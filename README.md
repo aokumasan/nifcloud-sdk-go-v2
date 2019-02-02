@@ -1,0 +1,1 @@
+# nifcloud-sdk-go-v2
