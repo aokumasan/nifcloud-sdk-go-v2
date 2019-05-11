@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "apiVersion": "3.0",
+    "apiVersion": "2016-11-15",
     "endpointPrefix": "computing",
     "protocol": "computing",
     "serviceAbbreviation": "computing",
     "serviceFullName": "NIFCLOUD Computing",
     "serviceId": "computing",
     "signatureVersion": "v2-computing",
-    "uid": "computing-2.2",
+    "uid": "computing-2016-11-15",
     "xmlNamespace": "https://cp.cloud.nifty.com/api/"
   },
   "operations": {
