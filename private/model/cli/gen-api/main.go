@@ -221,12 +221,7 @@ func writeServiceFile(g *generateInfo) error {
 		codeLayout,
 		"",
 		g.API.PackageName(),
-		strings.Replace(
-			g.API.ServiceGoCode(),
-			"github.com/aws/aws-sdk-go-v2/internal",
-			"github.com/alice02/nifcloud-sdk-go-v2/internal",
-			-1,
-		),
+		fixServiceFile(g.API.ServiceGoCode()),
 	)
 }
 
@@ -266,12 +261,7 @@ func writeAPIFile(g *generateInfo) error {
 		codeLayout,
 		"",
 		g.API.PackageName(),
-		strings.Replace(
-			g.API.APIGoCode(),
-			"github.com/aws/aws-sdk-go-v2/internal",
-			"github.com/alice02/nifcloud-sdk-go-v2/internal",
-			-1,
-		),
+		fixAPIFile(g.API.APIGoCode()),
 	)
 }
 
@@ -283,4 +273,37 @@ func writeAPIErrorsFile(g *generateInfo) error {
 		g.API.PackageName(),
 		g.API.APIErrorsGoCode(),
 	)
+}
+
+func fixServiceFile(code string) string {
+	replaceMap := map[string]string{
+		`"github.com/aws/aws-sdk-go-v2/aws"`: `"github.com/aws/aws-sdk-go-v2/aws"
+"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"`,
+		"aws.Config": "nifcloud.Config",
+		"config,":    "config.AWSConfig(),",
+	}
+
+	return replace(code, replaceMap)
+}
+
+func fixAPIFile(code string) string {
+	replaceMap := map[string]string{
+		"github.com/aws/aws-sdk-go-v2/internal/awsutil": "github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil",
+		"awsutil": "nifcloudutil",
+	}
+
+	return replace(code, replaceMap)
+}
+
+func replace(code string, replaceMap map[string]string) string {
+	for org, replace := range replaceMap {
+		code = strings.Replace(
+			code,
+			org,
+			replace,
+			-1,
+		)
+	}
+
+	return code
 }
