@@ -1,4 +1,4 @@
-// This file was imported from https://github.com/aws/aws-sdk-go-v2/blob/v2.0.0-preview.5/aws/endpoints/v3model.go
+// NOTE: This file was imported from https://github.com/aws/aws-sdk-go-v2/blob/v2.0.0-preview.5/aws/endpoints/v3model.go
 
 package endpoints
 
