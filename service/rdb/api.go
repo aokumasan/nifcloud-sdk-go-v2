@@ -5,7 +5,7 @@ package rdb
 import (
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go-v2/internal/awsutil"
+	"github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/private/protocol"
 	"github.com/aws/aws-sdk-go-v2/private/protocol/query"
@@ -1850,7 +1850,7 @@ type AddSourceIdentifierToSubscriptionInput struct {
 
 // String returns the string representation
 func (s AddSourceIdentifierToSubscriptionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1869,7 +1869,7 @@ type AddSourceIdentifierToSubscriptionOutput struct {
 
 // String returns the string representation
 func (s AddSourceIdentifierToSubscriptionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1895,7 +1895,7 @@ type AuthorizeDBSecurityGroupIngressInput struct {
 
 // String returns the string representation
 func (s AuthorizeDBSecurityGroupIngressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1914,7 +1914,7 @@ type AuthorizeDBSecurityGroupIngressOutput struct {
 
 // String returns the string representation
 func (s AuthorizeDBSecurityGroupIngressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1940,7 +1940,7 @@ type AvailabilityZone struct {
 
 // String returns the string representation
 func (s AvailabilityZone) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1959,7 +1959,7 @@ type CopyDBSnapshotInput struct {
 
 // String returns the string representation
 func (s CopyDBSnapshotInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1978,7 +1978,7 @@ type CopyDBSnapshotOutput struct {
 
 // String returns the string representation
 func (s CopyDBSnapshotOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2050,7 +2050,7 @@ type CreateDBInstanceInput struct {
 
 // String returns the string representation
 func (s CreateDBInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2069,7 +2069,7 @@ type CreateDBInstanceOutput struct {
 
 // String returns the string representation
 func (s CreateDBInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2099,7 +2099,7 @@ type CreateDBInstanceReadReplicaInput struct {
 
 // String returns the string representation
 func (s CreateDBInstanceReadReplicaInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2118,7 +2118,7 @@ type CreateDBInstanceReadReplicaOutput struct {
 
 // String returns the string representation
 func (s CreateDBInstanceReadReplicaOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2144,7 +2144,7 @@ type CreateDBParameterGroupInput struct {
 
 // String returns the string representation
 func (s CreateDBParameterGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2163,7 +2163,7 @@ type CreateDBParameterGroupOutput struct {
 
 // String returns the string representation
 func (s CreateDBParameterGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2189,7 +2189,7 @@ type CreateDBSecurityGroupInput struct {
 
 // String returns the string representation
 func (s CreateDBSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2208,7 +2208,7 @@ type CreateDBSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s CreateDBSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2232,7 +2232,7 @@ type CreateDBSnapshotInput struct {
 
 // String returns the string representation
 func (s CreateDBSnapshotInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2251,7 +2251,7 @@ type CreateDBSnapshotOutput struct {
 
 // String returns the string representation
 func (s CreateDBSnapshotOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2285,7 +2285,7 @@ type CreateEventSubscriptionInput struct {
 
 // String returns the string representation
 func (s CreateEventSubscriptionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2304,7 +2304,7 @@ type CreateEventSubscriptionOutput struct {
 
 // String returns the string representation
 func (s CreateEventSubscriptionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2334,7 +2334,7 @@ type DBEngineVersion struct {
 
 // String returns the string representation
 func (s DBEngineVersion) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2415,7 +2415,7 @@ type DBInstance struct {
 
 // String returns the string representation
 func (s DBInstance) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2438,7 +2438,7 @@ type DBInstanceStatusInfo struct {
 
 // String returns the string representation
 func (s DBInstanceStatusInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2459,7 +2459,7 @@ type DBParameterGroup struct {
 
 // String returns the string representation
 func (s DBParameterGroup) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2486,7 +2486,7 @@ type DBSecurityGroup struct {
 
 // String returns the string representation
 func (s DBSecurityGroup) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2529,7 +2529,7 @@ type DBSnapshot struct {
 
 // String returns the string representation
 func (s DBSnapshot) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2550,7 +2550,7 @@ type DeleteDBInstanceInput struct {
 
 // String returns the string representation
 func (s DeleteDBInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2569,7 +2569,7 @@ type DeleteDBInstanceOutput struct {
 
 // String returns the string representation
 func (s DeleteDBInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2591,7 +2591,7 @@ type DeleteDBParameterGroupInput struct {
 
 // String returns the string representation
 func (s DeleteDBParameterGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2608,7 +2608,7 @@ type DeleteDBParameterGroupOutput struct {
 
 // String returns the string representation
 func (s DeleteDBParameterGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2630,7 +2630,7 @@ type DeleteDBSecurityGroupInput struct {
 
 // String returns the string representation
 func (s DeleteDBSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2647,7 +2647,7 @@ type DeleteDBSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s DeleteDBSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2669,7 +2669,7 @@ type DeleteDBSnapshotInput struct {
 
 // String returns the string representation
 func (s DeleteDBSnapshotInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2688,7 +2688,7 @@ type DeleteDBSnapshotOutput struct {
 
 // String returns the string representation
 func (s DeleteDBSnapshotOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2710,7 +2710,7 @@ type DeleteEventSubscriptionInput struct {
 
 // String returns the string representation
 func (s DeleteEventSubscriptionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2729,7 +2729,7 @@ type DeleteEventSubscriptionOutput struct {
 
 // String returns the string representation
 func (s DeleteEventSubscriptionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2761,7 +2761,7 @@ type DescribeDBEngineVersionsInput struct {
 
 // String returns the string representation
 func (s DescribeDBEngineVersionsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2782,7 +2782,7 @@ type DescribeDBEngineVersionsOutput struct {
 
 // String returns the string representation
 func (s DescribeDBEngineVersionsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2808,7 +2808,7 @@ type DescribeDBInstancesInput struct {
 
 // String returns the string representation
 func (s DescribeDBInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2829,7 +2829,7 @@ type DescribeDBInstancesOutput struct {
 
 // String returns the string representation
 func (s DescribeDBInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2855,7 +2855,7 @@ type DescribeDBLogFilesDetails struct {
 
 // String returns the string representation
 func (s DescribeDBLogFilesDetails) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2882,7 +2882,7 @@ type DescribeDBLogFilesInput struct {
 
 // String returns the string representation
 func (s DescribeDBLogFilesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2903,7 +2903,7 @@ type DescribeDBLogFilesOutput struct {
 
 // String returns the string representation
 func (s DescribeDBLogFilesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2929,7 +2929,7 @@ type DescribeDBParameterGroupsInput struct {
 
 // String returns the string representation
 func (s DescribeDBParameterGroupsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2950,7 +2950,7 @@ type DescribeDBParameterGroupsOutput struct {
 
 // String returns the string representation
 func (s DescribeDBParameterGroupsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2978,7 +2978,7 @@ type DescribeDBParametersInput struct {
 
 // String returns the string representation
 func (s DescribeDBParametersInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -2999,7 +2999,7 @@ type DescribeDBParametersOutput struct {
 
 // String returns the string representation
 func (s DescribeDBParametersOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3025,7 +3025,7 @@ type DescribeDBSecurityGroupsInput struct {
 
 // String returns the string representation
 func (s DescribeDBSecurityGroupsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3046,7 +3046,7 @@ type DescribeDBSecurityGroupsOutput struct {
 
 // String returns the string representation
 func (s DescribeDBSecurityGroupsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3076,7 +3076,7 @@ type DescribeDBSnapshotsInput struct {
 
 // String returns the string representation
 func (s DescribeDBSnapshotsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3097,7 +3097,7 @@ type DescribeDBSnapshotsOutput struct {
 
 // String returns the string representation
 func (s DescribeDBSnapshotsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3123,7 +3123,7 @@ type DescribeEngineDefaultParametersInput struct {
 
 // String returns the string representation
 func (s DescribeEngineDefaultParametersInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3142,7 +3142,7 @@ type DescribeEngineDefaultParametersOutput struct {
 
 // String returns the string representation
 func (s DescribeEngineDefaultParametersOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3164,7 +3164,7 @@ type DescribeEventCategoriesInput struct {
 
 // String returns the string representation
 func (s DescribeEventCategoriesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3183,7 +3183,7 @@ type DescribeEventCategoriesOutput struct {
 
 // String returns the string representation
 func (s DescribeEventCategoriesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3209,7 +3209,7 @@ type DescribeEventSubscriptionsInput struct {
 
 // String returns the string representation
 func (s DescribeEventSubscriptionsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3230,7 +3230,7 @@ type DescribeEventSubscriptionsOutput struct {
 
 // String returns the string representation
 func (s DescribeEventSubscriptionsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3266,7 +3266,7 @@ type DescribeEventsInput struct {
 
 // String returns the string representation
 func (s DescribeEventsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3287,7 +3287,7 @@ type DescribeEventsOutput struct {
 
 // String returns the string representation
 func (s DescribeEventsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3319,7 +3319,7 @@ type DescribeOrderableDBInstanceOptionsInput struct {
 
 // String returns the string representation
 func (s DescribeOrderableDBInstanceOptionsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3340,7 +3340,7 @@ type DescribeOrderableDBInstanceOptionsOutput struct {
 
 // String returns the string representation
 func (s DescribeOrderableDBInstanceOptionsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3368,7 +3368,7 @@ type DownloadDBLogFilePortionInput struct {
 
 // String returns the string representation
 func (s DownloadDBLogFilePortionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3391,7 +3391,7 @@ type DownloadDBLogFilePortionOutput struct {
 
 // String returns the string representation
 func (s DownloadDBLogFilePortionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3417,7 +3417,7 @@ type EC2SecurityGroup struct {
 
 // String returns the string representation
 func (s EC2SecurityGroup) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3438,7 +3438,7 @@ type Endpoint struct {
 
 // String returns the string representation
 func (s Endpoint) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3459,7 +3459,7 @@ type EngineDefaults struct {
 
 // String returns the string representation
 func (s EngineDefaults) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3484,7 +3484,7 @@ type Event struct {
 
 // String returns the string representation
 func (s Event) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3503,7 +3503,7 @@ type EventCategoriesMap struct {
 
 // String returns the string representation
 func (s EventCategoriesMap) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3536,7 +3536,7 @@ type EventSubscription struct {
 
 // String returns the string representation
 func (s EventSubscription) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3555,7 +3555,7 @@ type IPRange struct {
 
 // String returns the string representation
 func (s IPRange) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3578,7 +3578,7 @@ type Member struct {
 
 // String returns the string representation
 func (s Member) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3625,7 +3625,7 @@ type ModifyDBInstanceInput struct {
 
 // String returns the string representation
 func (s ModifyDBInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3644,7 +3644,7 @@ type ModifyDBInstanceOutput struct {
 
 // String returns the string representation
 func (s ModifyDBInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3668,7 +3668,7 @@ type ModifyDBParameterGroupInput struct {
 
 // String returns the string representation
 func (s ModifyDBParameterGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3687,7 +3687,7 @@ type ModifyDBParameterGroupOutput struct {
 
 // String returns the string representation
 func (s ModifyDBParameterGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3719,7 +3719,7 @@ type ModifyEventSubscriptionInput struct {
 
 // String returns the string representation
 func (s ModifyEventSubscriptionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3738,7 +3738,7 @@ type ModifyEventSubscriptionOutput struct {
 
 // String returns the string representation
 func (s ModifyEventSubscriptionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3760,7 +3760,7 @@ type NiftyFailoverDBInstanceInput struct {
 
 // String returns the string representation
 func (s NiftyFailoverDBInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3779,7 +3779,7 @@ type NiftyFailoverDBInstanceOutput struct {
 
 // String returns the string representation
 func (s NiftyFailoverDBInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3807,7 +3807,7 @@ type NiftyGetMetricStatisticsInput struct {
 
 // String returns the string representation
 func (s NiftyGetMetricStatisticsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3828,7 +3828,7 @@ type NiftyGetMetricStatisticsOutput struct {
 
 // String returns the string representation
 func (s NiftyGetMetricStatisticsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3852,7 +3852,7 @@ type OptionGroupMembership struct {
 
 // String returns the string representation
 func (s OptionGroupMembership) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3883,7 +3883,7 @@ type OrderableDBInstanceOption struct {
 
 // String returns the string representation
 func (s OrderableDBInstanceOption) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3918,7 +3918,7 @@ type Parameter struct {
 
 // String returns the string representation
 func (s Parameter) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3951,7 +3951,7 @@ type PendingModifiedValues struct {
 
 // String returns the string representation
 func (s PendingModifiedValues) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3968,7 +3968,7 @@ type ReadReplicaDBInstanceIdentifier struct {
 
 // String returns the string representation
 func (s ReadReplicaDBInstanceIdentifier) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -3989,7 +3989,7 @@ type RebootDBInstanceInput struct {
 
 // String returns the string representation
 func (s RebootDBInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4008,7 +4008,7 @@ type RebootDBInstanceOutput struct {
 
 // String returns the string representation
 func (s RebootDBInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4032,7 +4032,7 @@ type RemoveSourceIdentifierFromSubscriptionInput struct {
 
 // String returns the string representation
 func (s RemoveSourceIdentifierFromSubscriptionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4051,7 +4051,7 @@ type RemoveSourceIdentifierFromSubscriptionOutput struct {
 
 // String returns the string representation
 func (s RemoveSourceIdentifierFromSubscriptionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4075,7 +4075,7 @@ type RequestDimensionsStruct struct {
 
 // String returns the string representation
 func (s RequestDimensionsStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4096,7 +4096,7 @@ type RequestParametersStruct struct {
 
 // String returns the string representation
 func (s RequestParametersStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4117,7 +4117,7 @@ type ResetDBParameterGroupInput struct {
 
 // String returns the string representation
 func (s ResetDBParameterGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4136,7 +4136,7 @@ type ResetDBParameterGroupOutput struct {
 
 // String returns the string representation
 func (s ResetDBParameterGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4196,7 +4196,7 @@ type RestoreDBInstanceFromDBSnapshotInput struct {
 
 // String returns the string representation
 func (s RestoreDBInstanceFromDBSnapshotInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4215,7 +4215,7 @@ type RestoreDBInstanceFromDBSnapshotOutput struct {
 
 // String returns the string representation
 func (s RestoreDBInstanceFromDBSnapshotOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4279,7 +4279,7 @@ type RestoreDBInstanceToPointInTimeInput struct {
 
 // String returns the string representation
 func (s RestoreDBInstanceToPointInTimeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4298,7 +4298,7 @@ type RestoreDBInstanceToPointInTimeOutput struct {
 
 // String returns the string representation
 func (s RestoreDBInstanceToPointInTimeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4324,7 +4324,7 @@ type RevokeDBSecurityGroupIngressInput struct {
 
 // String returns the string representation
 func (s RevokeDBSecurityGroupIngressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4343,7 +4343,7 @@ type RevokeDBSecurityGroupIngressOutput struct {
 
 // String returns the string representation
 func (s RevokeDBSecurityGroupIngressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -4363,7 +4363,7 @@ type VpcSecurityGroup struct {
 
 // String returns the string representation
 func (s VpcSecurityGroup) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation

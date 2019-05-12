@@ -5,7 +5,7 @@ package nas
 import (
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go-v2/internal/awsutil"
+	"github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/private/protocol"
 	"github.com/aws/aws-sdk-go-v2/private/protocol/query"
@@ -554,7 +554,7 @@ type AuthorizeNASSecurityGroupIngressInput struct {
 
 // String returns the string representation
 func (s AuthorizeNASSecurityGroupIngressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -573,7 +573,7 @@ type AuthorizeNASSecurityGroupIngressOutput struct {
 
 // String returns the string representation
 func (s AuthorizeNASSecurityGroupIngressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -615,7 +615,7 @@ type CreateNASInstanceInput struct {
 
 // String returns the string representation
 func (s CreateNASInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -634,7 +634,7 @@ type CreateNASInstanceOutput struct {
 
 // String returns the string representation
 func (s CreateNASInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -660,7 +660,7 @@ type CreateNASSecurityGroupInput struct {
 
 // String returns the string representation
 func (s CreateNASSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -679,7 +679,7 @@ type CreateNASSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s CreateNASSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -705,7 +705,7 @@ type DeleteNASInstanceInput struct {
 
 // String returns the string representation
 func (s DeleteNASInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -724,7 +724,7 @@ type DeleteNASInstanceOutput struct {
 
 // String returns the string representation
 func (s DeleteNASInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -746,7 +746,7 @@ type DeleteNASSecurityGroupInput struct {
 
 // String returns the string representation
 func (s DeleteNASSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -763,7 +763,7 @@ type DeleteNASSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s DeleteNASSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -785,7 +785,7 @@ type DescribeNASInstancesInput struct {
 
 // String returns the string representation
 func (s DescribeNASInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -804,7 +804,7 @@ type DescribeNASInstancesOutput struct {
 
 // String returns the string representation
 func (s DescribeNASInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -826,7 +826,7 @@ type DescribeNASSecurityGroupsInput struct {
 
 // String returns the string representation
 func (s DescribeNASSecurityGroupsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -845,7 +845,7 @@ type DescribeNASSecurityGroupsOutput struct {
 
 // String returns the string representation
 func (s DescribeNASSecurityGroupsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -869,7 +869,7 @@ type DomainController struct {
 
 // String returns the string representation
 func (s DomainController) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -888,7 +888,7 @@ type Endpoint struct {
 
 // String returns the string representation
 func (s Endpoint) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -911,7 +911,7 @@ type GetMetricStatisticsInput struct {
 
 // String returns the string representation
 func (s GetMetricStatisticsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -932,7 +932,7 @@ type GetMetricStatisticsOutput struct {
 
 // String returns the string representation
 func (s GetMetricStatisticsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -956,7 +956,7 @@ type IPRange struct {
 
 // String returns the string representation
 func (s IPRange) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -979,7 +979,7 @@ type Member struct {
 
 // String returns the string representation
 func (s Member) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1020,7 +1020,7 @@ type ModifyNASInstanceInput struct {
 
 // String returns the string representation
 func (s ModifyNASInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1039,7 +1039,7 @@ type ModifyNASInstanceOutput struct {
 
 // String returns the string representation
 func (s ModifyNASInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1065,7 +1065,7 @@ type ModifyNASSecurityGroupInput struct {
 
 // String returns the string representation
 func (s ModifyNASSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1084,7 +1084,7 @@ type ModifyNASSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s ModifyNASSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1142,7 +1142,7 @@ type NASInstance struct {
 
 // String returns the string representation
 func (s NASInstance) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1161,7 +1161,7 @@ type NASInstanceErrorInfo struct {
 
 // String returns the string representation
 func (s NASInstanceErrorInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1188,7 +1188,7 @@ type NASSecurityGroup struct {
 
 // String returns the string representation
 func (s NASSecurityGroup) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1207,7 +1207,7 @@ type RequestDimensionsStruct struct {
 
 // String returns the string representation
 func (s RequestDimensionsStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1226,7 +1226,7 @@ type RequestDomainControllersStruct struct {
 
 // String returns the string representation
 func (s RequestDomainControllersStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1247,7 +1247,7 @@ type RevokeNASSecurityGroupIngressInput struct {
 
 // String returns the string representation
 func (s RevokeNASSecurityGroupIngressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1266,7 +1266,7 @@ type RevokeNASSecurityGroupIngressOutput struct {
 
 // String returns the string representation
 func (s RevokeNASSecurityGroupIngressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -1292,7 +1292,7 @@ type SecurityGroup struct {
 
 // String returns the string representation
 func (s SecurityGroup) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation

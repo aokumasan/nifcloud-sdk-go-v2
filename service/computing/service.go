@@ -3,6 +3,7 @@
 package computing
 
 import (
+	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/signer/v4"
 	"github.com/aws/aws-sdk-go-v2/private/protocol/computing"
@@ -35,13 +36,13 @@ const (
 // Example:
 //     // Create a Computing client from just a config.
 //     svc := computing.New(myConfig)
-func New(config aws.Config) *Computing {
+func New(config nifcloud.Config) *Computing {
 	var signingName string
 	signingRegion := config.Region
 
 	svc := &Computing{
 		Client: aws.NewClient(
-			config,
+			config.AWSConfig(),
 			aws.Metadata{
 				ServiceName:   ServiceName,
 				SigningName:   signingName,

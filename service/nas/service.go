@@ -3,6 +3,7 @@
 package nas
 
 import (
+	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/signer/v4"
 	"github.com/aws/aws-sdk-go-v2/private/protocol/query"
@@ -35,13 +36,13 @@ const (
 // Example:
 //     // Create a Nas client from just a config.
 //     svc := nas.New(myConfig)
-func New(config aws.Config) *Nas {
+func New(config nifcloud.Config) *Nas {
 	var signingName string
 	signingRegion := config.Region
 
 	svc := &Nas{
 		Client: aws.NewClient(
-			config,
+			config.AWSConfig(),
 			aws.Metadata{
 				ServiceName:   ServiceName,
 				SigningName:   signingName,

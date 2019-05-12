@@ -3,6 +3,7 @@
 package rdb
 
 import (
+	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/signer/v4"
 	"github.com/aws/aws-sdk-go-v2/private/protocol/query"
@@ -35,13 +36,13 @@ const (
 // Example:
 //     // Create a Rdb client from just a config.
 //     svc := rdb.New(myConfig)
-func New(config aws.Config) *Rdb {
+func New(config nifcloud.Config) *Rdb {
 	var signingName string
 	signingRegion := config.Region
 
 	svc := &Rdb{
 		Client: aws.NewClient(
-			config,
+			config.AWSConfig(),
 			aws.Metadata{
 				ServiceName:   ServiceName,
 				SigningName:   signingName,

@@ -3,6 +3,7 @@
 package script
 
 import (
+	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/signer/v4"
 	"github.com/aws/aws-sdk-go-v2/private/protocol/script"
@@ -35,13 +36,13 @@ const (
 // Example:
 //     // Create a Script client from just a config.
 //     svc := script.New(myConfig)
-func New(config aws.Config) *Script {
+func New(config nifcloud.Config) *Script {
 	var signingName string
 	signingRegion := config.Region
 
 	svc := &Script{
 		Client: aws.NewClient(
-			config,
+			config.AWSConfig(),
 			aws.Metadata{
 				ServiceName:   ServiceName,
 				SigningName:   signingName,

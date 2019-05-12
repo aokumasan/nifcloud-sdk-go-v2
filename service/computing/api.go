@@ -5,7 +5,7 @@ package computing
 import (
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go-v2/internal/awsutil"
+	"github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"
 	"github.com/aws/aws-sdk-go-v2/aws"
 )
 
@@ -9282,7 +9282,7 @@ type AccountingType struct {
 
 // String returns the string representation
 func (s AccountingType) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9319,7 +9319,7 @@ type AddressesSetItem struct {
 
 // String returns the string representation
 func (s AddressesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9338,7 +9338,7 @@ type AlarmDateHistorySetItem struct {
 
 // String returns the string representation
 func (s AlarmDateHistorySetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9357,7 +9357,7 @@ type AlarmEventHistorySetItem struct {
 
 // String returns the string representation
 func (s AlarmEventHistorySetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9376,7 +9376,7 @@ type AlarmRulesActivitiesDateSetItem struct {
 
 // String returns the string representation
 func (s AlarmRulesActivitiesDateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9399,7 +9399,7 @@ type AlarmRulesActivitiesEventSetItem struct {
 
 // String returns the string representation
 func (s AlarmRulesActivitiesEventSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9418,7 +9418,7 @@ type AlarmRulesActivitiesSetItem struct {
 
 // String returns the string representation
 func (s AlarmRulesActivitiesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9437,7 +9437,7 @@ type AlarmTargetSetItem struct {
 
 // String returns the string representation
 func (s AlarmTargetSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9454,7 +9454,7 @@ type AlarmTargetsSetItem struct {
 
 // String returns the string representation
 func (s AlarmTargetsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9475,7 +9475,7 @@ type AllocateAddressInput struct {
 
 // String returns the string representation
 func (s AllocateAddressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9504,7 +9504,7 @@ type AllocateAddressOutput struct {
 
 // String returns the string representation
 func (s AllocateAddressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9528,7 +9528,7 @@ type AnalyzeResultSetItem struct {
 
 // String returns the string representation
 func (s AnalyzeResultSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9547,7 +9547,7 @@ type AppCookieStickinessPoliciesMemberItem struct {
 
 // String returns the string representation
 func (s AppCookieStickinessPoliciesMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9570,7 +9570,7 @@ type AssociateAddressInput struct {
 
 // String returns the string representation
 func (s AssociateAddressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9593,7 +9593,7 @@ type AssociateAddressOutput struct {
 
 // String returns the string representation
 func (s AssociateAddressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9621,7 +9621,7 @@ type AssociateRouteTableInput struct {
 
 // String returns the string representation
 func (s AssociateRouteTableInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9642,7 +9642,7 @@ type AssociateRouteTableOutput struct {
 
 // String returns the string representation
 func (s AssociateRouteTableOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9666,7 +9666,7 @@ type AssociateUsersInput struct {
 
 // String returns the string representation
 func (s AssociateUsersInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9689,7 +9689,7 @@ type AssociateUsersOutput struct {
 
 // String returns the string representation
 func (s AssociateUsersOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9721,7 +9721,7 @@ type Association struct {
 
 // String returns the string representation
 func (s Association) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9752,7 +9752,7 @@ type AssociationSetItem struct {
 
 // String returns the string representation
 func (s AssociationSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9775,7 +9775,7 @@ type AttachNetworkInterfaceInput struct {
 
 // String returns the string representation
 func (s AttachNetworkInterfaceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9798,7 +9798,7 @@ type AttachNetworkInterfaceOutput struct {
 
 // String returns the string representation
 func (s AttachNetworkInterfaceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9822,7 +9822,7 @@ type AttachVolumeInput struct {
 
 // String returns the string representation
 func (s AttachVolumeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9853,7 +9853,7 @@ type AttachVolumeOutput struct {
 
 // String returns the string representation
 func (s AttachVolumeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9889,7 +9889,7 @@ type Attachment struct {
 
 // String returns the string representation
 func (s Attachment) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9918,7 +9918,7 @@ type AttachmentSetItem struct {
 
 // String returns the string representation
 func (s AttachmentSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9937,7 +9937,7 @@ type AttachmentsSetItem struct {
 
 // String returns the string representation
 func (s AttachmentsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9956,7 +9956,7 @@ type AuthorizeSecurityGroupIngressInput struct {
 
 // String returns the string representation
 func (s AuthorizeSecurityGroupIngressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -9977,7 +9977,7 @@ type AuthorizeSecurityGroupIngressOutput struct {
 
 // String returns the string representation
 func (s AuthorizeSecurityGroupIngressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10005,7 +10005,7 @@ type AutoScaleCount struct {
 
 // String returns the string representation
 func (s AutoScaleCount) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10030,7 +10030,7 @@ type AutoScaleInfo struct {
 
 // String returns the string representation
 func (s AutoScaleInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10083,7 +10083,7 @@ type AutoScalingReservationSetItem struct {
 
 // String returns the string representation
 func (s AutoScalingReservationSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10102,7 +10102,7 @@ type Autoscaling struct {
 
 // String returns the string representation
 func (s Autoscaling) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10125,7 +10125,7 @@ type AvailabilityZoneInfoSetItem struct {
 
 // String returns the string representation
 func (s AvailabilityZoneInfoSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10144,7 +10144,7 @@ type BackupInformation struct {
 
 // String returns the string representation
 func (s BackupInformation) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10167,7 +10167,7 @@ type BlockDeviceMappingSetItem struct {
 
 // String returns the string representation
 func (s BlockDeviceMappingSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10186,7 +10186,7 @@ type BypassInterface struct {
 
 // String returns the string representation
 func (s BypassInterface) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10203,7 +10203,7 @@ type CaState struct {
 
 // String returns the string representation
 func (s CaState) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10220,7 +10220,7 @@ type CancelCopyInstancesInput struct {
 
 // String returns the string representation
 func (s CancelCopyInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10239,7 +10239,7 @@ type CancelCopyInstancesOutput struct {
 
 // String returns the string representation
 func (s CancelCopyInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10261,7 +10261,7 @@ type CancelUploadInput struct {
 
 // String returns the string representation
 func (s CancelUploadInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10282,7 +10282,7 @@ type CancelUploadOutput struct {
 
 // String returns the string representation
 func (s CancelUploadOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10304,7 +10304,7 @@ type CertAuthority struct {
 
 // String returns the string representation
 func (s CertAuthority) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10331,7 +10331,7 @@ type CertInfo struct {
 
 // String returns the string representation
 func (s CertInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10348,7 +10348,7 @@ type CertState struct {
 
 // String returns the string representation
 func (s CertState) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10385,7 +10385,7 @@ type CertsSetItem struct {
 
 // String returns the string representation
 func (s CertsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10408,7 +10408,7 @@ type ChargeDetail struct {
 
 // String returns the string representation
 func (s ChargeDetail) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10425,7 +10425,7 @@ type ChargeDetailInfo struct {
 
 // String returns the string representation
 func (s ChargeDetailInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10446,7 +10446,7 @@ type ClearLoadBalancerSessionInput struct {
 
 // String returns the string representation
 func (s ClearLoadBalancerSessionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10465,7 +10465,7 @@ type ClearLoadBalancerSessionOutput struct {
 
 // String returns the string representation
 func (s ClearLoadBalancerSessionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10493,7 +10493,7 @@ type ConfigureHealthCheckInput struct {
 
 // String returns the string representation
 func (s ConfigureHealthCheckInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10516,7 +10516,7 @@ type ConfigureHealthCheckOutput struct {
 
 // String returns the string representation
 func (s ConfigureHealthCheckOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10550,7 +10550,7 @@ type ConversionTask struct {
 
 // String returns the string representation
 func (s ConversionTask) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10569,7 +10569,7 @@ type CopyInfo struct {
 
 // String returns the string representation
 func (s CopyInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10590,7 +10590,7 @@ type CopyInstanceSetItem struct {
 
 // String returns the string representation
 func (s CopyInstanceSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10613,7 +10613,7 @@ type CopyInstancesInput struct {
 
 // String returns the string representation
 func (s CopyInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10634,7 +10634,7 @@ type CopyInstancesOutput struct {
 
 // String returns the string representation
 func (s CopyInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10656,7 +10656,7 @@ type Count struct {
 
 // String returns the string representation
 func (s Count) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10681,7 +10681,7 @@ type CreateCustomerGatewayInput struct {
 
 // String returns the string representation
 func (s CreateCustomerGatewayInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10702,7 +10702,7 @@ type CreateCustomerGatewayOutput struct {
 
 // String returns the string representation
 func (s CreateCustomerGatewayOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10724,7 +10724,7 @@ type CreateDhcpOptionsInput struct {
 
 // String returns the string representation
 func (s CreateDhcpOptionsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10745,7 +10745,7 @@ type CreateDhcpOptionsOutput struct {
 
 // String returns the string representation
 func (s CreateDhcpOptionsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10773,7 +10773,7 @@ type CreateImage struct {
 
 // String returns the string representation
 func (s CreateImage) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10798,7 +10798,7 @@ type CreateImageInput struct {
 
 // String returns the string representation
 func (s CreateImageInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10821,7 +10821,7 @@ type CreateImageOutput struct {
 
 // String returns the string representation
 func (s CreateImageOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10847,7 +10847,7 @@ type CreateKeyPairInput struct {
 
 // String returns the string representation
 func (s CreateKeyPairInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10872,7 +10872,7 @@ type CreateKeyPairOutput struct {
 
 // String returns the string representation
 func (s CreateKeyPairOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10904,7 +10904,7 @@ type CreateLoadBalancerInput struct {
 
 // String returns the string representation
 func (s CreateLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10927,7 +10927,7 @@ type CreateLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s CreateLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10955,7 +10955,7 @@ type CreateNetworkInterfaceInput struct {
 
 // String returns the string representation
 func (s CreateNetworkInterfaceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -10978,7 +10978,7 @@ type CreateNetworkInterfaceOutput struct {
 
 // String returns the string representation
 func (s CreateNetworkInterfaceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11008,7 +11008,7 @@ type CreateRouteInput struct {
 
 // String returns the string representation
 func (s CreateRouteInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11029,7 +11029,7 @@ type CreateRouteOutput struct {
 
 // String returns the string representation
 func (s CreateRouteOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11049,7 +11049,7 @@ type CreateRouteTableInput struct {
 
 // String returns the string representation
 func (s CreateRouteTableInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11070,7 +11070,7 @@ type CreateRouteTableOutput struct {
 
 // String returns the string representation
 func (s CreateRouteTableOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11096,7 +11096,7 @@ type CreateSecurityGroupInput struct {
 
 // String returns the string representation
 func (s CreateSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11117,7 +11117,7 @@ type CreateSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s CreateSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11145,7 +11145,7 @@ type CreateSslCertSetItem struct {
 
 // String returns the string representation
 func (s CreateSslCertSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11176,7 +11176,7 @@ type CreateSslCertificateInput struct {
 
 // String returns the string representation
 func (s CreateSslCertificateInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11207,7 +11207,7 @@ type CreateSslCertificateOutput struct {
 
 // String returns the string representation
 func (s CreateSslCertificateOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11239,7 +11239,7 @@ type CreateVolumeInput struct {
 
 // String returns the string representation
 func (s CreateVolumeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11274,7 +11274,7 @@ type CreateVolumeOutput struct {
 
 // String returns the string representation
 func (s CreateVolumeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11316,7 +11316,7 @@ type CreateVpnConnectionInput struct {
 
 // String returns the string representation
 func (s CreateVpnConnectionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11337,7 +11337,7 @@ type CreateVpnConnectionOutput struct {
 
 // String returns the string representation
 func (s CreateVpnConnectionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11373,7 +11373,7 @@ type CreateVpnGatewayInput struct {
 
 // String returns the string representation
 func (s CreateVpnGatewayInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11394,7 +11394,7 @@ type CreateVpnGatewayOutput struct {
 
 // String returns the string representation
 func (s CreateVpnGatewayOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11418,7 +11418,7 @@ type CurrentState struct {
 
 // String returns the string representation
 func (s CurrentState) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11453,7 +11453,7 @@ type CustomerGateway struct {
 
 // String returns the string representation
 func (s CustomerGateway) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11490,7 +11490,7 @@ type CustomerGatewaySetItem struct {
 
 // String returns the string representation
 func (s CustomerGatewaySetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11509,7 +11509,7 @@ type DDay struct {
 
 // String returns the string representation
 func (s DDay) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11528,7 +11528,7 @@ type DataSetItem struct {
 
 // String returns the string representation
 func (s DataSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11557,7 +11557,7 @@ type Day struct {
 
 // String returns the string representation
 func (s Day) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11576,7 +11576,7 @@ type DeleteCustomerGatewayInput struct {
 
 // String returns the string representation
 func (s DeleteCustomerGatewayInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11597,7 +11597,7 @@ type DeleteCustomerGatewayOutput struct {
 
 // String returns the string representation
 func (s DeleteCustomerGatewayOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11619,7 +11619,7 @@ type DeleteDhcpOptionsInput struct {
 
 // String returns the string representation
 func (s DeleteDhcpOptionsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11640,7 +11640,7 @@ type DeleteDhcpOptionsOutput struct {
 
 // String returns the string representation
 func (s DeleteDhcpOptionsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11662,7 +11662,7 @@ type DeleteImageInput struct {
 
 // String returns the string representation
 func (s DeleteImageInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11681,7 +11681,7 @@ type DeleteImageOutput struct {
 
 // String returns the string representation
 func (s DeleteImageOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11703,7 +11703,7 @@ type DeleteKeyPairInput struct {
 
 // String returns the string representation
 func (s DeleteKeyPairInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11724,7 +11724,7 @@ type DeleteKeyPairOutput struct {
 
 // String returns the string representation
 func (s DeleteKeyPairOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11750,7 +11750,7 @@ type DeleteLoadBalancerInput struct {
 
 // String returns the string representation
 func (s DeleteLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11769,7 +11769,7 @@ type DeleteLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s DeleteLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11791,7 +11791,7 @@ type DeleteNetworkInterfaceInput struct {
 
 // String returns the string representation
 func (s DeleteNetworkInterfaceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11812,7 +11812,7 @@ type DeleteNetworkInterfaceOutput struct {
 
 // String returns the string representation
 func (s DeleteNetworkInterfaceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11836,7 +11836,7 @@ type DeleteRouteInput struct {
 
 // String returns the string representation
 func (s DeleteRouteInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11857,7 +11857,7 @@ type DeleteRouteOutput struct {
 
 // String returns the string representation
 func (s DeleteRouteOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11879,7 +11879,7 @@ type DeleteRouteTableInput struct {
 
 // String returns the string representation
 func (s DeleteRouteTableInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11900,7 +11900,7 @@ type DeleteRouteTableOutput struct {
 
 // String returns the string representation
 func (s DeleteRouteTableOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11922,7 +11922,7 @@ type DeleteSecurityGroupInput struct {
 
 // String returns the string representation
 func (s DeleteSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11943,7 +11943,7 @@ type DeleteSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s DeleteSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11965,7 +11965,7 @@ type DeleteSslCertificateInput struct {
 
 // String returns the string representation
 func (s DeleteSslCertificateInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -11986,7 +11986,7 @@ type DeleteSslCertificateOutput struct {
 
 // String returns the string representation
 func (s DeleteSslCertificateOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12008,7 +12008,7 @@ type DeleteVolumeInput struct {
 
 // String returns the string representation
 func (s DeleteVolumeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12029,7 +12029,7 @@ type DeleteVolumeOutput struct {
 
 // String returns the string representation
 func (s DeleteVolumeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12053,7 +12053,7 @@ type DeleteVpnConnectionInput struct {
 
 // String returns the string representation
 func (s DeleteVpnConnectionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12074,7 +12074,7 @@ type DeleteVpnConnectionOutput struct {
 
 // String returns the string representation
 func (s DeleteVpnConnectionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12098,7 +12098,7 @@ type DeleteVpnGatewayInput struct {
 
 // String returns the string representation
 func (s DeleteVpnGatewayInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12119,7 +12119,7 @@ type DeleteVpnGatewayOutput struct {
 
 // String returns the string representation
 func (s DeleteVpnGatewayOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12147,7 +12147,7 @@ type DeregisterInstancesFromLoadBalancerInput struct {
 
 // String returns the string representation
 func (s DeregisterInstancesFromLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12170,7 +12170,7 @@ type DeregisterInstancesFromLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s DeregisterInstancesFromLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12194,7 +12194,7 @@ type DeregisterInstancesFromSecurityGroupInput struct {
 
 // String returns the string representation
 func (s DeregisterInstancesFromSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12215,7 +12215,7 @@ type DeregisterInstancesFromSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s DeregisterInstancesFromSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12239,7 +12239,7 @@ type DescribeAddressesInput struct {
 
 // String returns the string representation
 func (s DescribeAddressesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12260,7 +12260,7 @@ type DescribeAddressesOutput struct {
 
 // String returns the string representation
 func (s DescribeAddressesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12282,7 +12282,7 @@ type DescribeAssociatedUsersInput struct {
 
 // String returns the string representation
 func (s DescribeAssociatedUsersInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12305,7 +12305,7 @@ type DescribeAssociatedUsersOutput struct {
 
 // String returns the string representation
 func (s DescribeAssociatedUsersOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12327,7 +12327,7 @@ type DescribeAvailabilityZonesInput struct {
 
 // String returns the string representation
 func (s DescribeAvailabilityZonesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12348,7 +12348,7 @@ type DescribeAvailabilityZonesOutput struct {
 
 // String returns the string representation
 func (s DescribeAvailabilityZonesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12374,7 +12374,7 @@ type DescribeCustomerGatewaysInput struct {
 
 // String returns the string representation
 func (s DescribeCustomerGatewaysInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12395,7 +12395,7 @@ type DescribeCustomerGatewaysOutput struct {
 
 // String returns the string representation
 func (s DescribeCustomerGatewaysOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12419,7 +12419,7 @@ type DescribeDhcpOptionsInput struct {
 
 // String returns the string representation
 func (s DescribeDhcpOptionsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12440,7 +12440,7 @@ type DescribeDhcpOptionsOutput struct {
 
 // String returns the string representation
 func (s DescribeDhcpOptionsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12466,7 +12466,7 @@ type DescribeImagesInput struct {
 
 // String returns the string representation
 func (s DescribeImagesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12487,7 +12487,7 @@ type DescribeImagesOutput struct {
 
 // String returns the string representation
 func (s DescribeImagesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12511,7 +12511,7 @@ type DescribeInstanceAttributeInput struct {
 
 // String returns the string representation
 func (s DescribeInstanceAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12572,7 +12572,7 @@ type DescribeInstanceAttributeOutput struct {
 
 // String returns the string representation
 func (s DescribeInstanceAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12600,7 +12600,7 @@ type DescribeInstanceHealthInput struct {
 
 // String returns the string representation
 func (s DescribeInstanceHealthInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12623,7 +12623,7 @@ type DescribeInstanceHealthOutput struct {
 
 // String returns the string representation
 func (s DescribeInstanceHealthOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12647,7 +12647,7 @@ type DescribeInstancesInput struct {
 
 // String returns the string representation
 func (s DescribeInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12668,7 +12668,7 @@ type DescribeInstancesOutput struct {
 
 // String returns the string representation
 func (s DescribeInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12690,7 +12690,7 @@ type DescribeKeyPairsInput struct {
 
 // String returns the string representation
 func (s DescribeKeyPairsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12711,7 +12711,7 @@ type DescribeKeyPairsOutput struct {
 
 // String returns the string representation
 func (s DescribeKeyPairsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12733,7 +12733,7 @@ type DescribeLoadBalancersInput struct {
 
 // String returns the string representation
 func (s DescribeLoadBalancersInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12756,7 +12756,7 @@ type DescribeLoadBalancersOutput struct {
 
 // String returns the string representation
 func (s DescribeLoadBalancersOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12780,7 +12780,7 @@ type DescribeNetworkInterfacesInput struct {
 
 // String returns the string representation
 func (s DescribeNetworkInterfacesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12801,7 +12801,7 @@ type DescribeNetworkInterfacesOutput struct {
 
 // String returns the string representation
 func (s DescribeNetworkInterfacesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12823,7 +12823,7 @@ type DescribeRegionsInput struct {
 
 // String returns the string representation
 func (s DescribeRegionsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12844,7 +12844,7 @@ type DescribeRegionsOutput struct {
 
 // String returns the string representation
 func (s DescribeRegionsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12864,7 +12864,7 @@ type DescribeResourcesInput struct {
 
 // String returns the string representation
 func (s DescribeResourcesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12885,7 +12885,7 @@ type DescribeResourcesOutput struct {
 
 // String returns the string representation
 func (s DescribeResourcesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12909,7 +12909,7 @@ type DescribeRouteTablesInput struct {
 
 // String returns the string representation
 func (s DescribeRouteTablesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12930,7 +12930,7 @@ type DescribeRouteTablesOutput struct {
 
 // String returns the string representation
 func (s DescribeRouteTablesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12956,7 +12956,7 @@ type DescribeSecurityActivitiesInput struct {
 
 // String returns the string representation
 func (s DescribeSecurityActivitiesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12979,7 +12979,7 @@ type DescribeSecurityActivitiesOutput struct {
 
 // String returns the string representation
 func (s DescribeSecurityActivitiesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -12999,7 +12999,7 @@ type DescribeSecurityGroupOptionInput struct {
 
 // String returns the string representation
 func (s DescribeSecurityGroupOptionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13022,7 +13022,7 @@ type DescribeSecurityGroupOptionOutput struct {
 
 // String returns the string representation
 func (s DescribeSecurityGroupOptionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13046,7 +13046,7 @@ type DescribeSecurityGroupsInput struct {
 
 // String returns the string representation
 func (s DescribeSecurityGroupsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13067,7 +13067,7 @@ type DescribeSecurityGroupsOutput struct {
 
 // String returns the string representation
 func (s DescribeSecurityGroupsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13091,7 +13091,7 @@ type DescribeServiceStatusInput struct {
 
 // String returns the string representation
 func (s DescribeServiceStatusInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13112,7 +13112,7 @@ type DescribeServiceStatusOutput struct {
 
 // String returns the string representation
 func (s DescribeServiceStatusOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13136,7 +13136,7 @@ type DescribeSslCertificateAttributeInput struct {
 
 // String returns the string representation
 func (s DescribeSslCertificateAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13177,7 +13177,7 @@ type DescribeSslCertificateAttributeOutput struct {
 
 // String returns the string representation
 func (s DescribeSslCertificateAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13201,7 +13201,7 @@ type DescribeSslCertificatesInput struct {
 
 // String returns the string representation
 func (s DescribeSslCertificatesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13222,7 +13222,7 @@ type DescribeSslCertificatesOutput struct {
 
 // String returns the string representation
 func (s DescribeSslCertificatesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13244,7 +13244,7 @@ type DescribeUploadsInput struct {
 
 // String returns the string representation
 func (s DescribeUploadsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13263,7 +13263,7 @@ type DescribeUploadsOutput struct {
 
 // String returns the string representation
 func (s DescribeUploadsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13289,7 +13289,7 @@ type DescribeUsageInput struct {
 
 // String returns the string representation
 func (s DescribeUsageInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13368,7 +13368,7 @@ type DescribeUsageOutput struct {
 
 // String returns the string representation
 func (s DescribeUsageOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13392,7 +13392,7 @@ type DescribeUserActivitiesInput struct {
 
 // String returns the string representation
 func (s DescribeUserActivitiesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13413,7 +13413,7 @@ type DescribeUserActivitiesOutput struct {
 
 // String returns the string representation
 func (s DescribeUserActivitiesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13435,7 +13435,7 @@ type DescribeVolumesInput struct {
 
 // String returns the string representation
 func (s DescribeVolumesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13456,7 +13456,7 @@ type DescribeVolumesOutput struct {
 
 // String returns the string representation
 func (s DescribeVolumesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13480,7 +13480,7 @@ type DescribeVpnConnectionsInput struct {
 
 // String returns the string representation
 func (s DescribeVpnConnectionsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13501,7 +13501,7 @@ type DescribeVpnConnectionsOutput struct {
 
 // String returns the string representation
 func (s DescribeVpnConnectionsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13527,7 +13527,7 @@ type DescribeVpnGatewaysInput struct {
 
 // String returns the string representation
 func (s DescribeVpnGatewaysInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13548,7 +13548,7 @@ type DescribeVpnGatewaysOutput struct {
 
 // String returns the string representation
 func (s DescribeVpnGatewaysOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13570,7 +13570,7 @@ type DescriptionValue struct {
 
 // String returns the string representation
 func (s DescriptionValue) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13589,7 +13589,7 @@ type Destination struct {
 
 // String returns the string representation
 func (s Destination) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13608,7 +13608,7 @@ type DetachNetworkInterfaceInput struct {
 
 // String returns the string representation
 func (s DetachNetworkInterfaceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13629,7 +13629,7 @@ type DetachNetworkInterfaceOutput struct {
 
 // String returns the string representation
 func (s DetachNetworkInterfaceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13655,7 +13655,7 @@ type DetachVolumeInput struct {
 
 // String returns the string representation
 func (s DetachVolumeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13686,7 +13686,7 @@ type DetachVolumeOutput struct {
 
 // String returns the string representation
 func (s DetachVolumeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13714,7 +13714,7 @@ type Details struct {
 
 // String returns the string representation
 func (s Details) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13735,7 +13735,7 @@ type DhcpConfig struct {
 
 // String returns the string representation
 func (s DhcpConfig) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13756,7 +13756,7 @@ type DhcpConfigsSetItem struct {
 
 // String returns the string representation
 func (s DhcpConfigsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13775,7 +13775,7 @@ type DhcpConfigurationSetItem struct {
 
 // String returns the string representation
 func (s DhcpConfigurationSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13794,7 +13794,7 @@ type DhcpConfigurationSetTypeSetItem struct {
 
 // String returns the string representation
 func (s DhcpConfigurationSetTypeSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13813,7 +13813,7 @@ type DhcpIpAddressInformationSet struct {
 
 // String returns the string representation
 func (s DhcpIpAddressInformationSet) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13834,7 +13834,7 @@ type DhcpIpAddressSetItem struct {
 
 // String returns the string representation
 func (s DhcpIpAddressSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13853,7 +13853,7 @@ type DhcpOptions struct {
 
 // String returns the string representation
 func (s DhcpOptions) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13872,7 +13872,7 @@ type DhcpOptionsSet struct {
 
 // String returns the string representation
 func (s DhcpOptionsSet) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13893,7 +13893,7 @@ type DhcpStatusInformationSetItem struct {
 
 // String returns the string representation
 func (s DhcpStatusInformationSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13910,7 +13910,7 @@ type DisableApiTermination struct {
 
 // String returns the string representation
 func (s DisableApiTermination) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13931,7 +13931,7 @@ type DisassociateAddressInput struct {
 
 // String returns the string representation
 func (s DisassociateAddressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13952,7 +13952,7 @@ type DisassociateAddressOutput struct {
 
 // String returns the string representation
 func (s DisassociateAddressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13976,7 +13976,7 @@ type DisassociateRouteTableInput struct {
 
 // String returns the string representation
 func (s DisassociateRouteTableInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -13997,7 +13997,7 @@ type DisassociateRouteTableOutput struct {
 
 // String returns the string representation
 func (s DisassociateRouteTableOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14021,7 +14021,7 @@ type DissociateUsersInput struct {
 
 // String returns the string representation
 func (s DissociateUsersInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14044,7 +14044,7 @@ type DissociateUsersOutput struct {
 
 // String returns the string representation
 func (s DissociateUsersOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14068,7 +14068,7 @@ type DownloadSslCertificateInput struct {
 
 // String returns the string representation
 func (s DownloadSslCertificateInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14093,7 +14093,7 @@ type DownloadSslCertificateOutput struct {
 
 // String returns the string representation
 func (s DownloadSslCertificateOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14121,7 +14121,7 @@ type DynamicIpMeasuredRate struct {
 
 // String returns the string representation
 func (s DynamicIpMeasuredRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14144,7 +14144,7 @@ type DynamicIpMonthlyRate struct {
 
 // String returns the string representation
 func (s DynamicIpMonthlyRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14163,7 +14163,7 @@ type ELBVersionInformation struct {
 
 // String returns the string representation
 func (s ELBVersionInformation) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14190,7 +14190,7 @@ type Ebs struct {
 
 // String returns the string representation
 func (s Ebs) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14207,7 +14207,7 @@ type ElasticIpInfo struct {
 
 // String returns the string representation
 func (s ElasticIpInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14226,7 +14226,7 @@ type ElasticIpItemSetItem struct {
 
 // String returns the string representation
 func (s ElasticIpItemSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14249,7 +14249,7 @@ type ElasticIpSetItem struct {
 
 // String returns the string representation
 func (s ElasticIpSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14288,7 +14288,7 @@ type ElasticLoadBalancerDescriptionsMemberItem struct {
 
 // String returns the string representation
 func (s ElasticLoadBalancerDescriptionsMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14307,7 +14307,7 @@ type ElasticLoadBalancerInfo struct {
 
 // String returns the string representation
 func (s ElasticLoadBalancerInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14324,7 +14324,7 @@ type ElasticLoadBalancerListenerDescriptionsMemberItem struct {
 
 // String returns the string representation
 func (s ElasticLoadBalancerListenerDescriptionsMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14347,7 +14347,7 @@ type ElasticLoadBalancingSetItem struct {
 
 // String returns the string representation
 func (s ElasticLoadBalancingSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14364,7 +14364,7 @@ type EmailAddressSetItem struct {
 
 // String returns the string representation
 func (s EmailAddressSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14381,7 +14381,7 @@ type ExtraChargeInfo struct {
 
 // String returns the string representation
 func (s ExtraChargeInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14404,7 +14404,7 @@ type ExtraChargeMonthlyRateSetItem struct {
 
 // String returns the string representation
 func (s ExtraChargeMonthlyRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14423,7 +14423,7 @@ type Filter struct {
 
 // String returns the string representation
 func (s Filter) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14440,7 +14440,7 @@ type GroupIdValue struct {
 
 // String returns the string representation
 func (s GroupIdValue) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14457,7 +14457,7 @@ type GroupSetItem struct {
 
 // String returns the string representation
 func (s GroupSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14476,7 +14476,7 @@ type GroupsSetItem struct {
 
 // String returns the string representation
 func (s GroupsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14503,7 +14503,7 @@ type HealthCheck struct {
 
 // String returns the string representation
 func (s HealthCheck) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14520,7 +14520,7 @@ type IPAddressesMemberItem struct {
 
 // String returns the string representation
 func (s IPAddressesMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14543,7 +14543,7 @@ type Image struct {
 
 // String returns the string representation
 func (s Image) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14562,7 +14562,7 @@ type ImageInfo struct {
 
 // String returns the string representation
 func (s ImageInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14629,7 +14629,7 @@ type ImagesSetItem struct {
 
 // String returns the string representation
 func (s ImagesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14658,7 +14658,7 @@ type ImportInstance struct {
 
 // String returns the string representation
 func (s ImportInstance) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14681,7 +14681,7 @@ type ImportInstanceDiskMeasuredRate struct {
 
 // String returns the string representation
 func (s ImportInstanceDiskMeasuredRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14704,7 +14704,7 @@ type ImportInstanceDiskMonthlyRate struct {
 
 // String returns the string representation
 func (s ImportInstanceDiskMonthlyRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14739,7 +14739,7 @@ type ImportInstanceInput struct {
 
 // String returns the string representation
 func (s ImportInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14758,7 +14758,7 @@ type ImportInstanceOutput struct {
 
 // String returns the string representation
 func (s ImportInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14784,7 +14784,7 @@ type ImportKeyPairInput struct {
 
 // String returns the string representation
 func (s ImportKeyPairInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14807,7 +14807,7 @@ type ImportKeyPairOutput struct {
 
 // String returns the string representation
 func (s ImportKeyPairOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14831,7 +14831,7 @@ type InboundInterface struct {
 
 // String returns the string representation
 func (s InboundInterface) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14854,7 +14854,7 @@ type InstanceCopy struct {
 
 // String returns the string representation
 func (s InstanceCopy) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14885,7 +14885,7 @@ type InstanceInfo struct {
 
 // String returns the string representation
 func (s InstanceInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14902,7 +14902,7 @@ type InstanceInitiatedShutdownBehavior struct {
 
 // String returns the string representation
 func (s InstanceInitiatedShutdownBehavior) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14921,7 +14921,7 @@ type InstanceItemSetItem struct {
 
 // String returns the string representation
 func (s InstanceItemSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14944,7 +14944,7 @@ type InstanceMonthlyRateSetItem struct {
 
 // String returns the string representation
 func (s InstanceMonthlyRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14965,7 +14965,7 @@ type InstanceSetItem struct {
 
 // String returns the string representation
 func (s InstanceSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -14984,7 +14984,7 @@ type InstanceState struct {
 
 // String returns the string representation
 func (s InstanceState) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15009,7 +15009,7 @@ type InstanceStatesMemberItem struct {
 
 // String returns the string representation
 func (s InstanceStatesMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15026,7 +15026,7 @@ type InstanceType struct {
 
 // String returns the string representation
 func (s InstanceType) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15043,7 +15043,7 @@ type InstanceUniqueIdsSetItem struct {
 
 // String returns the string representation
 func (s InstanceUniqueIdsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15062,7 +15062,7 @@ type InstancesMemberItem struct {
 
 // String returns the string representation
 func (s InstancesMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15087,7 +15087,7 @@ type InstancesNetworkInterfaceSetItem struct {
 
 // String returns the string representation
 func (s InstancesNetworkInterfaceSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15204,7 +15204,7 @@ type InstancesSetItem struct {
 
 // String returns the string representation
 func (s InstancesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15223,7 +15223,7 @@ type InternetVpnInfo struct {
 
 // String returns the string representation
 func (s InternetVpnInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15242,7 +15242,7 @@ type InternetVpnInitial struct {
 
 // String returns the string representation
 func (s InternetVpnInitial) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15265,7 +15265,7 @@ type InternetVpnMonthlyRateSetItem struct {
 
 // String returns the string representation
 func (s InternetVpnMonthlyRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15286,7 +15286,7 @@ type IpAddressPoolSetItem struct {
 
 // String returns the string representation
 func (s IpAddressPoolSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15307,7 +15307,7 @@ type IpAddressPoolsSetItem struct {
 
 // String returns the string representation
 func (s IpAddressPoolsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15338,7 +15338,7 @@ type IpPermissionsSetItem struct {
 
 // String returns the string representation
 func (s IpPermissionsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15355,7 +15355,7 @@ type IpRangesSetItem struct {
 
 // String returns the string representation
 func (s IpRangesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15372,7 +15372,7 @@ type IpType struct {
 
 // String returns the string representation
 func (s IpType) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15389,7 +15389,7 @@ type Ipv6AddressesSetItem struct {
 
 // String returns the string representation
 func (s Ipv6AddressesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15412,7 +15412,7 @@ type KeepImageSetItem struct {
 
 // String returns the string representation
 func (s KeepImageSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15429,7 +15429,7 @@ type Kernel struct {
 
 // String returns the string representation
 func (s Kernel) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15446,7 +15446,7 @@ type KeyLength struct {
 
 // String returns the string representation
 func (s KeyLength) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15469,7 +15469,7 @@ type KeySetItem struct {
 
 // String returns the string representation
 func (s KeySetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15488,7 +15488,7 @@ type LBCookieStickinessPoliciesMemberItem struct {
 
 // String returns the string representation
 func (s LBCookieStickinessPoliciesMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15505,7 +15505,7 @@ type LicenseInfo struct {
 
 // String returns the string representation
 func (s LicenseInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15528,7 +15528,7 @@ type LicenseMonthlyRateSetItem struct {
 
 // String returns the string representation
 func (s LicenseMonthlyRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15547,7 +15547,7 @@ type ListenInterface struct {
 
 // String returns the string representation
 func (s ListenInterface) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15584,7 +15584,7 @@ type Listener struct {
 
 // String returns the string representation
 func (s Listener) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15603,7 +15603,7 @@ type ListenerDescriptionsMemberItem struct {
 
 // String returns the string representation
 func (s ListenerDescriptionsMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15628,7 +15628,7 @@ type ListenersMemberItem struct {
 
 // String returns the string representation
 func (s ListenersMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15671,7 +15671,7 @@ type LoadBalancerDescriptionsMemberItem struct {
 
 // String returns the string representation
 func (s LoadBalancerDescriptionsMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15692,7 +15692,7 @@ type LoadBalancerInfo struct {
 
 // String returns the string representation
 func (s LoadBalancerInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15713,7 +15713,7 @@ type LoadBalancingSetItem struct {
 
 // String returns the string representation
 func (s LoadBalancingSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15736,7 +15736,7 @@ type LoadbalancingSetItem struct {
 
 // String returns the string representation
 func (s LoadbalancingSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15757,7 +15757,7 @@ type LogSetItem struct {
 
 // String returns the string representation
 func (s LogSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15782,7 +15782,7 @@ type MailSendInfo struct {
 
 // String returns the string representation
 func (s MailSendInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15805,7 +15805,7 @@ type MailSendInitial struct {
 
 // String returns the string representation
 func (s MailSendInitial) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15828,7 +15828,7 @@ type MailSendMeasuredRate struct {
 
 // String returns the string representation
 func (s MailSendMeasuredRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15851,7 +15851,7 @@ type MailSendMonthlyExceedRate struct {
 
 // String returns the string representation
 func (s MailSendMonthlyExceedRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15874,7 +15874,7 @@ type MailSendMonthlyRate struct {
 
 // String returns the string representation
 func (s MailSendMonthlyRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15891,7 +15891,7 @@ type MessageSetItem struct {
 
 // String returns the string representation
 func (s MessageSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15908,7 +15908,7 @@ type MobileFilter struct {
 
 // String returns the string representation
 func (s MobileFilter) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15929,7 +15929,7 @@ type ModifyImageAttributeInput struct {
 
 // String returns the string representation
 func (s ModifyImageAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15948,7 +15948,7 @@ type ModifyImageAttributeOutput struct {
 
 // String returns the string representation
 func (s ModifyImageAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -15980,7 +15980,7 @@ type ModifyInstanceAttributeInput struct {
 
 // String returns the string representation
 func (s ModifyInstanceAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16001,7 +16001,7 @@ type ModifyInstanceAttributeOutput struct {
 
 // String returns the string representation
 func (s ModifyInstanceAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16027,7 +16027,7 @@ type ModifyNetworkInterfaceAttributeInput struct {
 
 // String returns the string representation
 func (s ModifyNetworkInterfaceAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16048,7 +16048,7 @@ type ModifyNetworkInterfaceAttributeOutput struct {
 
 // String returns the string representation
 func (s ModifyNetworkInterfaceAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16072,7 +16072,7 @@ type ModifySslCertificateAttributeInput struct {
 
 // String returns the string representation
 func (s ModifySslCertificateAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16093,7 +16093,7 @@ type ModifySslCertificateAttributeOutput struct {
 
 // String returns the string representation
 func (s ModifySslCertificateAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16119,7 +16119,7 @@ type ModifyVolumeAttributeInput struct {
 
 // String returns the string representation
 func (s ModifyVolumeAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16140,7 +16140,7 @@ type ModifyVolumeAttributeOutput struct {
 
 // String returns the string representation
 func (s ModifyVolumeAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16162,7 +16162,7 @@ type Monitoring struct {
 
 // String returns the string representation
 func (s Monitoring) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16181,7 +16181,7 @@ type Month struct {
 
 // String returns the string representation
 func (s Month) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16204,7 +16204,7 @@ type MultiAccount struct {
 
 // String returns the string representation
 func (s MultiAccount) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16221,7 +16221,7 @@ type MultiAccountInfo struct {
 
 // String returns the string representation
 func (s MultiAccountInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16244,7 +16244,7 @@ type MultiIpMonthlyRate struct {
 
 // String returns the string representation
 func (s MultiIpMonthlyRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16277,7 +16277,7 @@ type NatRule struct {
 
 // String returns the string representation
 func (s NatRule) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16310,7 +16310,7 @@ type NatRuleSetItem struct {
 
 // String returns the string representation
 func (s NatRuleSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16329,7 +16329,7 @@ type NatTable struct {
 
 // String returns the string representation
 func (s NatTable) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16352,7 +16352,7 @@ type NatTableSetItem struct {
 
 // String returns the string representation
 func (s NatTableSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16375,7 +16375,7 @@ type NetworkFlowSetItem struct {
 
 // String returns the string representation
 func (s NetworkFlowSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16392,7 +16392,7 @@ type NetworkInfo struct {
 
 // String returns the string representation
 func (s NetworkInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16451,7 +16451,7 @@ type NetworkInterface struct {
 
 // String returns the string representation
 func (s NetworkInterface) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16528,7 +16528,7 @@ type NetworkInterfaceSetItem struct {
 
 // String returns the string representation
 func (s NetworkInterfaceSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16555,7 +16555,7 @@ type NetworkInterfacesMemberItem struct {
 
 // String returns the string representation
 func (s NetworkInterfacesMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16572,7 +16572,7 @@ type NextMonthAccountingType struct {
 
 // String returns the string representation
 func (s NextMonthAccountingType) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16595,7 +16595,7 @@ type NiftyAssociateImageInput struct {
 
 // String returns the string representation
 func (s NiftyAssociateImageInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16616,7 +16616,7 @@ type NiftyAssociateImageOutput struct {
 
 // String returns the string representation
 func (s NiftyAssociateImageOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16644,7 +16644,7 @@ type NiftyAssociateNatTableInput struct {
 
 // String returns the string representation
 func (s NiftyAssociateNatTableInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16665,7 +16665,7 @@ type NiftyAssociateNatTableOutput struct {
 
 // String returns the string representation
 func (s NiftyAssociateNatTableOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16693,7 +16693,7 @@ type NiftyAssociateRouteTableWithVpnGatewayInput struct {
 
 // String returns the string representation
 func (s NiftyAssociateRouteTableWithVpnGatewayInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16714,7 +16714,7 @@ type NiftyAssociateRouteTableWithVpnGatewayOutput struct {
 
 // String returns the string representation
 func (s NiftyAssociateRouteTableWithVpnGatewayOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16746,7 +16746,7 @@ type NiftyConfigureElasticLoadBalancerHealthCheckInput struct {
 
 // String returns the string representation
 func (s NiftyConfigureElasticLoadBalancerHealthCheckInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16769,7 +16769,7 @@ type NiftyConfigureElasticLoadBalancerHealthCheckOutput struct {
 
 // String returns the string representation
 func (s NiftyConfigureElasticLoadBalancerHealthCheckOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16817,7 +16817,7 @@ type NiftyCreateAlarmInput struct {
 
 // String returns the string representation
 func (s NiftyCreateAlarmInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16838,7 +16838,7 @@ type NiftyCreateAlarmOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateAlarmOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16888,7 +16888,7 @@ type NiftyCreateAutoScalingGroupInput struct {
 
 // String returns the string representation
 func (s NiftyCreateAutoScalingGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16909,7 +16909,7 @@ type NiftyCreateAutoScalingGroupOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateAutoScalingGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16929,7 +16929,7 @@ type NiftyCreateDhcpConfigInput struct {
 
 // String returns the string representation
 func (s NiftyCreateDhcpConfigInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16950,7 +16950,7 @@ type NiftyCreateDhcpConfigOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateDhcpConfigOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16978,7 +16978,7 @@ type NiftyCreateDhcpIpAddressPoolInput struct {
 
 // String returns the string representation
 func (s NiftyCreateDhcpIpAddressPoolInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -16999,7 +16999,7 @@ type NiftyCreateDhcpIpAddressPoolOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateDhcpIpAddressPoolOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17027,7 +17027,7 @@ type NiftyCreateDhcpStaticMappingInput struct {
 
 // String returns the string representation
 func (s NiftyCreateDhcpStaticMappingInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17048,7 +17048,7 @@ type NiftyCreateDhcpStaticMappingOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateDhcpStaticMappingOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17080,7 +17080,7 @@ type NiftyCreateElasticLoadBalancerInput struct {
 
 // String returns the string representation
 func (s NiftyCreateElasticLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17103,7 +17103,7 @@ type NiftyCreateElasticLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateElasticLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17129,7 +17129,7 @@ type NiftyCreateInstanceSnapshotInput struct {
 
 // String returns the string representation
 func (s NiftyCreateInstanceSnapshotInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17152,7 +17152,7 @@ type NiftyCreateInstanceSnapshotOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateInstanceSnapshotOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17192,7 +17192,7 @@ type NiftyCreateNatRuleInput struct {
 
 // String returns the string representation
 func (s NiftyCreateNatRuleInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17215,7 +17215,7 @@ type NiftyCreateNatRuleOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateNatRuleOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17235,7 +17235,7 @@ type NiftyCreateNatTableInput struct {
 
 // String returns the string representation
 func (s NiftyCreateNatTableInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17256,7 +17256,7 @@ type NiftyCreateNatTableOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateNatTableOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17286,7 +17286,7 @@ type NiftyCreatePrivateLanInput struct {
 
 // String returns the string representation
 func (s NiftyCreatePrivateLanInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17307,7 +17307,7 @@ type NiftyCreatePrivateLanOutput struct {
 
 // String returns the string representation
 func (s NiftyCreatePrivateLanOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17341,7 +17341,7 @@ type NiftyCreateRouterInput struct {
 
 // String returns the string representation
 func (s NiftyCreateRouterInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17362,7 +17362,7 @@ type NiftyCreateRouterOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateRouterOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17392,7 +17392,7 @@ type NiftyCreateSeparateInstanceRuleInput struct {
 
 // String returns the string representation
 func (s NiftyCreateSeparateInstanceRuleInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17413,7 +17413,7 @@ type NiftyCreateSeparateInstanceRuleOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateSeparateInstanceRuleOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17449,7 +17449,7 @@ type NiftyCreateWebProxyInput struct {
 
 // String returns the string representation
 func (s NiftyCreateWebProxyInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17470,7 +17470,7 @@ type NiftyCreateWebProxyOutput struct {
 
 // String returns the string representation
 func (s NiftyCreateWebProxyOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17494,7 +17494,7 @@ type NiftyDeleteAlarmInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteAlarmInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17515,7 +17515,7 @@ type NiftyDeleteAlarmOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteAlarmOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17537,7 +17537,7 @@ type NiftyDeleteAutoScalingGroupInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteAutoScalingGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17558,7 +17558,7 @@ type NiftyDeleteAutoScalingGroupOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteAutoScalingGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17580,7 +17580,7 @@ type NiftyDeleteDhcpConfigInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteDhcpConfigInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17601,7 +17601,7 @@ type NiftyDeleteDhcpConfigOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteDhcpConfigOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17627,7 +17627,7 @@ type NiftyDeleteDhcpIpAddressPoolInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteDhcpIpAddressPoolInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17648,7 +17648,7 @@ type NiftyDeleteDhcpIpAddressPoolOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteDhcpIpAddressPoolOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17674,7 +17674,7 @@ type NiftyDeleteDhcpStaticMappingInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteDhcpStaticMappingInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17695,7 +17695,7 @@ type NiftyDeleteDhcpStaticMappingOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteDhcpStaticMappingOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17725,7 +17725,7 @@ type NiftyDeleteElasticLoadBalancerInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteElasticLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17744,7 +17744,7 @@ type NiftyDeleteElasticLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteElasticLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17768,7 +17768,7 @@ type NiftyDeleteInstanceSnapshotInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteInstanceSnapshotInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17789,7 +17789,7 @@ type NiftyDeleteInstanceSnapshotOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteInstanceSnapshotOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17815,7 +17815,7 @@ type NiftyDeleteNatRuleInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteNatRuleInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17836,7 +17836,7 @@ type NiftyDeleteNatRuleOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteNatRuleOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17858,7 +17858,7 @@ type NiftyDeleteNatTableInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteNatTableInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17879,7 +17879,7 @@ type NiftyDeleteNatTableOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteNatTableOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17903,7 +17903,7 @@ type NiftyDeletePrivateLanInput struct {
 
 // String returns the string representation
 func (s NiftyDeletePrivateLanInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17924,7 +17924,7 @@ type NiftyDeletePrivateLanOutput struct {
 
 // String returns the string representation
 func (s NiftyDeletePrivateLanOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17948,7 +17948,7 @@ type NiftyDeleteRouterInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteRouterInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17969,7 +17969,7 @@ type NiftyDeleteRouterOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteRouterOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -17991,7 +17991,7 @@ type NiftyDeleteSeparateInstanceRuleInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteSeparateInstanceRuleInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18012,7 +18012,7 @@ type NiftyDeleteSeparateInstanceRuleOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteSeparateInstanceRuleOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18038,7 +18038,7 @@ type NiftyDeleteWebProxyInput struct {
 
 // String returns the string representation
 func (s NiftyDeleteWebProxyInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18059,7 +18059,7 @@ type NiftyDeleteWebProxyOutput struct {
 
 // String returns the string representation
 func (s NiftyDeleteWebProxyOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18091,7 +18091,7 @@ type NiftyDeregisterInstancesFromElasticLoadBalancerInput struct {
 
 // String returns the string representation
 func (s NiftyDeregisterInstancesFromElasticLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18114,7 +18114,7 @@ type NiftyDeregisterInstancesFromElasticLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s NiftyDeregisterInstancesFromElasticLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18140,7 +18140,7 @@ type NiftyDeregisterInstancesFromSeparateInstanceRuleInput struct {
 
 // String returns the string representation
 func (s NiftyDeregisterInstancesFromSeparateInstanceRuleInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18161,7 +18161,7 @@ type NiftyDeregisterInstancesFromSeparateInstanceRuleOutput struct {
 
 // String returns the string representation
 func (s NiftyDeregisterInstancesFromSeparateInstanceRuleOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18185,7 +18185,7 @@ type NiftyDeregisterRoutersFromSecurityGroupInput struct {
 
 // String returns the string representation
 func (s NiftyDeregisterRoutersFromSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18206,7 +18206,7 @@ type NiftyDeregisterRoutersFromSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s NiftyDeregisterRoutersFromSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18230,7 +18230,7 @@ type NiftyDeregisterVpnGatewaysFromSecurityGroupInput struct {
 
 // String returns the string representation
 func (s NiftyDeregisterVpnGatewaysFromSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18251,7 +18251,7 @@ type NiftyDeregisterVpnGatewaysFromSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s NiftyDeregisterVpnGatewaysFromSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18273,7 +18273,7 @@ type NiftyDescribeAlarmHistoryInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAlarmHistoryInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18294,7 +18294,7 @@ type NiftyDescribeAlarmHistoryOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAlarmHistoryOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18316,7 +18316,7 @@ type NiftyDescribeAlarmRulesActivitiesInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAlarmRulesActivitiesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18337,7 +18337,7 @@ type NiftyDescribeAlarmRulesActivitiesOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAlarmRulesActivitiesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18359,7 +18359,7 @@ type NiftyDescribeAlarmsInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAlarmsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18380,7 +18380,7 @@ type NiftyDescribeAlarmsOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAlarmsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18402,7 +18402,7 @@ type NiftyDescribeAlarmsPartitionsInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAlarmsPartitionsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18423,7 +18423,7 @@ type NiftyDescribeAlarmsPartitionsOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAlarmsPartitionsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18445,7 +18445,7 @@ type NiftyDescribeAutoScalingGroupsInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAutoScalingGroupsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18466,7 +18466,7 @@ type NiftyDescribeAutoScalingGroupsOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeAutoScalingGroupsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18486,7 +18486,7 @@ type NiftyDescribeCorporateInfoForCertificateInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeCorporateInfoForCertificateInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18535,7 +18535,7 @@ type NiftyDescribeCorporateInfoForCertificateOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeCorporateInfoForCertificateOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18559,7 +18559,7 @@ type NiftyDescribeDhcpConfigsInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeDhcpConfigsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18580,7 +18580,7 @@ type NiftyDescribeDhcpConfigsOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeDhcpConfigsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18604,7 +18604,7 @@ type NiftyDescribeDhcpStatusInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeDhcpStatusInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18629,7 +18629,7 @@ type NiftyDescribeDhcpStatusOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeDhcpStatusOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18653,7 +18653,7 @@ type NiftyDescribeElasticLoadBalancersInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeElasticLoadBalancersInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18676,7 +18676,7 @@ type NiftyDescribeElasticLoadBalancersOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeElasticLoadBalancersOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18708,7 +18708,7 @@ type NiftyDescribeInstanceElasticLoadBalancerHealthInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeInstanceElasticLoadBalancerHealthInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18731,7 +18731,7 @@ type NiftyDescribeInstanceElasticLoadBalancerHealthOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeInstanceElasticLoadBalancerHealthOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18755,7 +18755,7 @@ type NiftyDescribeInstanceSnapshotsInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeInstanceSnapshotsInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18776,7 +18776,7 @@ type NiftyDescribeInstanceSnapshotsOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeInstanceSnapshotsOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18800,7 +18800,7 @@ type NiftyDescribeNatTablesInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeNatTablesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18821,7 +18821,7 @@ type NiftyDescribeNatTablesOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeNatTablesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18853,7 +18853,7 @@ type NiftyDescribePerformanceChartInput struct {
 
 // String returns the string representation
 func (s NiftyDescribePerformanceChartInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18878,7 +18878,7 @@ type NiftyDescribePerformanceChartOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribePerformanceChartOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18904,7 +18904,7 @@ type NiftyDescribePrivateLansInput struct {
 
 // String returns the string representation
 func (s NiftyDescribePrivateLansInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18925,7 +18925,7 @@ type NiftyDescribePrivateLansOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribePrivateLansOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18951,7 +18951,7 @@ type NiftyDescribeRoutersInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeRoutersInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -18972,7 +18972,7 @@ type NiftyDescribeRoutersOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeRoutersOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19000,7 +19000,7 @@ type NiftyDescribeScalingActivitiesInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeScalingActivitiesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19023,7 +19023,7 @@ type NiftyDescribeScalingActivitiesOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeScalingActivitiesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19047,7 +19047,7 @@ type NiftyDescribeSeparateInstanceRulesInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeSeparateInstanceRulesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19068,7 +19068,7 @@ type NiftyDescribeSeparateInstanceRulesOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeSeparateInstanceRulesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19092,7 +19092,7 @@ type NiftyDescribeVpnGatewayActivitiesInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeVpnGatewayActivitiesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19119,7 +19119,7 @@ type NiftyDescribeVpnGatewayActivitiesOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeVpnGatewayActivitiesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19145,7 +19145,7 @@ type NiftyDescribeWebProxiesInput struct {
 
 // String returns the string representation
 func (s NiftyDescribeWebProxiesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19166,7 +19166,7 @@ type NiftyDescribeWebProxiesOutput struct {
 
 // String returns the string representation
 func (s NiftyDescribeWebProxiesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19196,7 +19196,7 @@ type NiftyDisableDhcpInput struct {
 
 // String returns the string representation
 func (s NiftyDisableDhcpInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19217,7 +19217,7 @@ type NiftyDisableDhcpOutput struct {
 
 // String returns the string representation
 func (s NiftyDisableDhcpOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19241,7 +19241,7 @@ type NiftyDisassociateNatTableInput struct {
 
 // String returns the string representation
 func (s NiftyDisassociateNatTableInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19262,7 +19262,7 @@ type NiftyDisassociateNatTableOutput struct {
 
 // String returns the string representation
 func (s NiftyDisassociateNatTableOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19286,7 +19286,7 @@ type NiftyDisassociateRouteTableFromVpnGatewayInput struct {
 
 // String returns the string representation
 func (s NiftyDisassociateRouteTableFromVpnGatewayInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19307,7 +19307,7 @@ type NiftyDisassociateRouteTableFromVpnGatewayOutput struct {
 
 // String returns the string representation
 func (s NiftyDisassociateRouteTableFromVpnGatewayOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19329,7 +19329,7 @@ type NiftyDistributionIdsSetItem struct {
 
 // String returns the string representation
 func (s NiftyDistributionIdsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19354,7 +19354,7 @@ type NiftyElasticLoadBalancingSetItem struct {
 
 // String returns the string representation
 func (s NiftyElasticLoadBalancingSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19383,7 +19383,7 @@ type NiftyEnableDhcpInput struct {
 
 // String returns the string representation
 func (s NiftyEnableDhcpInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19404,7 +19404,7 @@ type NiftyEnableDhcpOutput struct {
 
 // String returns the string representation
 func (s NiftyEnableDhcpOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19434,7 +19434,7 @@ type NiftyIpsecConfiguration struct {
 
 // String returns the string representation
 func (s NiftyIpsecConfiguration) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19457,7 +19457,7 @@ type NiftyModifyAddressAttributeInput struct {
 
 // String returns the string representation
 func (s NiftyModifyAddressAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19478,7 +19478,7 @@ type NiftyModifyAddressAttributeOutput struct {
 
 // String returns the string representation
 func (s NiftyModifyAddressAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19506,7 +19506,7 @@ type NiftyModifyCustomerGatewayAttributeInput struct {
 
 // String returns the string representation
 func (s NiftyModifyCustomerGatewayAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19527,7 +19527,7 @@ type NiftyModifyCustomerGatewayAttributeOutput struct {
 
 // String returns the string representation
 func (s NiftyModifyCustomerGatewayAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19559,7 +19559,7 @@ type NiftyModifyElasticLoadBalancerAttributesInput struct {
 
 // String returns the string representation
 func (s NiftyModifyElasticLoadBalancerAttributesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19578,7 +19578,7 @@ type NiftyModifyElasticLoadBalancerAttributesOutput struct {
 
 // String returns the string representation
 func (s NiftyModifyElasticLoadBalancerAttributesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19606,7 +19606,7 @@ type NiftyModifyInstanceSnapshotAttributeInput struct {
 
 // String returns the string representation
 func (s NiftyModifyInstanceSnapshotAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19627,7 +19627,7 @@ type NiftyModifyInstanceSnapshotAttributeOutput struct {
 
 // String returns the string representation
 func (s NiftyModifyInstanceSnapshotAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19653,7 +19653,7 @@ type NiftyModifyKeyPairAttributeInput struct {
 
 // String returns the string representation
 func (s NiftyModifyKeyPairAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19678,7 +19678,7 @@ type NiftyModifyKeyPairAttributeOutput struct {
 
 // String returns the string representation
 func (s NiftyModifyKeyPairAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19706,7 +19706,7 @@ type NiftyModifyPrivateLanAttributeInput struct {
 
 // String returns the string representation
 func (s NiftyModifyPrivateLanAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19727,7 +19727,7 @@ type NiftyModifyPrivateLanAttributeOutput struct {
 
 // String returns the string representation
 func (s NiftyModifyPrivateLanAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19757,7 +19757,7 @@ type NiftyModifyRouterAttributeInput struct {
 
 // String returns the string representation
 func (s NiftyModifyRouterAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19778,7 +19778,7 @@ type NiftyModifyRouterAttributeOutput struct {
 
 // String returns the string representation
 func (s NiftyModifyRouterAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19808,7 +19808,7 @@ type NiftyModifyVpnGatewayAttributeInput struct {
 
 // String returns the string representation
 func (s NiftyModifyVpnGatewayAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19829,7 +19829,7 @@ type NiftyModifyVpnGatewayAttributeOutput struct {
 
 // String returns the string representation
 func (s NiftyModifyVpnGatewayAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19859,7 +19859,7 @@ type NiftyModifyWebProxyAttributeInput struct {
 
 // String returns the string representation
 func (s NiftyModifyWebProxyAttributeInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19880,7 +19880,7 @@ type NiftyModifyWebProxyAttributeOutput struct {
 
 // String returns the string representation
 func (s NiftyModifyWebProxyAttributeOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19902,7 +19902,7 @@ type NiftyPrivateIpType struct {
 
 // String returns the string representation
 func (s NiftyPrivateIpType) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19919,7 +19919,7 @@ type NiftyRebootRoutersInput struct {
 
 // String returns the string representation
 func (s NiftyRebootRoutersInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19940,7 +19940,7 @@ type NiftyRebootRoutersOutput struct {
 
 // String returns the string representation
 func (s NiftyRebootRoutersOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19962,7 +19962,7 @@ type NiftyRebootVpnGatewaysInput struct {
 
 // String returns the string representation
 func (s NiftyRebootVpnGatewaysInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -19983,7 +19983,7 @@ type NiftyRebootVpnGatewaysOutput struct {
 
 // String returns the string representation
 func (s NiftyRebootVpnGatewaysOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20015,7 +20015,7 @@ type NiftyRegisterInstancesWithElasticLoadBalancerInput struct {
 
 // String returns the string representation
 func (s NiftyRegisterInstancesWithElasticLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20038,7 +20038,7 @@ type NiftyRegisterInstancesWithElasticLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s NiftyRegisterInstancesWithElasticLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20064,7 +20064,7 @@ type NiftyRegisterInstancesWithSeparateInstanceRuleInput struct {
 
 // String returns the string representation
 func (s NiftyRegisterInstancesWithSeparateInstanceRuleInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20085,7 +20085,7 @@ type NiftyRegisterInstancesWithSeparateInstanceRuleOutput struct {
 
 // String returns the string representation
 func (s NiftyRegisterInstancesWithSeparateInstanceRuleOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20111,7 +20111,7 @@ type NiftyRegisterPortWithElasticLoadBalancerInput struct {
 
 // String returns the string representation
 func (s NiftyRegisterPortWithElasticLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20134,7 +20134,7 @@ type NiftyRegisterPortWithElasticLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s NiftyRegisterPortWithElasticLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20158,7 +20158,7 @@ type NiftyRegisterRoutersWithSecurityGroupInput struct {
 
 // String returns the string representation
 func (s NiftyRegisterRoutersWithSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20179,7 +20179,7 @@ type NiftyRegisterRoutersWithSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s NiftyRegisterRoutersWithSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20203,7 +20203,7 @@ type NiftyRegisterVpnGatewaysWithSecurityGroupInput struct {
 
 // String returns the string representation
 func (s NiftyRegisterVpnGatewaysWithSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20224,7 +20224,7 @@ type NiftyRegisterVpnGatewaysWithSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s NiftyRegisterVpnGatewaysWithSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20248,7 +20248,7 @@ type NiftyReleaseRouterBackupStateInput struct {
 
 // String returns the string representation
 func (s NiftyReleaseRouterBackupStateInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20269,7 +20269,7 @@ type NiftyReleaseRouterBackupStateOutput struct {
 
 // String returns the string representation
 func (s NiftyReleaseRouterBackupStateOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20293,7 +20293,7 @@ type NiftyReleaseVpnGatewayBackupStateInput struct {
 
 // String returns the string representation
 func (s NiftyReleaseVpnGatewayBackupStateInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20314,7 +20314,7 @@ type NiftyReleaseVpnGatewayBackupStateOutput struct {
 
 // String returns the string representation
 func (s NiftyReleaseVpnGatewayBackupStateOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20346,7 +20346,7 @@ type NiftyReplaceDhcpConfigInput struct {
 
 // String returns the string representation
 func (s NiftyReplaceDhcpConfigInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20367,7 +20367,7 @@ type NiftyReplaceDhcpConfigOutput struct {
 
 // String returns the string representation
 func (s NiftyReplaceDhcpConfigOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20399,7 +20399,7 @@ type NiftyReplaceDhcpOptionInput struct {
 
 // String returns the string representation
 func (s NiftyReplaceDhcpOptionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20420,7 +20420,7 @@ type NiftyReplaceDhcpOptionOutput struct {
 
 // String returns the string representation
 func (s NiftyReplaceDhcpOptionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20444,7 +20444,7 @@ type NiftyReplaceElasticLoadBalancerLatestVersionInput struct {
 
 // String returns the string representation
 func (s NiftyReplaceElasticLoadBalancerLatestVersionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20463,7 +20463,7 @@ type NiftyReplaceElasticLoadBalancerLatestVersionOutput struct {
 
 // String returns the string representation
 func (s NiftyReplaceElasticLoadBalancerLatestVersionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20503,7 +20503,7 @@ type NiftyReplaceNatRuleInput struct {
 
 // String returns the string representation
 func (s NiftyReplaceNatRuleInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20526,7 +20526,7 @@ type NiftyReplaceNatRuleOutput struct {
 
 // String returns the string representation
 func (s NiftyReplaceNatRuleOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20552,7 +20552,7 @@ type NiftyReplaceNatTableAssociationInput struct {
 
 // String returns the string representation
 func (s NiftyReplaceNatTableAssociationInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20573,7 +20573,7 @@ type NiftyReplaceNatTableAssociationOutput struct {
 
 // String returns the string representation
 func (s NiftyReplaceNatTableAssociationOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20599,7 +20599,7 @@ type NiftyReplaceRouteTableAssociationWithVpnGatewayInput struct {
 
 // String returns the string representation
 func (s NiftyReplaceRouteTableAssociationWithVpnGatewayInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20620,7 +20620,7 @@ type NiftyReplaceRouteTableAssociationWithVpnGatewayOutput struct {
 
 // String returns the string representation
 func (s NiftyReplaceRouteTableAssociationWithVpnGatewayOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20646,7 +20646,7 @@ type NiftyReplaceRouterLatestVersionInput struct {
 
 // String returns the string representation
 func (s NiftyReplaceRouterLatestVersionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20667,7 +20667,7 @@ type NiftyReplaceRouterLatestVersionOutput struct {
 
 // String returns the string representation
 func (s NiftyReplaceRouterLatestVersionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20693,7 +20693,7 @@ type NiftyReplaceVpnGatewayLatestVersionInput struct {
 
 // String returns the string representation
 func (s NiftyReplaceVpnGatewayLatestVersionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20714,7 +20714,7 @@ type NiftyReplaceVpnGatewayLatestVersionOutput struct {
 
 // String returns the string representation
 func (s NiftyReplaceVpnGatewayLatestVersionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20738,7 +20738,7 @@ type NiftyRestoreInstanceSnapshotInput struct {
 
 // String returns the string representation
 func (s NiftyRestoreInstanceSnapshotInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20759,7 +20759,7 @@ type NiftyRestoreInstanceSnapshotOutput struct {
 
 // String returns the string representation
 func (s NiftyRestoreInstanceSnapshotOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20783,7 +20783,7 @@ type NiftyRestoreRouterPreviousVersionInput struct {
 
 // String returns the string representation
 func (s NiftyRestoreRouterPreviousVersionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20804,7 +20804,7 @@ type NiftyRestoreRouterPreviousVersionOutput struct {
 
 // String returns the string representation
 func (s NiftyRestoreRouterPreviousVersionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20828,7 +20828,7 @@ type NiftyRestoreVpnGatewayPreviousVersionInput struct {
 
 // String returns the string representation
 func (s NiftyRestoreVpnGatewayPreviousVersionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20849,7 +20849,7 @@ type NiftyRestoreVpnGatewayPreviousVersionOutput struct {
 
 // String returns the string representation
 func (s NiftyRestoreVpnGatewayPreviousVersionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20871,7 +20871,7 @@ type NiftyRetryImportInstanceInput struct {
 
 // String returns the string representation
 func (s NiftyRetryImportInstanceInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20896,7 +20896,7 @@ type NiftyRetryImportInstanceOutput struct {
 
 // String returns the string representation
 func (s NiftyRetryImportInstanceOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20918,7 +20918,7 @@ type NiftySnapshottingSetItem struct {
 
 // String returns the string representation
 func (s NiftySnapshottingSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20951,7 +20951,7 @@ type NiftyTunnel struct {
 
 // String returns the string representation
 func (s NiftyTunnel) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -20994,7 +20994,7 @@ type NiftyUpdateAlarmInput struct {
 
 // String returns the string representation
 func (s NiftyUpdateAlarmInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21015,7 +21015,7 @@ type NiftyUpdateAlarmOutput struct {
 
 // String returns the string representation
 func (s NiftyUpdateAlarmOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21067,7 +21067,7 @@ type NiftyUpdateAutoScalingGroupInput struct {
 
 // String returns the string representation
 func (s NiftyUpdateAutoScalingGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21088,7 +21088,7 @@ type NiftyUpdateAutoScalingGroupOutput struct {
 
 // String returns the string representation
 func (s NiftyUpdateAutoScalingGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21118,7 +21118,7 @@ type NiftyUpdateElasticLoadBalancerInput struct {
 
 // String returns the string representation
 func (s NiftyUpdateElasticLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21137,7 +21137,7 @@ type NiftyUpdateElasticLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s NiftyUpdateElasticLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21163,7 +21163,7 @@ type NiftyUpdateInstanceNetworkInterfacesInput struct {
 
 // String returns the string representation
 func (s NiftyUpdateInstanceNetworkInterfacesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21182,7 +21182,7 @@ type NiftyUpdateInstanceNetworkInterfacesOutput struct {
 
 // String returns the string representation
 func (s NiftyUpdateInstanceNetworkInterfacesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21212,7 +21212,7 @@ type NiftyUpdateRouterNetworkInterfacesInput struct {
 
 // String returns the string representation
 func (s NiftyUpdateRouterNetworkInterfacesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21233,7 +21233,7 @@ type NiftyUpdateRouterNetworkInterfacesOutput struct {
 
 // String returns the string representation
 func (s NiftyUpdateRouterNetworkInterfacesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21259,7 +21259,7 @@ type NiftyUpdateSeparateInstanceRuleInput struct {
 
 // String returns the string representation
 func (s NiftyUpdateSeparateInstanceRuleInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21280,7 +21280,7 @@ type NiftyUpdateSeparateInstanceRuleOutput struct {
 
 // String returns the string representation
 func (s NiftyUpdateSeparateInstanceRuleOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21310,7 +21310,7 @@ type NiftyUpdateVpnGatewayNetworkInterfacesInput struct {
 
 // String returns the string representation
 func (s NiftyUpdateVpnGatewayNetworkInterfacesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21331,7 +21331,7 @@ type NiftyUpdateVpnGatewayNetworkInterfacesOutput struct {
 
 // String returns the string representation
 func (s NiftyUpdateVpnGatewayNetworkInterfacesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21359,7 +21359,7 @@ type Option struct {
 
 // String returns the string representation
 func (s Option) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21378,7 +21378,7 @@ type OptionCommonInfoSetItem struct {
 
 // String returns the string representation
 func (s OptionCommonInfoSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21397,7 +21397,7 @@ type OptionInfoSetItem struct {
 
 // String returns the string representation
 func (s OptionInfoSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21420,7 +21420,7 @@ type OptionSetItem struct {
 
 // String returns the string representation
 func (s OptionSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21437,7 +21437,7 @@ type Options struct {
 
 // String returns the string representation
 func (s Options) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21460,7 +21460,7 @@ type OsMeasuredRateSetItem struct {
 
 // String returns the string representation
 func (s OsMeasuredRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21483,7 +21483,7 @@ type OsMonthlyRateSetItem struct {
 
 // String returns the string representation
 func (s OsMonthlyRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21500,7 +21500,7 @@ type OsOptionChargeInfo struct {
 
 // String returns the string representation
 func (s OsOptionChargeInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21523,7 +21523,7 @@ type OsOptionChargeMonthlyRateSetItem struct {
 
 // String returns the string representation
 func (s OsOptionChargeMonthlyRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21542,7 +21542,7 @@ type OutboundInterface struct {
 
 // String returns the string representation
 func (s OutboundInterface) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21559,7 +21559,7 @@ type PartitionsSetItem struct {
 
 // String returns the string representation
 func (s PartitionsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21576,7 +21576,7 @@ type PatternAuthInfo struct {
 
 // String returns the string representation
 func (s PatternAuthInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21599,7 +21599,7 @@ type PatternAuthSetItem struct {
 
 // String returns the string representation
 func (s PatternAuthSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21620,7 +21620,7 @@ type PerformanceChartSetItem struct {
 
 // String returns the string representation
 func (s PerformanceChartSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21641,7 +21641,7 @@ type Period struct {
 
 // String returns the string representation
 func (s Period) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21660,7 +21660,7 @@ type Placement struct {
 
 // String returns the string representation
 func (s Placement) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21679,7 +21679,7 @@ type Policies struct {
 
 // String returns the string representation
 func (s Policies) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21696,7 +21696,7 @@ type PremiumSupportInfo struct {
 
 // String returns the string representation
 func (s PremiumSupportInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21721,7 +21721,7 @@ type PremiumSupportSetItem struct {
 
 // String returns the string representation
 func (s PremiumSupportSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21740,7 +21740,7 @@ type PreviousState struct {
 
 // String returns the string representation
 func (s PreviousState) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21763,7 +21763,7 @@ type PrivateIpAddressesSetItem struct {
 
 // String returns the string representation
 func (s PrivateIpAddressesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21810,7 +21810,7 @@ type PrivateLan struct {
 
 // String returns the string representation
 func (s PrivateLan) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21827,7 +21827,7 @@ type PrivateLanInfo struct {
 
 // String returns the string representation
 func (s PrivateLanInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21870,7 +21870,7 @@ type PrivateLanSetItem struct {
 
 // String returns the string representation
 func (s PrivateLanSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21889,7 +21889,7 @@ type PrivateNetworkInfo struct {
 
 // String returns the string representation
 func (s PrivateNetworkInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21912,7 +21912,7 @@ type PrivateNetworkMeasuredRate struct {
 
 // String returns the string representation
 func (s PrivateNetworkMeasuredRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21935,7 +21935,7 @@ type PrivateNetworkMonthlyRate struct {
 
 // String returns the string representation
 func (s PrivateNetworkMonthlyRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21952,7 +21952,7 @@ type ProductCodesSetItem struct {
 
 // String returns the string representation
 func (s ProductCodesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21973,7 +21973,7 @@ type PropagatingVgwSetItem struct {
 
 // String returns the string representation
 func (s PropagatingVgwSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -21990,7 +21990,7 @@ type Ramdisk struct {
 
 // String returns the string representation
 func (s Ramdisk) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22015,7 +22015,7 @@ type RebootInstancesInput struct {
 
 // String returns the string representation
 func (s RebootInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22036,7 +22036,7 @@ type RebootInstancesOutput struct {
 
 // String returns the string representation
 func (s RebootInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22064,7 +22064,7 @@ type RegionInfoSetItem struct {
 
 // String returns the string representation
 func (s RegionInfoSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22119,7 +22119,7 @@ type RegisterCorporateInfoForCertificateInput struct {
 
 // String returns the string representation
 func (s RegisterCorporateInfoForCertificateInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22168,7 +22168,7 @@ type RegisterCorporateInfoForCertificateOutput struct {
 
 // String returns the string representation
 func (s RegisterCorporateInfoForCertificateOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22196,7 +22196,7 @@ type RegisterInstancesWithLoadBalancerInput struct {
 
 // String returns the string representation
 func (s RegisterInstancesWithLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22219,7 +22219,7 @@ type RegisterInstancesWithLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s RegisterInstancesWithLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22243,7 +22243,7 @@ type RegisterInstancesWithSecurityGroupInput struct {
 
 // String returns the string representation
 func (s RegisterInstancesWithSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22264,7 +22264,7 @@ type RegisterInstancesWithSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s RegisterInstancesWithSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22288,7 +22288,7 @@ type RegisterPortWithLoadBalancerInput struct {
 
 // String returns the string representation
 func (s RegisterPortWithLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22311,7 +22311,7 @@ type RegisterPortWithLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s RegisterPortWithLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22335,7 +22335,7 @@ type ReleaseAddressInput struct {
 
 // String returns the string representation
 func (s ReleaseAddressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22356,7 +22356,7 @@ type ReleaseAddressOutput struct {
 
 // String returns the string representation
 func (s ReleaseAddressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22386,7 +22386,7 @@ type ReplaceRouteInput struct {
 
 // String returns the string representation
 func (s ReplaceRouteInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22407,7 +22407,7 @@ type ReplaceRouteOutput struct {
 
 // String returns the string representation
 func (s ReplaceRouteOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22433,7 +22433,7 @@ type ReplaceRouteTableAssociationInput struct {
 
 // String returns the string representation
 func (s ReplaceRouteTableAssociationInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22454,7 +22454,7 @@ type ReplaceRouteTableAssociationOutput struct {
 
 // String returns the string representation
 func (s ReplaceRouteTableAssociationOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22478,7 +22478,7 @@ type RequestAdditionalAttributesStruct struct {
 
 // String returns the string representation
 func (s RequestAdditionalAttributesStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22497,7 +22497,7 @@ type RequestBypassInterfaceStruct struct {
 
 // String returns the string representation
 func (s RequestBypassInterfaceStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22520,7 +22520,7 @@ type RequestCertInfoStruct struct {
 
 // String returns the string representation
 func (s RequestCertInfoStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22549,7 +22549,7 @@ type RequestCopyInstanceStruct struct {
 
 // String returns the string representation
 func (s RequestCopyInstanceStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22568,7 +22568,7 @@ type RequestDDayStruct struct {
 
 // String returns the string representation
 func (s RequestDDayStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22597,7 +22597,7 @@ type RequestDayStruct struct {
 
 // String returns the string representation
 func (s RequestDayStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22614,7 +22614,7 @@ type RequestDescriptionStruct struct {
 
 // String returns the string representation
 func (s RequestDescriptionStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22631,7 +22631,7 @@ type RequestDestinationStruct struct {
 
 // String returns the string representation
 func (s RequestDestinationStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22650,7 +22650,7 @@ type RequestDhcpConfigurationStruct struct {
 
 // String returns the string representation
 func (s RequestDhcpConfigurationStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22675,7 +22675,7 @@ type RequestElasticLoadBalancersStruct struct {
 
 // String returns the string representation
 func (s RequestElasticLoadBalancersStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22694,7 +22694,7 @@ type RequestFilterStruct struct {
 
 // String returns the string representation
 func (s RequestFilterStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22711,7 +22711,7 @@ type RequestGroupsStruct struct {
 
 // String returns the string representation
 func (s RequestGroupsStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22732,7 +22732,7 @@ type RequestHealthCheckStruct struct {
 
 // String returns the string representation
 func (s RequestHealthCheckStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22751,7 +22751,7 @@ type RequestIPAddressesStruct struct {
 
 // String returns the string representation
 func (s RequestIPAddressesStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22770,7 +22770,7 @@ type RequestInboundInterfaceStruct struct {
 
 // String returns the string representation
 func (s RequestInboundInterfaceStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22789,7 +22789,7 @@ type RequestInstancesStruct struct {
 
 // String returns the string representation
 func (s RequestInstancesStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22818,7 +22818,7 @@ type RequestIpPermissionsStruct struct {
 
 // String returns the string representation
 func (s RequestIpPermissionsStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22835,7 +22835,7 @@ type RequestIpRangesStruct struct {
 
 // String returns the string representation
 func (s RequestIpRangesStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22854,7 +22854,7 @@ type RequestLicenseStruct struct {
 
 // String returns the string representation
 func (s RequestLicenseStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22873,7 +22873,7 @@ type RequestListenInterfaceStruct struct {
 
 // String returns the string representation
 func (s RequestListenInterfaceStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22896,7 +22896,7 @@ type RequestListenerStruct struct {
 
 // String returns the string representation
 func (s RequestListenerStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22917,7 +22917,7 @@ type RequestListenerUpdateStruct struct {
 
 // String returns the string representation
 func (s RequestListenerUpdateStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22954,7 +22954,7 @@ type RequestListenersStruct struct {
 
 // String returns the string representation
 func (s RequestListenersStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22975,7 +22975,7 @@ type RequestLoadBalancerAttributesStruct struct {
 
 // String returns the string representation
 func (s RequestLoadBalancerAttributesStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -22996,7 +22996,7 @@ type RequestLoadBalancerNamesStruct struct {
 
 // String returns the string representation
 func (s RequestLoadBalancerNamesStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23019,7 +23019,7 @@ type RequestLoadBalancersStruct struct {
 
 // String returns the string representation
 func (s RequestLoadBalancersStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23038,7 +23038,7 @@ type RequestMonthStruct struct {
 
 // String returns the string representation
 func (s RequestMonthStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23071,7 +23071,7 @@ type RequestNetworkInterfaceStruct struct {
 
 // String returns the string representation
 func (s RequestNetworkInterfaceStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23092,7 +23092,7 @@ type RequestNiftyIPsecConfigurationStruct struct {
 
 // String returns the string representation
 func (s RequestNiftyIPsecConfigurationStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23109,7 +23109,7 @@ type RequestNiftyIpsecConfigurationStruct struct {
 
 // String returns the string representation
 func (s RequestNiftyIpsecConfigurationStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23130,7 +23130,7 @@ type RequestNiftyNetworkStruct struct {
 
 // String returns the string representation
 func (s RequestNiftyNetworkStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23163,7 +23163,7 @@ type RequestNiftyTunnelStruct struct {
 
 // String returns the string representation
 func (s RequestNiftyTunnelStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23180,7 +23180,7 @@ type RequestOptionStruct struct {
 
 // String returns the string representation
 func (s RequestOptionStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23199,7 +23199,7 @@ type RequestOutboundInterfaceStruct struct {
 
 // String returns the string representation
 func (s RequestOutboundInterfaceStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23218,7 +23218,7 @@ type RequestPlacementStruct struct {
 
 // String returns the string representation
 func (s RequestPlacementStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23239,7 +23239,7 @@ type RequestRangeStruct struct {
 
 // String returns the string representation
 func (s RequestRangeStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23258,7 +23258,7 @@ type RequestRouterSetStruct struct {
 
 // String returns the string representation
 func (s RequestRouterSetStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23279,7 +23279,7 @@ type RequestRouterStruct struct {
 
 // String returns the string representation
 func (s RequestRouterStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23310,7 +23310,7 @@ type RequestRuleStruct struct {
 
 // String returns the string representation
 func (s RequestRuleStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23333,7 +23333,7 @@ type RequestScalingScheduleStruct struct {
 
 // String returns the string representation
 func (s RequestScalingScheduleStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23354,7 +23354,7 @@ type RequestScalingTriggerStruct struct {
 
 // String returns the string representation
 func (s RequestScalingTriggerStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23373,7 +23373,7 @@ type RequestSessionStickinessPolicyUpdateStruct struct {
 
 // String returns the string representation
 func (s RequestSessionStickinessPolicyUpdateStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23390,7 +23390,7 @@ type RequestSessionStruct struct {
 
 // String returns the string representation
 func (s RequestSessionStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23409,7 +23409,7 @@ type RequestSorryPageStruct struct {
 
 // String returns the string representation
 func (s RequestSorryPageStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23428,7 +23428,7 @@ type RequestSorryPageUpdateStruct struct {
 
 // String returns the string representation
 func (s RequestSorryPageUpdateStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23447,7 +23447,7 @@ type RequestSourceStruct struct {
 
 // String returns the string representation
 func (s RequestSourceStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23468,7 +23468,7 @@ type RequestStickinessPolicyStruct struct {
 
 // String returns the string representation
 func (s RequestStickinessPolicyStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23487,7 +23487,7 @@ type RequestTimeZoneStruct struct {
 
 // String returns the string representation
 func (s RequestTimeZoneStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23506,7 +23506,7 @@ type RequestTranslationStruct struct {
 
 // String returns the string representation
 func (s RequestTranslationStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23523,7 +23523,7 @@ type RequestUsersStruct struct {
 
 // String returns the string representation
 func (s RequestUsersStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23542,7 +23542,7 @@ type RequestVpnGatewaySetStruct struct {
 
 // String returns the string representation
 func (s RequestVpnGatewaySetStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23563,7 +23563,7 @@ type RequestVpnGatewayStruct struct {
 
 // String returns the string representation
 func (s RequestVpnGatewayStruct) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23610,7 +23610,7 @@ type ReservationSetItem struct {
 
 // String returns the string representation
 func (s ReservationSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23661,7 +23661,7 @@ type ResourceInfo struct {
 
 // String returns the string representation
 func (s ResourceInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23678,7 +23678,7 @@ type ResponseMetadata struct {
 
 // String returns the string representation
 func (s ResponseMetadata) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23697,7 +23697,7 @@ type RevokeSecurityGroupIngressInput struct {
 
 // String returns the string representation
 func (s RevokeSecurityGroupIngressInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23718,7 +23718,7 @@ type RevokeSecurityGroupIngressOutput struct {
 
 // String returns the string representation
 func (s RevokeSecurityGroupIngressOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23740,7 +23740,7 @@ type RootDeviceName struct {
 
 // String returns the string representation
 func (s RootDeviceName) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23773,7 +23773,7 @@ type RouteSetItem struct {
 
 // String returns the string representation
 func (s RouteSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23792,7 +23792,7 @@ type RouteTable struct {
 
 // String returns the string representation
 func (s RouteTable) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23819,7 +23819,7 @@ type RouteTableSetItem struct {
 
 // String returns the string representation
 func (s RouteTableSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23868,7 +23868,7 @@ type Router struct {
 
 // String returns the string representation
 func (s Router) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23887,7 +23887,7 @@ type RouterInfo struct {
 
 // String returns the string representation
 func (s RouterInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23906,7 +23906,7 @@ type RouterItemSetItem struct {
 
 // String returns the string representation
 func (s RouterItemSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23929,7 +23929,7 @@ type RouterMeasuredRateSetItem struct {
 
 // String returns the string representation
 func (s RouterMeasuredRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23952,7 +23952,7 @@ type RouterMonthlyRateSetItem struct {
 
 // String returns the string representation
 func (s RouterMonthlyRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -23977,7 +23977,7 @@ type RouterNetworkInterfaceSetItem struct {
 
 // String returns the string representation
 func (s RouterNetworkInterfaceSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24028,7 +24028,7 @@ type RouterSetItem struct {
 
 // String returns the string representation
 func (s RouterSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24049,7 +24049,7 @@ type Routes struct {
 
 // String returns the string representation
 func (s Routes) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24072,7 +24072,7 @@ type RuleSetItem struct {
 
 // String returns the string representation
 func (s RuleSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24121,7 +24121,7 @@ type RunInstancesInput struct {
 
 // String returns the string representation
 func (s RunInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24150,7 +24150,7 @@ type RunInstancesOutput struct {
 
 // String returns the string representation
 func (s RunInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24178,7 +24178,7 @@ type RunningInstanceMeasuredRateSetItem struct {
 
 // String returns the string representation
 func (s RunningInstanceMeasuredRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24201,7 +24201,7 @@ type RunningScaleOutInstanceSetItem struct {
 
 // String returns the string representation
 func (s RunningScaleOutInstanceSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24224,7 +24224,7 @@ type RunningScaleOutOsSetItem struct {
 
 // String returns the string representation
 func (s RunningScaleOutOsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24247,7 +24247,7 @@ type ScheduleSetItem struct {
 
 // String returns the string representation
 func (s ScheduleSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24266,7 +24266,7 @@ type SecureNetInfo struct {
 
 // String returns the string representation
 func (s SecureNetInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24289,7 +24289,7 @@ type SecureNetMonthlyRate struct {
 
 // String returns the string representation
 func (s SecureNetMonthlyRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24312,7 +24312,7 @@ type SecurityGroupApplyTime struct {
 
 // String returns the string representation
 func (s SecurityGroupApplyTime) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24331,7 +24331,7 @@ type SecurityGroupInfo struct {
 
 // String returns the string representation
 func (s SecurityGroupInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24382,7 +24382,7 @@ type SecurityGroupInfoSetItem struct {
 
 // String returns the string representation
 func (s SecurityGroupInfoSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24407,7 +24407,7 @@ type SeparateInstanceRulesInfoSetItem struct {
 
 // String returns the string representation
 func (s SeparateInstanceRulesInfoSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24434,7 +24434,7 @@ type ServiceStatusSetItem struct {
 
 // String returns the string representation
 func (s ServiceStatusSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24455,7 +24455,7 @@ type SessionStickinessPolicy struct {
 
 // String returns the string representation
 func (s SessionStickinessPolicy) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24480,7 +24480,7 @@ type SetFilterForLoadBalancerInput struct {
 
 // String returns the string representation
 func (s SetFilterForLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24503,7 +24503,7 @@ type SetFilterForLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s SetFilterForLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24531,7 +24531,7 @@ type Snapshot struct {
 
 // String returns the string representation
 func (s Snapshot) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24548,7 +24548,7 @@ type SnapshotInfo struct {
 
 // String returns the string representation
 func (s SnapshotInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24581,7 +24581,7 @@ type SnapshotInfoSetItem struct {
 
 // String returns the string representation
 func (s SnapshotInfoSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24602,7 +24602,7 @@ type SorryPage struct {
 
 // String returns the string representation
 func (s SorryPage) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24621,7 +24621,7 @@ type Source struct {
 
 // String returns the string representation
 func (s Source) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24638,7 +24638,7 @@ type SslCertInfo struct {
 
 // String returns the string representation
 func (s SslCertInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24665,7 +24665,7 @@ type StartInstancesInput struct {
 
 // String returns the string representation
 func (s StartInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24686,7 +24686,7 @@ type StartInstancesOutput struct {
 
 // String returns the string representation
 func (s StartInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24710,7 +24710,7 @@ type StateReason struct {
 
 // String returns the string representation
 func (s StateReason) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24731,7 +24731,7 @@ type StaticMappingsSetItem struct {
 
 // String returns the string representation
 func (s StaticMappingsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24752,7 +24752,7 @@ type StopInstancesInput struct {
 
 // String returns the string representation
 func (s StopInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24773,7 +24773,7 @@ type StopInstancesOutput struct {
 
 // String returns the string representation
 func (s StopInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24801,7 +24801,7 @@ type StoppedInstanceMeasuredRateSetItem struct {
 
 // String returns the string representation
 func (s StoppedInstanceMeasuredRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24824,7 +24824,7 @@ type StoppedScaleOutInstanceSetItem struct {
 
 // String returns the string representation
 func (s StoppedScaleOutInstanceSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24847,7 +24847,7 @@ type StoppedScaleOutOsSetItem struct {
 
 // String returns the string representation
 func (s StoppedScaleOutOsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24866,7 +24866,7 @@ type StorageInfo struct {
 
 // String returns the string representation
 func (s StorageInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24889,7 +24889,7 @@ type StorageMeasuredRate struct {
 
 // String returns the string representation
 func (s StorageMeasuredRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24912,7 +24912,7 @@ type StorageMonthlyRate struct {
 
 // String returns the string representation
 func (s StorageMonthlyRate) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24931,7 +24931,7 @@ type TagSetItem struct {
 
 // String returns the string representation
 func (s TagSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24948,7 +24948,7 @@ type TerminateInstancesInput struct {
 
 // String returns the string representation
 func (s TerminateInstancesInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24969,7 +24969,7 @@ type TerminateInstancesOutput struct {
 
 // String returns the string representation
 func (s TerminateInstancesOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -24993,7 +24993,7 @@ type TimeZone struct {
 
 // String returns the string representation
 func (s TimeZone) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25012,7 +25012,7 @@ type Translation struct {
 
 // String returns the string representation
 func (s Translation) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25033,7 +25033,7 @@ type TriggerSetItem struct {
 
 // String returns the string representation
 func (s TriggerSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25056,7 +25056,7 @@ type UpdateLoadBalancerInput struct {
 
 // String returns the string representation
 func (s UpdateLoadBalancerInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25081,7 +25081,7 @@ type UpdateLoadBalancerOptionInput struct {
 
 // String returns the string representation
 func (s UpdateLoadBalancerOptionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25100,7 +25100,7 @@ type UpdateLoadBalancerOptionOutput struct {
 
 // String returns the string representation
 func (s UpdateLoadBalancerOptionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25124,7 +25124,7 @@ type UpdateLoadBalancerOutput struct {
 
 // String returns the string representation
 func (s UpdateLoadBalancerOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25152,7 +25152,7 @@ type UpdateSecurityGroupInput struct {
 
 // String returns the string representation
 func (s UpdateSecurityGroupInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25169,7 +25169,7 @@ type UpdateSecurityGroupOptionInput struct {
 
 // String returns the string representation
 func (s UpdateSecurityGroupOptionInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25190,7 +25190,7 @@ type UpdateSecurityGroupOptionOutput struct {
 
 // String returns the string representation
 func (s UpdateSecurityGroupOptionOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25216,7 +25216,7 @@ type UpdateSecurityGroupOutput struct {
 
 // String returns the string representation
 func (s UpdateSecurityGroupOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25242,7 +25242,7 @@ type UploadSslCertificateInput struct {
 
 // String returns the string representation
 func (s UploadSslCertificateInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25267,7 +25267,7 @@ type UploadSslCertificateOutput struct {
 
 // String returns the string representation
 func (s UploadSslCertificateOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25289,7 +25289,7 @@ type UploadState struct {
 
 // String returns the string representation
 func (s UploadState) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25310,7 +25310,7 @@ type UploadsSetItem struct {
 
 // String returns the string representation
 func (s UploadsSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25337,7 +25337,7 @@ type UserActivitiesSetItem struct {
 
 // String returns the string representation
 func (s UserActivitiesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25354,7 +25354,7 @@ type UserData struct {
 
 // String returns the string representation
 func (s UserData) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25371,7 +25371,7 @@ type UsersMemberItem struct {
 
 // String returns the string representation
 func (s UsersMemberItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25388,7 +25388,7 @@ type ValueSetItem struct {
 
 // String returns the string representation
 func (s ValueSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25407,7 +25407,7 @@ type VersionInformation struct {
 
 // String returns the string representation
 func (s VersionInformation) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25432,7 +25432,7 @@ type VgwTelemetrySetItem struct {
 
 // String returns the string representation
 func (s VgwTelemetrySetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25455,7 +25455,7 @@ type VipMeasuredRateSetItem struct {
 
 // String returns the string representation
 func (s VipMeasuredRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25478,7 +25478,7 @@ type VipSetItem struct {
 
 // String returns the string representation
 func (s VipSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25497,7 +25497,7 @@ type Volume struct {
 
 // String returns the string representation
 func (s Volume) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25520,7 +25520,7 @@ type VolumeInfo struct {
 
 // String returns the string representation
 func (s VolumeInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25543,7 +25543,7 @@ type VolumeMeasuredRateSetItem struct {
 
 // String returns the string representation
 func (s VolumeMeasuredRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25586,7 +25586,7 @@ type VolumeSetItem struct {
 
 // String returns the string representation
 func (s VolumeSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25615,7 +25615,7 @@ type VolumesSetItem struct {
 
 // String returns the string representation
 func (s VolumesSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25638,7 +25638,7 @@ type VpnConnectMeasuredRateSetItem struct {
 
 // String returns the string representation
 func (s VpnConnectMeasuredRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25685,7 +25685,7 @@ type VpnConnection struct {
 
 // String returns the string representation
 func (s VpnConnection) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25732,7 +25732,7 @@ type VpnConnectionSetItem struct {
 
 // String returns the string representation
 func (s VpnConnectionSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25777,7 +25777,7 @@ type VpnGateway struct {
 
 // String returns the string representation
 func (s VpnGateway) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25796,7 +25796,7 @@ type VpnGatewayInfo struct {
 
 // String returns the string representation
 func (s VpnGatewayInfo) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25815,7 +25815,7 @@ type VpnGatewayItemSetItem struct {
 
 // String returns the string representation
 func (s VpnGatewayItemSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25838,7 +25838,7 @@ type VpnGatewayMeasuredRateSetItem struct {
 
 // String returns the string representation
 func (s VpnGatewayMeasuredRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25861,7 +25861,7 @@ type VpnGatewayMonthlyRateSetItem struct {
 
 // String returns the string representation
 func (s VpnGatewayMonthlyRateSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25886,7 +25886,7 @@ type VpnGatewayNetworkInterfaceSetItem struct {
 
 // String returns the string representation
 func (s VpnGatewayNetworkInterfaceSetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25941,7 +25941,7 @@ type VpnGatewaySetItem struct {
 
 // String returns the string representation
 func (s VpnGatewaySetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25970,7 +25970,7 @@ type WebProxy struct {
 
 // String returns the string representation
 func (s WebProxy) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -25999,7 +25999,7 @@ type WebProxySetItem struct {
 
 // String returns the string representation
 func (s WebProxySetItem) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation

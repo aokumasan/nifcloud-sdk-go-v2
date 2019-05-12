@@ -3,8 +3,8 @@
 package script
 
 import (
-	"github.com/alice02/nifcloud-sdk-go-v2/internal/awsutil"
 	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/aws/aws-sdk-go-v2/internal/nifcloudutil"
 )
 
 const opExecuteScript = "ExecuteScript"
@@ -72,7 +72,7 @@ type ExecuteScriptInput struct {
 
 // String returns the string representation
 func (s ExecuteScriptInput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -91,7 +91,7 @@ type ExecuteScriptOutput struct {
 
 // String returns the string representation
 func (s ExecuteScriptOutput) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
@@ -125,7 +125,7 @@ type Result struct {
 
 // String returns the string representation
 func (s Result) String() string {
-	return awsutil.Prettify(s)
+	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
