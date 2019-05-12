@@ -2,6 +2,10 @@
 
 // Command aws-gen-gocli parses a JSON description of an NIFCLOUD API and generates a
 // Go file containing a client for the API.
+
+// NOTE: This file was imported from https://github.com/aws/aws-sdk-go-v2/blob/v2.0.0-preview.5/private/model/cli/gen-api/main.go
+//       and some modifications for NIFCLOUD.
+
 package main
 
 import (

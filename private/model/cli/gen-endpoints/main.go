@@ -2,6 +2,9 @@
 
 // Command gen-endpoints parses a JSON description of the NIFCLOUD endpoint
 // discovery logic and generates a Go file which returns an endpoint.
+
+// NOTE: This file was imported from https://github.com/aws/aws-sdk-go-v2/blob/v2.0.0-preview.5/private/model/cli/gen-endpoints/main.go
+
 package main
 
 import (
