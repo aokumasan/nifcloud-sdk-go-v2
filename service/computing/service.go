@@ -4,9 +4,10 @@ package computing
 
 import (
 	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
+	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud/signer/v2"
+	"github.com/alice02/nifcloud-sdk-go-v2/private/protocol/computing"
 	"github.com/aws/aws-sdk-go-v2/aws"
-	"github.com/aws/aws-sdk-go-v2/aws/signer/v4"
-	"github.com/aws/aws-sdk-go-v2/private/protocol/computing"
+	"github.com/aws/aws-sdk-go-v2/aws/defaults"
 )
 
 // Computing provides the API operation methods for making requests to
@@ -53,7 +54,8 @@ func New(config nifcloud.Config) *Computing {
 	}
 
 	// Handlers
-	svc.Handlers.Sign.PushBackNamed(v4.SignRequestHandler)
+	svc.Handlers.Sign.PushBackNamed(v2.SignRequestHandler)
+	svc.Handlers.Sign.PushBackNamed(defaults.BuildContentLengthHandler)
 	svc.Handlers.Build.PushBackNamed(computing.BuildHandler)
 	svc.Handlers.Unmarshal.PushBackNamed(computing.UnmarshalHandler)
 	svc.Handlers.UnmarshalMeta.PushBackNamed(computing.UnmarshalMetaHandler)
