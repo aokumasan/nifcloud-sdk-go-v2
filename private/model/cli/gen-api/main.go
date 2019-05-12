@@ -283,6 +283,8 @@ func fixServiceFile(code string) string {
 	maps := []map[string]string{
 		{`"github.com/aws/aws-sdk-go-v2/aws"`: `"github.com/aws/aws-sdk-go-v2/aws"
 "github.com/alice02/nifcloud-sdk-go-v2/nifcloud"`},
+		{"github.com/aws/aws-sdk-go-v2/private/protocol/computing": "github.com/alice02/nifcloud-sdk-go-v2/private/protocol/computing"},
+		{"github.com/aws/aws-sdk-go-v2/aws/signer/v2": "github.com/alice02/nifcloud-sdk-go-v2/nifcloud/signer/v2"},
 		{"aws.Config": "nifcloud.Config"},
 		{"config,": "config.AWSConfig(),"},
 	}
