@@ -280,33 +280,35 @@ func writeAPIErrorsFile(g *generateInfo) error {
 }
 
 func fixServiceFile(code string) string {
-	replaceMap := map[string]string{
-		`"github.com/aws/aws-sdk-go-v2/aws"`: `"github.com/aws/aws-sdk-go-v2/aws"
-"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"`,
-		"aws.Config": "nifcloud.Config",
-		"config,":    "config.AWSConfig(),",
+	maps := []map[string]string{
+		{`"github.com/aws/aws-sdk-go-v2/aws"`: `"github.com/aws/aws-sdk-go-v2/aws"
+"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"`},
+		{"aws.Config": "nifcloud.Config"},
+		{"config,": "config.AWSConfig(),"},
 	}
 
-	return replace(code, replaceMap)
+	return replace(code, maps)
 }
 
 func fixAPIFile(code string) string {
-	replaceMap := map[string]string{
-		"github.com/aws/aws-sdk-go-v2/internal/awsutil": "github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil",
-		"awsutil": "nifcloudutil",
+	maps := []map[string]string{
+		{"github.com/aws/aws-sdk-go-v2/internal/awsutil": "github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"},
+		{"awsutil": "nifcloudutil"},
 	}
 
-	return replace(code, replaceMap)
+	return replace(code, maps)
 }
 
-func replace(code string, replaceMap map[string]string) string {
-	for org, replace := range replaceMap {
-		code = strings.Replace(
-			code,
-			org,
-			replace,
-			-1,
-		)
+func replace(code string, replaceMaps []map[string]string) string {
+	for _, m := range replaceMaps {
+		for org, replace := range m {
+			code = strings.Replace(
+				code,
+				org,
+				replace,
+				-1,
+			)
+		}
 	}
 
 	return code
