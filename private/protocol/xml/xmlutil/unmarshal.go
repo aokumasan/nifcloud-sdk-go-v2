@@ -268,9 +268,7 @@ func parseScalar(r reflect.Value, node *XMLNode, tag reflect.StructTag) error {
 		}
 		r.Set(reflect.ValueOf(v))
 	case time.Time:
-		if len(node.Text) == 0 {
-			r.Set(reflect.ValueOf(node.Text))
-		} else {
+		if len(node.Text) != 0 {
 			t, err := time.Parse(time.RFC3339, node.Text)
 			if err != nil {
 				return err
