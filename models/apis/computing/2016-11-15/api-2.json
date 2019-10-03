@@ -17634,6 +17634,10 @@
           "locationName": "createTime",
           "shape": "TStamp"
         },
+        "Description": {
+          "locationName": "description",
+          "shape": "String"
+        },
         "DiskType": {
           "locationName": "diskType",
           "shape": "String"
