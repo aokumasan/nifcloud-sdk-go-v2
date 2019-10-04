@@ -25565,6 +25565,8 @@ type VolumeSetItem struct {
 
 	CreateTime *time.Time `locationName:"createTime" type:"timestamp" timestampFormat:""`
 
+	Description *string `locationName:"description" type:"string"`
+
 	DiskType *string `locationName:"diskType" type:"string"`
 
 	NextMonthAccountingType *string `locationName:"nextMonthAccountingType" type:"string"`
