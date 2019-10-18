@@ -5,6 +5,7 @@
     "protocol": "query",
     "serviceAbbreviation": "rdb",
     "serviceFullName": "NIFCLOUD RDB",
+    "serviceId": "rdb",
     "signatureVersion": "v4",
     "uid": "rdb-2013-05-15N2013-12-16"
   },
@@ -195,6 +196,20 @@
       "output": {
         "resultWrapper": "DeleteEventSubscriptionResult",
         "shape": "DeleteEventSubscriptionResult"
+      }
+    },
+    "DescribeCertificates": {
+      "http": {
+        "method": "POST",
+        "requestUri": "/"
+      },
+      "input": {
+        "shape": "DescribeCertificatesRequest"
+      },
+      "name": "DescribeCertificates",
+      "output": {
+        "resultWrapper": "DescribeCertificatesResult",
+        "shape": "DescribeCertificatesResult"
       }
     },
     "DescribeDBEngineVersions": {
@@ -491,6 +506,20 @@
         "shape": "ResetDBParameterGroupResult"
       }
     },
+    "ResetExternalMaster": {
+      "http": {
+        "method": "POST",
+        "requestUri": "/"
+      },
+      "input": {
+        "shape": "ResetExternalMasterRequest"
+      },
+      "name": "ResetExternalMaster",
+      "output": {
+        "resultWrapper": "ResetExternalMasterResult",
+        "shape": "ResetExternalMasterResult"
+      }
+    },
     "RestoreDBInstanceFromDBSnapshot": {
       "http": {
         "method": "POST",
@@ -531,6 +560,48 @@
       "output": {
         "resultWrapper": "RevokeDBSecurityGroupIngressResult",
         "shape": "RevokeDBSecurityGroupIngressResult"
+      }
+    },
+    "SetExternalMaster": {
+      "http": {
+        "method": "POST",
+        "requestUri": "/"
+      },
+      "input": {
+        "shape": "SetExternalMasterRequest"
+      },
+      "name": "SetExternalMaster",
+      "output": {
+        "resultWrapper": "SetExternalMasterResult",
+        "shape": "SetExternalMasterResult"
+      }
+    },
+    "StartReplication": {
+      "http": {
+        "method": "POST",
+        "requestUri": "/"
+      },
+      "input": {
+        "shape": "StartReplicationRequest"
+      },
+      "name": "StartReplication",
+      "output": {
+        "resultWrapper": "StartReplicationResult",
+        "shape": "StartReplicationResult"
+      }
+    },
+    "StopReplication": {
+      "http": {
+        "method": "POST",
+        "requestUri": "/"
+      },
+      "input": {
+        "shape": "StopReplicationRequest"
+      },
+      "name": "StopReplication",
+      "output": {
+        "resultWrapper": "StopReplicationResult",
+        "shape": "StopReplicationResult"
       }
     }
   },
@@ -611,6 +682,35 @@
     "Boolean": {
       "name": "Boolean",
       "type": "boolean"
+    },
+    "Certificate": {
+      "members": {
+        "CertificateIdentifier": {
+          "shape": "String"
+        },
+        "CertificateType": {
+          "shape": "String"
+        },
+        "Thumbprint": {
+          "shape": "String"
+        },
+        "ValidFrom": {
+          "shape": "String"
+        },
+        "ValidTill": {
+          "shape": "String"
+        }
+      },
+      "name": "Certificate",
+      "type": "structure"
+    },
+    "Certificates": {
+      "member": {
+        "locationName": "Certificate",
+        "shape": "Certificate"
+      },
+      "name": "Certificates",
+      "type": "list"
     },
     "CopyDBSnapshotRequest": {
       "members": {
@@ -952,6 +1052,12 @@
         "BackupRetentionPeriod": {
           "shape": "String"
         },
+        "BinlogRetentionPeriod": {
+          "shape": "String"
+        },
+        "CACertificateIdentifier": {
+          "shape": "String"
+        },
         "DBInstanceClass": {
           "shape": "String"
         },
@@ -978,6 +1084,9 @@
         },
         "EngineVersion": {
           "shape": "String"
+        },
+        "ExternalReplicationInfo": {
+          "shape": "ExternalReplicationInfo"
         },
         "InstanceCreateTime": {
           "shape": "String"
@@ -1271,6 +1380,36 @@
         }
       },
       "name": "DeleteEventSubscriptionResult",
+      "type": "structure"
+    },
+    "DescribeCertificatesRequest": {
+      "members": {
+        "CertificateIdentifier": {
+          "locationName": "CertificateIdentifier",
+          "shape": "String"
+        },
+        "Marker": {
+          "locationName": "Marker",
+          "shape": "String"
+        },
+        "MaxRecords": {
+          "locationName": "MaxRecords",
+          "shape": "Integer"
+        }
+      },
+      "name": "DescribeCertificatesRequest",
+      "type": "structure"
+    },
+    "DescribeCertificatesResult": {
+      "members": {
+        "Certificates": {
+          "shape": "Certificates"
+        },
+        "Marker": {
+          "shape": "String"
+        }
+      },
+      "name": "DescribeCertificatesResult",
       "type": "structure"
     },
     "DescribeDBEngineVersionsRequest": {
@@ -1908,6 +2047,24 @@
       "name": "Events",
       "type": "list"
     },
+    "ExternalReplicationInfo": {
+      "members": {
+        "ExternalMasterAddress": {
+          "shape": "String"
+        },
+        "ExternalReplicationMessage": {
+          "shape": "String"
+        },
+        "ExternalReplicationStatus": {
+          "shape": "String"
+        },
+        "ReplicationAddresses": {
+          "shape": "ReplicationAddresses"
+        }
+      },
+      "name": "ExternalReplicationInfo",
+      "type": "structure"
+    },
     "IPRange": {
       "members": {
         "CIDRIP": {
@@ -1962,6 +2119,18 @@
         },
         "BackupRetentionPeriod": {
           "locationName": "BackupRetentionPeriod",
+          "shape": "Integer"
+        },
+        "BinlogRetentionPeriod": {
+          "locationName": "BinlogRetentionPeriod",
+          "shape": "Integer"
+        },
+        "CACertificateIdentifier": {
+          "locationName": "CACertificateIdentifier",
+          "shape": "String"
+        },
+        "CustomBinlogRetentionPeriod": {
+          "locationName": "CustomBinlogRetentionPeriod",
           "shape": "Integer"
         },
         "DBInstanceClass": {
@@ -2360,6 +2529,13 @@
       "name": "RemoveSourceIdentifierFromSubscriptionResult",
       "type": "structure"
     },
+    "ReplicationAddresses": {
+      "member": {
+        "shape": "String"
+      },
+      "name": "ReplicationAddresses",
+      "type": "list"
+    },
     "RequestDBSecurityGroups": {
       "member": {
         "locationName": "member",
@@ -2473,6 +2649,25 @@
         }
       },
       "name": "ResetDBParameterGroupResult",
+      "type": "structure"
+    },
+    "ResetExternalMasterRequest": {
+      "members": {
+        "DBInstanceIdentifier": {
+          "locationName": "DBInstanceIdentifier",
+          "shape": "String"
+        }
+      },
+      "name": "ResetExternalMasterRequest",
+      "type": "structure"
+    },
+    "ResetExternalMasterResult": {
+      "members": {
+        "DBInstance": {
+          "shape": "DBInstance"
+        }
+      },
+      "name": "ResetExternalMasterResult",
       "type": "structure"
     },
     "RestoreDBInstanceFromDBSnapshotRequest": {
@@ -2700,12 +2895,74 @@
       "name": "RevokeDBSecurityGroupIngressResult",
       "type": "structure"
     },
+    "SetExternalMasterRequest": {
+      "members": {
+        "BinlogFileName": {
+          "locationName": "BinlogFileName",
+          "shape": "String"
+        },
+        "BinlogPosition": {
+          "locationName": "BinlogPosition",
+          "shape": "Integer"
+        },
+        "DBInstanceIdentifier": {
+          "locationName": "DBInstanceIdentifier",
+          "shape": "String"
+        },
+        "MasterHost": {
+          "locationName": "MasterHost",
+          "shape": "String"
+        },
+        "MasterPort": {
+          "locationName": "MasterPort",
+          "shape": "Integer"
+        },
+        "ReplicationUserName": {
+          "locationName": "ReplicationUserName",
+          "shape": "String"
+        },
+        "ReplicationUserPassword": {
+          "locationName": "ReplicationUserPassword",
+          "shape": "String"
+        }
+      },
+      "name": "SetExternalMasterRequest",
+      "type": "structure"
+    },
+    "SetExternalMasterResult": {
+      "members": {
+        "DBInstance": {
+          "shape": "DBInstance"
+        }
+      },
+      "name": "SetExternalMasterResult",
+      "type": "structure"
+    },
     "SourceIdsList": {
       "member": {
         "shape": "String"
       },
       "name": "SourceIdsList",
       "type": "list"
+    },
+    "StartReplicationRequest": {
+      "members": {
+        "DBInstanceIdentifier": {
+          "locationName": "DBInstanceIdentifier",
+          "shape": "String"
+        }
+      },
+      "name": "StartReplicationRequest",
+      "type": "structure"
+    },
+    "StartReplicationResult": {
+      "members": {
+        "DBInstance": {
+          "shape": "DBInstance"
+        }
+      },
+      "name": "StartReplicationResult",
+      "type": "structure"
     },
     "StatusInfos": {
       "member": {
@@ -2714,6 +2971,25 @@
       },
       "name": "StatusInfos",
       "type": "list"
+    },
+    "StopReplicationRequest": {
+      "members": {
+        "DBInstanceIdentifier": {
+          "locationName": "DBInstanceIdentifier",
+          "shape": "String"
+        }
+      },
+      "name": "StopReplicationRequest",
+      "type": "structure"
+    },
+    "StopReplicationResult": {
+      "members": {
+        "DBInstance": {
+          "shape": "DBInstance"
+        }
+      },
+      "name": "StopReplicationResult",
+      "type": "structure"
     },
     "String": {
       "name": "String",
