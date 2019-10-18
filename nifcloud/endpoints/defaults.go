@@ -21,17 +21,6 @@ const (
 	UsEast1RegionID = "us-east-1" // us-east-1.
 )
 
-// Service identifiers
-const (
-	CloudsearchdomainServiceID = "cloudsearchdomain" // Cloudsearchdomain.
-	ComputingServiceID         = "computing"         // Computing.
-	DataIotServiceID           = "data.iot"          // DataIot.
-	Ec2metadataServiceID       = "ec2metadata"       // Ec2metadata.
-	NasServiceID               = "nas"               // Nas.
-	RdbServiceID               = "rdb"               // Rdb.
-	ScriptServiceID            = "script"            // Script.
-)
-
 // NewDefaultResolver returns an Endpoint resolver that will be able
 // to resolve endpoints for: NIFCLOUD Standard.
 //
@@ -130,6 +119,12 @@ var nifcloudPartition = partition{
 					Hostname:  "169.254.169.254/latest",
 					Protocols: []string{"http"},
 				},
+			},
+		},
+		"hatoba": service{
+
+			Endpoints: endpoints{
+				"jp-east-1": endpoint{},
 			},
 		},
 		"nas": service{
