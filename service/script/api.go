@@ -3,6 +3,8 @@
 package script
 
 import (
+	"context"
+
 	"github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"
 	"github.com/aws/aws-sdk-go-v2/aws"
 )
@@ -17,7 +19,8 @@ type ExecuteScriptRequest struct {
 }
 
 // Send marshals and sends the ExecuteScript API request.
-func (r ExecuteScriptRequest) Send() (*ExecuteScriptOutput, error) {
+func (r ExecuteScriptRequest) Send(ctx context.Context) (*ExecuteScriptOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -31,7 +34,7 @@ func (r ExecuteScriptRequest) Send() (*ExecuteScriptOutput, error) {
 //
 //    // Example sending a request using the ExecuteScriptRequest method.
 //    req := client.ExecuteScriptRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }

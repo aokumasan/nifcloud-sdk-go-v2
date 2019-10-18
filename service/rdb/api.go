@@ -3,6 +3,7 @@
 package rdb
 
 import (
+	"context"
 	"time"
 
 	"github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"
@@ -21,7 +22,8 @@ type AddSourceIdentifierToSubscriptionRequest struct {
 }
 
 // Send marshals and sends the AddSourceIdentifierToSubscription API request.
-func (r AddSourceIdentifierToSubscriptionRequest) Send() (*AddSourceIdentifierToSubscriptionOutput, error) {
+func (r AddSourceIdentifierToSubscriptionRequest) Send(ctx context.Context) (*AddSourceIdentifierToSubscriptionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -35,7 +37,7 @@ func (r AddSourceIdentifierToSubscriptionRequest) Send() (*AddSourceIdentifierTo
 //
 //    // Example sending a request using the AddSourceIdentifierToSubscriptionRequest method.
 //    req := client.AddSourceIdentifierToSubscriptionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -69,7 +71,8 @@ type AuthorizeDBSecurityGroupIngressRequest struct {
 }
 
 // Send marshals and sends the AuthorizeDBSecurityGroupIngress API request.
-func (r AuthorizeDBSecurityGroupIngressRequest) Send() (*AuthorizeDBSecurityGroupIngressOutput, error) {
+func (r AuthorizeDBSecurityGroupIngressRequest) Send(ctx context.Context) (*AuthorizeDBSecurityGroupIngressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -83,7 +86,7 @@ func (r AuthorizeDBSecurityGroupIngressRequest) Send() (*AuthorizeDBSecurityGrou
 //
 //    // Example sending a request using the AuthorizeDBSecurityGroupIngressRequest method.
 //    req := client.AuthorizeDBSecurityGroupIngressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -117,7 +120,8 @@ type CopyDBSnapshotRequest struct {
 }
 
 // Send marshals and sends the CopyDBSnapshot API request.
-func (r CopyDBSnapshotRequest) Send() (*CopyDBSnapshotOutput, error) {
+func (r CopyDBSnapshotRequest) Send(ctx context.Context) (*CopyDBSnapshotOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -131,7 +135,7 @@ func (r CopyDBSnapshotRequest) Send() (*CopyDBSnapshotOutput, error) {
 //
 //    // Example sending a request using the CopyDBSnapshotRequest method.
 //    req := client.CopyDBSnapshotRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -165,7 +169,8 @@ type CreateDBInstanceRequest struct {
 }
 
 // Send marshals and sends the CreateDBInstance API request.
-func (r CreateDBInstanceRequest) Send() (*CreateDBInstanceOutput, error) {
+func (r CreateDBInstanceRequest) Send(ctx context.Context) (*CreateDBInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -179,7 +184,7 @@ func (r CreateDBInstanceRequest) Send() (*CreateDBInstanceOutput, error) {
 //
 //    // Example sending a request using the CreateDBInstanceRequest method.
 //    req := client.CreateDBInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -213,7 +218,8 @@ type CreateDBInstanceReadReplicaRequest struct {
 }
 
 // Send marshals and sends the CreateDBInstanceReadReplica API request.
-func (r CreateDBInstanceReadReplicaRequest) Send() (*CreateDBInstanceReadReplicaOutput, error) {
+func (r CreateDBInstanceReadReplicaRequest) Send(ctx context.Context) (*CreateDBInstanceReadReplicaOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -227,7 +233,7 @@ func (r CreateDBInstanceReadReplicaRequest) Send() (*CreateDBInstanceReadReplica
 //
 //    // Example sending a request using the CreateDBInstanceReadReplicaRequest method.
 //    req := client.CreateDBInstanceReadReplicaRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -261,7 +267,8 @@ type CreateDBParameterGroupRequest struct {
 }
 
 // Send marshals and sends the CreateDBParameterGroup API request.
-func (r CreateDBParameterGroupRequest) Send() (*CreateDBParameterGroupOutput, error) {
+func (r CreateDBParameterGroupRequest) Send(ctx context.Context) (*CreateDBParameterGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -275,7 +282,7 @@ func (r CreateDBParameterGroupRequest) Send() (*CreateDBParameterGroupOutput, er
 //
 //    // Example sending a request using the CreateDBParameterGroupRequest method.
 //    req := client.CreateDBParameterGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -309,7 +316,8 @@ type CreateDBSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the CreateDBSecurityGroup API request.
-func (r CreateDBSecurityGroupRequest) Send() (*CreateDBSecurityGroupOutput, error) {
+func (r CreateDBSecurityGroupRequest) Send(ctx context.Context) (*CreateDBSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -323,7 +331,7 @@ func (r CreateDBSecurityGroupRequest) Send() (*CreateDBSecurityGroupOutput, erro
 //
 //    // Example sending a request using the CreateDBSecurityGroupRequest method.
 //    req := client.CreateDBSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -357,7 +365,8 @@ type CreateDBSnapshotRequest struct {
 }
 
 // Send marshals and sends the CreateDBSnapshot API request.
-func (r CreateDBSnapshotRequest) Send() (*CreateDBSnapshotOutput, error) {
+func (r CreateDBSnapshotRequest) Send(ctx context.Context) (*CreateDBSnapshotOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -371,7 +380,7 @@ func (r CreateDBSnapshotRequest) Send() (*CreateDBSnapshotOutput, error) {
 //
 //    // Example sending a request using the CreateDBSnapshotRequest method.
 //    req := client.CreateDBSnapshotRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -405,7 +414,8 @@ type CreateEventSubscriptionRequest struct {
 }
 
 // Send marshals and sends the CreateEventSubscription API request.
-func (r CreateEventSubscriptionRequest) Send() (*CreateEventSubscriptionOutput, error) {
+func (r CreateEventSubscriptionRequest) Send(ctx context.Context) (*CreateEventSubscriptionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -419,7 +429,7 @@ func (r CreateEventSubscriptionRequest) Send() (*CreateEventSubscriptionOutput, 
 //
 //    // Example sending a request using the CreateEventSubscriptionRequest method.
 //    req := client.CreateEventSubscriptionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -453,7 +463,8 @@ type DeleteDBInstanceRequest struct {
 }
 
 // Send marshals and sends the DeleteDBInstance API request.
-func (r DeleteDBInstanceRequest) Send() (*DeleteDBInstanceOutput, error) {
+func (r DeleteDBInstanceRequest) Send(ctx context.Context) (*DeleteDBInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -467,7 +478,7 @@ func (r DeleteDBInstanceRequest) Send() (*DeleteDBInstanceOutput, error) {
 //
 //    // Example sending a request using the DeleteDBInstanceRequest method.
 //    req := client.DeleteDBInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -501,7 +512,8 @@ type DeleteDBParameterGroupRequest struct {
 }
 
 // Send marshals and sends the DeleteDBParameterGroup API request.
-func (r DeleteDBParameterGroupRequest) Send() (*DeleteDBParameterGroupOutput, error) {
+func (r DeleteDBParameterGroupRequest) Send(ctx context.Context) (*DeleteDBParameterGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -515,7 +527,7 @@ func (r DeleteDBParameterGroupRequest) Send() (*DeleteDBParameterGroupOutput, er
 //
 //    // Example sending a request using the DeleteDBParameterGroupRequest method.
 //    req := client.DeleteDBParameterGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -551,7 +563,8 @@ type DeleteDBSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the DeleteDBSecurityGroup API request.
-func (r DeleteDBSecurityGroupRequest) Send() (*DeleteDBSecurityGroupOutput, error) {
+func (r DeleteDBSecurityGroupRequest) Send(ctx context.Context) (*DeleteDBSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -565,7 +578,7 @@ func (r DeleteDBSecurityGroupRequest) Send() (*DeleteDBSecurityGroupOutput, erro
 //
 //    // Example sending a request using the DeleteDBSecurityGroupRequest method.
 //    req := client.DeleteDBSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -601,7 +614,8 @@ type DeleteDBSnapshotRequest struct {
 }
 
 // Send marshals and sends the DeleteDBSnapshot API request.
-func (r DeleteDBSnapshotRequest) Send() (*DeleteDBSnapshotOutput, error) {
+func (r DeleteDBSnapshotRequest) Send(ctx context.Context) (*DeleteDBSnapshotOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -615,7 +629,7 @@ func (r DeleteDBSnapshotRequest) Send() (*DeleteDBSnapshotOutput, error) {
 //
 //    // Example sending a request using the DeleteDBSnapshotRequest method.
 //    req := client.DeleteDBSnapshotRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -649,7 +663,8 @@ type DeleteEventSubscriptionRequest struct {
 }
 
 // Send marshals and sends the DeleteEventSubscription API request.
-func (r DeleteEventSubscriptionRequest) Send() (*DeleteEventSubscriptionOutput, error) {
+func (r DeleteEventSubscriptionRequest) Send(ctx context.Context) (*DeleteEventSubscriptionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -663,7 +678,7 @@ func (r DeleteEventSubscriptionRequest) Send() (*DeleteEventSubscriptionOutput, 
 //
 //    // Example sending a request using the DeleteEventSubscriptionRequest method.
 //    req := client.DeleteEventSubscriptionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -687,6 +702,55 @@ func (c *Rdb) DeleteEventSubscriptionRequest(input *DeleteEventSubscriptionInput
 	return DeleteEventSubscriptionRequest{Request: req, Input: input, Copy: c.DeleteEventSubscriptionRequest}
 }
 
+const opDescribeCertificates = "DescribeCertificates"
+
+// DescribeCertificatesRequest is a API request type for the DescribeCertificates API operation.
+type DescribeCertificatesRequest struct {
+	*aws.Request
+	Input *DescribeCertificatesInput
+	Copy  func(*DescribeCertificatesInput) DescribeCertificatesRequest
+}
+
+// Send marshals and sends the DescribeCertificates API request.
+func (r DescribeCertificatesRequest) Send(ctx context.Context) (*DescribeCertificatesOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*DescribeCertificatesOutput), nil
+}
+
+// DescribeCertificatesRequest returns a request value for making API operation for
+// NIFCLOUD RDB.
+//
+//    // Example sending a request using the DescribeCertificatesRequest method.
+//    req := client.DescribeCertificatesRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/DescribeCertificates
+func (c *Rdb) DescribeCertificatesRequest(input *DescribeCertificatesInput) DescribeCertificatesRequest {
+	op := &aws.Operation{
+		Name:       opDescribeCertificates,
+		HTTPMethod: "POST",
+		HTTPPath:   "/",
+	}
+
+	if input == nil {
+		input = &DescribeCertificatesInput{}
+	}
+
+	output := &DescribeCertificatesOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return DescribeCertificatesRequest{Request: req, Input: input, Copy: c.DescribeCertificatesRequest}
+}
+
 const opDescribeDBEngineVersions = "DescribeDBEngineVersions"
 
 // DescribeDBEngineVersionsRequest is a API request type for the DescribeDBEngineVersions API operation.
@@ -697,7 +761,8 @@ type DescribeDBEngineVersionsRequest struct {
 }
 
 // Send marshals and sends the DescribeDBEngineVersions API request.
-func (r DescribeDBEngineVersionsRequest) Send() (*DescribeDBEngineVersionsOutput, error) {
+func (r DescribeDBEngineVersionsRequest) Send(ctx context.Context) (*DescribeDBEngineVersionsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -711,7 +776,7 @@ func (r DescribeDBEngineVersionsRequest) Send() (*DescribeDBEngineVersionsOutput
 //
 //    // Example sending a request using the DescribeDBEngineVersionsRequest method.
 //    req := client.DescribeDBEngineVersionsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -745,7 +810,8 @@ type DescribeDBInstancesRequest struct {
 }
 
 // Send marshals and sends the DescribeDBInstances API request.
-func (r DescribeDBInstancesRequest) Send() (*DescribeDBInstancesOutput, error) {
+func (r DescribeDBInstancesRequest) Send(ctx context.Context) (*DescribeDBInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -759,7 +825,7 @@ func (r DescribeDBInstancesRequest) Send() (*DescribeDBInstancesOutput, error) {
 //
 //    // Example sending a request using the DescribeDBInstancesRequest method.
 //    req := client.DescribeDBInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -793,7 +859,8 @@ type DescribeDBLogFilesRequest struct {
 }
 
 // Send marshals and sends the DescribeDBLogFiles API request.
-func (r DescribeDBLogFilesRequest) Send() (*DescribeDBLogFilesOutput, error) {
+func (r DescribeDBLogFilesRequest) Send(ctx context.Context) (*DescribeDBLogFilesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -807,7 +874,7 @@ func (r DescribeDBLogFilesRequest) Send() (*DescribeDBLogFilesOutput, error) {
 //
 //    // Example sending a request using the DescribeDBLogFilesRequest method.
 //    req := client.DescribeDBLogFilesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -841,7 +908,8 @@ type DescribeDBParameterGroupsRequest struct {
 }
 
 // Send marshals and sends the DescribeDBParameterGroups API request.
-func (r DescribeDBParameterGroupsRequest) Send() (*DescribeDBParameterGroupsOutput, error) {
+func (r DescribeDBParameterGroupsRequest) Send(ctx context.Context) (*DescribeDBParameterGroupsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -855,7 +923,7 @@ func (r DescribeDBParameterGroupsRequest) Send() (*DescribeDBParameterGroupsOutp
 //
 //    // Example sending a request using the DescribeDBParameterGroupsRequest method.
 //    req := client.DescribeDBParameterGroupsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -889,7 +957,8 @@ type DescribeDBParametersRequest struct {
 }
 
 // Send marshals and sends the DescribeDBParameters API request.
-func (r DescribeDBParametersRequest) Send() (*DescribeDBParametersOutput, error) {
+func (r DescribeDBParametersRequest) Send(ctx context.Context) (*DescribeDBParametersOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -903,7 +972,7 @@ func (r DescribeDBParametersRequest) Send() (*DescribeDBParametersOutput, error)
 //
 //    // Example sending a request using the DescribeDBParametersRequest method.
 //    req := client.DescribeDBParametersRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -937,7 +1006,8 @@ type DescribeDBSecurityGroupsRequest struct {
 }
 
 // Send marshals and sends the DescribeDBSecurityGroups API request.
-func (r DescribeDBSecurityGroupsRequest) Send() (*DescribeDBSecurityGroupsOutput, error) {
+func (r DescribeDBSecurityGroupsRequest) Send(ctx context.Context) (*DescribeDBSecurityGroupsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -951,7 +1021,7 @@ func (r DescribeDBSecurityGroupsRequest) Send() (*DescribeDBSecurityGroupsOutput
 //
 //    // Example sending a request using the DescribeDBSecurityGroupsRequest method.
 //    req := client.DescribeDBSecurityGroupsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -985,7 +1055,8 @@ type DescribeDBSnapshotsRequest struct {
 }
 
 // Send marshals and sends the DescribeDBSnapshots API request.
-func (r DescribeDBSnapshotsRequest) Send() (*DescribeDBSnapshotsOutput, error) {
+func (r DescribeDBSnapshotsRequest) Send(ctx context.Context) (*DescribeDBSnapshotsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -999,7 +1070,7 @@ func (r DescribeDBSnapshotsRequest) Send() (*DescribeDBSnapshotsOutput, error) {
 //
 //    // Example sending a request using the DescribeDBSnapshotsRequest method.
 //    req := client.DescribeDBSnapshotsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1033,7 +1104,8 @@ type DescribeEngineDefaultParametersRequest struct {
 }
 
 // Send marshals and sends the DescribeEngineDefaultParameters API request.
-func (r DescribeEngineDefaultParametersRequest) Send() (*DescribeEngineDefaultParametersOutput, error) {
+func (r DescribeEngineDefaultParametersRequest) Send(ctx context.Context) (*DescribeEngineDefaultParametersOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1047,7 +1119,7 @@ func (r DescribeEngineDefaultParametersRequest) Send() (*DescribeEngineDefaultPa
 //
 //    // Example sending a request using the DescribeEngineDefaultParametersRequest method.
 //    req := client.DescribeEngineDefaultParametersRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1081,7 +1153,8 @@ type DescribeEventCategoriesRequest struct {
 }
 
 // Send marshals and sends the DescribeEventCategories API request.
-func (r DescribeEventCategoriesRequest) Send() (*DescribeEventCategoriesOutput, error) {
+func (r DescribeEventCategoriesRequest) Send(ctx context.Context) (*DescribeEventCategoriesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1095,7 +1168,7 @@ func (r DescribeEventCategoriesRequest) Send() (*DescribeEventCategoriesOutput, 
 //
 //    // Example sending a request using the DescribeEventCategoriesRequest method.
 //    req := client.DescribeEventCategoriesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1129,7 +1202,8 @@ type DescribeEventSubscriptionsRequest struct {
 }
 
 // Send marshals and sends the DescribeEventSubscriptions API request.
-func (r DescribeEventSubscriptionsRequest) Send() (*DescribeEventSubscriptionsOutput, error) {
+func (r DescribeEventSubscriptionsRequest) Send(ctx context.Context) (*DescribeEventSubscriptionsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1143,7 +1217,7 @@ func (r DescribeEventSubscriptionsRequest) Send() (*DescribeEventSubscriptionsOu
 //
 //    // Example sending a request using the DescribeEventSubscriptionsRequest method.
 //    req := client.DescribeEventSubscriptionsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1177,7 +1251,8 @@ type DescribeEventsRequest struct {
 }
 
 // Send marshals and sends the DescribeEvents API request.
-func (r DescribeEventsRequest) Send() (*DescribeEventsOutput, error) {
+func (r DescribeEventsRequest) Send(ctx context.Context) (*DescribeEventsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1191,7 +1266,7 @@ func (r DescribeEventsRequest) Send() (*DescribeEventsOutput, error) {
 //
 //    // Example sending a request using the DescribeEventsRequest method.
 //    req := client.DescribeEventsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1225,7 +1300,8 @@ type DescribeOrderableDBInstanceOptionsRequest struct {
 }
 
 // Send marshals and sends the DescribeOrderableDBInstanceOptions API request.
-func (r DescribeOrderableDBInstanceOptionsRequest) Send() (*DescribeOrderableDBInstanceOptionsOutput, error) {
+func (r DescribeOrderableDBInstanceOptionsRequest) Send(ctx context.Context) (*DescribeOrderableDBInstanceOptionsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1239,7 +1315,7 @@ func (r DescribeOrderableDBInstanceOptionsRequest) Send() (*DescribeOrderableDBI
 //
 //    // Example sending a request using the DescribeOrderableDBInstanceOptionsRequest method.
 //    req := client.DescribeOrderableDBInstanceOptionsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1273,7 +1349,8 @@ type DownloadDBLogFilePortionRequest struct {
 }
 
 // Send marshals and sends the DownloadDBLogFilePortion API request.
-func (r DownloadDBLogFilePortionRequest) Send() (*DownloadDBLogFilePortionOutput, error) {
+func (r DownloadDBLogFilePortionRequest) Send(ctx context.Context) (*DownloadDBLogFilePortionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1287,7 +1364,7 @@ func (r DownloadDBLogFilePortionRequest) Send() (*DownloadDBLogFilePortionOutput
 //
 //    // Example sending a request using the DownloadDBLogFilePortionRequest method.
 //    req := client.DownloadDBLogFilePortionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1321,7 +1398,8 @@ type ModifyDBInstanceRequest struct {
 }
 
 // Send marshals and sends the ModifyDBInstance API request.
-func (r ModifyDBInstanceRequest) Send() (*ModifyDBInstanceOutput, error) {
+func (r ModifyDBInstanceRequest) Send(ctx context.Context) (*ModifyDBInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1335,7 +1413,7 @@ func (r ModifyDBInstanceRequest) Send() (*ModifyDBInstanceOutput, error) {
 //
 //    // Example sending a request using the ModifyDBInstanceRequest method.
 //    req := client.ModifyDBInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1369,7 +1447,8 @@ type ModifyDBParameterGroupRequest struct {
 }
 
 // Send marshals and sends the ModifyDBParameterGroup API request.
-func (r ModifyDBParameterGroupRequest) Send() (*ModifyDBParameterGroupOutput, error) {
+func (r ModifyDBParameterGroupRequest) Send(ctx context.Context) (*ModifyDBParameterGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1383,7 +1462,7 @@ func (r ModifyDBParameterGroupRequest) Send() (*ModifyDBParameterGroupOutput, er
 //
 //    // Example sending a request using the ModifyDBParameterGroupRequest method.
 //    req := client.ModifyDBParameterGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1417,7 +1496,8 @@ type ModifyEventSubscriptionRequest struct {
 }
 
 // Send marshals and sends the ModifyEventSubscription API request.
-func (r ModifyEventSubscriptionRequest) Send() (*ModifyEventSubscriptionOutput, error) {
+func (r ModifyEventSubscriptionRequest) Send(ctx context.Context) (*ModifyEventSubscriptionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1431,7 +1511,7 @@ func (r ModifyEventSubscriptionRequest) Send() (*ModifyEventSubscriptionOutput, 
 //
 //    // Example sending a request using the ModifyEventSubscriptionRequest method.
 //    req := client.ModifyEventSubscriptionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1465,7 +1545,8 @@ type NiftyFailoverDBInstanceRequest struct {
 }
 
 // Send marshals and sends the NiftyFailoverDBInstance API request.
-func (r NiftyFailoverDBInstanceRequest) Send() (*NiftyFailoverDBInstanceOutput, error) {
+func (r NiftyFailoverDBInstanceRequest) Send(ctx context.Context) (*NiftyFailoverDBInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1479,7 +1560,7 @@ func (r NiftyFailoverDBInstanceRequest) Send() (*NiftyFailoverDBInstanceOutput, 
 //
 //    // Example sending a request using the NiftyFailoverDBInstanceRequest method.
 //    req := client.NiftyFailoverDBInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1513,7 +1594,8 @@ type NiftyGetMetricStatisticsRequest struct {
 }
 
 // Send marshals and sends the NiftyGetMetricStatistics API request.
-func (r NiftyGetMetricStatisticsRequest) Send() (*NiftyGetMetricStatisticsOutput, error) {
+func (r NiftyGetMetricStatisticsRequest) Send(ctx context.Context) (*NiftyGetMetricStatisticsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1527,7 +1609,7 @@ func (r NiftyGetMetricStatisticsRequest) Send() (*NiftyGetMetricStatisticsOutput
 //
 //    // Example sending a request using the NiftyGetMetricStatisticsRequest method.
 //    req := client.NiftyGetMetricStatisticsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1561,7 +1643,8 @@ type RebootDBInstanceRequest struct {
 }
 
 // Send marshals and sends the RebootDBInstance API request.
-func (r RebootDBInstanceRequest) Send() (*RebootDBInstanceOutput, error) {
+func (r RebootDBInstanceRequest) Send(ctx context.Context) (*RebootDBInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1575,7 +1658,7 @@ func (r RebootDBInstanceRequest) Send() (*RebootDBInstanceOutput, error) {
 //
 //    // Example sending a request using the RebootDBInstanceRequest method.
 //    req := client.RebootDBInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1609,7 +1692,8 @@ type RemoveSourceIdentifierFromSubscriptionRequest struct {
 }
 
 // Send marshals and sends the RemoveSourceIdentifierFromSubscription API request.
-func (r RemoveSourceIdentifierFromSubscriptionRequest) Send() (*RemoveSourceIdentifierFromSubscriptionOutput, error) {
+func (r RemoveSourceIdentifierFromSubscriptionRequest) Send(ctx context.Context) (*RemoveSourceIdentifierFromSubscriptionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1623,7 +1707,7 @@ func (r RemoveSourceIdentifierFromSubscriptionRequest) Send() (*RemoveSourceIden
 //
 //    // Example sending a request using the RemoveSourceIdentifierFromSubscriptionRequest method.
 //    req := client.RemoveSourceIdentifierFromSubscriptionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1657,7 +1741,8 @@ type ResetDBParameterGroupRequest struct {
 }
 
 // Send marshals and sends the ResetDBParameterGroup API request.
-func (r ResetDBParameterGroupRequest) Send() (*ResetDBParameterGroupOutput, error) {
+func (r ResetDBParameterGroupRequest) Send(ctx context.Context) (*ResetDBParameterGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1671,7 +1756,7 @@ func (r ResetDBParameterGroupRequest) Send() (*ResetDBParameterGroupOutput, erro
 //
 //    // Example sending a request using the ResetDBParameterGroupRequest method.
 //    req := client.ResetDBParameterGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1695,6 +1780,55 @@ func (c *Rdb) ResetDBParameterGroupRequest(input *ResetDBParameterGroupInput) Re
 	return ResetDBParameterGroupRequest{Request: req, Input: input, Copy: c.ResetDBParameterGroupRequest}
 }
 
+const opResetExternalMaster = "ResetExternalMaster"
+
+// ResetExternalMasterRequest is a API request type for the ResetExternalMaster API operation.
+type ResetExternalMasterRequest struct {
+	*aws.Request
+	Input *ResetExternalMasterInput
+	Copy  func(*ResetExternalMasterInput) ResetExternalMasterRequest
+}
+
+// Send marshals and sends the ResetExternalMaster API request.
+func (r ResetExternalMasterRequest) Send(ctx context.Context) (*ResetExternalMasterOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*ResetExternalMasterOutput), nil
+}
+
+// ResetExternalMasterRequest returns a request value for making API operation for
+// NIFCLOUD RDB.
+//
+//    // Example sending a request using the ResetExternalMasterRequest method.
+//    req := client.ResetExternalMasterRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/ResetExternalMaster
+func (c *Rdb) ResetExternalMasterRequest(input *ResetExternalMasterInput) ResetExternalMasterRequest {
+	op := &aws.Operation{
+		Name:       opResetExternalMaster,
+		HTTPMethod: "POST",
+		HTTPPath:   "/",
+	}
+
+	if input == nil {
+		input = &ResetExternalMasterInput{}
+	}
+
+	output := &ResetExternalMasterOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return ResetExternalMasterRequest{Request: req, Input: input, Copy: c.ResetExternalMasterRequest}
+}
+
 const opRestoreDBInstanceFromDBSnapshot = "RestoreDBInstanceFromDBSnapshot"
 
 // RestoreDBInstanceFromDBSnapshotRequest is a API request type for the RestoreDBInstanceFromDBSnapshot API operation.
@@ -1705,7 +1839,8 @@ type RestoreDBInstanceFromDBSnapshotRequest struct {
 }
 
 // Send marshals and sends the RestoreDBInstanceFromDBSnapshot API request.
-func (r RestoreDBInstanceFromDBSnapshotRequest) Send() (*RestoreDBInstanceFromDBSnapshotOutput, error) {
+func (r RestoreDBInstanceFromDBSnapshotRequest) Send(ctx context.Context) (*RestoreDBInstanceFromDBSnapshotOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1719,7 +1854,7 @@ func (r RestoreDBInstanceFromDBSnapshotRequest) Send() (*RestoreDBInstanceFromDB
 //
 //    // Example sending a request using the RestoreDBInstanceFromDBSnapshotRequest method.
 //    req := client.RestoreDBInstanceFromDBSnapshotRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1753,7 +1888,8 @@ type RestoreDBInstanceToPointInTimeRequest struct {
 }
 
 // Send marshals and sends the RestoreDBInstanceToPointInTime API request.
-func (r RestoreDBInstanceToPointInTimeRequest) Send() (*RestoreDBInstanceToPointInTimeOutput, error) {
+func (r RestoreDBInstanceToPointInTimeRequest) Send(ctx context.Context) (*RestoreDBInstanceToPointInTimeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1767,7 +1903,7 @@ func (r RestoreDBInstanceToPointInTimeRequest) Send() (*RestoreDBInstanceToPoint
 //
 //    // Example sending a request using the RestoreDBInstanceToPointInTimeRequest method.
 //    req := client.RestoreDBInstanceToPointInTimeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1801,7 +1937,8 @@ type RevokeDBSecurityGroupIngressRequest struct {
 }
 
 // Send marshals and sends the RevokeDBSecurityGroupIngress API request.
-func (r RevokeDBSecurityGroupIngressRequest) Send() (*RevokeDBSecurityGroupIngressOutput, error) {
+func (r RevokeDBSecurityGroupIngressRequest) Send(ctx context.Context) (*RevokeDBSecurityGroupIngressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1815,7 +1952,7 @@ func (r RevokeDBSecurityGroupIngressRequest) Send() (*RevokeDBSecurityGroupIngre
 //
 //    // Example sending a request using the RevokeDBSecurityGroupIngressRequest method.
 //    req := client.RevokeDBSecurityGroupIngressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1837,6 +1974,153 @@ func (c *Rdb) RevokeDBSecurityGroupIngressRequest(input *RevokeDBSecurityGroupIn
 	output.responseMetadata = aws.Response{Request: req}
 
 	return RevokeDBSecurityGroupIngressRequest{Request: req, Input: input, Copy: c.RevokeDBSecurityGroupIngressRequest}
+}
+
+const opSetExternalMaster = "SetExternalMaster"
+
+// SetExternalMasterRequest is a API request type for the SetExternalMaster API operation.
+type SetExternalMasterRequest struct {
+	*aws.Request
+	Input *SetExternalMasterInput
+	Copy  func(*SetExternalMasterInput) SetExternalMasterRequest
+}
+
+// Send marshals and sends the SetExternalMaster API request.
+func (r SetExternalMasterRequest) Send(ctx context.Context) (*SetExternalMasterOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*SetExternalMasterOutput), nil
+}
+
+// SetExternalMasterRequest returns a request value for making API operation for
+// NIFCLOUD RDB.
+//
+//    // Example sending a request using the SetExternalMasterRequest method.
+//    req := client.SetExternalMasterRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/SetExternalMaster
+func (c *Rdb) SetExternalMasterRequest(input *SetExternalMasterInput) SetExternalMasterRequest {
+	op := &aws.Operation{
+		Name:       opSetExternalMaster,
+		HTTPMethod: "POST",
+		HTTPPath:   "/",
+	}
+
+	if input == nil {
+		input = &SetExternalMasterInput{}
+	}
+
+	output := &SetExternalMasterOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return SetExternalMasterRequest{Request: req, Input: input, Copy: c.SetExternalMasterRequest}
+}
+
+const opStartReplication = "StartReplication"
+
+// StartReplicationRequest is a API request type for the StartReplication API operation.
+type StartReplicationRequest struct {
+	*aws.Request
+	Input *StartReplicationInput
+	Copy  func(*StartReplicationInput) StartReplicationRequest
+}
+
+// Send marshals and sends the StartReplication API request.
+func (r StartReplicationRequest) Send(ctx context.Context) (*StartReplicationOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*StartReplicationOutput), nil
+}
+
+// StartReplicationRequest returns a request value for making API operation for
+// NIFCLOUD RDB.
+//
+//    // Example sending a request using the StartReplicationRequest method.
+//    req := client.StartReplicationRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/StartReplication
+func (c *Rdb) StartReplicationRequest(input *StartReplicationInput) StartReplicationRequest {
+	op := &aws.Operation{
+		Name:       opStartReplication,
+		HTTPMethod: "POST",
+		HTTPPath:   "/",
+	}
+
+	if input == nil {
+		input = &StartReplicationInput{}
+	}
+
+	output := &StartReplicationOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return StartReplicationRequest{Request: req, Input: input, Copy: c.StartReplicationRequest}
+}
+
+const opStopReplication = "StopReplication"
+
+// StopReplicationRequest is a API request type for the StopReplication API operation.
+type StopReplicationRequest struct {
+	*aws.Request
+	Input *StopReplicationInput
+	Copy  func(*StopReplicationInput) StopReplicationRequest
+}
+
+// Send marshals and sends the StopReplication API request.
+func (r StopReplicationRequest) Send(ctx context.Context) (*StopReplicationOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*StopReplicationOutput), nil
+}
+
+// StopReplicationRequest returns a request value for making API operation for
+// NIFCLOUD RDB.
+//
+//    // Example sending a request using the StopReplicationRequest method.
+//    req := client.StopReplicationRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/StopReplication
+func (c *Rdb) StopReplicationRequest(input *StopReplicationInput) StopReplicationRequest {
+	op := &aws.Operation{
+		Name:       opStopReplication,
+		HTTPMethod: "POST",
+		HTTPPath:   "/",
+	}
+
+	if input == nil {
+		input = &StopReplicationInput{}
+	}
+
+	output := &StopReplicationOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return StopReplicationRequest{Request: req, Input: input, Copy: c.StopReplicationRequest}
 }
 
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/AddSourceIdentifierToSubscriptionRequest
@@ -1945,6 +2229,31 @@ func (s AvailabilityZone) String() string {
 
 // GoString returns the string representation
 func (s AvailabilityZone) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/Certificate
+type Certificate struct {
+	_ struct{} `type:"structure"`
+
+	CertificateIdentifier *string `type:"string"`
+
+	CertificateType *string `type:"string"`
+
+	Thumbprint *string `type:"string"`
+
+	ValidFrom *string `type:"string"`
+
+	ValidTill *string `type:"string"`
+}
+
+// String returns the string representation
+func (s Certificate) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s Certificate) GoString() string {
 	return s.String()
 }
 
@@ -2354,6 +2663,10 @@ type DBInstance struct {
 
 	BackupRetentionPeriod *string `type:"string"`
 
+	BinlogRetentionPeriod *string `type:"string"`
+
+	CACertificateIdentifier *string `type:"string"`
+
 	DBInstanceClass *string `type:"string"`
 
 	DBInstanceIdentifier *string `type:"string"`
@@ -2371,6 +2684,8 @@ type DBInstance struct {
 	Engine *string `type:"string"`
 
 	EngineVersion *string `type:"string"`
+
+	ExternalReplicationInfo *ExternalReplicationInfo `type:"structure"`
 
 	InstanceCreateTime *string `type:"string"`
 
@@ -2739,6 +3054,53 @@ func (s DeleteEventSubscriptionOutput) GoString() string {
 
 // SDKResponseMetdata return sthe response metadata for the API.
 func (s DeleteEventSubscriptionOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/DescribeCertificatesRequest
+type DescribeCertificatesInput struct {
+	_ struct{} `type:"structure"`
+
+	CertificateIdentifier *string `locationName:"CertificateIdentifier" type:"string"`
+
+	Marker *string `locationName:"Marker" type:"string"`
+
+	MaxRecords *int64 `locationName:"MaxRecords" type:"integer"`
+}
+
+// String returns the string representation
+func (s DescribeCertificatesInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s DescribeCertificatesInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/DescribeCertificatesResult
+type DescribeCertificatesOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	Certificates []Certificate `locationNameList:"Certificate" type:"list"`
+
+	Marker *string `type:"string"`
+}
+
+// String returns the string representation
+func (s DescribeCertificatesOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s DescribeCertificatesOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s DescribeCertificatesOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
@@ -3544,6 +3906,29 @@ func (s EventSubscription) GoString() string {
 	return s.String()
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/ExternalReplicationInfo
+type ExternalReplicationInfo struct {
+	_ struct{} `type:"structure"`
+
+	ExternalMasterAddress *string `type:"string"`
+
+	ExternalReplicationMessage *string `type:"string"`
+
+	ExternalReplicationStatus *string `type:"string"`
+
+	ReplicationAddresses []string `type:"list"`
+}
+
+// String returns the string representation
+func (s ExternalReplicationInfo) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ExternalReplicationInfo) GoString() string {
+	return s.String()
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/IPRange
 type IPRange struct {
 	_ struct{} `type:"structure"`
@@ -3595,6 +3980,12 @@ type ModifyDBInstanceInput struct {
 	ApplyImmediately *bool `locationName:"ApplyImmediately" type:"boolean"`
 
 	BackupRetentionPeriod *int64 `locationName:"BackupRetentionPeriod" type:"integer"`
+
+	BinlogRetentionPeriod *int64 `locationName:"BinlogRetentionPeriod" type:"integer"`
+
+	CACertificateIdentifier *string `locationName:"CACertificateIdentifier" type:"string"`
+
+	CustomBinlogRetentionPeriod *int64 `locationName:"CustomBinlogRetentionPeriod" type:"integer"`
 
 	DBInstanceClass *string `locationName:"DBInstanceClass" type:"string"`
 
@@ -4149,6 +4540,47 @@ func (s ResetDBParameterGroupOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/ResetExternalMasterRequest
+type ResetExternalMasterInput struct {
+	_ struct{} `type:"structure"`
+
+	DBInstanceIdentifier *string `locationName:"DBInstanceIdentifier" type:"string"`
+}
+
+// String returns the string representation
+func (s ResetExternalMasterInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ResetExternalMasterInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/ResetExternalMasterResult
+type ResetExternalMasterOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	DBInstance *DBInstance `type:"structure"`
+}
+
+// String returns the string representation
+func (s ResetExternalMasterOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ResetExternalMasterOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s ResetExternalMasterOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/RestoreDBInstanceFromDBSnapshotRequest
 type RestoreDBInstanceFromDBSnapshotInput struct {
 	_ struct{} `type:"structure"`
@@ -4353,6 +4785,141 @@ func (s RevokeDBSecurityGroupIngressOutput) GoString() string {
 
 // SDKResponseMetdata return sthe response metadata for the API.
 func (s RevokeDBSecurityGroupIngressOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/SetExternalMasterRequest
+type SetExternalMasterInput struct {
+	_ struct{} `type:"structure"`
+
+	BinlogFileName *string `locationName:"BinlogFileName" type:"string"`
+
+	BinlogPosition *int64 `locationName:"BinlogPosition" type:"integer"`
+
+	DBInstanceIdentifier *string `locationName:"DBInstanceIdentifier" type:"string"`
+
+	MasterHost *string `locationName:"MasterHost" type:"string"`
+
+	MasterPort *int64 `locationName:"MasterPort" type:"integer"`
+
+	ReplicationUserName *string `locationName:"ReplicationUserName" type:"string"`
+
+	ReplicationUserPassword *string `locationName:"ReplicationUserPassword" type:"string"`
+}
+
+// String returns the string representation
+func (s SetExternalMasterInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s SetExternalMasterInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/SetExternalMasterResult
+type SetExternalMasterOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	DBInstance *DBInstance `type:"structure"`
+}
+
+// String returns the string representation
+func (s SetExternalMasterOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s SetExternalMasterOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s SetExternalMasterOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/StartReplicationRequest
+type StartReplicationInput struct {
+	_ struct{} `type:"structure"`
+
+	DBInstanceIdentifier *string `locationName:"DBInstanceIdentifier" type:"string"`
+}
+
+// String returns the string representation
+func (s StartReplicationInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s StartReplicationInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/StartReplicationResult
+type StartReplicationOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	DBInstance *DBInstance `type:"structure"`
+}
+
+// String returns the string representation
+func (s StartReplicationOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s StartReplicationOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s StartReplicationOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/StopReplicationRequest
+type StopReplicationInput struct {
+	_ struct{} `type:"structure"`
+
+	DBInstanceIdentifier *string `locationName:"DBInstanceIdentifier" type:"string"`
+}
+
+// String returns the string representation
+func (s StopReplicationInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s StopReplicationInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/rdb-2013-05-15N2013-12-16/StopReplicationResult
+type StopReplicationOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	DBInstance *DBInstance `type:"structure"`
+}
+
+// String returns the string representation
+func (s StopReplicationOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s StopReplicationOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s StopReplicationOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 

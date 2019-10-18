@@ -90,6 +90,8 @@ type RdbAPI interface {
 
 	DeleteEventSubscriptionRequest(*rdb.DeleteEventSubscriptionInput) rdb.DeleteEventSubscriptionRequest
 
+	DescribeCertificatesRequest(*rdb.DescribeCertificatesInput) rdb.DescribeCertificatesRequest
+
 	DescribeDBEngineVersionsRequest(*rdb.DescribeDBEngineVersionsInput) rdb.DescribeDBEngineVersionsRequest
 
 	DescribeDBInstancesRequest(*rdb.DescribeDBInstancesInput) rdb.DescribeDBInstancesRequest
@@ -132,11 +134,19 @@ type RdbAPI interface {
 
 	ResetDBParameterGroupRequest(*rdb.ResetDBParameterGroupInput) rdb.ResetDBParameterGroupRequest
 
+	ResetExternalMasterRequest(*rdb.ResetExternalMasterInput) rdb.ResetExternalMasterRequest
+
 	RestoreDBInstanceFromDBSnapshotRequest(*rdb.RestoreDBInstanceFromDBSnapshotInput) rdb.RestoreDBInstanceFromDBSnapshotRequest
 
 	RestoreDBInstanceToPointInTimeRequest(*rdb.RestoreDBInstanceToPointInTimeInput) rdb.RestoreDBInstanceToPointInTimeRequest
 
 	RevokeDBSecurityGroupIngressRequest(*rdb.RevokeDBSecurityGroupIngressInput) rdb.RevokeDBSecurityGroupIngressRequest
+
+	SetExternalMasterRequest(*rdb.SetExternalMasterInput) rdb.SetExternalMasterRequest
+
+	StartReplicationRequest(*rdb.StartReplicationInput) rdb.StartReplicationRequest
+
+	StopReplicationRequest(*rdb.StopReplicationInput) rdb.StopReplicationRequest
 }
 
 var _ RdbAPI = (*rdb.Rdb)(nil)
