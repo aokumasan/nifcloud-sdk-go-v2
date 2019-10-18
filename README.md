@@ -7,7 +7,7 @@ nifcloud-sdk-go-v2 is the Developer Preview for the v2 of the NIFCLOUD SDK for t
 ## Installing
 
 ```sh
-go get github.com/alice02/nifcloud-sdk-go-v2
+go get -u github.com/alice02/nifcloud-sdk-go-v2
 ```
 
 ## Hello NIFCLOUD
@@ -36,7 +36,7 @@ func main() {
         req := svc.DescribeInstancesRequest(nil)
 
         // Send the request
-        resp, err := req.Send()
+        resp, err := req.Send(context.TODO())
         if err != nil {
                 panic(err)
         }
