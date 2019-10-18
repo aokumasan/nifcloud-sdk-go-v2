@@ -234,7 +234,7 @@ func writeInterfaceFile(g *generateInfo) error {
 		codeLayout,
 		fmt.Sprintf(pkgDoc, g.API.InterfacePackageName(), g.API.Metadata.ServiceFullName),
 		g.API.InterfacePackageName(),
-		g.API.InterfaceGoCode(),
+		fixInterfaceFile(g.API.InterfaceGoCode()),
 	)
 }
 
@@ -316,6 +316,15 @@ func fixAPIFile(code string) string {
 	maps := []map[string]string{
 		{"github.com/aws/aws-sdk-go-v2/internal/awsutil": "github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"},
 		{"awsutil": "nifcloudutil"},
+	}
+
+	return replace(code, maps)
+}
+
+func fixInterfaceFile(code string) string {
+	maps := []map[string]string{
+		{"github.com/aws/aws-sdk-go-v2/aws": "github.com/alice02/nifcloud-sdk-go-v2/nifcloud"},
+		{"github.com/aws/aws-sdk-go-v2/service": "github.com/alice02/nifcloud-sdk-go-v2/service"},
 	}
 
 	return replace(code, maps)
