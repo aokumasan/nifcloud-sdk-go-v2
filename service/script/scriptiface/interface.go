@@ -9,7 +9,7 @@
 package scriptiface
 
 import (
-	"github.com/aws/aws-sdk-go-v2/service/script"
+	"github.com/alice02/nifcloud-sdk-go-v2/service/script"
 )
 
 // ClientAPI provides an interface to enable mocking the
