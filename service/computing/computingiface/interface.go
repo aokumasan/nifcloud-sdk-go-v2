@@ -9,21 +9,23 @@
 package computingiface
 
 import (
+	"context"
+
+	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
 	"github.com/alice02/nifcloud-sdk-go-v2/service/computing"
 )
 
-// ComputingAPI provides an interface to enable mocking the
-// computing.Computing service client's API operation,
-// paginators, and waiters. This make unit testing your code that calls out
-// to the SDK's service client's calls easier.
+// ClientAPI provides an interface to enable mocking the
+// computing.Client methods. This make unit testing your code that
+// calls out to the SDK's service client's calls easier.
 //
 // The best way to use this interface is so the SDK's service client's calls
 // can be stubbed out for unit testing your code with the SDK without needing
 // to inject custom request handlers into the SDK's request pipeline.
 //
 //    // myFunc uses an SDK service client to make a request to
-//    // NIFCLOUD Computing.
-//    func myFunc(svc computingiface.ComputingAPI) bool {
+//    // computing.
+//    func myFunc(svc computingiface.ClientAPI) bool {
 //        // Make svc.AllocateAddress request
 //    }
 //
@@ -41,16 +43,16 @@ import (
 // In your _test.go file:
 //
 //    // Define a mock struct to be used in your unit tests of myFunc.
-//    type mockComputingClient struct {
-//        computingiface.ComputingAPI
+//    type mockClientClient struct {
+//        computingiface.ClientPI
 //    }
-//    func (m *mockComputingClient) AllocateAddress(input *computing.AllocateAddressInput) (*computing.AllocateAddressOutput, error) {
+//    func (m *mockClientClient) AllocateAddress(input *computing.AllocateAddressInput) (*computing.AllocateAddressOutput, error) {
 //        // mock response/functionality
 //    }
 //
 //    func TestMyFunc(t *testing.T) {
 //        // Setup Test
-//        mockSvc := &mockComputingClient{}
+//        mockSvc := &mockClientClient{}
 //
 //        myfunc(mockSvc)
 //
@@ -61,7 +63,7 @@ import (
 // when the service model is updated and adds new API operations, paginators,
 // and waiters. Its suggested to use the pattern above for testing, or using
 // tooling to generate mocks to satisfy the interfaces.
-type ComputingAPI interface {
+type ClientAPI interface {
 	AllocateAddressRequest(*computing.AllocateAddressInput) computing.AllocateAddressRequest
 
 	AssociateAddressRequest(*computing.AssociateAddressInput) computing.AssociateAddressRequest
@@ -481,6 +483,14 @@ type ComputingAPI interface {
 	UpdateSecurityGroupOptionRequest(*computing.UpdateSecurityGroupOptionInput) computing.UpdateSecurityGroupOptionRequest
 
 	UploadSslCertificateRequest(*computing.UploadSslCertificateInput) computing.UploadSslCertificateRequest
+
+	WaitUntilInstanceDeleted(context.Context, *computing.DescribeInstancesInput, ...aws.WaiterOption) error
+
+	WaitUntilInstanceExists(context.Context, *computing.DescribeInstancesInput, ...aws.WaiterOption) error
+
+	WaitUntilInstanceRunning(context.Context, *computing.DescribeInstancesInput, ...aws.WaiterOption) error
+
+	WaitUntilInstanceStopped(context.Context, *computing.DescribeInstancesInput, ...aws.WaiterOption) error
 }
 
-var _ ComputingAPI = (*computing.Computing)(nil)
+var _ ClientAPI = (*computing.Client)(nil)

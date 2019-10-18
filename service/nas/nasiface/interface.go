@@ -12,18 +12,17 @@ import (
 	"github.com/alice02/nifcloud-sdk-go-v2/service/nas"
 )
 
-// NasAPI provides an interface to enable mocking the
-// nas.Nas service client's API operation,
-// paginators, and waiters. This make unit testing your code that calls out
-// to the SDK's service client's calls easier.
+// ClientAPI provides an interface to enable mocking the
+// nas.Client methods. This make unit testing your code that
+// calls out to the SDK's service client's calls easier.
 //
 // The best way to use this interface is so the SDK's service client's calls
 // can be stubbed out for unit testing your code with the SDK without needing
 // to inject custom request handlers into the SDK's request pipeline.
 //
 //    // myFunc uses an SDK service client to make a request to
-//    // NIFCLOUD NAS.
-//    func myFunc(svc nasiface.NasAPI) bool {
+//    // nas.
+//    func myFunc(svc nasiface.ClientAPI) bool {
 //        // Make svc.AuthorizeNASSecurityGroupIngress request
 //    }
 //
@@ -41,16 +40,16 @@ import (
 // In your _test.go file:
 //
 //    // Define a mock struct to be used in your unit tests of myFunc.
-//    type mockNasClient struct {
-//        nasiface.NasAPI
+//    type mockClientClient struct {
+//        nasiface.ClientPI
 //    }
-//    func (m *mockNasClient) AuthorizeNASSecurityGroupIngress(input *nas.AuthorizeNASSecurityGroupIngressInput) (*nas.AuthorizeNASSecurityGroupIngressOutput, error) {
+//    func (m *mockClientClient) AuthorizeNASSecurityGroupIngress(input *nas.AuthorizeNASSecurityGroupIngressInput) (*nas.AuthorizeNASSecurityGroupIngressOutput, error) {
 //        // mock response/functionality
 //    }
 //
 //    func TestMyFunc(t *testing.T) {
 //        // Setup Test
-//        mockSvc := &mockNasClient{}
+//        mockSvc := &mockClientClient{}
 //
 //        myfunc(mockSvc)
 //
@@ -61,7 +60,7 @@ import (
 // when the service model is updated and adds new API operations, paginators,
 // and waiters. Its suggested to use the pattern above for testing, or using
 // tooling to generate mocks to satisfy the interfaces.
-type NasAPI interface {
+type ClientAPI interface {
 	AuthorizeNASSecurityGroupIngressRequest(*nas.AuthorizeNASSecurityGroupIngressInput) nas.AuthorizeNASSecurityGroupIngressRequest
 
 	ClearNASSessionRequest(*nas.ClearNASSessionInput) nas.ClearNASSessionRequest
@@ -87,4 +86,4 @@ type NasAPI interface {
 	RevokeNASSecurityGroupIngressRequest(*nas.RevokeNASSecurityGroupIngressInput) nas.RevokeNASSecurityGroupIngressRequest
 }
 
-var _ NasAPI = (*nas.Nas)(nil)
+var _ ClientAPI = (*nas.Client)(nil)

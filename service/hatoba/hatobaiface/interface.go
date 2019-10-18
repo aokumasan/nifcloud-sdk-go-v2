@@ -9,21 +9,23 @@
 package hatobaiface
 
 import (
+	"context"
+
+	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
 	"github.com/alice02/nifcloud-sdk-go-v2/service/hatoba"
 )
 
-// HatobaAPI provides an interface to enable mocking the
-// hatoba.Hatoba service client's API operation,
-// paginators, and waiters. This make unit testing your code that calls out
-// to the SDK's service client's calls easier.
+// ClientAPI provides an interface to enable mocking the
+// hatoba.Client methods. This make unit testing your code that
+// calls out to the SDK's service client's calls easier.
 //
 // The best way to use this interface is so the SDK's service client's calls
 // can be stubbed out for unit testing your code with the SDK without needing
 // to inject custom request handlers into the SDK's request pipeline.
 //
 //    // myFunc uses an SDK service client to make a request to
-//    // NIFCLOUD Hatoba beta.
-//    func myFunc(svc hatobaiface.HatobaAPI) bool {
+//    // hatoba.
+//    func myFunc(svc hatobaiface.ClientAPI) bool {
 //        // Make svc.AuthorizeFirewallGroup request
 //    }
 //
@@ -41,16 +43,16 @@ import (
 // In your _test.go file:
 //
 //    // Define a mock struct to be used in your unit tests of myFunc.
-//    type mockHatobaClient struct {
-//        hatobaiface.HatobaAPI
+//    type mockClientClient struct {
+//        hatobaiface.ClientPI
 //    }
-//    func (m *mockHatobaClient) AuthorizeFirewallGroup(input *hatoba.AuthorizeFirewallGroupInput) (*hatoba.AuthorizeFirewallGroupOutput, error) {
+//    func (m *mockClientClient) AuthorizeFirewallGroup(input *hatoba.AuthorizeFirewallGroupInput) (*hatoba.AuthorizeFirewallGroupOutput, error) {
 //        // mock response/functionality
 //    }
 //
 //    func TestMyFunc(t *testing.T) {
 //        // Setup Test
-//        mockSvc := &mockHatobaClient{}
+//        mockSvc := &mockClientClient{}
 //
 //        myfunc(mockSvc)
 //
@@ -61,7 +63,7 @@ import (
 // when the service model is updated and adds new API operations, paginators,
 // and waiters. Its suggested to use the pattern above for testing, or using
 // tooling to generate mocks to satisfy the interfaces.
-type HatobaAPI interface {
+type ClientAPI interface {
 	AuthorizeFirewallGroupRequest(*hatoba.AuthorizeFirewallGroupInput) hatoba.AuthorizeFirewallGroupRequest
 
 	CreateClusterRequest(*hatoba.CreateClusterInput) hatoba.CreateClusterRequest
@@ -119,6 +121,12 @@ type HatobaAPI interface {
 	UpdateFirewallGroupRequest(*hatoba.UpdateFirewallGroupInput) hatoba.UpdateFirewallGroupRequest
 
 	UpdateSnapshotRequest(*hatoba.UpdateSnapshotInput) hatoba.UpdateSnapshotRequest
+
+	WaitUntilClusterDeleted(context.Context, *hatoba.GetClusterInput, ...aws.WaiterOption) error
+
+	WaitUntilClusterRunning(context.Context, *hatoba.GetClusterInput, ...aws.WaiterOption) error
+
+	WaitUntilFirewallRuleAuthorized(context.Context, *hatoba.GetFirewallGroupInput, ...aws.WaiterOption) error
 }
 
-var _ HatobaAPI = (*hatoba.Hatoba)(nil)
+var _ ClientAPI = (*hatoba.Client)(nil)

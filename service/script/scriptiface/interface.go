@@ -12,18 +12,17 @@ import (
 	"github.com/alice02/nifcloud-sdk-go-v2/service/script"
 )
 
-// ScriptAPI provides an interface to enable mocking the
-// script.Script service client's API operation,
-// paginators, and waiters. This make unit testing your code that calls out
-// to the SDK's service client's calls easier.
+// ClientAPI provides an interface to enable mocking the
+// script.Client methods. This make unit testing your code that
+// calls out to the SDK's service client's calls easier.
 //
 // The best way to use this interface is so the SDK's service client's calls
 // can be stubbed out for unit testing your code with the SDK without needing
 // to inject custom request handlers into the SDK's request pipeline.
 //
 //    // myFunc uses an SDK service client to make a request to
-//    // NIFCLOUD Script.
-//    func myFunc(svc scriptiface.ScriptAPI) bool {
+//    // script.
+//    func myFunc(svc scriptiface.ClientAPI) bool {
 //        // Make svc.ExecuteScript request
 //    }
 //
@@ -41,16 +40,16 @@ import (
 // In your _test.go file:
 //
 //    // Define a mock struct to be used in your unit tests of myFunc.
-//    type mockScriptClient struct {
-//        scriptiface.ScriptAPI
+//    type mockClientClient struct {
+//        scriptiface.ClientPI
 //    }
-//    func (m *mockScriptClient) ExecuteScript(input *script.ExecuteScriptInput) (*script.ExecuteScriptOutput, error) {
+//    func (m *mockClientClient) ExecuteScript(input *script.ExecuteScriptInput) (*script.ExecuteScriptOutput, error) {
 //        // mock response/functionality
 //    }
 //
 //    func TestMyFunc(t *testing.T) {
 //        // Setup Test
-//        mockSvc := &mockScriptClient{}
+//        mockSvc := &mockClientClient{}
 //
 //        myfunc(mockSvc)
 //
@@ -61,8 +60,8 @@ import (
 // when the service model is updated and adds new API operations, paginators,
 // and waiters. Its suggested to use the pattern above for testing, or using
 // tooling to generate mocks to satisfy the interfaces.
-type ScriptAPI interface {
+type ClientAPI interface {
 	ExecuteScriptRequest(*script.ExecuteScriptInput) script.ExecuteScriptRequest
 }
 
-var _ ScriptAPI = (*script.Script)(nil)
+var _ ClientAPI = (*script.Client)(nil)
