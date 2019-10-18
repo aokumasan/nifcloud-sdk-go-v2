@@ -3,6 +3,7 @@
 package nas
 
 import (
+	"context"
 	"time"
 
 	"github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"
@@ -21,7 +22,8 @@ type AuthorizeNASSecurityGroupIngressRequest struct {
 }
 
 // Send marshals and sends the AuthorizeNASSecurityGroupIngress API request.
-func (r AuthorizeNASSecurityGroupIngressRequest) Send() (*AuthorizeNASSecurityGroupIngressOutput, error) {
+func (r AuthorizeNASSecurityGroupIngressRequest) Send(ctx context.Context) (*AuthorizeNASSecurityGroupIngressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -35,7 +37,7 @@ func (r AuthorizeNASSecurityGroupIngressRequest) Send() (*AuthorizeNASSecurityGr
 //
 //    // Example sending a request using the AuthorizeNASSecurityGroupIngressRequest method.
 //    req := client.AuthorizeNASSecurityGroupIngressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -59,6 +61,55 @@ func (c *Nas) AuthorizeNASSecurityGroupIngressRequest(input *AuthorizeNASSecurit
 	return AuthorizeNASSecurityGroupIngressRequest{Request: req, Input: input, Copy: c.AuthorizeNASSecurityGroupIngressRequest}
 }
 
+const opClearNASSession = "ClearNASSession"
+
+// ClearNASSessionRequest is a API request type for the ClearNASSession API operation.
+type ClearNASSessionRequest struct {
+	*aws.Request
+	Input *ClearNASSessionInput
+	Copy  func(*ClearNASSessionInput) ClearNASSessionRequest
+}
+
+// Send marshals and sends the ClearNASSession API request.
+func (r ClearNASSessionRequest) Send(ctx context.Context) (*ClearNASSessionOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*ClearNASSessionOutput), nil
+}
+
+// ClearNASSessionRequest returns a request value for making API operation for
+// NIFCLOUD NAS.
+//
+//    // Example sending a request using the ClearNASSessionRequest method.
+//    req := client.ClearNASSessionRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/nas-N2016-02-24/ClearNASSession
+func (c *Nas) ClearNASSessionRequest(input *ClearNASSessionInput) ClearNASSessionRequest {
+	op := &aws.Operation{
+		Name:       opClearNASSession,
+		HTTPMethod: "POST",
+		HTTPPath:   "/",
+	}
+
+	if input == nil {
+		input = &ClearNASSessionInput{}
+	}
+
+	output := &ClearNASSessionOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return ClearNASSessionRequest{Request: req, Input: input, Copy: c.ClearNASSessionRequest}
+}
+
 const opCreateNASInstance = "CreateNASInstance"
 
 // CreateNASInstanceRequest is a API request type for the CreateNASInstance API operation.
@@ -69,7 +120,8 @@ type CreateNASInstanceRequest struct {
 }
 
 // Send marshals and sends the CreateNASInstance API request.
-func (r CreateNASInstanceRequest) Send() (*CreateNASInstanceOutput, error) {
+func (r CreateNASInstanceRequest) Send(ctx context.Context) (*CreateNASInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -83,7 +135,7 @@ func (r CreateNASInstanceRequest) Send() (*CreateNASInstanceOutput, error) {
 //
 //    // Example sending a request using the CreateNASInstanceRequest method.
 //    req := client.CreateNASInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -117,7 +169,8 @@ type CreateNASSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the CreateNASSecurityGroup API request.
-func (r CreateNASSecurityGroupRequest) Send() (*CreateNASSecurityGroupOutput, error) {
+func (r CreateNASSecurityGroupRequest) Send(ctx context.Context) (*CreateNASSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -131,7 +184,7 @@ func (r CreateNASSecurityGroupRequest) Send() (*CreateNASSecurityGroupOutput, er
 //
 //    // Example sending a request using the CreateNASSecurityGroupRequest method.
 //    req := client.CreateNASSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -165,7 +218,8 @@ type DeleteNASInstanceRequest struct {
 }
 
 // Send marshals and sends the DeleteNASInstance API request.
-func (r DeleteNASInstanceRequest) Send() (*DeleteNASInstanceOutput, error) {
+func (r DeleteNASInstanceRequest) Send(ctx context.Context) (*DeleteNASInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -179,7 +233,7 @@ func (r DeleteNASInstanceRequest) Send() (*DeleteNASInstanceOutput, error) {
 //
 //    // Example sending a request using the DeleteNASInstanceRequest method.
 //    req := client.DeleteNASInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -213,7 +267,8 @@ type DeleteNASSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the DeleteNASSecurityGroup API request.
-func (r DeleteNASSecurityGroupRequest) Send() (*DeleteNASSecurityGroupOutput, error) {
+func (r DeleteNASSecurityGroupRequest) Send(ctx context.Context) (*DeleteNASSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -227,7 +282,7 @@ func (r DeleteNASSecurityGroupRequest) Send() (*DeleteNASSecurityGroupOutput, er
 //
 //    // Example sending a request using the DeleteNASSecurityGroupRequest method.
 //    req := client.DeleteNASSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -263,7 +318,8 @@ type DescribeNASInstancesRequest struct {
 }
 
 // Send marshals and sends the DescribeNASInstances API request.
-func (r DescribeNASInstancesRequest) Send() (*DescribeNASInstancesOutput, error) {
+func (r DescribeNASInstancesRequest) Send(ctx context.Context) (*DescribeNASInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -277,7 +333,7 @@ func (r DescribeNASInstancesRequest) Send() (*DescribeNASInstancesOutput, error)
 //
 //    // Example sending a request using the DescribeNASInstancesRequest method.
 //    req := client.DescribeNASInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -311,7 +367,8 @@ type DescribeNASSecurityGroupsRequest struct {
 }
 
 // Send marshals and sends the DescribeNASSecurityGroups API request.
-func (r DescribeNASSecurityGroupsRequest) Send() (*DescribeNASSecurityGroupsOutput, error) {
+func (r DescribeNASSecurityGroupsRequest) Send(ctx context.Context) (*DescribeNASSecurityGroupsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -325,7 +382,7 @@ func (r DescribeNASSecurityGroupsRequest) Send() (*DescribeNASSecurityGroupsOutp
 //
 //    // Example sending a request using the DescribeNASSecurityGroupsRequest method.
 //    req := client.DescribeNASSecurityGroupsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -359,7 +416,8 @@ type GetMetricStatisticsRequest struct {
 }
 
 // Send marshals and sends the GetMetricStatistics API request.
-func (r GetMetricStatisticsRequest) Send() (*GetMetricStatisticsOutput, error) {
+func (r GetMetricStatisticsRequest) Send(ctx context.Context) (*GetMetricStatisticsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -373,7 +431,7 @@ func (r GetMetricStatisticsRequest) Send() (*GetMetricStatisticsOutput, error) {
 //
 //    // Example sending a request using the GetMetricStatisticsRequest method.
 //    req := client.GetMetricStatisticsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -407,7 +465,8 @@ type ModifyNASInstanceRequest struct {
 }
 
 // Send marshals and sends the ModifyNASInstance API request.
-func (r ModifyNASInstanceRequest) Send() (*ModifyNASInstanceOutput, error) {
+func (r ModifyNASInstanceRequest) Send(ctx context.Context) (*ModifyNASInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -421,7 +480,7 @@ func (r ModifyNASInstanceRequest) Send() (*ModifyNASInstanceOutput, error) {
 //
 //    // Example sending a request using the ModifyNASInstanceRequest method.
 //    req := client.ModifyNASInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -455,7 +514,8 @@ type ModifyNASSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the ModifyNASSecurityGroup API request.
-func (r ModifyNASSecurityGroupRequest) Send() (*ModifyNASSecurityGroupOutput, error) {
+func (r ModifyNASSecurityGroupRequest) Send(ctx context.Context) (*ModifyNASSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -469,7 +529,7 @@ func (r ModifyNASSecurityGroupRequest) Send() (*ModifyNASSecurityGroupOutput, er
 //
 //    // Example sending a request using the ModifyNASSecurityGroupRequest method.
 //    req := client.ModifyNASSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -503,7 +563,8 @@ type RevokeNASSecurityGroupIngressRequest struct {
 }
 
 // Send marshals and sends the RevokeNASSecurityGroupIngress API request.
-func (r RevokeNASSecurityGroupIngressRequest) Send() (*RevokeNASSecurityGroupIngressOutput, error) {
+func (r RevokeNASSecurityGroupIngressRequest) Send(ctx context.Context) (*RevokeNASSecurityGroupIngressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -517,7 +578,7 @@ func (r RevokeNASSecurityGroupIngressRequest) Send() (*RevokeNASSecurityGroupIng
 //
 //    // Example sending a request using the RevokeNASSecurityGroupIngressRequest method.
 //    req := client.RevokeNASSecurityGroupIngressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -583,6 +644,49 @@ func (s AuthorizeNASSecurityGroupIngressOutput) GoString() string {
 
 // SDKResponseMetdata return sthe response metadata for the API.
 func (s AuthorizeNASSecurityGroupIngressOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/nas-N2016-02-24/ClearNASSessionRequest
+type ClearNASSessionInput struct {
+	_ struct{} `type:"structure"`
+
+	NASInstanceIdentifier *string `locationName:"NASInstanceIdentifier" type:"string"`
+
+	SessionClearType *string `locationName:"SessionClearType" type:"string"`
+}
+
+// String returns the string representation
+func (s ClearNASSessionInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ClearNASSessionInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/nas-N2016-02-24/ClearNASSessionResult
+type ClearNASSessionOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	NASInstance *NASInstance `type:"structure"`
+}
+
+// String returns the string representation
+func (s ClearNASSessionOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ClearNASSessionOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s ClearNASSessionOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
@@ -1016,6 +1120,8 @@ type ModifyNASInstanceInput struct {
 	NetworkId *string `locationName:"NetworkId" type:"string"`
 
 	NewNASInstanceIdentifier *string `locationName:"NewNASInstanceIdentifier" type:"string"`
+
+	NoRootSquash *string `locationName:"NoRootSquash" type:"string"`
 }
 
 // String returns the string representation

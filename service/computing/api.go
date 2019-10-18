@@ -3,6 +3,7 @@
 package computing
 
 import (
+	"context"
 	"time"
 
 	"github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"
@@ -19,7 +20,8 @@ type AllocateAddressRequest struct {
 }
 
 // Send marshals and sends the AllocateAddress API request.
-func (r AllocateAddressRequest) Send() (*AllocateAddressOutput, error) {
+func (r AllocateAddressRequest) Send(ctx context.Context) (*AllocateAddressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -33,7 +35,7 @@ func (r AllocateAddressRequest) Send() (*AllocateAddressOutput, error) {
 //
 //    // Example sending a request using the AllocateAddressRequest method.
 //    req := client.AllocateAddressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -67,7 +69,8 @@ type AssociateAddressRequest struct {
 }
 
 // Send marshals and sends the AssociateAddress API request.
-func (r AssociateAddressRequest) Send() (*AssociateAddressOutput, error) {
+func (r AssociateAddressRequest) Send(ctx context.Context) (*AssociateAddressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -81,7 +84,7 @@ func (r AssociateAddressRequest) Send() (*AssociateAddressOutput, error) {
 //
 //    // Example sending a request using the AssociateAddressRequest method.
 //    req := client.AssociateAddressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -115,7 +118,8 @@ type AssociateRouteTableRequest struct {
 }
 
 // Send marshals and sends the AssociateRouteTable API request.
-func (r AssociateRouteTableRequest) Send() (*AssociateRouteTableOutput, error) {
+func (r AssociateRouteTableRequest) Send(ctx context.Context) (*AssociateRouteTableOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -129,7 +133,7 @@ func (r AssociateRouteTableRequest) Send() (*AssociateRouteTableOutput, error) {
 //
 //    // Example sending a request using the AssociateRouteTableRequest method.
 //    req := client.AssociateRouteTableRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -163,7 +167,8 @@ type AssociateUsersRequest struct {
 }
 
 // Send marshals and sends the AssociateUsers API request.
-func (r AssociateUsersRequest) Send() (*AssociateUsersOutput, error) {
+func (r AssociateUsersRequest) Send(ctx context.Context) (*AssociateUsersOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -177,7 +182,7 @@ func (r AssociateUsersRequest) Send() (*AssociateUsersOutput, error) {
 //
 //    // Example sending a request using the AssociateUsersRequest method.
 //    req := client.AssociateUsersRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -211,7 +216,8 @@ type AttachNetworkInterfaceRequest struct {
 }
 
 // Send marshals and sends the AttachNetworkInterface API request.
-func (r AttachNetworkInterfaceRequest) Send() (*AttachNetworkInterfaceOutput, error) {
+func (r AttachNetworkInterfaceRequest) Send(ctx context.Context) (*AttachNetworkInterfaceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -225,7 +231,7 @@ func (r AttachNetworkInterfaceRequest) Send() (*AttachNetworkInterfaceOutput, er
 //
 //    // Example sending a request using the AttachNetworkInterfaceRequest method.
 //    req := client.AttachNetworkInterfaceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -259,7 +265,8 @@ type AttachVolumeRequest struct {
 }
 
 // Send marshals and sends the AttachVolume API request.
-func (r AttachVolumeRequest) Send() (*AttachVolumeOutput, error) {
+func (r AttachVolumeRequest) Send(ctx context.Context) (*AttachVolumeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -273,7 +280,7 @@ func (r AttachVolumeRequest) Send() (*AttachVolumeOutput, error) {
 //
 //    // Example sending a request using the AttachVolumeRequest method.
 //    req := client.AttachVolumeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -307,7 +314,8 @@ type AuthorizeSecurityGroupIngressRequest struct {
 }
 
 // Send marshals and sends the AuthorizeSecurityGroupIngress API request.
-func (r AuthorizeSecurityGroupIngressRequest) Send() (*AuthorizeSecurityGroupIngressOutput, error) {
+func (r AuthorizeSecurityGroupIngressRequest) Send(ctx context.Context) (*AuthorizeSecurityGroupIngressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -321,7 +329,7 @@ func (r AuthorizeSecurityGroupIngressRequest) Send() (*AuthorizeSecurityGroupIng
 //
 //    // Example sending a request using the AuthorizeSecurityGroupIngressRequest method.
 //    req := client.AuthorizeSecurityGroupIngressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -355,7 +363,8 @@ type CancelCopyInstancesRequest struct {
 }
 
 // Send marshals and sends the CancelCopyInstances API request.
-func (r CancelCopyInstancesRequest) Send() (*CancelCopyInstancesOutput, error) {
+func (r CancelCopyInstancesRequest) Send(ctx context.Context) (*CancelCopyInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -369,7 +378,7 @@ func (r CancelCopyInstancesRequest) Send() (*CancelCopyInstancesOutput, error) {
 //
 //    // Example sending a request using the CancelCopyInstancesRequest method.
 //    req := client.CancelCopyInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -403,7 +412,8 @@ type CancelUploadRequest struct {
 }
 
 // Send marshals and sends the CancelUpload API request.
-func (r CancelUploadRequest) Send() (*CancelUploadOutput, error) {
+func (r CancelUploadRequest) Send(ctx context.Context) (*CancelUploadOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -417,7 +427,7 @@ func (r CancelUploadRequest) Send() (*CancelUploadOutput, error) {
 //
 //    // Example sending a request using the CancelUploadRequest method.
 //    req := client.CancelUploadRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -451,7 +461,8 @@ type ClearLoadBalancerSessionRequest struct {
 }
 
 // Send marshals and sends the ClearLoadBalancerSession API request.
-func (r ClearLoadBalancerSessionRequest) Send() (*ClearLoadBalancerSessionOutput, error) {
+func (r ClearLoadBalancerSessionRequest) Send(ctx context.Context) (*ClearLoadBalancerSessionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -465,7 +476,7 @@ func (r ClearLoadBalancerSessionRequest) Send() (*ClearLoadBalancerSessionOutput
 //
 //    // Example sending a request using the ClearLoadBalancerSessionRequest method.
 //    req := client.ClearLoadBalancerSessionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -499,7 +510,8 @@ type ConfigureHealthCheckRequest struct {
 }
 
 // Send marshals and sends the ConfigureHealthCheck API request.
-func (r ConfigureHealthCheckRequest) Send() (*ConfigureHealthCheckOutput, error) {
+func (r ConfigureHealthCheckRequest) Send(ctx context.Context) (*ConfigureHealthCheckOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -513,7 +525,7 @@ func (r ConfigureHealthCheckRequest) Send() (*ConfigureHealthCheckOutput, error)
 //
 //    // Example sending a request using the ConfigureHealthCheckRequest method.
 //    req := client.ConfigureHealthCheckRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -537,6 +549,55 @@ func (c *Computing) ConfigureHealthCheckRequest(input *ConfigureHealthCheckInput
 	return ConfigureHealthCheckRequest{Request: req, Input: input, Copy: c.ConfigureHealthCheckRequest}
 }
 
+const opCopyFromBackupInstance = "CopyFromBackupInstance"
+
+// CopyFromBackupInstanceRequest is a API request type for the CopyFromBackupInstance API operation.
+type CopyFromBackupInstanceRequest struct {
+	*aws.Request
+	Input *CopyFromBackupInstanceInput
+	Copy  func(*CopyFromBackupInstanceInput) CopyFromBackupInstanceRequest
+}
+
+// Send marshals and sends the CopyFromBackupInstance API request.
+func (r CopyFromBackupInstanceRequest) Send(ctx context.Context) (*CopyFromBackupInstanceOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*CopyFromBackupInstanceOutput), nil
+}
+
+// CopyFromBackupInstanceRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the CopyFromBackupInstanceRequest method.
+//    req := client.CopyFromBackupInstanceRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CopyFromBackupInstance
+func (c *Computing) CopyFromBackupInstanceRequest(input *CopyFromBackupInstanceInput) CopyFromBackupInstanceRequest {
+	op := &aws.Operation{
+		Name:       opCopyFromBackupInstance,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &CopyFromBackupInstanceInput{}
+	}
+
+	output := &CopyFromBackupInstanceOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return CopyFromBackupInstanceRequest{Request: req, Input: input, Copy: c.CopyFromBackupInstanceRequest}
+}
+
 const opCopyInstances = "CopyInstances"
 
 // CopyInstancesRequest is a API request type for the CopyInstances API operation.
@@ -547,7 +608,8 @@ type CopyInstancesRequest struct {
 }
 
 // Send marshals and sends the CopyInstances API request.
-func (r CopyInstancesRequest) Send() (*CopyInstancesOutput, error) {
+func (r CopyInstancesRequest) Send(ctx context.Context) (*CopyInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -561,7 +623,7 @@ func (r CopyInstancesRequest) Send() (*CopyInstancesOutput, error) {
 //
 //    // Example sending a request using the CopyInstancesRequest method.
 //    req := client.CopyInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -585,6 +647,55 @@ func (c *Computing) CopyInstancesRequest(input *CopyInstancesInput) CopyInstance
 	return CopyInstancesRequest{Request: req, Input: input, Copy: c.CopyInstancesRequest}
 }
 
+const opCreateBackupInstances = "CreateBackupInstances"
+
+// CreateBackupInstancesRequest is a API request type for the CreateBackupInstances API operation.
+type CreateBackupInstancesRequest struct {
+	*aws.Request
+	Input *CreateBackupInstancesInput
+	Copy  func(*CreateBackupInstancesInput) CreateBackupInstancesRequest
+}
+
+// Send marshals and sends the CreateBackupInstances API request.
+func (r CreateBackupInstancesRequest) Send(ctx context.Context) (*CreateBackupInstancesOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*CreateBackupInstancesOutput), nil
+}
+
+// CreateBackupInstancesRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the CreateBackupInstancesRequest method.
+//    req := client.CreateBackupInstancesRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CreateBackupInstances
+func (c *Computing) CreateBackupInstancesRequest(input *CreateBackupInstancesInput) CreateBackupInstancesRequest {
+	op := &aws.Operation{
+		Name:       opCreateBackupInstances,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &CreateBackupInstancesInput{}
+	}
+
+	output := &CreateBackupInstancesOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return CreateBackupInstancesRequest{Request: req, Input: input, Copy: c.CreateBackupInstancesRequest}
+}
+
 const opCreateCustomerGateway = "CreateCustomerGateway"
 
 // CreateCustomerGatewayRequest is a API request type for the CreateCustomerGateway API operation.
@@ -595,7 +706,8 @@ type CreateCustomerGatewayRequest struct {
 }
 
 // Send marshals and sends the CreateCustomerGateway API request.
-func (r CreateCustomerGatewayRequest) Send() (*CreateCustomerGatewayOutput, error) {
+func (r CreateCustomerGatewayRequest) Send(ctx context.Context) (*CreateCustomerGatewayOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -609,7 +721,7 @@ func (r CreateCustomerGatewayRequest) Send() (*CreateCustomerGatewayOutput, erro
 //
 //    // Example sending a request using the CreateCustomerGatewayRequest method.
 //    req := client.CreateCustomerGatewayRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -643,7 +755,8 @@ type CreateDhcpOptionsRequest struct {
 }
 
 // Send marshals and sends the CreateDhcpOptions API request.
-func (r CreateDhcpOptionsRequest) Send() (*CreateDhcpOptionsOutput, error) {
+func (r CreateDhcpOptionsRequest) Send(ctx context.Context) (*CreateDhcpOptionsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -657,7 +770,7 @@ func (r CreateDhcpOptionsRequest) Send() (*CreateDhcpOptionsOutput, error) {
 //
 //    // Example sending a request using the CreateDhcpOptionsRequest method.
 //    req := client.CreateDhcpOptionsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -691,7 +804,8 @@ type CreateImageRequest struct {
 }
 
 // Send marshals and sends the CreateImage API request.
-func (r CreateImageRequest) Send() (*CreateImageOutput, error) {
+func (r CreateImageRequest) Send(ctx context.Context) (*CreateImageOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -705,7 +819,7 @@ func (r CreateImageRequest) Send() (*CreateImageOutput, error) {
 //
 //    // Example sending a request using the CreateImageRequest method.
 //    req := client.CreateImageRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -729,6 +843,55 @@ func (c *Computing) CreateImageRequest(input *CreateImageInput) CreateImageReque
 	return CreateImageRequest{Request: req, Input: input, Copy: c.CreateImageRequest}
 }
 
+const opCreateInstanceBackupRule = "CreateInstanceBackupRule"
+
+// CreateInstanceBackupRuleRequest is a API request type for the CreateInstanceBackupRule API operation.
+type CreateInstanceBackupRuleRequest struct {
+	*aws.Request
+	Input *CreateInstanceBackupRuleInput
+	Copy  func(*CreateInstanceBackupRuleInput) CreateInstanceBackupRuleRequest
+}
+
+// Send marshals and sends the CreateInstanceBackupRule API request.
+func (r CreateInstanceBackupRuleRequest) Send(ctx context.Context) (*CreateInstanceBackupRuleOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*CreateInstanceBackupRuleOutput), nil
+}
+
+// CreateInstanceBackupRuleRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the CreateInstanceBackupRuleRequest method.
+//    req := client.CreateInstanceBackupRuleRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CreateInstanceBackupRule
+func (c *Computing) CreateInstanceBackupRuleRequest(input *CreateInstanceBackupRuleInput) CreateInstanceBackupRuleRequest {
+	op := &aws.Operation{
+		Name:       opCreateInstanceBackupRule,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &CreateInstanceBackupRuleInput{}
+	}
+
+	output := &CreateInstanceBackupRuleOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return CreateInstanceBackupRuleRequest{Request: req, Input: input, Copy: c.CreateInstanceBackupRuleRequest}
+}
+
 const opCreateKeyPair = "CreateKeyPair"
 
 // CreateKeyPairRequest is a API request type for the CreateKeyPair API operation.
@@ -739,7 +902,8 @@ type CreateKeyPairRequest struct {
 }
 
 // Send marshals and sends the CreateKeyPair API request.
-func (r CreateKeyPairRequest) Send() (*CreateKeyPairOutput, error) {
+func (r CreateKeyPairRequest) Send(ctx context.Context) (*CreateKeyPairOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -753,7 +917,7 @@ func (r CreateKeyPairRequest) Send() (*CreateKeyPairOutput, error) {
 //
 //    // Example sending a request using the CreateKeyPairRequest method.
 //    req := client.CreateKeyPairRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -787,7 +951,8 @@ type CreateLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the CreateLoadBalancer API request.
-func (r CreateLoadBalancerRequest) Send() (*CreateLoadBalancerOutput, error) {
+func (r CreateLoadBalancerRequest) Send(ctx context.Context) (*CreateLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -801,7 +966,7 @@ func (r CreateLoadBalancerRequest) Send() (*CreateLoadBalancerOutput, error) {
 //
 //    // Example sending a request using the CreateLoadBalancerRequest method.
 //    req := client.CreateLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -835,7 +1000,8 @@ type CreateNetworkInterfaceRequest struct {
 }
 
 // Send marshals and sends the CreateNetworkInterface API request.
-func (r CreateNetworkInterfaceRequest) Send() (*CreateNetworkInterfaceOutput, error) {
+func (r CreateNetworkInterfaceRequest) Send(ctx context.Context) (*CreateNetworkInterfaceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -849,7 +1015,7 @@ func (r CreateNetworkInterfaceRequest) Send() (*CreateNetworkInterfaceOutput, er
 //
 //    // Example sending a request using the CreateNetworkInterfaceRequest method.
 //    req := client.CreateNetworkInterfaceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -883,7 +1049,8 @@ type CreateRouteRequest struct {
 }
 
 // Send marshals and sends the CreateRoute API request.
-func (r CreateRouteRequest) Send() (*CreateRouteOutput, error) {
+func (r CreateRouteRequest) Send(ctx context.Context) (*CreateRouteOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -897,7 +1064,7 @@ func (r CreateRouteRequest) Send() (*CreateRouteOutput, error) {
 //
 //    // Example sending a request using the CreateRouteRequest method.
 //    req := client.CreateRouteRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -931,7 +1098,8 @@ type CreateRouteTableRequest struct {
 }
 
 // Send marshals and sends the CreateRouteTable API request.
-func (r CreateRouteTableRequest) Send() (*CreateRouteTableOutput, error) {
+func (r CreateRouteTableRequest) Send(ctx context.Context) (*CreateRouteTableOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -945,7 +1113,7 @@ func (r CreateRouteTableRequest) Send() (*CreateRouteTableOutput, error) {
 //
 //    // Example sending a request using the CreateRouteTableRequest method.
 //    req := client.CreateRouteTableRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -979,7 +1147,8 @@ type CreateSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the CreateSecurityGroup API request.
-func (r CreateSecurityGroupRequest) Send() (*CreateSecurityGroupOutput, error) {
+func (r CreateSecurityGroupRequest) Send(ctx context.Context) (*CreateSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -993,7 +1162,7 @@ func (r CreateSecurityGroupRequest) Send() (*CreateSecurityGroupOutput, error) {
 //
 //    // Example sending a request using the CreateSecurityGroupRequest method.
 //    req := client.CreateSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1027,7 +1196,8 @@ type CreateSslCertificateRequest struct {
 }
 
 // Send marshals and sends the CreateSslCertificate API request.
-func (r CreateSslCertificateRequest) Send() (*CreateSslCertificateOutput, error) {
+func (r CreateSslCertificateRequest) Send(ctx context.Context) (*CreateSslCertificateOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1041,7 +1211,7 @@ func (r CreateSslCertificateRequest) Send() (*CreateSslCertificateOutput, error)
 //
 //    // Example sending a request using the CreateSslCertificateRequest method.
 //    req := client.CreateSslCertificateRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1075,7 +1245,8 @@ type CreateVolumeRequest struct {
 }
 
 // Send marshals and sends the CreateVolume API request.
-func (r CreateVolumeRequest) Send() (*CreateVolumeOutput, error) {
+func (r CreateVolumeRequest) Send(ctx context.Context) (*CreateVolumeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1089,7 +1260,7 @@ func (r CreateVolumeRequest) Send() (*CreateVolumeOutput, error) {
 //
 //    // Example sending a request using the CreateVolumeRequest method.
 //    req := client.CreateVolumeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1123,7 +1294,8 @@ type CreateVpnConnectionRequest struct {
 }
 
 // Send marshals and sends the CreateVpnConnection API request.
-func (r CreateVpnConnectionRequest) Send() (*CreateVpnConnectionOutput, error) {
+func (r CreateVpnConnectionRequest) Send(ctx context.Context) (*CreateVpnConnectionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1137,7 +1309,7 @@ func (r CreateVpnConnectionRequest) Send() (*CreateVpnConnectionOutput, error) {
 //
 //    // Example sending a request using the CreateVpnConnectionRequest method.
 //    req := client.CreateVpnConnectionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1171,7 +1343,8 @@ type CreateVpnGatewayRequest struct {
 }
 
 // Send marshals and sends the CreateVpnGateway API request.
-func (r CreateVpnGatewayRequest) Send() (*CreateVpnGatewayOutput, error) {
+func (r CreateVpnGatewayRequest) Send(ctx context.Context) (*CreateVpnGatewayOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1185,7 +1358,7 @@ func (r CreateVpnGatewayRequest) Send() (*CreateVpnGatewayOutput, error) {
 //
 //    // Example sending a request using the CreateVpnGatewayRequest method.
 //    req := client.CreateVpnGatewayRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1219,7 +1392,8 @@ type DeleteCustomerGatewayRequest struct {
 }
 
 // Send marshals and sends the DeleteCustomerGateway API request.
-func (r DeleteCustomerGatewayRequest) Send() (*DeleteCustomerGatewayOutput, error) {
+func (r DeleteCustomerGatewayRequest) Send(ctx context.Context) (*DeleteCustomerGatewayOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1233,7 +1407,7 @@ func (r DeleteCustomerGatewayRequest) Send() (*DeleteCustomerGatewayOutput, erro
 //
 //    // Example sending a request using the DeleteCustomerGatewayRequest method.
 //    req := client.DeleteCustomerGatewayRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1267,7 +1441,8 @@ type DeleteDhcpOptionsRequest struct {
 }
 
 // Send marshals and sends the DeleteDhcpOptions API request.
-func (r DeleteDhcpOptionsRequest) Send() (*DeleteDhcpOptionsOutput, error) {
+func (r DeleteDhcpOptionsRequest) Send(ctx context.Context) (*DeleteDhcpOptionsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1281,7 +1456,7 @@ func (r DeleteDhcpOptionsRequest) Send() (*DeleteDhcpOptionsOutput, error) {
 //
 //    // Example sending a request using the DeleteDhcpOptionsRequest method.
 //    req := client.DeleteDhcpOptionsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1315,7 +1490,8 @@ type DeleteImageRequest struct {
 }
 
 // Send marshals and sends the DeleteImage API request.
-func (r DeleteImageRequest) Send() (*DeleteImageOutput, error) {
+func (r DeleteImageRequest) Send(ctx context.Context) (*DeleteImageOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1329,7 +1505,7 @@ func (r DeleteImageRequest) Send() (*DeleteImageOutput, error) {
 //
 //    // Example sending a request using the DeleteImageRequest method.
 //    req := client.DeleteImageRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1353,6 +1529,55 @@ func (c *Computing) DeleteImageRequest(input *DeleteImageInput) DeleteImageReque
 	return DeleteImageRequest{Request: req, Input: input, Copy: c.DeleteImageRequest}
 }
 
+const opDeleteInstanceBackupRule = "DeleteInstanceBackupRule"
+
+// DeleteInstanceBackupRuleRequest is a API request type for the DeleteInstanceBackupRule API operation.
+type DeleteInstanceBackupRuleRequest struct {
+	*aws.Request
+	Input *DeleteInstanceBackupRuleInput
+	Copy  func(*DeleteInstanceBackupRuleInput) DeleteInstanceBackupRuleRequest
+}
+
+// Send marshals and sends the DeleteInstanceBackupRule API request.
+func (r DeleteInstanceBackupRuleRequest) Send(ctx context.Context) (*DeleteInstanceBackupRuleOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*DeleteInstanceBackupRuleOutput), nil
+}
+
+// DeleteInstanceBackupRuleRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the DeleteInstanceBackupRuleRequest method.
+//    req := client.DeleteInstanceBackupRuleRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DeleteInstanceBackupRule
+func (c *Computing) DeleteInstanceBackupRuleRequest(input *DeleteInstanceBackupRuleInput) DeleteInstanceBackupRuleRequest {
+	op := &aws.Operation{
+		Name:       opDeleteInstanceBackupRule,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &DeleteInstanceBackupRuleInput{}
+	}
+
+	output := &DeleteInstanceBackupRuleOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return DeleteInstanceBackupRuleRequest{Request: req, Input: input, Copy: c.DeleteInstanceBackupRuleRequest}
+}
+
 const opDeleteKeyPair = "DeleteKeyPair"
 
 // DeleteKeyPairRequest is a API request type for the DeleteKeyPair API operation.
@@ -1363,7 +1588,8 @@ type DeleteKeyPairRequest struct {
 }
 
 // Send marshals and sends the DeleteKeyPair API request.
-func (r DeleteKeyPairRequest) Send() (*DeleteKeyPairOutput, error) {
+func (r DeleteKeyPairRequest) Send(ctx context.Context) (*DeleteKeyPairOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1377,7 +1603,7 @@ func (r DeleteKeyPairRequest) Send() (*DeleteKeyPairOutput, error) {
 //
 //    // Example sending a request using the DeleteKeyPairRequest method.
 //    req := client.DeleteKeyPairRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1411,7 +1637,8 @@ type DeleteLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the DeleteLoadBalancer API request.
-func (r DeleteLoadBalancerRequest) Send() (*DeleteLoadBalancerOutput, error) {
+func (r DeleteLoadBalancerRequest) Send(ctx context.Context) (*DeleteLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1425,7 +1652,7 @@ func (r DeleteLoadBalancerRequest) Send() (*DeleteLoadBalancerOutput, error) {
 //
 //    // Example sending a request using the DeleteLoadBalancerRequest method.
 //    req := client.DeleteLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1459,7 +1686,8 @@ type DeleteNetworkInterfaceRequest struct {
 }
 
 // Send marshals and sends the DeleteNetworkInterface API request.
-func (r DeleteNetworkInterfaceRequest) Send() (*DeleteNetworkInterfaceOutput, error) {
+func (r DeleteNetworkInterfaceRequest) Send(ctx context.Context) (*DeleteNetworkInterfaceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1473,7 +1701,7 @@ func (r DeleteNetworkInterfaceRequest) Send() (*DeleteNetworkInterfaceOutput, er
 //
 //    // Example sending a request using the DeleteNetworkInterfaceRequest method.
 //    req := client.DeleteNetworkInterfaceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1507,7 +1735,8 @@ type DeleteRouteRequest struct {
 }
 
 // Send marshals and sends the DeleteRoute API request.
-func (r DeleteRouteRequest) Send() (*DeleteRouteOutput, error) {
+func (r DeleteRouteRequest) Send(ctx context.Context) (*DeleteRouteOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1521,7 +1750,7 @@ func (r DeleteRouteRequest) Send() (*DeleteRouteOutput, error) {
 //
 //    // Example sending a request using the DeleteRouteRequest method.
 //    req := client.DeleteRouteRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1555,7 +1784,8 @@ type DeleteRouteTableRequest struct {
 }
 
 // Send marshals and sends the DeleteRouteTable API request.
-func (r DeleteRouteTableRequest) Send() (*DeleteRouteTableOutput, error) {
+func (r DeleteRouteTableRequest) Send(ctx context.Context) (*DeleteRouteTableOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1569,7 +1799,7 @@ func (r DeleteRouteTableRequest) Send() (*DeleteRouteTableOutput, error) {
 //
 //    // Example sending a request using the DeleteRouteTableRequest method.
 //    req := client.DeleteRouteTableRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1603,7 +1833,8 @@ type DeleteSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the DeleteSecurityGroup API request.
-func (r DeleteSecurityGroupRequest) Send() (*DeleteSecurityGroupOutput, error) {
+func (r DeleteSecurityGroupRequest) Send(ctx context.Context) (*DeleteSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1617,7 +1848,7 @@ func (r DeleteSecurityGroupRequest) Send() (*DeleteSecurityGroupOutput, error) {
 //
 //    // Example sending a request using the DeleteSecurityGroupRequest method.
 //    req := client.DeleteSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1651,7 +1882,8 @@ type DeleteSslCertificateRequest struct {
 }
 
 // Send marshals and sends the DeleteSslCertificate API request.
-func (r DeleteSslCertificateRequest) Send() (*DeleteSslCertificateOutput, error) {
+func (r DeleteSslCertificateRequest) Send(ctx context.Context) (*DeleteSslCertificateOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1665,7 +1897,7 @@ func (r DeleteSslCertificateRequest) Send() (*DeleteSslCertificateOutput, error)
 //
 //    // Example sending a request using the DeleteSslCertificateRequest method.
 //    req := client.DeleteSslCertificateRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1699,7 +1931,8 @@ type DeleteVolumeRequest struct {
 }
 
 // Send marshals and sends the DeleteVolume API request.
-func (r DeleteVolumeRequest) Send() (*DeleteVolumeOutput, error) {
+func (r DeleteVolumeRequest) Send(ctx context.Context) (*DeleteVolumeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1713,7 +1946,7 @@ func (r DeleteVolumeRequest) Send() (*DeleteVolumeOutput, error) {
 //
 //    // Example sending a request using the DeleteVolumeRequest method.
 //    req := client.DeleteVolumeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1747,7 +1980,8 @@ type DeleteVpnConnectionRequest struct {
 }
 
 // Send marshals and sends the DeleteVpnConnection API request.
-func (r DeleteVpnConnectionRequest) Send() (*DeleteVpnConnectionOutput, error) {
+func (r DeleteVpnConnectionRequest) Send(ctx context.Context) (*DeleteVpnConnectionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1761,7 +1995,7 @@ func (r DeleteVpnConnectionRequest) Send() (*DeleteVpnConnectionOutput, error) {
 //
 //    // Example sending a request using the DeleteVpnConnectionRequest method.
 //    req := client.DeleteVpnConnectionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1795,7 +2029,8 @@ type DeleteVpnGatewayRequest struct {
 }
 
 // Send marshals and sends the DeleteVpnGateway API request.
-func (r DeleteVpnGatewayRequest) Send() (*DeleteVpnGatewayOutput, error) {
+func (r DeleteVpnGatewayRequest) Send(ctx context.Context) (*DeleteVpnGatewayOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1809,7 +2044,7 @@ func (r DeleteVpnGatewayRequest) Send() (*DeleteVpnGatewayOutput, error) {
 //
 //    // Example sending a request using the DeleteVpnGatewayRequest method.
 //    req := client.DeleteVpnGatewayRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1843,7 +2078,8 @@ type DeregisterInstancesFromLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the DeregisterInstancesFromLoadBalancer API request.
-func (r DeregisterInstancesFromLoadBalancerRequest) Send() (*DeregisterInstancesFromLoadBalancerOutput, error) {
+func (r DeregisterInstancesFromLoadBalancerRequest) Send(ctx context.Context) (*DeregisterInstancesFromLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1857,7 +2093,7 @@ func (r DeregisterInstancesFromLoadBalancerRequest) Send() (*DeregisterInstances
 //
 //    // Example sending a request using the DeregisterInstancesFromLoadBalancerRequest method.
 //    req := client.DeregisterInstancesFromLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1891,7 +2127,8 @@ type DeregisterInstancesFromSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the DeregisterInstancesFromSecurityGroup API request.
-func (r DeregisterInstancesFromSecurityGroupRequest) Send() (*DeregisterInstancesFromSecurityGroupOutput, error) {
+func (r DeregisterInstancesFromSecurityGroupRequest) Send(ctx context.Context) (*DeregisterInstancesFromSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1905,7 +2142,7 @@ func (r DeregisterInstancesFromSecurityGroupRequest) Send() (*DeregisterInstance
 //
 //    // Example sending a request using the DeregisterInstancesFromSecurityGroupRequest method.
 //    req := client.DeregisterInstancesFromSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1939,7 +2176,8 @@ type DescribeAddressesRequest struct {
 }
 
 // Send marshals and sends the DescribeAddresses API request.
-func (r DescribeAddressesRequest) Send() (*DescribeAddressesOutput, error) {
+func (r DescribeAddressesRequest) Send(ctx context.Context) (*DescribeAddressesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -1953,7 +2191,7 @@ func (r DescribeAddressesRequest) Send() (*DescribeAddressesOutput, error) {
 //
 //    // Example sending a request using the DescribeAddressesRequest method.
 //    req := client.DescribeAddressesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -1987,7 +2225,8 @@ type DescribeAssociatedUsersRequest struct {
 }
 
 // Send marshals and sends the DescribeAssociatedUsers API request.
-func (r DescribeAssociatedUsersRequest) Send() (*DescribeAssociatedUsersOutput, error) {
+func (r DescribeAssociatedUsersRequest) Send(ctx context.Context) (*DescribeAssociatedUsersOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2001,7 +2240,7 @@ func (r DescribeAssociatedUsersRequest) Send() (*DescribeAssociatedUsersOutput, 
 //
 //    // Example sending a request using the DescribeAssociatedUsersRequest method.
 //    req := client.DescribeAssociatedUsersRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2035,7 +2274,8 @@ type DescribeAvailabilityZonesRequest struct {
 }
 
 // Send marshals and sends the DescribeAvailabilityZones API request.
-func (r DescribeAvailabilityZonesRequest) Send() (*DescribeAvailabilityZonesOutput, error) {
+func (r DescribeAvailabilityZonesRequest) Send(ctx context.Context) (*DescribeAvailabilityZonesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2049,7 +2289,7 @@ func (r DescribeAvailabilityZonesRequest) Send() (*DescribeAvailabilityZonesOutp
 //
 //    // Example sending a request using the DescribeAvailabilityZonesRequest method.
 //    req := client.DescribeAvailabilityZonesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2083,7 +2323,8 @@ type DescribeCustomerGatewaysRequest struct {
 }
 
 // Send marshals and sends the DescribeCustomerGateways API request.
-func (r DescribeCustomerGatewaysRequest) Send() (*DescribeCustomerGatewaysOutput, error) {
+func (r DescribeCustomerGatewaysRequest) Send(ctx context.Context) (*DescribeCustomerGatewaysOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2097,7 +2338,7 @@ func (r DescribeCustomerGatewaysRequest) Send() (*DescribeCustomerGatewaysOutput
 //
 //    // Example sending a request using the DescribeCustomerGatewaysRequest method.
 //    req := client.DescribeCustomerGatewaysRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2131,7 +2372,8 @@ type DescribeDhcpOptionsRequest struct {
 }
 
 // Send marshals and sends the DescribeDhcpOptions API request.
-func (r DescribeDhcpOptionsRequest) Send() (*DescribeDhcpOptionsOutput, error) {
+func (r DescribeDhcpOptionsRequest) Send(ctx context.Context) (*DescribeDhcpOptionsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2145,7 +2387,7 @@ func (r DescribeDhcpOptionsRequest) Send() (*DescribeDhcpOptionsOutput, error) {
 //
 //    // Example sending a request using the DescribeDhcpOptionsRequest method.
 //    req := client.DescribeDhcpOptionsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2179,7 +2421,8 @@ type DescribeImagesRequest struct {
 }
 
 // Send marshals and sends the DescribeImages API request.
-func (r DescribeImagesRequest) Send() (*DescribeImagesOutput, error) {
+func (r DescribeImagesRequest) Send(ctx context.Context) (*DescribeImagesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2193,7 +2436,7 @@ func (r DescribeImagesRequest) Send() (*DescribeImagesOutput, error) {
 //
 //    // Example sending a request using the DescribeImagesRequest method.
 //    req := client.DescribeImagesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2227,7 +2470,8 @@ type DescribeInstanceAttributeRequest struct {
 }
 
 // Send marshals and sends the DescribeInstanceAttribute API request.
-func (r DescribeInstanceAttributeRequest) Send() (*DescribeInstanceAttributeOutput, error) {
+func (r DescribeInstanceAttributeRequest) Send(ctx context.Context) (*DescribeInstanceAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2241,7 +2485,7 @@ func (r DescribeInstanceAttributeRequest) Send() (*DescribeInstanceAttributeOutp
 //
 //    // Example sending a request using the DescribeInstanceAttributeRequest method.
 //    req := client.DescribeInstanceAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2265,6 +2509,104 @@ func (c *Computing) DescribeInstanceAttributeRequest(input *DescribeInstanceAttr
 	return DescribeInstanceAttributeRequest{Request: req, Input: input, Copy: c.DescribeInstanceAttributeRequest}
 }
 
+const opDescribeInstanceBackupRuleActivities = "DescribeInstanceBackupRuleActivities"
+
+// DescribeInstanceBackupRuleActivitiesRequest is a API request type for the DescribeInstanceBackupRuleActivities API operation.
+type DescribeInstanceBackupRuleActivitiesRequest struct {
+	*aws.Request
+	Input *DescribeInstanceBackupRuleActivitiesInput
+	Copy  func(*DescribeInstanceBackupRuleActivitiesInput) DescribeInstanceBackupRuleActivitiesRequest
+}
+
+// Send marshals and sends the DescribeInstanceBackupRuleActivities API request.
+func (r DescribeInstanceBackupRuleActivitiesRequest) Send(ctx context.Context) (*DescribeInstanceBackupRuleActivitiesOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*DescribeInstanceBackupRuleActivitiesOutput), nil
+}
+
+// DescribeInstanceBackupRuleActivitiesRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the DescribeInstanceBackupRuleActivitiesRequest method.
+//    req := client.DescribeInstanceBackupRuleActivitiesRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DescribeInstanceBackupRuleActivities
+func (c *Computing) DescribeInstanceBackupRuleActivitiesRequest(input *DescribeInstanceBackupRuleActivitiesInput) DescribeInstanceBackupRuleActivitiesRequest {
+	op := &aws.Operation{
+		Name:       opDescribeInstanceBackupRuleActivities,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &DescribeInstanceBackupRuleActivitiesInput{}
+	}
+
+	output := &DescribeInstanceBackupRuleActivitiesOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return DescribeInstanceBackupRuleActivitiesRequest{Request: req, Input: input, Copy: c.DescribeInstanceBackupRuleActivitiesRequest}
+}
+
+const opDescribeInstanceBackupRules = "DescribeInstanceBackupRules"
+
+// DescribeInstanceBackupRulesRequest is a API request type for the DescribeInstanceBackupRules API operation.
+type DescribeInstanceBackupRulesRequest struct {
+	*aws.Request
+	Input *DescribeInstanceBackupRulesInput
+	Copy  func(*DescribeInstanceBackupRulesInput) DescribeInstanceBackupRulesRequest
+}
+
+// Send marshals and sends the DescribeInstanceBackupRules API request.
+func (r DescribeInstanceBackupRulesRequest) Send(ctx context.Context) (*DescribeInstanceBackupRulesOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*DescribeInstanceBackupRulesOutput), nil
+}
+
+// DescribeInstanceBackupRulesRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the DescribeInstanceBackupRulesRequest method.
+//    req := client.DescribeInstanceBackupRulesRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DescribeInstanceBackupRules
+func (c *Computing) DescribeInstanceBackupRulesRequest(input *DescribeInstanceBackupRulesInput) DescribeInstanceBackupRulesRequest {
+	op := &aws.Operation{
+		Name:       opDescribeInstanceBackupRules,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &DescribeInstanceBackupRulesInput{}
+	}
+
+	output := &DescribeInstanceBackupRulesOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return DescribeInstanceBackupRulesRequest{Request: req, Input: input, Copy: c.DescribeInstanceBackupRulesRequest}
+}
+
 const opDescribeInstanceHealth = "DescribeInstanceHealth"
 
 // DescribeInstanceHealthRequest is a API request type for the DescribeInstanceHealth API operation.
@@ -2275,7 +2617,8 @@ type DescribeInstanceHealthRequest struct {
 }
 
 // Send marshals and sends the DescribeInstanceHealth API request.
-func (r DescribeInstanceHealthRequest) Send() (*DescribeInstanceHealthOutput, error) {
+func (r DescribeInstanceHealthRequest) Send(ctx context.Context) (*DescribeInstanceHealthOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2289,7 +2632,7 @@ func (r DescribeInstanceHealthRequest) Send() (*DescribeInstanceHealthOutput, er
 //
 //    // Example sending a request using the DescribeInstanceHealthRequest method.
 //    req := client.DescribeInstanceHealthRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2323,7 +2666,8 @@ type DescribeInstancesRequest struct {
 }
 
 // Send marshals and sends the DescribeInstances API request.
-func (r DescribeInstancesRequest) Send() (*DescribeInstancesOutput, error) {
+func (r DescribeInstancesRequest) Send(ctx context.Context) (*DescribeInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2337,7 +2681,7 @@ func (r DescribeInstancesRequest) Send() (*DescribeInstancesOutput, error) {
 //
 //    // Example sending a request using the DescribeInstancesRequest method.
 //    req := client.DescribeInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2371,7 +2715,8 @@ type DescribeKeyPairsRequest struct {
 }
 
 // Send marshals and sends the DescribeKeyPairs API request.
-func (r DescribeKeyPairsRequest) Send() (*DescribeKeyPairsOutput, error) {
+func (r DescribeKeyPairsRequest) Send(ctx context.Context) (*DescribeKeyPairsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2385,7 +2730,7 @@ func (r DescribeKeyPairsRequest) Send() (*DescribeKeyPairsOutput, error) {
 //
 //    // Example sending a request using the DescribeKeyPairsRequest method.
 //    req := client.DescribeKeyPairsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2419,7 +2764,8 @@ type DescribeLoadBalancersRequest struct {
 }
 
 // Send marshals and sends the DescribeLoadBalancers API request.
-func (r DescribeLoadBalancersRequest) Send() (*DescribeLoadBalancersOutput, error) {
+func (r DescribeLoadBalancersRequest) Send(ctx context.Context) (*DescribeLoadBalancersOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2433,7 +2779,7 @@ func (r DescribeLoadBalancersRequest) Send() (*DescribeLoadBalancersOutput, erro
 //
 //    // Example sending a request using the DescribeLoadBalancersRequest method.
 //    req := client.DescribeLoadBalancersRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2467,7 +2813,8 @@ type DescribeNetworkInterfacesRequest struct {
 }
 
 // Send marshals and sends the DescribeNetworkInterfaces API request.
-func (r DescribeNetworkInterfacesRequest) Send() (*DescribeNetworkInterfacesOutput, error) {
+func (r DescribeNetworkInterfacesRequest) Send(ctx context.Context) (*DescribeNetworkInterfacesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2481,7 +2828,7 @@ func (r DescribeNetworkInterfacesRequest) Send() (*DescribeNetworkInterfacesOutp
 //
 //    // Example sending a request using the DescribeNetworkInterfacesRequest method.
 //    req := client.DescribeNetworkInterfacesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2515,7 +2862,8 @@ type DescribeRegionsRequest struct {
 }
 
 // Send marshals and sends the DescribeRegions API request.
-func (r DescribeRegionsRequest) Send() (*DescribeRegionsOutput, error) {
+func (r DescribeRegionsRequest) Send(ctx context.Context) (*DescribeRegionsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2529,7 +2877,7 @@ func (r DescribeRegionsRequest) Send() (*DescribeRegionsOutput, error) {
 //
 //    // Example sending a request using the DescribeRegionsRequest method.
 //    req := client.DescribeRegionsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2563,7 +2911,8 @@ type DescribeResourcesRequest struct {
 }
 
 // Send marshals and sends the DescribeResources API request.
-func (r DescribeResourcesRequest) Send() (*DescribeResourcesOutput, error) {
+func (r DescribeResourcesRequest) Send(ctx context.Context) (*DescribeResourcesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2577,7 +2926,7 @@ func (r DescribeResourcesRequest) Send() (*DescribeResourcesOutput, error) {
 //
 //    // Example sending a request using the DescribeResourcesRequest method.
 //    req := client.DescribeResourcesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2611,7 +2960,8 @@ type DescribeRouteTablesRequest struct {
 }
 
 // Send marshals and sends the DescribeRouteTables API request.
-func (r DescribeRouteTablesRequest) Send() (*DescribeRouteTablesOutput, error) {
+func (r DescribeRouteTablesRequest) Send(ctx context.Context) (*DescribeRouteTablesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2625,7 +2975,7 @@ func (r DescribeRouteTablesRequest) Send() (*DescribeRouteTablesOutput, error) {
 //
 //    // Example sending a request using the DescribeRouteTablesRequest method.
 //    req := client.DescribeRouteTablesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2659,7 +3009,8 @@ type DescribeSecurityActivitiesRequest struct {
 }
 
 // Send marshals and sends the DescribeSecurityActivities API request.
-func (r DescribeSecurityActivitiesRequest) Send() (*DescribeSecurityActivitiesOutput, error) {
+func (r DescribeSecurityActivitiesRequest) Send(ctx context.Context) (*DescribeSecurityActivitiesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2673,7 +3024,7 @@ func (r DescribeSecurityActivitiesRequest) Send() (*DescribeSecurityActivitiesOu
 //
 //    // Example sending a request using the DescribeSecurityActivitiesRequest method.
 //    req := client.DescribeSecurityActivitiesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2707,7 +3058,8 @@ type DescribeSecurityGroupOptionRequest struct {
 }
 
 // Send marshals and sends the DescribeSecurityGroupOption API request.
-func (r DescribeSecurityGroupOptionRequest) Send() (*DescribeSecurityGroupOptionOutput, error) {
+func (r DescribeSecurityGroupOptionRequest) Send(ctx context.Context) (*DescribeSecurityGroupOptionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2721,7 +3073,7 @@ func (r DescribeSecurityGroupOptionRequest) Send() (*DescribeSecurityGroupOption
 //
 //    // Example sending a request using the DescribeSecurityGroupOptionRequest method.
 //    req := client.DescribeSecurityGroupOptionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2755,7 +3107,8 @@ type DescribeSecurityGroupsRequest struct {
 }
 
 // Send marshals and sends the DescribeSecurityGroups API request.
-func (r DescribeSecurityGroupsRequest) Send() (*DescribeSecurityGroupsOutput, error) {
+func (r DescribeSecurityGroupsRequest) Send(ctx context.Context) (*DescribeSecurityGroupsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2769,7 +3122,7 @@ func (r DescribeSecurityGroupsRequest) Send() (*DescribeSecurityGroupsOutput, er
 //
 //    // Example sending a request using the DescribeSecurityGroupsRequest method.
 //    req := client.DescribeSecurityGroupsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2803,7 +3156,8 @@ type DescribeServiceStatusRequest struct {
 }
 
 // Send marshals and sends the DescribeServiceStatus API request.
-func (r DescribeServiceStatusRequest) Send() (*DescribeServiceStatusOutput, error) {
+func (r DescribeServiceStatusRequest) Send(ctx context.Context) (*DescribeServiceStatusOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2817,7 +3171,7 @@ func (r DescribeServiceStatusRequest) Send() (*DescribeServiceStatusOutput, erro
 //
 //    // Example sending a request using the DescribeServiceStatusRequest method.
 //    req := client.DescribeServiceStatusRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2851,7 +3205,8 @@ type DescribeSslCertificateAttributeRequest struct {
 }
 
 // Send marshals and sends the DescribeSslCertificateAttribute API request.
-func (r DescribeSslCertificateAttributeRequest) Send() (*DescribeSslCertificateAttributeOutput, error) {
+func (r DescribeSslCertificateAttributeRequest) Send(ctx context.Context) (*DescribeSslCertificateAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2865,7 +3220,7 @@ func (r DescribeSslCertificateAttributeRequest) Send() (*DescribeSslCertificateA
 //
 //    // Example sending a request using the DescribeSslCertificateAttributeRequest method.
 //    req := client.DescribeSslCertificateAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2899,7 +3254,8 @@ type DescribeSslCertificatesRequest struct {
 }
 
 // Send marshals and sends the DescribeSslCertificates API request.
-func (r DescribeSslCertificatesRequest) Send() (*DescribeSslCertificatesOutput, error) {
+func (r DescribeSslCertificatesRequest) Send(ctx context.Context) (*DescribeSslCertificatesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2913,7 +3269,7 @@ func (r DescribeSslCertificatesRequest) Send() (*DescribeSslCertificatesOutput, 
 //
 //    // Example sending a request using the DescribeSslCertificatesRequest method.
 //    req := client.DescribeSslCertificatesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2947,7 +3303,8 @@ type DescribeUploadsRequest struct {
 }
 
 // Send marshals and sends the DescribeUploads API request.
-func (r DescribeUploadsRequest) Send() (*DescribeUploadsOutput, error) {
+func (r DescribeUploadsRequest) Send(ctx context.Context) (*DescribeUploadsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -2961,7 +3318,7 @@ func (r DescribeUploadsRequest) Send() (*DescribeUploadsOutput, error) {
 //
 //    // Example sending a request using the DescribeUploadsRequest method.
 //    req := client.DescribeUploadsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -2995,7 +3352,8 @@ type DescribeUsageRequest struct {
 }
 
 // Send marshals and sends the DescribeUsage API request.
-func (r DescribeUsageRequest) Send() (*DescribeUsageOutput, error) {
+func (r DescribeUsageRequest) Send(ctx context.Context) (*DescribeUsageOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3009,7 +3367,7 @@ func (r DescribeUsageRequest) Send() (*DescribeUsageOutput, error) {
 //
 //    // Example sending a request using the DescribeUsageRequest method.
 //    req := client.DescribeUsageRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3043,7 +3401,8 @@ type DescribeUserActivitiesRequest struct {
 }
 
 // Send marshals and sends the DescribeUserActivities API request.
-func (r DescribeUserActivitiesRequest) Send() (*DescribeUserActivitiesOutput, error) {
+func (r DescribeUserActivitiesRequest) Send(ctx context.Context) (*DescribeUserActivitiesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3057,7 +3416,7 @@ func (r DescribeUserActivitiesRequest) Send() (*DescribeUserActivitiesOutput, er
 //
 //    // Example sending a request using the DescribeUserActivitiesRequest method.
 //    req := client.DescribeUserActivitiesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3091,7 +3450,8 @@ type DescribeVolumesRequest struct {
 }
 
 // Send marshals and sends the DescribeVolumes API request.
-func (r DescribeVolumesRequest) Send() (*DescribeVolumesOutput, error) {
+func (r DescribeVolumesRequest) Send(ctx context.Context) (*DescribeVolumesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3105,7 +3465,7 @@ func (r DescribeVolumesRequest) Send() (*DescribeVolumesOutput, error) {
 //
 //    // Example sending a request using the DescribeVolumesRequest method.
 //    req := client.DescribeVolumesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3139,7 +3499,8 @@ type DescribeVpnConnectionsRequest struct {
 }
 
 // Send marshals and sends the DescribeVpnConnections API request.
-func (r DescribeVpnConnectionsRequest) Send() (*DescribeVpnConnectionsOutput, error) {
+func (r DescribeVpnConnectionsRequest) Send(ctx context.Context) (*DescribeVpnConnectionsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3153,7 +3514,7 @@ func (r DescribeVpnConnectionsRequest) Send() (*DescribeVpnConnectionsOutput, er
 //
 //    // Example sending a request using the DescribeVpnConnectionsRequest method.
 //    req := client.DescribeVpnConnectionsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3187,7 +3548,8 @@ type DescribeVpnGatewaysRequest struct {
 }
 
 // Send marshals and sends the DescribeVpnGateways API request.
-func (r DescribeVpnGatewaysRequest) Send() (*DescribeVpnGatewaysOutput, error) {
+func (r DescribeVpnGatewaysRequest) Send(ctx context.Context) (*DescribeVpnGatewaysOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3201,7 +3563,7 @@ func (r DescribeVpnGatewaysRequest) Send() (*DescribeVpnGatewaysOutput, error) {
 //
 //    // Example sending a request using the DescribeVpnGatewaysRequest method.
 //    req := client.DescribeVpnGatewaysRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3235,7 +3597,8 @@ type DetachNetworkInterfaceRequest struct {
 }
 
 // Send marshals and sends the DetachNetworkInterface API request.
-func (r DetachNetworkInterfaceRequest) Send() (*DetachNetworkInterfaceOutput, error) {
+func (r DetachNetworkInterfaceRequest) Send(ctx context.Context) (*DetachNetworkInterfaceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3249,7 +3612,7 @@ func (r DetachNetworkInterfaceRequest) Send() (*DetachNetworkInterfaceOutput, er
 //
 //    // Example sending a request using the DetachNetworkInterfaceRequest method.
 //    req := client.DetachNetworkInterfaceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3283,7 +3646,8 @@ type DetachVolumeRequest struct {
 }
 
 // Send marshals and sends the DetachVolume API request.
-func (r DetachVolumeRequest) Send() (*DetachVolumeOutput, error) {
+func (r DetachVolumeRequest) Send(ctx context.Context) (*DetachVolumeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3297,7 +3661,7 @@ func (r DetachVolumeRequest) Send() (*DetachVolumeOutput, error) {
 //
 //    // Example sending a request using the DetachVolumeRequest method.
 //    req := client.DetachVolumeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3331,7 +3695,8 @@ type DisassociateAddressRequest struct {
 }
 
 // Send marshals and sends the DisassociateAddress API request.
-func (r DisassociateAddressRequest) Send() (*DisassociateAddressOutput, error) {
+func (r DisassociateAddressRequest) Send(ctx context.Context) (*DisassociateAddressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3345,7 +3710,7 @@ func (r DisassociateAddressRequest) Send() (*DisassociateAddressOutput, error) {
 //
 //    // Example sending a request using the DisassociateAddressRequest method.
 //    req := client.DisassociateAddressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3379,7 +3744,8 @@ type DisassociateRouteTableRequest struct {
 }
 
 // Send marshals and sends the DisassociateRouteTable API request.
-func (r DisassociateRouteTableRequest) Send() (*DisassociateRouteTableOutput, error) {
+func (r DisassociateRouteTableRequest) Send(ctx context.Context) (*DisassociateRouteTableOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3393,7 +3759,7 @@ func (r DisassociateRouteTableRequest) Send() (*DisassociateRouteTableOutput, er
 //
 //    // Example sending a request using the DisassociateRouteTableRequest method.
 //    req := client.DisassociateRouteTableRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3427,7 +3793,8 @@ type DissociateUsersRequest struct {
 }
 
 // Send marshals and sends the DissociateUsers API request.
-func (r DissociateUsersRequest) Send() (*DissociateUsersOutput, error) {
+func (r DissociateUsersRequest) Send(ctx context.Context) (*DissociateUsersOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3441,7 +3808,7 @@ func (r DissociateUsersRequest) Send() (*DissociateUsersOutput, error) {
 //
 //    // Example sending a request using the DissociateUsersRequest method.
 //    req := client.DissociateUsersRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3475,7 +3842,8 @@ type DownloadSslCertificateRequest struct {
 }
 
 // Send marshals and sends the DownloadSslCertificate API request.
-func (r DownloadSslCertificateRequest) Send() (*DownloadSslCertificateOutput, error) {
+func (r DownloadSslCertificateRequest) Send(ctx context.Context) (*DownloadSslCertificateOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3489,7 +3857,7 @@ func (r DownloadSslCertificateRequest) Send() (*DownloadSslCertificateOutput, er
 //
 //    // Example sending a request using the DownloadSslCertificateRequest method.
 //    req := client.DownloadSslCertificateRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3523,7 +3891,8 @@ type ImportInstanceRequest struct {
 }
 
 // Send marshals and sends the ImportInstance API request.
-func (r ImportInstanceRequest) Send() (*ImportInstanceOutput, error) {
+func (r ImportInstanceRequest) Send(ctx context.Context) (*ImportInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3537,7 +3906,7 @@ func (r ImportInstanceRequest) Send() (*ImportInstanceOutput, error) {
 //
 //    // Example sending a request using the ImportInstanceRequest method.
 //    req := client.ImportInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3571,7 +3940,8 @@ type ImportKeyPairRequest struct {
 }
 
 // Send marshals and sends the ImportKeyPair API request.
-func (r ImportKeyPairRequest) Send() (*ImportKeyPairOutput, error) {
+func (r ImportKeyPairRequest) Send(ctx context.Context) (*ImportKeyPairOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3585,7 +3955,7 @@ func (r ImportKeyPairRequest) Send() (*ImportKeyPairOutput, error) {
 //
 //    // Example sending a request using the ImportKeyPairRequest method.
 //    req := client.ImportKeyPairRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3619,7 +3989,8 @@ type ModifyImageAttributeRequest struct {
 }
 
 // Send marshals and sends the ModifyImageAttribute API request.
-func (r ModifyImageAttributeRequest) Send() (*ModifyImageAttributeOutput, error) {
+func (r ModifyImageAttributeRequest) Send(ctx context.Context) (*ModifyImageAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3633,7 +4004,7 @@ func (r ModifyImageAttributeRequest) Send() (*ModifyImageAttributeOutput, error)
 //
 //    // Example sending a request using the ModifyImageAttributeRequest method.
 //    req := client.ModifyImageAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3667,7 +4038,8 @@ type ModifyInstanceAttributeRequest struct {
 }
 
 // Send marshals and sends the ModifyInstanceAttribute API request.
-func (r ModifyInstanceAttributeRequest) Send() (*ModifyInstanceAttributeOutput, error) {
+func (r ModifyInstanceAttributeRequest) Send(ctx context.Context) (*ModifyInstanceAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3681,7 +4053,7 @@ func (r ModifyInstanceAttributeRequest) Send() (*ModifyInstanceAttributeOutput, 
 //
 //    // Example sending a request using the ModifyInstanceAttributeRequest method.
 //    req := client.ModifyInstanceAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3705,6 +4077,55 @@ func (c *Computing) ModifyInstanceAttributeRequest(input *ModifyInstanceAttribut
 	return ModifyInstanceAttributeRequest{Request: req, Input: input, Copy: c.ModifyInstanceAttributeRequest}
 }
 
+const opModifyInstanceBackupRuleAttribute = "ModifyInstanceBackupRuleAttribute"
+
+// ModifyInstanceBackupRuleAttributeRequest is a API request type for the ModifyInstanceBackupRuleAttribute API operation.
+type ModifyInstanceBackupRuleAttributeRequest struct {
+	*aws.Request
+	Input *ModifyInstanceBackupRuleAttributeInput
+	Copy  func(*ModifyInstanceBackupRuleAttributeInput) ModifyInstanceBackupRuleAttributeRequest
+}
+
+// Send marshals and sends the ModifyInstanceBackupRuleAttribute API request.
+func (r ModifyInstanceBackupRuleAttributeRequest) Send(ctx context.Context) (*ModifyInstanceBackupRuleAttributeOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*ModifyInstanceBackupRuleAttributeOutput), nil
+}
+
+// ModifyInstanceBackupRuleAttributeRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the ModifyInstanceBackupRuleAttributeRequest method.
+//    req := client.ModifyInstanceBackupRuleAttributeRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/ModifyInstanceBackupRuleAttribute
+func (c *Computing) ModifyInstanceBackupRuleAttributeRequest(input *ModifyInstanceBackupRuleAttributeInput) ModifyInstanceBackupRuleAttributeRequest {
+	op := &aws.Operation{
+		Name:       opModifyInstanceBackupRuleAttribute,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &ModifyInstanceBackupRuleAttributeInput{}
+	}
+
+	output := &ModifyInstanceBackupRuleAttributeOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return ModifyInstanceBackupRuleAttributeRequest{Request: req, Input: input, Copy: c.ModifyInstanceBackupRuleAttributeRequest}
+}
+
 const opModifyNetworkInterfaceAttribute = "ModifyNetworkInterfaceAttribute"
 
 // ModifyNetworkInterfaceAttributeRequest is a API request type for the ModifyNetworkInterfaceAttribute API operation.
@@ -3715,7 +4136,8 @@ type ModifyNetworkInterfaceAttributeRequest struct {
 }
 
 // Send marshals and sends the ModifyNetworkInterfaceAttribute API request.
-func (r ModifyNetworkInterfaceAttributeRequest) Send() (*ModifyNetworkInterfaceAttributeOutput, error) {
+func (r ModifyNetworkInterfaceAttributeRequest) Send(ctx context.Context) (*ModifyNetworkInterfaceAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3729,7 +4151,7 @@ func (r ModifyNetworkInterfaceAttributeRequest) Send() (*ModifyNetworkInterfaceA
 //
 //    // Example sending a request using the ModifyNetworkInterfaceAttributeRequest method.
 //    req := client.ModifyNetworkInterfaceAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3763,7 +4185,8 @@ type ModifySslCertificateAttributeRequest struct {
 }
 
 // Send marshals and sends the ModifySslCertificateAttribute API request.
-func (r ModifySslCertificateAttributeRequest) Send() (*ModifySslCertificateAttributeOutput, error) {
+func (r ModifySslCertificateAttributeRequest) Send(ctx context.Context) (*ModifySslCertificateAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3777,7 +4200,7 @@ func (r ModifySslCertificateAttributeRequest) Send() (*ModifySslCertificateAttri
 //
 //    // Example sending a request using the ModifySslCertificateAttributeRequest method.
 //    req := client.ModifySslCertificateAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3811,7 +4234,8 @@ type ModifyVolumeAttributeRequest struct {
 }
 
 // Send marshals and sends the ModifyVolumeAttribute API request.
-func (r ModifyVolumeAttributeRequest) Send() (*ModifyVolumeAttributeOutput, error) {
+func (r ModifyVolumeAttributeRequest) Send(ctx context.Context) (*ModifyVolumeAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3825,7 +4249,7 @@ func (r ModifyVolumeAttributeRequest) Send() (*ModifyVolumeAttributeOutput, erro
 //
 //    // Example sending a request using the ModifyVolumeAttributeRequest method.
 //    req := client.ModifyVolumeAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3859,7 +4283,8 @@ type NiftyAssociateImageRequest struct {
 }
 
 // Send marshals and sends the NiftyAssociateImage API request.
-func (r NiftyAssociateImageRequest) Send() (*NiftyAssociateImageOutput, error) {
+func (r NiftyAssociateImageRequest) Send(ctx context.Context) (*NiftyAssociateImageOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3873,7 +4298,7 @@ func (r NiftyAssociateImageRequest) Send() (*NiftyAssociateImageOutput, error) {
 //
 //    // Example sending a request using the NiftyAssociateImageRequest method.
 //    req := client.NiftyAssociateImageRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3907,7 +4332,8 @@ type NiftyAssociateNatTableRequest struct {
 }
 
 // Send marshals and sends the NiftyAssociateNatTable API request.
-func (r NiftyAssociateNatTableRequest) Send() (*NiftyAssociateNatTableOutput, error) {
+func (r NiftyAssociateNatTableRequest) Send(ctx context.Context) (*NiftyAssociateNatTableOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3921,7 +4347,7 @@ func (r NiftyAssociateNatTableRequest) Send() (*NiftyAssociateNatTableOutput, er
 //
 //    // Example sending a request using the NiftyAssociateNatTableRequest method.
 //    req := client.NiftyAssociateNatTableRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -3945,6 +4371,55 @@ func (c *Computing) NiftyAssociateNatTableRequest(input *NiftyAssociateNatTableI
 	return NiftyAssociateNatTableRequest{Request: req, Input: input, Copy: c.NiftyAssociateNatTableRequest}
 }
 
+const opNiftyAssociateRouteTableWithElasticLoadBalancer = "NiftyAssociateRouteTableWithElasticLoadBalancer"
+
+// NiftyAssociateRouteTableWithElasticLoadBalancerRequest is a API request type for the NiftyAssociateRouteTableWithElasticLoadBalancer API operation.
+type NiftyAssociateRouteTableWithElasticLoadBalancerRequest struct {
+	*aws.Request
+	Input *NiftyAssociateRouteTableWithElasticLoadBalancerInput
+	Copy  func(*NiftyAssociateRouteTableWithElasticLoadBalancerInput) NiftyAssociateRouteTableWithElasticLoadBalancerRequest
+}
+
+// Send marshals and sends the NiftyAssociateRouteTableWithElasticLoadBalancer API request.
+func (r NiftyAssociateRouteTableWithElasticLoadBalancerRequest) Send(ctx context.Context) (*NiftyAssociateRouteTableWithElasticLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*NiftyAssociateRouteTableWithElasticLoadBalancerOutput), nil
+}
+
+// NiftyAssociateRouteTableWithElasticLoadBalancerRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the NiftyAssociateRouteTableWithElasticLoadBalancerRequest method.
+//    req := client.NiftyAssociateRouteTableWithElasticLoadBalancerRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyAssociateRouteTableWithElasticLoadBalancer
+func (c *Computing) NiftyAssociateRouteTableWithElasticLoadBalancerRequest(input *NiftyAssociateRouteTableWithElasticLoadBalancerInput) NiftyAssociateRouteTableWithElasticLoadBalancerRequest {
+	op := &aws.Operation{
+		Name:       opNiftyAssociateRouteTableWithElasticLoadBalancer,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &NiftyAssociateRouteTableWithElasticLoadBalancerInput{}
+	}
+
+	output := &NiftyAssociateRouteTableWithElasticLoadBalancerOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return NiftyAssociateRouteTableWithElasticLoadBalancerRequest{Request: req, Input: input, Copy: c.NiftyAssociateRouteTableWithElasticLoadBalancerRequest}
+}
+
 const opNiftyAssociateRouteTableWithVpnGateway = "NiftyAssociateRouteTableWithVpnGateway"
 
 // NiftyAssociateRouteTableWithVpnGatewayRequest is a API request type for the NiftyAssociateRouteTableWithVpnGateway API operation.
@@ -3955,7 +4430,8 @@ type NiftyAssociateRouteTableWithVpnGatewayRequest struct {
 }
 
 // Send marshals and sends the NiftyAssociateRouteTableWithVpnGateway API request.
-func (r NiftyAssociateRouteTableWithVpnGatewayRequest) Send() (*NiftyAssociateRouteTableWithVpnGatewayOutput, error) {
+func (r NiftyAssociateRouteTableWithVpnGatewayRequest) Send(ctx context.Context) (*NiftyAssociateRouteTableWithVpnGatewayOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -3969,7 +4445,7 @@ func (r NiftyAssociateRouteTableWithVpnGatewayRequest) Send() (*NiftyAssociateRo
 //
 //    // Example sending a request using the NiftyAssociateRouteTableWithVpnGatewayRequest method.
 //    req := client.NiftyAssociateRouteTableWithVpnGatewayRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4003,7 +4479,8 @@ type NiftyConfigureElasticLoadBalancerHealthCheckRequest struct {
 }
 
 // Send marshals and sends the NiftyConfigureElasticLoadBalancerHealthCheck API request.
-func (r NiftyConfigureElasticLoadBalancerHealthCheckRequest) Send() (*NiftyConfigureElasticLoadBalancerHealthCheckOutput, error) {
+func (r NiftyConfigureElasticLoadBalancerHealthCheckRequest) Send(ctx context.Context) (*NiftyConfigureElasticLoadBalancerHealthCheckOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4017,7 +4494,7 @@ func (r NiftyConfigureElasticLoadBalancerHealthCheckRequest) Send() (*NiftyConfi
 //
 //    // Example sending a request using the NiftyConfigureElasticLoadBalancerHealthCheckRequest method.
 //    req := client.NiftyConfigureElasticLoadBalancerHealthCheckRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4051,7 +4528,8 @@ type NiftyCreateAlarmRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateAlarm API request.
-func (r NiftyCreateAlarmRequest) Send() (*NiftyCreateAlarmOutput, error) {
+func (r NiftyCreateAlarmRequest) Send(ctx context.Context) (*NiftyCreateAlarmOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4065,7 +4543,7 @@ func (r NiftyCreateAlarmRequest) Send() (*NiftyCreateAlarmOutput, error) {
 //
 //    // Example sending a request using the NiftyCreateAlarmRequest method.
 //    req := client.NiftyCreateAlarmRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4099,7 +4577,8 @@ type NiftyCreateAutoScalingGroupRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateAutoScalingGroup API request.
-func (r NiftyCreateAutoScalingGroupRequest) Send() (*NiftyCreateAutoScalingGroupOutput, error) {
+func (r NiftyCreateAutoScalingGroupRequest) Send(ctx context.Context) (*NiftyCreateAutoScalingGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4113,7 +4592,7 @@ func (r NiftyCreateAutoScalingGroupRequest) Send() (*NiftyCreateAutoScalingGroup
 //
 //    // Example sending a request using the NiftyCreateAutoScalingGroupRequest method.
 //    req := client.NiftyCreateAutoScalingGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4147,7 +4626,8 @@ type NiftyCreateDhcpConfigRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateDhcpConfig API request.
-func (r NiftyCreateDhcpConfigRequest) Send() (*NiftyCreateDhcpConfigOutput, error) {
+func (r NiftyCreateDhcpConfigRequest) Send(ctx context.Context) (*NiftyCreateDhcpConfigOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4161,7 +4641,7 @@ func (r NiftyCreateDhcpConfigRequest) Send() (*NiftyCreateDhcpConfigOutput, erro
 //
 //    // Example sending a request using the NiftyCreateDhcpConfigRequest method.
 //    req := client.NiftyCreateDhcpConfigRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4195,7 +4675,8 @@ type NiftyCreateDhcpIpAddressPoolRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateDhcpIpAddressPool API request.
-func (r NiftyCreateDhcpIpAddressPoolRequest) Send() (*NiftyCreateDhcpIpAddressPoolOutput, error) {
+func (r NiftyCreateDhcpIpAddressPoolRequest) Send(ctx context.Context) (*NiftyCreateDhcpIpAddressPoolOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4209,7 +4690,7 @@ func (r NiftyCreateDhcpIpAddressPoolRequest) Send() (*NiftyCreateDhcpIpAddressPo
 //
 //    // Example sending a request using the NiftyCreateDhcpIpAddressPoolRequest method.
 //    req := client.NiftyCreateDhcpIpAddressPoolRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4243,7 +4724,8 @@ type NiftyCreateDhcpStaticMappingRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateDhcpStaticMapping API request.
-func (r NiftyCreateDhcpStaticMappingRequest) Send() (*NiftyCreateDhcpStaticMappingOutput, error) {
+func (r NiftyCreateDhcpStaticMappingRequest) Send(ctx context.Context) (*NiftyCreateDhcpStaticMappingOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4257,7 +4739,7 @@ func (r NiftyCreateDhcpStaticMappingRequest) Send() (*NiftyCreateDhcpStaticMappi
 //
 //    // Example sending a request using the NiftyCreateDhcpStaticMappingRequest method.
 //    req := client.NiftyCreateDhcpStaticMappingRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4291,7 +4773,8 @@ type NiftyCreateElasticLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateElasticLoadBalancer API request.
-func (r NiftyCreateElasticLoadBalancerRequest) Send() (*NiftyCreateElasticLoadBalancerOutput, error) {
+func (r NiftyCreateElasticLoadBalancerRequest) Send(ctx context.Context) (*NiftyCreateElasticLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4305,7 +4788,7 @@ func (r NiftyCreateElasticLoadBalancerRequest) Send() (*NiftyCreateElasticLoadBa
 //
 //    // Example sending a request using the NiftyCreateElasticLoadBalancerRequest method.
 //    req := client.NiftyCreateElasticLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4339,7 +4822,8 @@ type NiftyCreateInstanceSnapshotRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateInstanceSnapshot API request.
-func (r NiftyCreateInstanceSnapshotRequest) Send() (*NiftyCreateInstanceSnapshotOutput, error) {
+func (r NiftyCreateInstanceSnapshotRequest) Send(ctx context.Context) (*NiftyCreateInstanceSnapshotOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4353,7 +4837,7 @@ func (r NiftyCreateInstanceSnapshotRequest) Send() (*NiftyCreateInstanceSnapshot
 //
 //    // Example sending a request using the NiftyCreateInstanceSnapshotRequest method.
 //    req := client.NiftyCreateInstanceSnapshotRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4387,7 +4871,8 @@ type NiftyCreateNatRuleRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateNatRule API request.
-func (r NiftyCreateNatRuleRequest) Send() (*NiftyCreateNatRuleOutput, error) {
+func (r NiftyCreateNatRuleRequest) Send(ctx context.Context) (*NiftyCreateNatRuleOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4401,7 +4886,7 @@ func (r NiftyCreateNatRuleRequest) Send() (*NiftyCreateNatRuleOutput, error) {
 //
 //    // Example sending a request using the NiftyCreateNatRuleRequest method.
 //    req := client.NiftyCreateNatRuleRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4435,7 +4920,8 @@ type NiftyCreateNatTableRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateNatTable API request.
-func (r NiftyCreateNatTableRequest) Send() (*NiftyCreateNatTableOutput, error) {
+func (r NiftyCreateNatTableRequest) Send(ctx context.Context) (*NiftyCreateNatTableOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4449,7 +4935,7 @@ func (r NiftyCreateNatTableRequest) Send() (*NiftyCreateNatTableOutput, error) {
 //
 //    // Example sending a request using the NiftyCreateNatTableRequest method.
 //    req := client.NiftyCreateNatTableRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4483,7 +4969,8 @@ type NiftyCreatePrivateLanRequest struct {
 }
 
 // Send marshals and sends the NiftyCreatePrivateLan API request.
-func (r NiftyCreatePrivateLanRequest) Send() (*NiftyCreatePrivateLanOutput, error) {
+func (r NiftyCreatePrivateLanRequest) Send(ctx context.Context) (*NiftyCreatePrivateLanOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4497,7 +4984,7 @@ func (r NiftyCreatePrivateLanRequest) Send() (*NiftyCreatePrivateLanOutput, erro
 //
 //    // Example sending a request using the NiftyCreatePrivateLanRequest method.
 //    req := client.NiftyCreatePrivateLanRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4531,7 +5018,8 @@ type NiftyCreateRouterRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateRouter API request.
-func (r NiftyCreateRouterRequest) Send() (*NiftyCreateRouterOutput, error) {
+func (r NiftyCreateRouterRequest) Send(ctx context.Context) (*NiftyCreateRouterOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4545,7 +5033,7 @@ func (r NiftyCreateRouterRequest) Send() (*NiftyCreateRouterOutput, error) {
 //
 //    // Example sending a request using the NiftyCreateRouterRequest method.
 //    req := client.NiftyCreateRouterRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4579,7 +5067,8 @@ type NiftyCreateSeparateInstanceRuleRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateSeparateInstanceRule API request.
-func (r NiftyCreateSeparateInstanceRuleRequest) Send() (*NiftyCreateSeparateInstanceRuleOutput, error) {
+func (r NiftyCreateSeparateInstanceRuleRequest) Send(ctx context.Context) (*NiftyCreateSeparateInstanceRuleOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4593,7 +5082,7 @@ func (r NiftyCreateSeparateInstanceRuleRequest) Send() (*NiftyCreateSeparateInst
 //
 //    // Example sending a request using the NiftyCreateSeparateInstanceRuleRequest method.
 //    req := client.NiftyCreateSeparateInstanceRuleRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4627,7 +5116,8 @@ type NiftyCreateWebProxyRequest struct {
 }
 
 // Send marshals and sends the NiftyCreateWebProxy API request.
-func (r NiftyCreateWebProxyRequest) Send() (*NiftyCreateWebProxyOutput, error) {
+func (r NiftyCreateWebProxyRequest) Send(ctx context.Context) (*NiftyCreateWebProxyOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4641,7 +5131,7 @@ func (r NiftyCreateWebProxyRequest) Send() (*NiftyCreateWebProxyOutput, error) {
 //
 //    // Example sending a request using the NiftyCreateWebProxyRequest method.
 //    req := client.NiftyCreateWebProxyRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4675,7 +5165,8 @@ type NiftyDeleteAlarmRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteAlarm API request.
-func (r NiftyDeleteAlarmRequest) Send() (*NiftyDeleteAlarmOutput, error) {
+func (r NiftyDeleteAlarmRequest) Send(ctx context.Context) (*NiftyDeleteAlarmOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4689,7 +5180,7 @@ func (r NiftyDeleteAlarmRequest) Send() (*NiftyDeleteAlarmOutput, error) {
 //
 //    // Example sending a request using the NiftyDeleteAlarmRequest method.
 //    req := client.NiftyDeleteAlarmRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4723,7 +5214,8 @@ type NiftyDeleteAutoScalingGroupRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteAutoScalingGroup API request.
-func (r NiftyDeleteAutoScalingGroupRequest) Send() (*NiftyDeleteAutoScalingGroupOutput, error) {
+func (r NiftyDeleteAutoScalingGroupRequest) Send(ctx context.Context) (*NiftyDeleteAutoScalingGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4737,7 +5229,7 @@ func (r NiftyDeleteAutoScalingGroupRequest) Send() (*NiftyDeleteAutoScalingGroup
 //
 //    // Example sending a request using the NiftyDeleteAutoScalingGroupRequest method.
 //    req := client.NiftyDeleteAutoScalingGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4771,7 +5263,8 @@ type NiftyDeleteDhcpConfigRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteDhcpConfig API request.
-func (r NiftyDeleteDhcpConfigRequest) Send() (*NiftyDeleteDhcpConfigOutput, error) {
+func (r NiftyDeleteDhcpConfigRequest) Send(ctx context.Context) (*NiftyDeleteDhcpConfigOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4785,7 +5278,7 @@ func (r NiftyDeleteDhcpConfigRequest) Send() (*NiftyDeleteDhcpConfigOutput, erro
 //
 //    // Example sending a request using the NiftyDeleteDhcpConfigRequest method.
 //    req := client.NiftyDeleteDhcpConfigRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4819,7 +5312,8 @@ type NiftyDeleteDhcpIpAddressPoolRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteDhcpIpAddressPool API request.
-func (r NiftyDeleteDhcpIpAddressPoolRequest) Send() (*NiftyDeleteDhcpIpAddressPoolOutput, error) {
+func (r NiftyDeleteDhcpIpAddressPoolRequest) Send(ctx context.Context) (*NiftyDeleteDhcpIpAddressPoolOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4833,7 +5327,7 @@ func (r NiftyDeleteDhcpIpAddressPoolRequest) Send() (*NiftyDeleteDhcpIpAddressPo
 //
 //    // Example sending a request using the NiftyDeleteDhcpIpAddressPoolRequest method.
 //    req := client.NiftyDeleteDhcpIpAddressPoolRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4867,7 +5361,8 @@ type NiftyDeleteDhcpStaticMappingRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteDhcpStaticMapping API request.
-func (r NiftyDeleteDhcpStaticMappingRequest) Send() (*NiftyDeleteDhcpStaticMappingOutput, error) {
+func (r NiftyDeleteDhcpStaticMappingRequest) Send(ctx context.Context) (*NiftyDeleteDhcpStaticMappingOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4881,7 +5376,7 @@ func (r NiftyDeleteDhcpStaticMappingRequest) Send() (*NiftyDeleteDhcpStaticMappi
 //
 //    // Example sending a request using the NiftyDeleteDhcpStaticMappingRequest method.
 //    req := client.NiftyDeleteDhcpStaticMappingRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4915,7 +5410,8 @@ type NiftyDeleteElasticLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteElasticLoadBalancer API request.
-func (r NiftyDeleteElasticLoadBalancerRequest) Send() (*NiftyDeleteElasticLoadBalancerOutput, error) {
+func (r NiftyDeleteElasticLoadBalancerRequest) Send(ctx context.Context) (*NiftyDeleteElasticLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4929,7 +5425,7 @@ func (r NiftyDeleteElasticLoadBalancerRequest) Send() (*NiftyDeleteElasticLoadBa
 //
 //    // Example sending a request using the NiftyDeleteElasticLoadBalancerRequest method.
 //    req := client.NiftyDeleteElasticLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -4963,7 +5459,8 @@ type NiftyDeleteInstanceSnapshotRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteInstanceSnapshot API request.
-func (r NiftyDeleteInstanceSnapshotRequest) Send() (*NiftyDeleteInstanceSnapshotOutput, error) {
+func (r NiftyDeleteInstanceSnapshotRequest) Send(ctx context.Context) (*NiftyDeleteInstanceSnapshotOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -4977,7 +5474,7 @@ func (r NiftyDeleteInstanceSnapshotRequest) Send() (*NiftyDeleteInstanceSnapshot
 //
 //    // Example sending a request using the NiftyDeleteInstanceSnapshotRequest method.
 //    req := client.NiftyDeleteInstanceSnapshotRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5011,7 +5508,8 @@ type NiftyDeleteNatRuleRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteNatRule API request.
-func (r NiftyDeleteNatRuleRequest) Send() (*NiftyDeleteNatRuleOutput, error) {
+func (r NiftyDeleteNatRuleRequest) Send(ctx context.Context) (*NiftyDeleteNatRuleOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5025,7 +5523,7 @@ func (r NiftyDeleteNatRuleRequest) Send() (*NiftyDeleteNatRuleOutput, error) {
 //
 //    // Example sending a request using the NiftyDeleteNatRuleRequest method.
 //    req := client.NiftyDeleteNatRuleRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5059,7 +5557,8 @@ type NiftyDeleteNatTableRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteNatTable API request.
-func (r NiftyDeleteNatTableRequest) Send() (*NiftyDeleteNatTableOutput, error) {
+func (r NiftyDeleteNatTableRequest) Send(ctx context.Context) (*NiftyDeleteNatTableOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5073,7 +5572,7 @@ func (r NiftyDeleteNatTableRequest) Send() (*NiftyDeleteNatTableOutput, error) {
 //
 //    // Example sending a request using the NiftyDeleteNatTableRequest method.
 //    req := client.NiftyDeleteNatTableRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5107,7 +5606,8 @@ type NiftyDeletePrivateLanRequest struct {
 }
 
 // Send marshals and sends the NiftyDeletePrivateLan API request.
-func (r NiftyDeletePrivateLanRequest) Send() (*NiftyDeletePrivateLanOutput, error) {
+func (r NiftyDeletePrivateLanRequest) Send(ctx context.Context) (*NiftyDeletePrivateLanOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5121,7 +5621,7 @@ func (r NiftyDeletePrivateLanRequest) Send() (*NiftyDeletePrivateLanOutput, erro
 //
 //    // Example sending a request using the NiftyDeletePrivateLanRequest method.
 //    req := client.NiftyDeletePrivateLanRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5155,7 +5655,8 @@ type NiftyDeleteRouterRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteRouter API request.
-func (r NiftyDeleteRouterRequest) Send() (*NiftyDeleteRouterOutput, error) {
+func (r NiftyDeleteRouterRequest) Send(ctx context.Context) (*NiftyDeleteRouterOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5169,7 +5670,7 @@ func (r NiftyDeleteRouterRequest) Send() (*NiftyDeleteRouterOutput, error) {
 //
 //    // Example sending a request using the NiftyDeleteRouterRequest method.
 //    req := client.NiftyDeleteRouterRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5203,7 +5704,8 @@ type NiftyDeleteSeparateInstanceRuleRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteSeparateInstanceRule API request.
-func (r NiftyDeleteSeparateInstanceRuleRequest) Send() (*NiftyDeleteSeparateInstanceRuleOutput, error) {
+func (r NiftyDeleteSeparateInstanceRuleRequest) Send(ctx context.Context) (*NiftyDeleteSeparateInstanceRuleOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5217,7 +5719,7 @@ func (r NiftyDeleteSeparateInstanceRuleRequest) Send() (*NiftyDeleteSeparateInst
 //
 //    // Example sending a request using the NiftyDeleteSeparateInstanceRuleRequest method.
 //    req := client.NiftyDeleteSeparateInstanceRuleRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5251,7 +5753,8 @@ type NiftyDeleteWebProxyRequest struct {
 }
 
 // Send marshals and sends the NiftyDeleteWebProxy API request.
-func (r NiftyDeleteWebProxyRequest) Send() (*NiftyDeleteWebProxyOutput, error) {
+func (r NiftyDeleteWebProxyRequest) Send(ctx context.Context) (*NiftyDeleteWebProxyOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5265,7 +5768,7 @@ func (r NiftyDeleteWebProxyRequest) Send() (*NiftyDeleteWebProxyOutput, error) {
 //
 //    // Example sending a request using the NiftyDeleteWebProxyRequest method.
 //    req := client.NiftyDeleteWebProxyRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5299,7 +5802,8 @@ type NiftyDeregisterInstancesFromElasticLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the NiftyDeregisterInstancesFromElasticLoadBalancer API request.
-func (r NiftyDeregisterInstancesFromElasticLoadBalancerRequest) Send() (*NiftyDeregisterInstancesFromElasticLoadBalancerOutput, error) {
+func (r NiftyDeregisterInstancesFromElasticLoadBalancerRequest) Send(ctx context.Context) (*NiftyDeregisterInstancesFromElasticLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5313,7 +5817,7 @@ func (r NiftyDeregisterInstancesFromElasticLoadBalancerRequest) Send() (*NiftyDe
 //
 //    // Example sending a request using the NiftyDeregisterInstancesFromElasticLoadBalancerRequest method.
 //    req := client.NiftyDeregisterInstancesFromElasticLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5347,7 +5851,8 @@ type NiftyDeregisterInstancesFromSeparateInstanceRuleRequest struct {
 }
 
 // Send marshals and sends the NiftyDeregisterInstancesFromSeparateInstanceRule API request.
-func (r NiftyDeregisterInstancesFromSeparateInstanceRuleRequest) Send() (*NiftyDeregisterInstancesFromSeparateInstanceRuleOutput, error) {
+func (r NiftyDeregisterInstancesFromSeparateInstanceRuleRequest) Send(ctx context.Context) (*NiftyDeregisterInstancesFromSeparateInstanceRuleOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5361,7 +5866,7 @@ func (r NiftyDeregisterInstancesFromSeparateInstanceRuleRequest) Send() (*NiftyD
 //
 //    // Example sending a request using the NiftyDeregisterInstancesFromSeparateInstanceRuleRequest method.
 //    req := client.NiftyDeregisterInstancesFromSeparateInstanceRuleRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5395,7 +5900,8 @@ type NiftyDeregisterRoutersFromSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the NiftyDeregisterRoutersFromSecurityGroup API request.
-func (r NiftyDeregisterRoutersFromSecurityGroupRequest) Send() (*NiftyDeregisterRoutersFromSecurityGroupOutput, error) {
+func (r NiftyDeregisterRoutersFromSecurityGroupRequest) Send(ctx context.Context) (*NiftyDeregisterRoutersFromSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5409,7 +5915,7 @@ func (r NiftyDeregisterRoutersFromSecurityGroupRequest) Send() (*NiftyDeregister
 //
 //    // Example sending a request using the NiftyDeregisterRoutersFromSecurityGroupRequest method.
 //    req := client.NiftyDeregisterRoutersFromSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5443,7 +5949,8 @@ type NiftyDeregisterVpnGatewaysFromSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the NiftyDeregisterVpnGatewaysFromSecurityGroup API request.
-func (r NiftyDeregisterVpnGatewaysFromSecurityGroupRequest) Send() (*NiftyDeregisterVpnGatewaysFromSecurityGroupOutput, error) {
+func (r NiftyDeregisterVpnGatewaysFromSecurityGroupRequest) Send(ctx context.Context) (*NiftyDeregisterVpnGatewaysFromSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5457,7 +5964,7 @@ func (r NiftyDeregisterVpnGatewaysFromSecurityGroupRequest) Send() (*NiftyDeregi
 //
 //    // Example sending a request using the NiftyDeregisterVpnGatewaysFromSecurityGroupRequest method.
 //    req := client.NiftyDeregisterVpnGatewaysFromSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5491,7 +5998,8 @@ type NiftyDescribeAlarmHistoryRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeAlarmHistory API request.
-func (r NiftyDescribeAlarmHistoryRequest) Send() (*NiftyDescribeAlarmHistoryOutput, error) {
+func (r NiftyDescribeAlarmHistoryRequest) Send(ctx context.Context) (*NiftyDescribeAlarmHistoryOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5505,7 +6013,7 @@ func (r NiftyDescribeAlarmHistoryRequest) Send() (*NiftyDescribeAlarmHistoryOutp
 //
 //    // Example sending a request using the NiftyDescribeAlarmHistoryRequest method.
 //    req := client.NiftyDescribeAlarmHistoryRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5539,7 +6047,8 @@ type NiftyDescribeAlarmRulesActivitiesRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeAlarmRulesActivities API request.
-func (r NiftyDescribeAlarmRulesActivitiesRequest) Send() (*NiftyDescribeAlarmRulesActivitiesOutput, error) {
+func (r NiftyDescribeAlarmRulesActivitiesRequest) Send(ctx context.Context) (*NiftyDescribeAlarmRulesActivitiesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5553,7 +6062,7 @@ func (r NiftyDescribeAlarmRulesActivitiesRequest) Send() (*NiftyDescribeAlarmRul
 //
 //    // Example sending a request using the NiftyDescribeAlarmRulesActivitiesRequest method.
 //    req := client.NiftyDescribeAlarmRulesActivitiesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5587,7 +6096,8 @@ type NiftyDescribeAlarmsRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeAlarms API request.
-func (r NiftyDescribeAlarmsRequest) Send() (*NiftyDescribeAlarmsOutput, error) {
+func (r NiftyDescribeAlarmsRequest) Send(ctx context.Context) (*NiftyDescribeAlarmsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5601,7 +6111,7 @@ func (r NiftyDescribeAlarmsRequest) Send() (*NiftyDescribeAlarmsOutput, error) {
 //
 //    // Example sending a request using the NiftyDescribeAlarmsRequest method.
 //    req := client.NiftyDescribeAlarmsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5635,7 +6145,8 @@ type NiftyDescribeAlarmsPartitionsRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeAlarmsPartitions API request.
-func (r NiftyDescribeAlarmsPartitionsRequest) Send() (*NiftyDescribeAlarmsPartitionsOutput, error) {
+func (r NiftyDescribeAlarmsPartitionsRequest) Send(ctx context.Context) (*NiftyDescribeAlarmsPartitionsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5649,7 +6160,7 @@ func (r NiftyDescribeAlarmsPartitionsRequest) Send() (*NiftyDescribeAlarmsPartit
 //
 //    // Example sending a request using the NiftyDescribeAlarmsPartitionsRequest method.
 //    req := client.NiftyDescribeAlarmsPartitionsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5683,7 +6194,8 @@ type NiftyDescribeAutoScalingGroupsRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeAutoScalingGroups API request.
-func (r NiftyDescribeAutoScalingGroupsRequest) Send() (*NiftyDescribeAutoScalingGroupsOutput, error) {
+func (r NiftyDescribeAutoScalingGroupsRequest) Send(ctx context.Context) (*NiftyDescribeAutoScalingGroupsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5697,7 +6209,7 @@ func (r NiftyDescribeAutoScalingGroupsRequest) Send() (*NiftyDescribeAutoScaling
 //
 //    // Example sending a request using the NiftyDescribeAutoScalingGroupsRequest method.
 //    req := client.NiftyDescribeAutoScalingGroupsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5731,7 +6243,8 @@ type NiftyDescribeCorporateInfoForCertificateRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeCorporateInfoForCertificate API request.
-func (r NiftyDescribeCorporateInfoForCertificateRequest) Send() (*NiftyDescribeCorporateInfoForCertificateOutput, error) {
+func (r NiftyDescribeCorporateInfoForCertificateRequest) Send(ctx context.Context) (*NiftyDescribeCorporateInfoForCertificateOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5745,7 +6258,7 @@ func (r NiftyDescribeCorporateInfoForCertificateRequest) Send() (*NiftyDescribeC
 //
 //    // Example sending a request using the NiftyDescribeCorporateInfoForCertificateRequest method.
 //    req := client.NiftyDescribeCorporateInfoForCertificateRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5779,7 +6292,8 @@ type NiftyDescribeDhcpConfigsRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeDhcpConfigs API request.
-func (r NiftyDescribeDhcpConfigsRequest) Send() (*NiftyDescribeDhcpConfigsOutput, error) {
+func (r NiftyDescribeDhcpConfigsRequest) Send(ctx context.Context) (*NiftyDescribeDhcpConfigsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5793,7 +6307,7 @@ func (r NiftyDescribeDhcpConfigsRequest) Send() (*NiftyDescribeDhcpConfigsOutput
 //
 //    // Example sending a request using the NiftyDescribeDhcpConfigsRequest method.
 //    req := client.NiftyDescribeDhcpConfigsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5827,7 +6341,8 @@ type NiftyDescribeDhcpStatusRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeDhcpStatus API request.
-func (r NiftyDescribeDhcpStatusRequest) Send() (*NiftyDescribeDhcpStatusOutput, error) {
+func (r NiftyDescribeDhcpStatusRequest) Send(ctx context.Context) (*NiftyDescribeDhcpStatusOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5841,7 +6356,7 @@ func (r NiftyDescribeDhcpStatusRequest) Send() (*NiftyDescribeDhcpStatusOutput, 
 //
 //    // Example sending a request using the NiftyDescribeDhcpStatusRequest method.
 //    req := client.NiftyDescribeDhcpStatusRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5875,7 +6390,8 @@ type NiftyDescribeElasticLoadBalancersRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeElasticLoadBalancers API request.
-func (r NiftyDescribeElasticLoadBalancersRequest) Send() (*NiftyDescribeElasticLoadBalancersOutput, error) {
+func (r NiftyDescribeElasticLoadBalancersRequest) Send(ctx context.Context) (*NiftyDescribeElasticLoadBalancersOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5889,7 +6405,7 @@ func (r NiftyDescribeElasticLoadBalancersRequest) Send() (*NiftyDescribeElasticL
 //
 //    // Example sending a request using the NiftyDescribeElasticLoadBalancersRequest method.
 //    req := client.NiftyDescribeElasticLoadBalancersRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5923,7 +6439,8 @@ type NiftyDescribeInstanceElasticLoadBalancerHealthRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeInstanceElasticLoadBalancerHealth API request.
-func (r NiftyDescribeInstanceElasticLoadBalancerHealthRequest) Send() (*NiftyDescribeInstanceElasticLoadBalancerHealthOutput, error) {
+func (r NiftyDescribeInstanceElasticLoadBalancerHealthRequest) Send(ctx context.Context) (*NiftyDescribeInstanceElasticLoadBalancerHealthOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5937,7 +6454,7 @@ func (r NiftyDescribeInstanceElasticLoadBalancerHealthRequest) Send() (*NiftyDes
 //
 //    // Example sending a request using the NiftyDescribeInstanceElasticLoadBalancerHealthRequest method.
 //    req := client.NiftyDescribeInstanceElasticLoadBalancerHealthRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -5971,7 +6488,8 @@ type NiftyDescribeInstanceSnapshotsRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeInstanceSnapshots API request.
-func (r NiftyDescribeInstanceSnapshotsRequest) Send() (*NiftyDescribeInstanceSnapshotsOutput, error) {
+func (r NiftyDescribeInstanceSnapshotsRequest) Send(ctx context.Context) (*NiftyDescribeInstanceSnapshotsOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -5985,7 +6503,7 @@ func (r NiftyDescribeInstanceSnapshotsRequest) Send() (*NiftyDescribeInstanceSna
 //
 //    // Example sending a request using the NiftyDescribeInstanceSnapshotsRequest method.
 //    req := client.NiftyDescribeInstanceSnapshotsRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6009,6 +6527,55 @@ func (c *Computing) NiftyDescribeInstanceSnapshotsRequest(input *NiftyDescribeIn
 	return NiftyDescribeInstanceSnapshotsRequest{Request: req, Input: input, Copy: c.NiftyDescribeInstanceSnapshotsRequest}
 }
 
+const opNiftyDescribeLoadBalancerSSLPolicies = "NiftyDescribeLoadBalancerSSLPolicies"
+
+// NiftyDescribeLoadBalancerSSLPoliciesRequest is a API request type for the NiftyDescribeLoadBalancerSSLPolicies API operation.
+type NiftyDescribeLoadBalancerSSLPoliciesRequest struct {
+	*aws.Request
+	Input *NiftyDescribeLoadBalancerSSLPoliciesInput
+	Copy  func(*NiftyDescribeLoadBalancerSSLPoliciesInput) NiftyDescribeLoadBalancerSSLPoliciesRequest
+}
+
+// Send marshals and sends the NiftyDescribeLoadBalancerSSLPolicies API request.
+func (r NiftyDescribeLoadBalancerSSLPoliciesRequest) Send(ctx context.Context) (*NiftyDescribeLoadBalancerSSLPoliciesOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*NiftyDescribeLoadBalancerSSLPoliciesOutput), nil
+}
+
+// NiftyDescribeLoadBalancerSSLPoliciesRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the NiftyDescribeLoadBalancerSSLPoliciesRequest method.
+//    req := client.NiftyDescribeLoadBalancerSSLPoliciesRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyDescribeLoadBalancerSSLPolicies
+func (c *Computing) NiftyDescribeLoadBalancerSSLPoliciesRequest(input *NiftyDescribeLoadBalancerSSLPoliciesInput) NiftyDescribeLoadBalancerSSLPoliciesRequest {
+	op := &aws.Operation{
+		Name:       opNiftyDescribeLoadBalancerSSLPolicies,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &NiftyDescribeLoadBalancerSSLPoliciesInput{}
+	}
+
+	output := &NiftyDescribeLoadBalancerSSLPoliciesOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return NiftyDescribeLoadBalancerSSLPoliciesRequest{Request: req, Input: input, Copy: c.NiftyDescribeLoadBalancerSSLPoliciesRequest}
+}
+
 const opNiftyDescribeNatTables = "NiftyDescribeNatTables"
 
 // NiftyDescribeNatTablesRequest is a API request type for the NiftyDescribeNatTables API operation.
@@ -6019,7 +6586,8 @@ type NiftyDescribeNatTablesRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeNatTables API request.
-func (r NiftyDescribeNatTablesRequest) Send() (*NiftyDescribeNatTablesOutput, error) {
+func (r NiftyDescribeNatTablesRequest) Send(ctx context.Context) (*NiftyDescribeNatTablesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6033,7 +6601,7 @@ func (r NiftyDescribeNatTablesRequest) Send() (*NiftyDescribeNatTablesOutput, er
 //
 //    // Example sending a request using the NiftyDescribeNatTablesRequest method.
 //    req := client.NiftyDescribeNatTablesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6067,7 +6635,8 @@ type NiftyDescribePerformanceChartRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribePerformanceChart API request.
-func (r NiftyDescribePerformanceChartRequest) Send() (*NiftyDescribePerformanceChartOutput, error) {
+func (r NiftyDescribePerformanceChartRequest) Send(ctx context.Context) (*NiftyDescribePerformanceChartOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6081,7 +6650,7 @@ func (r NiftyDescribePerformanceChartRequest) Send() (*NiftyDescribePerformanceC
 //
 //    // Example sending a request using the NiftyDescribePerformanceChartRequest method.
 //    req := client.NiftyDescribePerformanceChartRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6115,7 +6684,8 @@ type NiftyDescribePrivateLansRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribePrivateLans API request.
-func (r NiftyDescribePrivateLansRequest) Send() (*NiftyDescribePrivateLansOutput, error) {
+func (r NiftyDescribePrivateLansRequest) Send(ctx context.Context) (*NiftyDescribePrivateLansOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6129,7 +6699,7 @@ func (r NiftyDescribePrivateLansRequest) Send() (*NiftyDescribePrivateLansOutput
 //
 //    // Example sending a request using the NiftyDescribePrivateLansRequest method.
 //    req := client.NiftyDescribePrivateLansRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6163,7 +6733,8 @@ type NiftyDescribeRoutersRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeRouters API request.
-func (r NiftyDescribeRoutersRequest) Send() (*NiftyDescribeRoutersOutput, error) {
+func (r NiftyDescribeRoutersRequest) Send(ctx context.Context) (*NiftyDescribeRoutersOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6177,7 +6748,7 @@ func (r NiftyDescribeRoutersRequest) Send() (*NiftyDescribeRoutersOutput, error)
 //
 //    // Example sending a request using the NiftyDescribeRoutersRequest method.
 //    req := client.NiftyDescribeRoutersRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6211,7 +6782,8 @@ type NiftyDescribeScalingActivitiesRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeScalingActivities API request.
-func (r NiftyDescribeScalingActivitiesRequest) Send() (*NiftyDescribeScalingActivitiesOutput, error) {
+func (r NiftyDescribeScalingActivitiesRequest) Send(ctx context.Context) (*NiftyDescribeScalingActivitiesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6225,7 +6797,7 @@ func (r NiftyDescribeScalingActivitiesRequest) Send() (*NiftyDescribeScalingActi
 //
 //    // Example sending a request using the NiftyDescribeScalingActivitiesRequest method.
 //    req := client.NiftyDescribeScalingActivitiesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6259,7 +6831,8 @@ type NiftyDescribeSeparateInstanceRulesRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeSeparateInstanceRules API request.
-func (r NiftyDescribeSeparateInstanceRulesRequest) Send() (*NiftyDescribeSeparateInstanceRulesOutput, error) {
+func (r NiftyDescribeSeparateInstanceRulesRequest) Send(ctx context.Context) (*NiftyDescribeSeparateInstanceRulesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6273,7 +6846,7 @@ func (r NiftyDescribeSeparateInstanceRulesRequest) Send() (*NiftyDescribeSeparat
 //
 //    // Example sending a request using the NiftyDescribeSeparateInstanceRulesRequest method.
 //    req := client.NiftyDescribeSeparateInstanceRulesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6307,7 +6880,8 @@ type NiftyDescribeVpnGatewayActivitiesRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeVpnGatewayActivities API request.
-func (r NiftyDescribeVpnGatewayActivitiesRequest) Send() (*NiftyDescribeVpnGatewayActivitiesOutput, error) {
+func (r NiftyDescribeVpnGatewayActivitiesRequest) Send(ctx context.Context) (*NiftyDescribeVpnGatewayActivitiesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6321,7 +6895,7 @@ func (r NiftyDescribeVpnGatewayActivitiesRequest) Send() (*NiftyDescribeVpnGatew
 //
 //    // Example sending a request using the NiftyDescribeVpnGatewayActivitiesRequest method.
 //    req := client.NiftyDescribeVpnGatewayActivitiesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6355,7 +6929,8 @@ type NiftyDescribeWebProxiesRequest struct {
 }
 
 // Send marshals and sends the NiftyDescribeWebProxies API request.
-func (r NiftyDescribeWebProxiesRequest) Send() (*NiftyDescribeWebProxiesOutput, error) {
+func (r NiftyDescribeWebProxiesRequest) Send(ctx context.Context) (*NiftyDescribeWebProxiesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6369,7 +6944,7 @@ func (r NiftyDescribeWebProxiesRequest) Send() (*NiftyDescribeWebProxiesOutput, 
 //
 //    // Example sending a request using the NiftyDescribeWebProxiesRequest method.
 //    req := client.NiftyDescribeWebProxiesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6403,7 +6978,8 @@ type NiftyDisableDhcpRequest struct {
 }
 
 // Send marshals and sends the NiftyDisableDhcp API request.
-func (r NiftyDisableDhcpRequest) Send() (*NiftyDisableDhcpOutput, error) {
+func (r NiftyDisableDhcpRequest) Send(ctx context.Context) (*NiftyDisableDhcpOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6417,7 +6993,7 @@ func (r NiftyDisableDhcpRequest) Send() (*NiftyDisableDhcpOutput, error) {
 //
 //    // Example sending a request using the NiftyDisableDhcpRequest method.
 //    req := client.NiftyDisableDhcpRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6451,7 +7027,8 @@ type NiftyDisassociateNatTableRequest struct {
 }
 
 // Send marshals and sends the NiftyDisassociateNatTable API request.
-func (r NiftyDisassociateNatTableRequest) Send() (*NiftyDisassociateNatTableOutput, error) {
+func (r NiftyDisassociateNatTableRequest) Send(ctx context.Context) (*NiftyDisassociateNatTableOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6465,7 +7042,7 @@ func (r NiftyDisassociateNatTableRequest) Send() (*NiftyDisassociateNatTableOutp
 //
 //    // Example sending a request using the NiftyDisassociateNatTableRequest method.
 //    req := client.NiftyDisassociateNatTableRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6489,6 +7066,55 @@ func (c *Computing) NiftyDisassociateNatTableRequest(input *NiftyDisassociateNat
 	return NiftyDisassociateNatTableRequest{Request: req, Input: input, Copy: c.NiftyDisassociateNatTableRequest}
 }
 
+const opNiftyDisassociateRouteTableFromElasticLoadBalancer = "NiftyDisassociateRouteTableFromElasticLoadBalancer"
+
+// NiftyDisassociateRouteTableFromElasticLoadBalancerRequest is a API request type for the NiftyDisassociateRouteTableFromElasticLoadBalancer API operation.
+type NiftyDisassociateRouteTableFromElasticLoadBalancerRequest struct {
+	*aws.Request
+	Input *NiftyDisassociateRouteTableFromElasticLoadBalancerInput
+	Copy  func(*NiftyDisassociateRouteTableFromElasticLoadBalancerInput) NiftyDisassociateRouteTableFromElasticLoadBalancerRequest
+}
+
+// Send marshals and sends the NiftyDisassociateRouteTableFromElasticLoadBalancer API request.
+func (r NiftyDisassociateRouteTableFromElasticLoadBalancerRequest) Send(ctx context.Context) (*NiftyDisassociateRouteTableFromElasticLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*NiftyDisassociateRouteTableFromElasticLoadBalancerOutput), nil
+}
+
+// NiftyDisassociateRouteTableFromElasticLoadBalancerRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the NiftyDisassociateRouteTableFromElasticLoadBalancerRequest method.
+//    req := client.NiftyDisassociateRouteTableFromElasticLoadBalancerRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyDisassociateRouteTableFromElasticLoadBalancer
+func (c *Computing) NiftyDisassociateRouteTableFromElasticLoadBalancerRequest(input *NiftyDisassociateRouteTableFromElasticLoadBalancerInput) NiftyDisassociateRouteTableFromElasticLoadBalancerRequest {
+	op := &aws.Operation{
+		Name:       opNiftyDisassociateRouteTableFromElasticLoadBalancer,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &NiftyDisassociateRouteTableFromElasticLoadBalancerInput{}
+	}
+
+	output := &NiftyDisassociateRouteTableFromElasticLoadBalancerOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return NiftyDisassociateRouteTableFromElasticLoadBalancerRequest{Request: req, Input: input, Copy: c.NiftyDisassociateRouteTableFromElasticLoadBalancerRequest}
+}
+
 const opNiftyDisassociateRouteTableFromVpnGateway = "NiftyDisassociateRouteTableFromVpnGateway"
 
 // NiftyDisassociateRouteTableFromVpnGatewayRequest is a API request type for the NiftyDisassociateRouteTableFromVpnGateway API operation.
@@ -6499,7 +7125,8 @@ type NiftyDisassociateRouteTableFromVpnGatewayRequest struct {
 }
 
 // Send marshals and sends the NiftyDisassociateRouteTableFromVpnGateway API request.
-func (r NiftyDisassociateRouteTableFromVpnGatewayRequest) Send() (*NiftyDisassociateRouteTableFromVpnGatewayOutput, error) {
+func (r NiftyDisassociateRouteTableFromVpnGatewayRequest) Send(ctx context.Context) (*NiftyDisassociateRouteTableFromVpnGatewayOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6513,7 +7140,7 @@ func (r NiftyDisassociateRouteTableFromVpnGatewayRequest) Send() (*NiftyDisassoc
 //
 //    // Example sending a request using the NiftyDisassociateRouteTableFromVpnGatewayRequest method.
 //    req := client.NiftyDisassociateRouteTableFromVpnGatewayRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6547,7 +7174,8 @@ type NiftyEnableDhcpRequest struct {
 }
 
 // Send marshals and sends the NiftyEnableDhcp API request.
-func (r NiftyEnableDhcpRequest) Send() (*NiftyEnableDhcpOutput, error) {
+func (r NiftyEnableDhcpRequest) Send(ctx context.Context) (*NiftyEnableDhcpOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6561,7 +7189,7 @@ func (r NiftyEnableDhcpRequest) Send() (*NiftyEnableDhcpOutput, error) {
 //
 //    // Example sending a request using the NiftyEnableDhcpRequest method.
 //    req := client.NiftyEnableDhcpRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6595,7 +7223,8 @@ type NiftyModifyAddressAttributeRequest struct {
 }
 
 // Send marshals and sends the NiftyModifyAddressAttribute API request.
-func (r NiftyModifyAddressAttributeRequest) Send() (*NiftyModifyAddressAttributeOutput, error) {
+func (r NiftyModifyAddressAttributeRequest) Send(ctx context.Context) (*NiftyModifyAddressAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6609,7 +7238,7 @@ func (r NiftyModifyAddressAttributeRequest) Send() (*NiftyModifyAddressAttribute
 //
 //    // Example sending a request using the NiftyModifyAddressAttributeRequest method.
 //    req := client.NiftyModifyAddressAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6643,7 +7272,8 @@ type NiftyModifyCustomerGatewayAttributeRequest struct {
 }
 
 // Send marshals and sends the NiftyModifyCustomerGatewayAttribute API request.
-func (r NiftyModifyCustomerGatewayAttributeRequest) Send() (*NiftyModifyCustomerGatewayAttributeOutput, error) {
+func (r NiftyModifyCustomerGatewayAttributeRequest) Send(ctx context.Context) (*NiftyModifyCustomerGatewayAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6657,7 +7287,7 @@ func (r NiftyModifyCustomerGatewayAttributeRequest) Send() (*NiftyModifyCustomer
 //
 //    // Example sending a request using the NiftyModifyCustomerGatewayAttributeRequest method.
 //    req := client.NiftyModifyCustomerGatewayAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6691,7 +7321,8 @@ type NiftyModifyElasticLoadBalancerAttributesRequest struct {
 }
 
 // Send marshals and sends the NiftyModifyElasticLoadBalancerAttributes API request.
-func (r NiftyModifyElasticLoadBalancerAttributesRequest) Send() (*NiftyModifyElasticLoadBalancerAttributesOutput, error) {
+func (r NiftyModifyElasticLoadBalancerAttributesRequest) Send(ctx context.Context) (*NiftyModifyElasticLoadBalancerAttributesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6705,7 +7336,7 @@ func (r NiftyModifyElasticLoadBalancerAttributesRequest) Send() (*NiftyModifyEla
 //
 //    // Example sending a request using the NiftyModifyElasticLoadBalancerAttributesRequest method.
 //    req := client.NiftyModifyElasticLoadBalancerAttributesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6739,7 +7370,8 @@ type NiftyModifyInstanceSnapshotAttributeRequest struct {
 }
 
 // Send marshals and sends the NiftyModifyInstanceSnapshotAttribute API request.
-func (r NiftyModifyInstanceSnapshotAttributeRequest) Send() (*NiftyModifyInstanceSnapshotAttributeOutput, error) {
+func (r NiftyModifyInstanceSnapshotAttributeRequest) Send(ctx context.Context) (*NiftyModifyInstanceSnapshotAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6753,7 +7385,7 @@ func (r NiftyModifyInstanceSnapshotAttributeRequest) Send() (*NiftyModifyInstanc
 //
 //    // Example sending a request using the NiftyModifyInstanceSnapshotAttributeRequest method.
 //    req := client.NiftyModifyInstanceSnapshotAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6787,7 +7419,8 @@ type NiftyModifyKeyPairAttributeRequest struct {
 }
 
 // Send marshals and sends the NiftyModifyKeyPairAttribute API request.
-func (r NiftyModifyKeyPairAttributeRequest) Send() (*NiftyModifyKeyPairAttributeOutput, error) {
+func (r NiftyModifyKeyPairAttributeRequest) Send(ctx context.Context) (*NiftyModifyKeyPairAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6801,7 +7434,7 @@ func (r NiftyModifyKeyPairAttributeRequest) Send() (*NiftyModifyKeyPairAttribute
 //
 //    // Example sending a request using the NiftyModifyKeyPairAttributeRequest method.
 //    req := client.NiftyModifyKeyPairAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6835,7 +7468,8 @@ type NiftyModifyPrivateLanAttributeRequest struct {
 }
 
 // Send marshals and sends the NiftyModifyPrivateLanAttribute API request.
-func (r NiftyModifyPrivateLanAttributeRequest) Send() (*NiftyModifyPrivateLanAttributeOutput, error) {
+func (r NiftyModifyPrivateLanAttributeRequest) Send(ctx context.Context) (*NiftyModifyPrivateLanAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6849,7 +7483,7 @@ func (r NiftyModifyPrivateLanAttributeRequest) Send() (*NiftyModifyPrivateLanAtt
 //
 //    // Example sending a request using the NiftyModifyPrivateLanAttributeRequest method.
 //    req := client.NiftyModifyPrivateLanAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6883,7 +7517,8 @@ type NiftyModifyRouterAttributeRequest struct {
 }
 
 // Send marshals and sends the NiftyModifyRouterAttribute API request.
-func (r NiftyModifyRouterAttributeRequest) Send() (*NiftyModifyRouterAttributeOutput, error) {
+func (r NiftyModifyRouterAttributeRequest) Send(ctx context.Context) (*NiftyModifyRouterAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6897,7 +7532,7 @@ func (r NiftyModifyRouterAttributeRequest) Send() (*NiftyModifyRouterAttributeOu
 //
 //    // Example sending a request using the NiftyModifyRouterAttributeRequest method.
 //    req := client.NiftyModifyRouterAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6931,7 +7566,8 @@ type NiftyModifyVpnGatewayAttributeRequest struct {
 }
 
 // Send marshals and sends the NiftyModifyVpnGatewayAttribute API request.
-func (r NiftyModifyVpnGatewayAttributeRequest) Send() (*NiftyModifyVpnGatewayAttributeOutput, error) {
+func (r NiftyModifyVpnGatewayAttributeRequest) Send(ctx context.Context) (*NiftyModifyVpnGatewayAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6945,7 +7581,7 @@ func (r NiftyModifyVpnGatewayAttributeRequest) Send() (*NiftyModifyVpnGatewayAtt
 //
 //    // Example sending a request using the NiftyModifyVpnGatewayAttributeRequest method.
 //    req := client.NiftyModifyVpnGatewayAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -6979,7 +7615,8 @@ type NiftyModifyWebProxyAttributeRequest struct {
 }
 
 // Send marshals and sends the NiftyModifyWebProxyAttribute API request.
-func (r NiftyModifyWebProxyAttributeRequest) Send() (*NiftyModifyWebProxyAttributeOutput, error) {
+func (r NiftyModifyWebProxyAttributeRequest) Send(ctx context.Context) (*NiftyModifyWebProxyAttributeOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -6993,7 +7630,7 @@ func (r NiftyModifyWebProxyAttributeRequest) Send() (*NiftyModifyWebProxyAttribu
 //
 //    // Example sending a request using the NiftyModifyWebProxyAttributeRequest method.
 //    req := client.NiftyModifyWebProxyAttributeRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7027,7 +7664,8 @@ type NiftyRebootRoutersRequest struct {
 }
 
 // Send marshals and sends the NiftyRebootRouters API request.
-func (r NiftyRebootRoutersRequest) Send() (*NiftyRebootRoutersOutput, error) {
+func (r NiftyRebootRoutersRequest) Send(ctx context.Context) (*NiftyRebootRoutersOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7041,7 +7679,7 @@ func (r NiftyRebootRoutersRequest) Send() (*NiftyRebootRoutersOutput, error) {
 //
 //    // Example sending a request using the NiftyRebootRoutersRequest method.
 //    req := client.NiftyRebootRoutersRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7075,7 +7713,8 @@ type NiftyRebootVpnGatewaysRequest struct {
 }
 
 // Send marshals and sends the NiftyRebootVpnGateways API request.
-func (r NiftyRebootVpnGatewaysRequest) Send() (*NiftyRebootVpnGatewaysOutput, error) {
+func (r NiftyRebootVpnGatewaysRequest) Send(ctx context.Context) (*NiftyRebootVpnGatewaysOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7089,7 +7728,7 @@ func (r NiftyRebootVpnGatewaysRequest) Send() (*NiftyRebootVpnGatewaysOutput, er
 //
 //    // Example sending a request using the NiftyRebootVpnGatewaysRequest method.
 //    req := client.NiftyRebootVpnGatewaysRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7123,7 +7762,8 @@ type NiftyRegisterInstancesWithElasticLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the NiftyRegisterInstancesWithElasticLoadBalancer API request.
-func (r NiftyRegisterInstancesWithElasticLoadBalancerRequest) Send() (*NiftyRegisterInstancesWithElasticLoadBalancerOutput, error) {
+func (r NiftyRegisterInstancesWithElasticLoadBalancerRequest) Send(ctx context.Context) (*NiftyRegisterInstancesWithElasticLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7137,7 +7777,7 @@ func (r NiftyRegisterInstancesWithElasticLoadBalancerRequest) Send() (*NiftyRegi
 //
 //    // Example sending a request using the NiftyRegisterInstancesWithElasticLoadBalancerRequest method.
 //    req := client.NiftyRegisterInstancesWithElasticLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7171,7 +7811,8 @@ type NiftyRegisterInstancesWithSeparateInstanceRuleRequest struct {
 }
 
 // Send marshals and sends the NiftyRegisterInstancesWithSeparateInstanceRule API request.
-func (r NiftyRegisterInstancesWithSeparateInstanceRuleRequest) Send() (*NiftyRegisterInstancesWithSeparateInstanceRuleOutput, error) {
+func (r NiftyRegisterInstancesWithSeparateInstanceRuleRequest) Send(ctx context.Context) (*NiftyRegisterInstancesWithSeparateInstanceRuleOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7185,7 +7826,7 @@ func (r NiftyRegisterInstancesWithSeparateInstanceRuleRequest) Send() (*NiftyReg
 //
 //    // Example sending a request using the NiftyRegisterInstancesWithSeparateInstanceRuleRequest method.
 //    req := client.NiftyRegisterInstancesWithSeparateInstanceRuleRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7219,7 +7860,8 @@ type NiftyRegisterPortWithElasticLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the NiftyRegisterPortWithElasticLoadBalancer API request.
-func (r NiftyRegisterPortWithElasticLoadBalancerRequest) Send() (*NiftyRegisterPortWithElasticLoadBalancerOutput, error) {
+func (r NiftyRegisterPortWithElasticLoadBalancerRequest) Send(ctx context.Context) (*NiftyRegisterPortWithElasticLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7233,7 +7875,7 @@ func (r NiftyRegisterPortWithElasticLoadBalancerRequest) Send() (*NiftyRegisterP
 //
 //    // Example sending a request using the NiftyRegisterPortWithElasticLoadBalancerRequest method.
 //    req := client.NiftyRegisterPortWithElasticLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7267,7 +7909,8 @@ type NiftyRegisterRoutersWithSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the NiftyRegisterRoutersWithSecurityGroup API request.
-func (r NiftyRegisterRoutersWithSecurityGroupRequest) Send() (*NiftyRegisterRoutersWithSecurityGroupOutput, error) {
+func (r NiftyRegisterRoutersWithSecurityGroupRequest) Send(ctx context.Context) (*NiftyRegisterRoutersWithSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7281,7 +7924,7 @@ func (r NiftyRegisterRoutersWithSecurityGroupRequest) Send() (*NiftyRegisterRout
 //
 //    // Example sending a request using the NiftyRegisterRoutersWithSecurityGroupRequest method.
 //    req := client.NiftyRegisterRoutersWithSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7315,7 +7958,8 @@ type NiftyRegisterVpnGatewaysWithSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the NiftyRegisterVpnGatewaysWithSecurityGroup API request.
-func (r NiftyRegisterVpnGatewaysWithSecurityGroupRequest) Send() (*NiftyRegisterVpnGatewaysWithSecurityGroupOutput, error) {
+func (r NiftyRegisterVpnGatewaysWithSecurityGroupRequest) Send(ctx context.Context) (*NiftyRegisterVpnGatewaysWithSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7329,7 +7973,7 @@ func (r NiftyRegisterVpnGatewaysWithSecurityGroupRequest) Send() (*NiftyRegister
 //
 //    // Example sending a request using the NiftyRegisterVpnGatewaysWithSecurityGroupRequest method.
 //    req := client.NiftyRegisterVpnGatewaysWithSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7363,7 +8007,8 @@ type NiftyReleaseRouterBackupStateRequest struct {
 }
 
 // Send marshals and sends the NiftyReleaseRouterBackupState API request.
-func (r NiftyReleaseRouterBackupStateRequest) Send() (*NiftyReleaseRouterBackupStateOutput, error) {
+func (r NiftyReleaseRouterBackupStateRequest) Send(ctx context.Context) (*NiftyReleaseRouterBackupStateOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7377,7 +8022,7 @@ func (r NiftyReleaseRouterBackupStateRequest) Send() (*NiftyReleaseRouterBackupS
 //
 //    // Example sending a request using the NiftyReleaseRouterBackupStateRequest method.
 //    req := client.NiftyReleaseRouterBackupStateRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7411,7 +8056,8 @@ type NiftyReleaseVpnGatewayBackupStateRequest struct {
 }
 
 // Send marshals and sends the NiftyReleaseVpnGatewayBackupState API request.
-func (r NiftyReleaseVpnGatewayBackupStateRequest) Send() (*NiftyReleaseVpnGatewayBackupStateOutput, error) {
+func (r NiftyReleaseVpnGatewayBackupStateRequest) Send(ctx context.Context) (*NiftyReleaseVpnGatewayBackupStateOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7425,7 +8071,7 @@ func (r NiftyReleaseVpnGatewayBackupStateRequest) Send() (*NiftyReleaseVpnGatewa
 //
 //    // Example sending a request using the NiftyReleaseVpnGatewayBackupStateRequest method.
 //    req := client.NiftyReleaseVpnGatewayBackupStateRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7459,7 +8105,8 @@ type NiftyReplaceDhcpConfigRequest struct {
 }
 
 // Send marshals and sends the NiftyReplaceDhcpConfig API request.
-func (r NiftyReplaceDhcpConfigRequest) Send() (*NiftyReplaceDhcpConfigOutput, error) {
+func (r NiftyReplaceDhcpConfigRequest) Send(ctx context.Context) (*NiftyReplaceDhcpConfigOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7473,7 +8120,7 @@ func (r NiftyReplaceDhcpConfigRequest) Send() (*NiftyReplaceDhcpConfigOutput, er
 //
 //    // Example sending a request using the NiftyReplaceDhcpConfigRequest method.
 //    req := client.NiftyReplaceDhcpConfigRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7507,7 +8154,8 @@ type NiftyReplaceDhcpOptionRequest struct {
 }
 
 // Send marshals and sends the NiftyReplaceDhcpOption API request.
-func (r NiftyReplaceDhcpOptionRequest) Send() (*NiftyReplaceDhcpOptionOutput, error) {
+func (r NiftyReplaceDhcpOptionRequest) Send(ctx context.Context) (*NiftyReplaceDhcpOptionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7521,7 +8169,7 @@ func (r NiftyReplaceDhcpOptionRequest) Send() (*NiftyReplaceDhcpOptionOutput, er
 //
 //    // Example sending a request using the NiftyReplaceDhcpOptionRequest method.
 //    req := client.NiftyReplaceDhcpOptionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7555,7 +8203,8 @@ type NiftyReplaceElasticLoadBalancerLatestVersionRequest struct {
 }
 
 // Send marshals and sends the NiftyReplaceElasticLoadBalancerLatestVersion API request.
-func (r NiftyReplaceElasticLoadBalancerLatestVersionRequest) Send() (*NiftyReplaceElasticLoadBalancerLatestVersionOutput, error) {
+func (r NiftyReplaceElasticLoadBalancerLatestVersionRequest) Send(ctx context.Context) (*NiftyReplaceElasticLoadBalancerLatestVersionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7569,7 +8218,7 @@ func (r NiftyReplaceElasticLoadBalancerLatestVersionRequest) Send() (*NiftyRepla
 //
 //    // Example sending a request using the NiftyReplaceElasticLoadBalancerLatestVersionRequest method.
 //    req := client.NiftyReplaceElasticLoadBalancerLatestVersionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7593,6 +8242,55 @@ func (c *Computing) NiftyReplaceElasticLoadBalancerLatestVersionRequest(input *N
 	return NiftyReplaceElasticLoadBalancerLatestVersionRequest{Request: req, Input: input, Copy: c.NiftyReplaceElasticLoadBalancerLatestVersionRequest}
 }
 
+const opNiftyReplaceElasticLoadBalancerListenerSSLCertificate = "NiftyReplaceElasticLoadBalancerListenerSSLCertificate"
+
+// NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest is a API request type for the NiftyReplaceElasticLoadBalancerListenerSSLCertificate API operation.
+type NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest struct {
+	*aws.Request
+	Input *NiftyReplaceElasticLoadBalancerListenerSSLCertificateInput
+	Copy  func(*NiftyReplaceElasticLoadBalancerListenerSSLCertificateInput) NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest
+}
+
+// Send marshals and sends the NiftyReplaceElasticLoadBalancerListenerSSLCertificate API request.
+func (r NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest) Send(ctx context.Context) (*NiftyReplaceElasticLoadBalancerListenerSSLCertificateOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*NiftyReplaceElasticLoadBalancerListenerSSLCertificateOutput), nil
+}
+
+// NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest method.
+//    req := client.NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyReplaceElasticLoadBalancerListenerSSLCertificate
+func (c *Computing) NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest(input *NiftyReplaceElasticLoadBalancerListenerSSLCertificateInput) NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest {
+	op := &aws.Operation{
+		Name:       opNiftyReplaceElasticLoadBalancerListenerSSLCertificate,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &NiftyReplaceElasticLoadBalancerListenerSSLCertificateInput{}
+	}
+
+	output := &NiftyReplaceElasticLoadBalancerListenerSSLCertificateOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest{Request: req, Input: input, Copy: c.NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest}
+}
+
 const opNiftyReplaceNatRule = "NiftyReplaceNatRule"
 
 // NiftyReplaceNatRuleRequest is a API request type for the NiftyReplaceNatRule API operation.
@@ -7603,7 +8301,8 @@ type NiftyReplaceNatRuleRequest struct {
 }
 
 // Send marshals and sends the NiftyReplaceNatRule API request.
-func (r NiftyReplaceNatRuleRequest) Send() (*NiftyReplaceNatRuleOutput, error) {
+func (r NiftyReplaceNatRuleRequest) Send(ctx context.Context) (*NiftyReplaceNatRuleOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7617,7 +8316,7 @@ func (r NiftyReplaceNatRuleRequest) Send() (*NiftyReplaceNatRuleOutput, error) {
 //
 //    // Example sending a request using the NiftyReplaceNatRuleRequest method.
 //    req := client.NiftyReplaceNatRuleRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7651,7 +8350,8 @@ type NiftyReplaceNatTableAssociationRequest struct {
 }
 
 // Send marshals and sends the NiftyReplaceNatTableAssociation API request.
-func (r NiftyReplaceNatTableAssociationRequest) Send() (*NiftyReplaceNatTableAssociationOutput, error) {
+func (r NiftyReplaceNatTableAssociationRequest) Send(ctx context.Context) (*NiftyReplaceNatTableAssociationOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7665,7 +8365,7 @@ func (r NiftyReplaceNatTableAssociationRequest) Send() (*NiftyReplaceNatTableAss
 //
 //    // Example sending a request using the NiftyReplaceNatTableAssociationRequest method.
 //    req := client.NiftyReplaceNatTableAssociationRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7689,6 +8389,55 @@ func (c *Computing) NiftyReplaceNatTableAssociationRequest(input *NiftyReplaceNa
 	return NiftyReplaceNatTableAssociationRequest{Request: req, Input: input, Copy: c.NiftyReplaceNatTableAssociationRequest}
 }
 
+const opNiftyReplaceRouteTableAssociationWithElasticLoadBalancer = "NiftyReplaceRouteTableAssociationWithElasticLoadBalancer"
+
+// NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest is a API request type for the NiftyReplaceRouteTableAssociationWithElasticLoadBalancer API operation.
+type NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest struct {
+	*aws.Request
+	Input *NiftyReplaceRouteTableAssociationWithElasticLoadBalancerInput
+	Copy  func(*NiftyReplaceRouteTableAssociationWithElasticLoadBalancerInput) NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest
+}
+
+// Send marshals and sends the NiftyReplaceRouteTableAssociationWithElasticLoadBalancer API request.
+func (r NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest) Send(ctx context.Context) (*NiftyReplaceRouteTableAssociationWithElasticLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*NiftyReplaceRouteTableAssociationWithElasticLoadBalancerOutput), nil
+}
+
+// NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest method.
+//    req := client.NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyReplaceRouteTableAssociationWithElasticLoadBalancer
+func (c *Computing) NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest(input *NiftyReplaceRouteTableAssociationWithElasticLoadBalancerInput) NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest {
+	op := &aws.Operation{
+		Name:       opNiftyReplaceRouteTableAssociationWithElasticLoadBalancer,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &NiftyReplaceRouteTableAssociationWithElasticLoadBalancerInput{}
+	}
+
+	output := &NiftyReplaceRouteTableAssociationWithElasticLoadBalancerOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest{Request: req, Input: input, Copy: c.NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest}
+}
+
 const opNiftyReplaceRouteTableAssociationWithVpnGateway = "NiftyReplaceRouteTableAssociationWithVpnGateway"
 
 // NiftyReplaceRouteTableAssociationWithVpnGatewayRequest is a API request type for the NiftyReplaceRouteTableAssociationWithVpnGateway API operation.
@@ -7699,7 +8448,8 @@ type NiftyReplaceRouteTableAssociationWithVpnGatewayRequest struct {
 }
 
 // Send marshals and sends the NiftyReplaceRouteTableAssociationWithVpnGateway API request.
-func (r NiftyReplaceRouteTableAssociationWithVpnGatewayRequest) Send() (*NiftyReplaceRouteTableAssociationWithVpnGatewayOutput, error) {
+func (r NiftyReplaceRouteTableAssociationWithVpnGatewayRequest) Send(ctx context.Context) (*NiftyReplaceRouteTableAssociationWithVpnGatewayOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7713,7 +8463,7 @@ func (r NiftyReplaceRouteTableAssociationWithVpnGatewayRequest) Send() (*NiftyRe
 //
 //    // Example sending a request using the NiftyReplaceRouteTableAssociationWithVpnGatewayRequest method.
 //    req := client.NiftyReplaceRouteTableAssociationWithVpnGatewayRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7747,7 +8497,8 @@ type NiftyReplaceRouterLatestVersionRequest struct {
 }
 
 // Send marshals and sends the NiftyReplaceRouterLatestVersion API request.
-func (r NiftyReplaceRouterLatestVersionRequest) Send() (*NiftyReplaceRouterLatestVersionOutput, error) {
+func (r NiftyReplaceRouterLatestVersionRequest) Send(ctx context.Context) (*NiftyReplaceRouterLatestVersionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7761,7 +8512,7 @@ func (r NiftyReplaceRouterLatestVersionRequest) Send() (*NiftyReplaceRouterLates
 //
 //    // Example sending a request using the NiftyReplaceRouterLatestVersionRequest method.
 //    req := client.NiftyReplaceRouterLatestVersionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7795,7 +8546,8 @@ type NiftyReplaceVpnGatewayLatestVersionRequest struct {
 }
 
 // Send marshals and sends the NiftyReplaceVpnGatewayLatestVersion API request.
-func (r NiftyReplaceVpnGatewayLatestVersionRequest) Send() (*NiftyReplaceVpnGatewayLatestVersionOutput, error) {
+func (r NiftyReplaceVpnGatewayLatestVersionRequest) Send(ctx context.Context) (*NiftyReplaceVpnGatewayLatestVersionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7809,7 +8561,7 @@ func (r NiftyReplaceVpnGatewayLatestVersionRequest) Send() (*NiftyReplaceVpnGate
 //
 //    // Example sending a request using the NiftyReplaceVpnGatewayLatestVersionRequest method.
 //    req := client.NiftyReplaceVpnGatewayLatestVersionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7843,7 +8595,8 @@ type NiftyRestoreInstanceSnapshotRequest struct {
 }
 
 // Send marshals and sends the NiftyRestoreInstanceSnapshot API request.
-func (r NiftyRestoreInstanceSnapshotRequest) Send() (*NiftyRestoreInstanceSnapshotOutput, error) {
+func (r NiftyRestoreInstanceSnapshotRequest) Send(ctx context.Context) (*NiftyRestoreInstanceSnapshotOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7857,7 +8610,7 @@ func (r NiftyRestoreInstanceSnapshotRequest) Send() (*NiftyRestoreInstanceSnapsh
 //
 //    // Example sending a request using the NiftyRestoreInstanceSnapshotRequest method.
 //    req := client.NiftyRestoreInstanceSnapshotRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7891,7 +8644,8 @@ type NiftyRestoreRouterPreviousVersionRequest struct {
 }
 
 // Send marshals and sends the NiftyRestoreRouterPreviousVersion API request.
-func (r NiftyRestoreRouterPreviousVersionRequest) Send() (*NiftyRestoreRouterPreviousVersionOutput, error) {
+func (r NiftyRestoreRouterPreviousVersionRequest) Send(ctx context.Context) (*NiftyRestoreRouterPreviousVersionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7905,7 +8659,7 @@ func (r NiftyRestoreRouterPreviousVersionRequest) Send() (*NiftyRestoreRouterPre
 //
 //    // Example sending a request using the NiftyRestoreRouterPreviousVersionRequest method.
 //    req := client.NiftyRestoreRouterPreviousVersionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7939,7 +8693,8 @@ type NiftyRestoreVpnGatewayPreviousVersionRequest struct {
 }
 
 // Send marshals and sends the NiftyRestoreVpnGatewayPreviousVersion API request.
-func (r NiftyRestoreVpnGatewayPreviousVersionRequest) Send() (*NiftyRestoreVpnGatewayPreviousVersionOutput, error) {
+func (r NiftyRestoreVpnGatewayPreviousVersionRequest) Send(ctx context.Context) (*NiftyRestoreVpnGatewayPreviousVersionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -7953,7 +8708,7 @@ func (r NiftyRestoreVpnGatewayPreviousVersionRequest) Send() (*NiftyRestoreVpnGa
 //
 //    // Example sending a request using the NiftyRestoreVpnGatewayPreviousVersionRequest method.
 //    req := client.NiftyRestoreVpnGatewayPreviousVersionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -7987,7 +8742,8 @@ type NiftyRetryImportInstanceRequest struct {
 }
 
 // Send marshals and sends the NiftyRetryImportInstance API request.
-func (r NiftyRetryImportInstanceRequest) Send() (*NiftyRetryImportInstanceOutput, error) {
+func (r NiftyRetryImportInstanceRequest) Send(ctx context.Context) (*NiftyRetryImportInstanceOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8001,7 +8757,7 @@ func (r NiftyRetryImportInstanceRequest) Send() (*NiftyRetryImportInstanceOutput
 //
 //    // Example sending a request using the NiftyRetryImportInstanceRequest method.
 //    req := client.NiftyRetryImportInstanceRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8025,6 +8781,104 @@ func (c *Computing) NiftyRetryImportInstanceRequest(input *NiftyRetryImportInsta
 	return NiftyRetryImportInstanceRequest{Request: req, Input: input, Copy: c.NiftyRetryImportInstanceRequest}
 }
 
+const opNiftySetLoadBalancerSSLPoliciesOfListener = "NiftySetLoadBalancerSSLPoliciesOfListener"
+
+// NiftySetLoadBalancerSSLPoliciesOfListenerRequest is a API request type for the NiftySetLoadBalancerSSLPoliciesOfListener API operation.
+type NiftySetLoadBalancerSSLPoliciesOfListenerRequest struct {
+	*aws.Request
+	Input *NiftySetLoadBalancerSSLPoliciesOfListenerInput
+	Copy  func(*NiftySetLoadBalancerSSLPoliciesOfListenerInput) NiftySetLoadBalancerSSLPoliciesOfListenerRequest
+}
+
+// Send marshals and sends the NiftySetLoadBalancerSSLPoliciesOfListener API request.
+func (r NiftySetLoadBalancerSSLPoliciesOfListenerRequest) Send(ctx context.Context) (*NiftySetLoadBalancerSSLPoliciesOfListenerOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*NiftySetLoadBalancerSSLPoliciesOfListenerOutput), nil
+}
+
+// NiftySetLoadBalancerSSLPoliciesOfListenerRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the NiftySetLoadBalancerSSLPoliciesOfListenerRequest method.
+//    req := client.NiftySetLoadBalancerSSLPoliciesOfListenerRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftySetLoadBalancerSSLPoliciesOfListener
+func (c *Computing) NiftySetLoadBalancerSSLPoliciesOfListenerRequest(input *NiftySetLoadBalancerSSLPoliciesOfListenerInput) NiftySetLoadBalancerSSLPoliciesOfListenerRequest {
+	op := &aws.Operation{
+		Name:       opNiftySetLoadBalancerSSLPoliciesOfListener,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &NiftySetLoadBalancerSSLPoliciesOfListenerInput{}
+	}
+
+	output := &NiftySetLoadBalancerSSLPoliciesOfListenerOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return NiftySetLoadBalancerSSLPoliciesOfListenerRequest{Request: req, Input: input, Copy: c.NiftySetLoadBalancerSSLPoliciesOfListenerRequest}
+}
+
+const opNiftyUnsetLoadBalancerSSLPoliciesOfListener = "NiftyUnsetLoadBalancerSSLPoliciesOfListener"
+
+// NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest is a API request type for the NiftyUnsetLoadBalancerSSLPoliciesOfListener API operation.
+type NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest struct {
+	*aws.Request
+	Input *NiftyUnsetLoadBalancerSSLPoliciesOfListenerInput
+	Copy  func(*NiftyUnsetLoadBalancerSSLPoliciesOfListenerInput) NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest
+}
+
+// Send marshals and sends the NiftyUnsetLoadBalancerSSLPoliciesOfListener API request.
+func (r NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest) Send(ctx context.Context) (*NiftyUnsetLoadBalancerSSLPoliciesOfListenerOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*NiftyUnsetLoadBalancerSSLPoliciesOfListenerOutput), nil
+}
+
+// NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest method.
+//    req := client.NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyUnsetLoadBalancerSSLPoliciesOfListener
+func (c *Computing) NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest(input *NiftyUnsetLoadBalancerSSLPoliciesOfListenerInput) NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest {
+	op := &aws.Operation{
+		Name:       opNiftyUnsetLoadBalancerSSLPoliciesOfListener,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &NiftyUnsetLoadBalancerSSLPoliciesOfListenerInput{}
+	}
+
+	output := &NiftyUnsetLoadBalancerSSLPoliciesOfListenerOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest{Request: req, Input: input, Copy: c.NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest}
+}
+
 const opNiftyUpdateAlarm = "NiftyUpdateAlarm"
 
 // NiftyUpdateAlarmRequest is a API request type for the NiftyUpdateAlarm API operation.
@@ -8035,7 +8889,8 @@ type NiftyUpdateAlarmRequest struct {
 }
 
 // Send marshals and sends the NiftyUpdateAlarm API request.
-func (r NiftyUpdateAlarmRequest) Send() (*NiftyUpdateAlarmOutput, error) {
+func (r NiftyUpdateAlarmRequest) Send(ctx context.Context) (*NiftyUpdateAlarmOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8049,7 +8904,7 @@ func (r NiftyUpdateAlarmRequest) Send() (*NiftyUpdateAlarmOutput, error) {
 //
 //    // Example sending a request using the NiftyUpdateAlarmRequest method.
 //    req := client.NiftyUpdateAlarmRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8083,7 +8938,8 @@ type NiftyUpdateAutoScalingGroupRequest struct {
 }
 
 // Send marshals and sends the NiftyUpdateAutoScalingGroup API request.
-func (r NiftyUpdateAutoScalingGroupRequest) Send() (*NiftyUpdateAutoScalingGroupOutput, error) {
+func (r NiftyUpdateAutoScalingGroupRequest) Send(ctx context.Context) (*NiftyUpdateAutoScalingGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8097,7 +8953,7 @@ func (r NiftyUpdateAutoScalingGroupRequest) Send() (*NiftyUpdateAutoScalingGroup
 //
 //    // Example sending a request using the NiftyUpdateAutoScalingGroupRequest method.
 //    req := client.NiftyUpdateAutoScalingGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8131,7 +8987,8 @@ type NiftyUpdateElasticLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the NiftyUpdateElasticLoadBalancer API request.
-func (r NiftyUpdateElasticLoadBalancerRequest) Send() (*NiftyUpdateElasticLoadBalancerOutput, error) {
+func (r NiftyUpdateElasticLoadBalancerRequest) Send(ctx context.Context) (*NiftyUpdateElasticLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8145,7 +9002,7 @@ func (r NiftyUpdateElasticLoadBalancerRequest) Send() (*NiftyUpdateElasticLoadBa
 //
 //    // Example sending a request using the NiftyUpdateElasticLoadBalancerRequest method.
 //    req := client.NiftyUpdateElasticLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8179,7 +9036,8 @@ type NiftyUpdateInstanceNetworkInterfacesRequest struct {
 }
 
 // Send marshals and sends the NiftyUpdateInstanceNetworkInterfaces API request.
-func (r NiftyUpdateInstanceNetworkInterfacesRequest) Send() (*NiftyUpdateInstanceNetworkInterfacesOutput, error) {
+func (r NiftyUpdateInstanceNetworkInterfacesRequest) Send(ctx context.Context) (*NiftyUpdateInstanceNetworkInterfacesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8193,7 +9051,7 @@ func (r NiftyUpdateInstanceNetworkInterfacesRequest) Send() (*NiftyUpdateInstanc
 //
 //    // Example sending a request using the NiftyUpdateInstanceNetworkInterfacesRequest method.
 //    req := client.NiftyUpdateInstanceNetworkInterfacesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8227,7 +9085,8 @@ type NiftyUpdateRouterNetworkInterfacesRequest struct {
 }
 
 // Send marshals and sends the NiftyUpdateRouterNetworkInterfaces API request.
-func (r NiftyUpdateRouterNetworkInterfacesRequest) Send() (*NiftyUpdateRouterNetworkInterfacesOutput, error) {
+func (r NiftyUpdateRouterNetworkInterfacesRequest) Send(ctx context.Context) (*NiftyUpdateRouterNetworkInterfacesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8241,7 +9100,7 @@ func (r NiftyUpdateRouterNetworkInterfacesRequest) Send() (*NiftyUpdateRouterNet
 //
 //    // Example sending a request using the NiftyUpdateRouterNetworkInterfacesRequest method.
 //    req := client.NiftyUpdateRouterNetworkInterfacesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8275,7 +9134,8 @@ type NiftyUpdateSeparateInstanceRuleRequest struct {
 }
 
 // Send marshals and sends the NiftyUpdateSeparateInstanceRule API request.
-func (r NiftyUpdateSeparateInstanceRuleRequest) Send() (*NiftyUpdateSeparateInstanceRuleOutput, error) {
+func (r NiftyUpdateSeparateInstanceRuleRequest) Send(ctx context.Context) (*NiftyUpdateSeparateInstanceRuleOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8289,7 +9149,7 @@ func (r NiftyUpdateSeparateInstanceRuleRequest) Send() (*NiftyUpdateSeparateInst
 //
 //    // Example sending a request using the NiftyUpdateSeparateInstanceRuleRequest method.
 //    req := client.NiftyUpdateSeparateInstanceRuleRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8323,7 +9183,8 @@ type NiftyUpdateVpnGatewayNetworkInterfacesRequest struct {
 }
 
 // Send marshals and sends the NiftyUpdateVpnGatewayNetworkInterfaces API request.
-func (r NiftyUpdateVpnGatewayNetworkInterfacesRequest) Send() (*NiftyUpdateVpnGatewayNetworkInterfacesOutput, error) {
+func (r NiftyUpdateVpnGatewayNetworkInterfacesRequest) Send(ctx context.Context) (*NiftyUpdateVpnGatewayNetworkInterfacesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8337,7 +9198,7 @@ func (r NiftyUpdateVpnGatewayNetworkInterfacesRequest) Send() (*NiftyUpdateVpnGa
 //
 //    // Example sending a request using the NiftyUpdateVpnGatewayNetworkInterfacesRequest method.
 //    req := client.NiftyUpdateVpnGatewayNetworkInterfacesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8371,7 +9232,8 @@ type RebootInstancesRequest struct {
 }
 
 // Send marshals and sends the RebootInstances API request.
-func (r RebootInstancesRequest) Send() (*RebootInstancesOutput, error) {
+func (r RebootInstancesRequest) Send(ctx context.Context) (*RebootInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8385,7 +9247,7 @@ func (r RebootInstancesRequest) Send() (*RebootInstancesOutput, error) {
 //
 //    // Example sending a request using the RebootInstancesRequest method.
 //    req := client.RebootInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8409,6 +9271,55 @@ func (c *Computing) RebootInstancesRequest(input *RebootInstancesInput) RebootIn
 	return RebootInstancesRequest{Request: req, Input: input, Copy: c.RebootInstancesRequest}
 }
 
+const opRefreshInstanceBackupRule = "RefreshInstanceBackupRule"
+
+// RefreshInstanceBackupRuleRequest is a API request type for the RefreshInstanceBackupRule API operation.
+type RefreshInstanceBackupRuleRequest struct {
+	*aws.Request
+	Input *RefreshInstanceBackupRuleInput
+	Copy  func(*RefreshInstanceBackupRuleInput) RefreshInstanceBackupRuleRequest
+}
+
+// Send marshals and sends the RefreshInstanceBackupRule API request.
+func (r RefreshInstanceBackupRuleRequest) Send(ctx context.Context) (*RefreshInstanceBackupRuleOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*RefreshInstanceBackupRuleOutput), nil
+}
+
+// RefreshInstanceBackupRuleRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the RefreshInstanceBackupRuleRequest method.
+//    req := client.RefreshInstanceBackupRuleRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RefreshInstanceBackupRule
+func (c *Computing) RefreshInstanceBackupRuleRequest(input *RefreshInstanceBackupRuleInput) RefreshInstanceBackupRuleRequest {
+	op := &aws.Operation{
+		Name:       opRefreshInstanceBackupRule,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &RefreshInstanceBackupRuleInput{}
+	}
+
+	output := &RefreshInstanceBackupRuleOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return RefreshInstanceBackupRuleRequest{Request: req, Input: input, Copy: c.RefreshInstanceBackupRuleRequest}
+}
+
 const opRegisterCorporateInfoForCertificate = "RegisterCorporateInfoForCertificate"
 
 // RegisterCorporateInfoForCertificateRequest is a API request type for the RegisterCorporateInfoForCertificate API operation.
@@ -8419,7 +9330,8 @@ type RegisterCorporateInfoForCertificateRequest struct {
 }
 
 // Send marshals and sends the RegisterCorporateInfoForCertificate API request.
-func (r RegisterCorporateInfoForCertificateRequest) Send() (*RegisterCorporateInfoForCertificateOutput, error) {
+func (r RegisterCorporateInfoForCertificateRequest) Send(ctx context.Context) (*RegisterCorporateInfoForCertificateOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8433,7 +9345,7 @@ func (r RegisterCorporateInfoForCertificateRequest) Send() (*RegisterCorporateIn
 //
 //    // Example sending a request using the RegisterCorporateInfoForCertificateRequest method.
 //    req := client.RegisterCorporateInfoForCertificateRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8467,7 +9379,8 @@ type RegisterInstancesWithLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the RegisterInstancesWithLoadBalancer API request.
-func (r RegisterInstancesWithLoadBalancerRequest) Send() (*RegisterInstancesWithLoadBalancerOutput, error) {
+func (r RegisterInstancesWithLoadBalancerRequest) Send(ctx context.Context) (*RegisterInstancesWithLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8481,7 +9394,7 @@ func (r RegisterInstancesWithLoadBalancerRequest) Send() (*RegisterInstancesWith
 //
 //    // Example sending a request using the RegisterInstancesWithLoadBalancerRequest method.
 //    req := client.RegisterInstancesWithLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8515,7 +9428,8 @@ type RegisterInstancesWithSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the RegisterInstancesWithSecurityGroup API request.
-func (r RegisterInstancesWithSecurityGroupRequest) Send() (*RegisterInstancesWithSecurityGroupOutput, error) {
+func (r RegisterInstancesWithSecurityGroupRequest) Send(ctx context.Context) (*RegisterInstancesWithSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8529,7 +9443,7 @@ func (r RegisterInstancesWithSecurityGroupRequest) Send() (*RegisterInstancesWit
 //
 //    // Example sending a request using the RegisterInstancesWithSecurityGroupRequest method.
 //    req := client.RegisterInstancesWithSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8563,7 +9477,8 @@ type RegisterPortWithLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the RegisterPortWithLoadBalancer API request.
-func (r RegisterPortWithLoadBalancerRequest) Send() (*RegisterPortWithLoadBalancerOutput, error) {
+func (r RegisterPortWithLoadBalancerRequest) Send(ctx context.Context) (*RegisterPortWithLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8577,7 +9492,7 @@ func (r RegisterPortWithLoadBalancerRequest) Send() (*RegisterPortWithLoadBalanc
 //
 //    // Example sending a request using the RegisterPortWithLoadBalancerRequest method.
 //    req := client.RegisterPortWithLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8611,7 +9526,8 @@ type ReleaseAddressRequest struct {
 }
 
 // Send marshals and sends the ReleaseAddress API request.
-func (r ReleaseAddressRequest) Send() (*ReleaseAddressOutput, error) {
+func (r ReleaseAddressRequest) Send(ctx context.Context) (*ReleaseAddressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8625,7 +9541,7 @@ func (r ReleaseAddressRequest) Send() (*ReleaseAddressOutput, error) {
 //
 //    // Example sending a request using the ReleaseAddressRequest method.
 //    req := client.ReleaseAddressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8659,7 +9575,8 @@ type ReplaceRouteRequest struct {
 }
 
 // Send marshals and sends the ReplaceRoute API request.
-func (r ReplaceRouteRequest) Send() (*ReplaceRouteOutput, error) {
+func (r ReplaceRouteRequest) Send(ctx context.Context) (*ReplaceRouteOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8673,7 +9590,7 @@ func (r ReplaceRouteRequest) Send() (*ReplaceRouteOutput, error) {
 //
 //    // Example sending a request using the ReplaceRouteRequest method.
 //    req := client.ReplaceRouteRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8707,7 +9624,8 @@ type ReplaceRouteTableAssociationRequest struct {
 }
 
 // Send marshals and sends the ReplaceRouteTableAssociation API request.
-func (r ReplaceRouteTableAssociationRequest) Send() (*ReplaceRouteTableAssociationOutput, error) {
+func (r ReplaceRouteTableAssociationRequest) Send(ctx context.Context) (*ReplaceRouteTableAssociationOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8721,7 +9639,7 @@ func (r ReplaceRouteTableAssociationRequest) Send() (*ReplaceRouteTableAssociati
 //
 //    // Example sending a request using the ReplaceRouteTableAssociationRequest method.
 //    req := client.ReplaceRouteTableAssociationRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8755,7 +9673,8 @@ type RevokeSecurityGroupIngressRequest struct {
 }
 
 // Send marshals and sends the RevokeSecurityGroupIngress API request.
-func (r RevokeSecurityGroupIngressRequest) Send() (*RevokeSecurityGroupIngressOutput, error) {
+func (r RevokeSecurityGroupIngressRequest) Send(ctx context.Context) (*RevokeSecurityGroupIngressOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8769,7 +9688,7 @@ func (r RevokeSecurityGroupIngressRequest) Send() (*RevokeSecurityGroupIngressOu
 //
 //    // Example sending a request using the RevokeSecurityGroupIngressRequest method.
 //    req := client.RevokeSecurityGroupIngressRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8803,7 +9722,8 @@ type RunInstancesRequest struct {
 }
 
 // Send marshals and sends the RunInstances API request.
-func (r RunInstancesRequest) Send() (*RunInstancesOutput, error) {
+func (r RunInstancesRequest) Send(ctx context.Context) (*RunInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8817,7 +9737,7 @@ func (r RunInstancesRequest) Send() (*RunInstancesOutput, error) {
 //
 //    // Example sending a request using the RunInstancesRequest method.
 //    req := client.RunInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8851,7 +9771,8 @@ type SetFilterForLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the SetFilterForLoadBalancer API request.
-func (r SetFilterForLoadBalancerRequest) Send() (*SetFilterForLoadBalancerOutput, error) {
+func (r SetFilterForLoadBalancerRequest) Send(ctx context.Context) (*SetFilterForLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8865,7 +9786,7 @@ func (r SetFilterForLoadBalancerRequest) Send() (*SetFilterForLoadBalancerOutput
 //
 //    // Example sending a request using the SetFilterForLoadBalancerRequest method.
 //    req := client.SetFilterForLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8889,6 +9810,55 @@ func (c *Computing) SetFilterForLoadBalancerRequest(input *SetFilterForLoadBalan
 	return SetFilterForLoadBalancerRequest{Request: req, Input: input, Copy: c.SetFilterForLoadBalancerRequest}
 }
 
+const opSetLoadBalancerListenerSSLCertificate = "SetLoadBalancerListenerSSLCertificate"
+
+// SetLoadBalancerListenerSSLCertificateRequest is a API request type for the SetLoadBalancerListenerSSLCertificate API operation.
+type SetLoadBalancerListenerSSLCertificateRequest struct {
+	*aws.Request
+	Input *SetLoadBalancerListenerSSLCertificateInput
+	Copy  func(*SetLoadBalancerListenerSSLCertificateInput) SetLoadBalancerListenerSSLCertificateRequest
+}
+
+// Send marshals and sends the SetLoadBalancerListenerSSLCertificate API request.
+func (r SetLoadBalancerListenerSSLCertificateRequest) Send(ctx context.Context) (*SetLoadBalancerListenerSSLCertificateOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*SetLoadBalancerListenerSSLCertificateOutput), nil
+}
+
+// SetLoadBalancerListenerSSLCertificateRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the SetLoadBalancerListenerSSLCertificateRequest method.
+//    req := client.SetLoadBalancerListenerSSLCertificateRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/SetLoadBalancerListenerSSLCertificate
+func (c *Computing) SetLoadBalancerListenerSSLCertificateRequest(input *SetLoadBalancerListenerSSLCertificateInput) SetLoadBalancerListenerSSLCertificateRequest {
+	op := &aws.Operation{
+		Name:       opSetLoadBalancerListenerSSLCertificate,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &SetLoadBalancerListenerSSLCertificateInput{}
+	}
+
+	output := &SetLoadBalancerListenerSSLCertificateOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return SetLoadBalancerListenerSSLCertificateRequest{Request: req, Input: input, Copy: c.SetLoadBalancerListenerSSLCertificateRequest}
+}
+
 const opStartInstances = "StartInstances"
 
 // StartInstancesRequest is a API request type for the StartInstances API operation.
@@ -8899,7 +9869,8 @@ type StartInstancesRequest struct {
 }
 
 // Send marshals and sends the StartInstances API request.
-func (r StartInstancesRequest) Send() (*StartInstancesOutput, error) {
+func (r StartInstancesRequest) Send(ctx context.Context) (*StartInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8913,7 +9884,7 @@ func (r StartInstancesRequest) Send() (*StartInstancesOutput, error) {
 //
 //    // Example sending a request using the StartInstancesRequest method.
 //    req := client.StartInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8947,7 +9918,8 @@ type StopInstancesRequest struct {
 }
 
 // Send marshals and sends the StopInstances API request.
-func (r StopInstancesRequest) Send() (*StopInstancesOutput, error) {
+func (r StopInstancesRequest) Send(ctx context.Context) (*StopInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -8961,7 +9933,7 @@ func (r StopInstancesRequest) Send() (*StopInstancesOutput, error) {
 //
 //    // Example sending a request using the StopInstancesRequest method.
 //    req := client.StopInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -8995,7 +9967,8 @@ type TerminateInstancesRequest struct {
 }
 
 // Send marshals and sends the TerminateInstances API request.
-func (r TerminateInstancesRequest) Send() (*TerminateInstancesOutput, error) {
+func (r TerminateInstancesRequest) Send(ctx context.Context) (*TerminateInstancesOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -9009,7 +9982,7 @@ func (r TerminateInstancesRequest) Send() (*TerminateInstancesOutput, error) {
 //
 //    // Example sending a request using the TerminateInstancesRequest method.
 //    req := client.TerminateInstancesRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -9033,6 +10006,55 @@ func (c *Computing) TerminateInstancesRequest(input *TerminateInstancesInput) Te
 	return TerminateInstancesRequest{Request: req, Input: input, Copy: c.TerminateInstancesRequest}
 }
 
+const opUnsetLoadBalancerListenerSSLCertificate = "UnsetLoadBalancerListenerSSLCertificate"
+
+// UnsetLoadBalancerListenerSSLCertificateRequest is a API request type for the UnsetLoadBalancerListenerSSLCertificate API operation.
+type UnsetLoadBalancerListenerSSLCertificateRequest struct {
+	*aws.Request
+	Input *UnsetLoadBalancerListenerSSLCertificateInput
+	Copy  func(*UnsetLoadBalancerListenerSSLCertificateInput) UnsetLoadBalancerListenerSSLCertificateRequest
+}
+
+// Send marshals and sends the UnsetLoadBalancerListenerSSLCertificate API request.
+func (r UnsetLoadBalancerListenerSSLCertificateRequest) Send(ctx context.Context) (*UnsetLoadBalancerListenerSSLCertificateOutput, error) {
+	r.Request.SetContext(ctx)
+	err := r.Request.Send()
+	if err != nil {
+		return nil, err
+	}
+
+	return r.Request.Data.(*UnsetLoadBalancerListenerSSLCertificateOutput), nil
+}
+
+// UnsetLoadBalancerListenerSSLCertificateRequest returns a request value for making API operation for
+// NIFCLOUD Computing.
+//
+//    // Example sending a request using the UnsetLoadBalancerListenerSSLCertificateRequest method.
+//    req := client.UnsetLoadBalancerListenerSSLCertificateRequest(params)
+//    resp, err := req.Send(context.TODO())
+//    if err == nil {
+//        fmt.Println(resp)
+//    }
+//
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/UnsetLoadBalancerListenerSSLCertificate
+func (c *Computing) UnsetLoadBalancerListenerSSLCertificateRequest(input *UnsetLoadBalancerListenerSSLCertificateInput) UnsetLoadBalancerListenerSSLCertificateRequest {
+	op := &aws.Operation{
+		Name:       opUnsetLoadBalancerListenerSSLCertificate,
+		HTTPMethod: "POST",
+		HTTPPath:   "/api/",
+	}
+
+	if input == nil {
+		input = &UnsetLoadBalancerListenerSSLCertificateInput{}
+	}
+
+	output := &UnsetLoadBalancerListenerSSLCertificateOutput{}
+	req := c.newRequest(op, input, output)
+	output.responseMetadata = aws.Response{Request: req}
+
+	return UnsetLoadBalancerListenerSSLCertificateRequest{Request: req, Input: input, Copy: c.UnsetLoadBalancerListenerSSLCertificateRequest}
+}
+
 const opUpdateLoadBalancer = "UpdateLoadBalancer"
 
 // UpdateLoadBalancerRequest is a API request type for the UpdateLoadBalancer API operation.
@@ -9043,7 +10065,8 @@ type UpdateLoadBalancerRequest struct {
 }
 
 // Send marshals and sends the UpdateLoadBalancer API request.
-func (r UpdateLoadBalancerRequest) Send() (*UpdateLoadBalancerOutput, error) {
+func (r UpdateLoadBalancerRequest) Send(ctx context.Context) (*UpdateLoadBalancerOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -9057,7 +10080,7 @@ func (r UpdateLoadBalancerRequest) Send() (*UpdateLoadBalancerOutput, error) {
 //
 //    // Example sending a request using the UpdateLoadBalancerRequest method.
 //    req := client.UpdateLoadBalancerRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -9091,7 +10114,8 @@ type UpdateLoadBalancerOptionRequest struct {
 }
 
 // Send marshals and sends the UpdateLoadBalancerOption API request.
-func (r UpdateLoadBalancerOptionRequest) Send() (*UpdateLoadBalancerOptionOutput, error) {
+func (r UpdateLoadBalancerOptionRequest) Send(ctx context.Context) (*UpdateLoadBalancerOptionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -9105,7 +10129,7 @@ func (r UpdateLoadBalancerOptionRequest) Send() (*UpdateLoadBalancerOptionOutput
 //
 //    // Example sending a request using the UpdateLoadBalancerOptionRequest method.
 //    req := client.UpdateLoadBalancerOptionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -9139,7 +10163,8 @@ type UpdateSecurityGroupRequest struct {
 }
 
 // Send marshals and sends the UpdateSecurityGroup API request.
-func (r UpdateSecurityGroupRequest) Send() (*UpdateSecurityGroupOutput, error) {
+func (r UpdateSecurityGroupRequest) Send(ctx context.Context) (*UpdateSecurityGroupOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -9153,7 +10178,7 @@ func (r UpdateSecurityGroupRequest) Send() (*UpdateSecurityGroupOutput, error) {
 //
 //    // Example sending a request using the UpdateSecurityGroupRequest method.
 //    req := client.UpdateSecurityGroupRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -9187,7 +10212,8 @@ type UpdateSecurityGroupOptionRequest struct {
 }
 
 // Send marshals and sends the UpdateSecurityGroupOption API request.
-func (r UpdateSecurityGroupOptionRequest) Send() (*UpdateSecurityGroupOptionOutput, error) {
+func (r UpdateSecurityGroupOptionRequest) Send(ctx context.Context) (*UpdateSecurityGroupOptionOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -9201,7 +10227,7 @@ func (r UpdateSecurityGroupOptionRequest) Send() (*UpdateSecurityGroupOptionOutp
 //
 //    // Example sending a request using the UpdateSecurityGroupOptionRequest method.
 //    req := client.UpdateSecurityGroupOptionRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -9235,7 +10261,8 @@ type UploadSslCertificateRequest struct {
 }
 
 // Send marshals and sends the UploadSslCertificate API request.
-func (r UploadSslCertificateRequest) Send() (*UploadSslCertificateOutput, error) {
+func (r UploadSslCertificateRequest) Send(ctx context.Context) (*UploadSslCertificateOutput, error) {
+	r.Request.SetContext(ctx)
 	err := r.Request.Send()
 	if err != nil {
 		return nil, err
@@ -9249,7 +10276,7 @@ func (r UploadSslCertificateRequest) Send() (*UploadSslCertificateOutput, error)
 //
 //    // Example sending a request using the UploadSslCertificateRequest method.
 //    req := client.UploadSslCertificateRequest(params)
-//    resp, err := req.Send()
+//    resp, err := req.Send(context.TODO())
 //    if err == nil {
 //        fmt.Println(resp)
 //    }
@@ -9287,6 +10314,35 @@ func (s AccountingType) String() string {
 
 // GoString returns the string representation
 func (s AccountingType) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/ActivitiesSetItem
+type ActivitiesSetItem struct {
+	_ struct{} `type:"structure"`
+
+	BackupInstanceUniqueId *string `locationName:"backupInstanceUniqueId" type:"string"`
+
+	Detail *string `locationName:"detail" type:"string"`
+
+	EndDateTime *string `locationName:"endDateTime" type:"string"`
+
+	InstanceUniqueId *string `locationName:"instanceUniqueId" type:"string"`
+
+	Operation *string `locationName:"operation" type:"string"`
+
+	StartDateTime *string `locationName:"startDateTime" type:"string"`
+
+	Status *string `locationName:"status" type:"string"`
+}
+
+// String returns the string representation
+func (s ActivitiesSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ActivitiesSetItem) GoString() string {
 	return s.String()
 }
 
@@ -10152,6 +11208,27 @@ func (s BackupInformation) GoString() string {
 	return s.String()
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/BackupInstancesSetItem
+type BackupInstancesSetItem struct {
+	_ struct{} `type:"structure"`
+
+	BackupInstanceCreateTime *string `locationName:"backupInstanceCreateTime" type:"string"`
+
+	BackupInstanceUniqueId *string `locationName:"backupInstanceUniqueId" type:"string"`
+
+	Status *string `locationName:"status" type:"string"`
+}
+
+// String returns the string representation
+func (s BackupInstancesSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s BackupInstancesSetItem) GoString() string {
+	return s.String()
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/BlockDeviceMappingSetItem
 type BlockDeviceMappingSetItem struct {
 	_ struct{} `type:"structure"`
@@ -10558,6 +11635,71 @@ func (s ConversionTask) GoString() string {
 	return s.String()
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CopyFromBackupInstanceRequest
+type CopyFromBackupInstanceInput struct {
+	_ struct{} `type:"structure"`
+
+	AccountingType *string `locationName:"AccountingType" type:"string"`
+
+	BackupInstanceUniqueId *string `locationName:"BackupInstanceUniqueId" type:"string"`
+
+	Description *string `locationName:"Description" type:"string"`
+
+	DisableApiTermination *bool `locationName:"DisableApiTermination" type:"boolean"`
+
+	InstanceId *string `locationName:"InstanceId" type:"string"`
+
+	InstanceType *string `locationName:"InstanceType" type:"string"`
+
+	NetworkInterface []RequestNetworkInterfaceStruct `locationName:"NetworkInterface" type:"list"`
+
+	SecurityGroup []string `locationName:"SecurityGroup" type:"list"`
+}
+
+// String returns the string representation
+func (s CopyFromBackupInstanceInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s CopyFromBackupInstanceInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CopyFromBackupInstanceResult
+type CopyFromBackupInstanceOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	GroupSet []GroupSetItem `locationName:"groupSet" locationNameList:"item" type:"list"`
+
+	Instance *Instance `locationName:"instance" type:"structure"`
+
+	OwnerId *string `locationName:"ownerId" type:"string"`
+
+	RequestId *string `locationName:"requestId" type:"string"`
+
+	ReservationId *string `locationName:"reservationId" type:"string"`
+
+	Return *bool `locationName:"return" type:"boolean"`
+}
+
+// String returns the string representation
+func (s CopyFromBackupInstanceOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s CopyFromBackupInstanceOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s CopyFromBackupInstanceOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CopyInfo
 type CopyInfo struct {
 	_ struct{} `type:"structure"`
@@ -10662,6 +11804,51 @@ func (s Count) String() string {
 // GoString returns the string representation
 func (s Count) GoString() string {
 	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CreateBackupInstancesRequest
+type CreateBackupInstancesInput struct {
+	_ struct{} `type:"structure"`
+
+	InstanceBackupRuleId *string `locationName:"InstanceBackupRuleId" type:"string"`
+}
+
+// String returns the string representation
+func (s CreateBackupInstancesInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s CreateBackupInstancesInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CreateBackupInstancesResult
+type CreateBackupInstancesOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	InstanceBackupRule *InstanceBackupRule `locationName:"instanceBackupRule" type:"structure"`
+
+	RequestId *string `locationName:"requestId" type:"string"`
+
+	Return *bool `locationName:"return" type:"boolean"`
+}
+
+// String returns the string representation
+func (s CreateBackupInstancesOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s CreateBackupInstancesOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s CreateBackupInstancesOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
 }
 
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CreateCustomerGatewayRequest
@@ -10834,6 +12021,59 @@ func (s CreateImageOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CreateInstanceBackupRuleRequest
+type CreateInstanceBackupRuleInput struct {
+	_ struct{} `type:"structure"`
+
+	BackupInstanceMaxCount *int64 `locationName:"BackupInstanceMaxCount" type:"integer"`
+
+	Description *string `locationName:"Description" type:"string"`
+
+	InstanceBackupRuleName *string `locationName:"InstanceBackupRuleName" type:"string"`
+
+	InstanceUniqueId []string `locationName:"InstanceUniqueId" type:"list"`
+
+	TimeSlotId *string `locationName:"TimeSlotId" type:"string"`
+}
+
+// String returns the string representation
+func (s CreateInstanceBackupRuleInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s CreateInstanceBackupRuleInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CreateInstanceBackupRuleResult
+type CreateInstanceBackupRuleOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	InstanceBackupRule *InstanceBackupRule `locationName:"instanceBackupRule" type:"structure"`
+
+	RequestId *string `locationName:"requestId" type:"string"`
+
+	Return *bool `locationName:"return" type:"boolean"`
+}
+
+// String returns the string representation
+func (s CreateInstanceBackupRuleOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s CreateInstanceBackupRuleOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s CreateInstanceBackupRuleOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/CreateKeyPairRequest
 type CreateKeyPairInput struct {
 	_ struct{} `type:"structure"`
@@ -10900,6 +12140,8 @@ type CreateLoadBalancerInput struct {
 	LoadBalancerName *string `locationName:"LoadBalancerName" type:"string"`
 
 	NetworkVolume *int64 `locationName:"NetworkVolume" type:"integer"`
+
+	PolicyType *string `locationName:"PolicyType" type:"string"`
 }
 
 // String returns the string representation
@@ -11297,8 +12539,6 @@ type CreateVpnConnectionInput struct {
 
 	NiftyCustomerGatewayName *string `locationName:"NiftyCustomerGatewayName" type:"string"`
 
-	NiftyIPsecConfiguration *RequestNiftyIPsecConfigurationStruct `locationName:"NiftyIPsecConfiguration" type:"structure"`
-
 	NiftyIpsecConfiguration *RequestNiftyIpsecConfigurationStruct `locationName:"NiftyIpsecConfiguration" type:"structure"`
 
 	NiftyTunnel *RequestNiftyTunnelStruct `locationName:"NiftyTunnel" type:"structure"`
@@ -11431,6 +12671,8 @@ type CustomerGateway struct {
 	_ struct{} `type:"structure"`
 
 	BgpAsn *string `locationName:"bgpAsn" type:"string"`
+
+	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
 
 	CustomerGatewayId *string `locationName:"customerGatewayId" type:"string"`
 
@@ -11691,6 +12933,49 @@ func (s DeleteImageOutput) GoString() string {
 
 // SDKResponseMetdata return sthe response metadata for the API.
 func (s DeleteImageOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DeleteInstanceBackupRuleRequest
+type DeleteInstanceBackupRuleInput struct {
+	_ struct{} `type:"structure"`
+
+	InstanceBackupRuleId *string `locationName:"InstanceBackupRuleId" type:"string"`
+}
+
+// String returns the string representation
+func (s DeleteInstanceBackupRuleInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s DeleteInstanceBackupRuleInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DeleteInstanceBackupRuleResult
+type DeleteInstanceBackupRuleOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	RequestId *string `locationName:"requestId" type:"string"`
+
+	Return *bool `locationName:"return" type:"boolean"`
+}
+
+// String returns the string representation
+func (s DeleteInstanceBackupRuleOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s DeleteInstanceBackupRuleOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s DeleteInstanceBackupRuleOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
@@ -12433,7 +13718,7 @@ type DescribeDhcpOptionsOutput struct {
 
 	responseMetadata aws.Response
 
-	DhcpOptionsSet *DhcpOptionsSet `locationName:"dhcpOptionsSet" type:"structure"`
+	DhcpOptionsSet []DhcpOptionsSetItem `locationName:"dhcpOptionsSet" locationNameList:"item" type:"list"`
 
 	RequestId *string `locationName:"requestId" type:"string"`
 }
@@ -12585,6 +13870,102 @@ func (s DescribeInstanceAttributeOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DescribeInstanceBackupRuleActivitiesRequest
+type DescribeInstanceBackupRuleActivitiesInput struct {
+	_ struct{} `type:"structure"`
+
+	Duration *int64 `locationName:"Duration" type:"integer"`
+
+	EndDateTime *string `locationName:"EndDateTime" type:"string"`
+
+	InstanceBackupRuleId *string `locationName:"InstanceBackupRuleId" type:"string"`
+
+	MaxRecords *int64 `locationName:"MaxRecords" type:"integer"`
+}
+
+// String returns the string representation
+func (s DescribeInstanceBackupRuleActivitiesInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s DescribeInstanceBackupRuleActivitiesInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DescribeInstanceBackupRuleActivitiesResult
+type DescribeInstanceBackupRuleActivitiesOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	ActivitiesSet []ActivitiesSetItem `locationName:"activitiesSet" locationNameList:"item" type:"list"`
+
+	InstanceBackupRuleId *string `locationName:"instanceBackupRuleId" type:"string"`
+
+	InstanceBackupRuleName *string `locationName:"instanceBackupRuleName" type:"string"`
+
+	RequestId *string `locationName:"requestId" type:"string"`
+}
+
+// String returns the string representation
+func (s DescribeInstanceBackupRuleActivitiesOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s DescribeInstanceBackupRuleActivitiesOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s DescribeInstanceBackupRuleActivitiesOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DescribeInstanceBackupRulesRequest
+type DescribeInstanceBackupRulesInput struct {
+	_ struct{} `type:"structure"`
+
+	InstanceBackupRuleId []string `locationName:"InstanceBackupRuleId" type:"list"`
+}
+
+// String returns the string representation
+func (s DescribeInstanceBackupRulesInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s DescribeInstanceBackupRulesInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DescribeInstanceBackupRulesResult
+type DescribeInstanceBackupRulesOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	InstanceBackupRulesSet []InstanceBackupRulesSetItem `locationName:"instanceBackupRulesSet" locationNameList:"item" type:"list"`
+
+	RequestId *string `locationName:"requestId" type:"string"`
+}
+
+// String returns the string representation
+func (s DescribeInstanceBackupRulesOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s DescribeInstanceBackupRulesOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s DescribeInstanceBackupRulesOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DescribeInstanceHealthRequest
 type DescribeInstanceHealthInput struct {
 	_ struct{} `type:"structure"`
@@ -12729,6 +14110,8 @@ type DescribeLoadBalancersInput struct {
 	_ struct{} `type:"structure"`
 
 	LoadBalancerNames []RequestLoadBalancerNamesStruct `locationName:"LoadBalancerNames" locationNameList:"member" type:"list"`
+
+	Owner *string `locationName:"Owner" type:"string"`
 }
 
 // String returns the string representation
@@ -13317,6 +14700,8 @@ type DescribeUsageOutput struct {
 
 	ImageInfo *ImageInfo `locationName:"imageInfo" type:"structure"`
 
+	InstanceBackupInfo *InstanceBackupInfo `locationName:"instanceBackupInfo" type:"structure"`
+
 	InstanceInfo *InstanceInfo `locationName:"instanceInfo" type:"structure"`
 
 	InternetVpnInfo *InternetVpnInfo `locationName:"internetVpnInfo" type:"structure"`
@@ -13331,6 +14716,8 @@ type DescribeUsageOutput struct {
 
 	NetworkInfo *NetworkInfo `locationName:"networkInfo" type:"structure"`
 
+	NetworkInterfaceInfo *NetworkInterfaceInfo `locationName:"networkInterfaceInfo" type:"structure"`
+
 	OptionCommonInfo []OptionCommonInfoSetItem `locationName:"optionCommonInfo" locationNameList:"item" type:"list"`
 
 	OptionInfo []OptionInfoSetItem `locationName:"optionInfo" locationNameList:"item" type:"list"`
@@ -13344,6 +14731,8 @@ type DescribeUsageOutput struct {
 	PrivateLanInfo *PrivateLanInfo `locationName:"privateLanInfo" type:"structure"`
 
 	PrivateNetworkInfo *PrivateNetworkInfo `locationName:"privateNetworkInfo" type:"structure"`
+
+	RemoteAccessVpnGatewayInfo *RemoteAccessVpnGatewayInfo `locationName:"remoteAccessVpnGatewayInfo" type:"structure"`
 
 	RequestId *string `locationName:"requestId" type:"string"`
 
@@ -13802,8 +15191,8 @@ func (s DhcpConfigurationSetTypeSetItem) GoString() string {
 	return s.String()
 }
 
-// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DhcpIpAddressInformationSet
-type DhcpIpAddressInformationSet struct {
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DhcpIpAddressInformation
+type DhcpIpAddressInformation struct {
 	_ struct{} `type:"structure"`
 
 	DhcpIpAddressSet []DhcpIpAddressSetItem `locationName:"dhcpIpAddressSet" locationNameList:"item" type:"list"`
@@ -13812,12 +15201,12 @@ type DhcpIpAddressInformationSet struct {
 }
 
 // String returns the string representation
-func (s DhcpIpAddressInformationSet) String() string {
+func (s DhcpIpAddressInformation) String() string {
 	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
-func (s DhcpIpAddressInformationSet) GoString() string {
+func (s DhcpIpAddressInformation) GoString() string {
 	return s.String()
 }
 
@@ -13861,8 +15250,8 @@ func (s DhcpOptions) GoString() string {
 	return s.String()
 }
 
-// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DhcpOptionsSet
-type DhcpOptionsSet struct {
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/DhcpOptionsSetItem
+type DhcpOptionsSetItem struct {
 	_ struct{} `type:"structure"`
 
 	DhcpConfigurationSet []DhcpConfigurationSetItem `locationName:"dhcpConfigurationSet" locationNameList:"item" type:"list"`
@@ -13871,12 +15260,12 @@ type DhcpOptionsSet struct {
 }
 
 // String returns the string representation
-func (s DhcpOptionsSet) String() string {
+func (s DhcpOptionsSetItem) String() string {
 	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
-func (s DhcpOptionsSet) GoString() string {
+func (s DhcpOptionsSetItem) GoString() string {
 	return s.String()
 }
 
@@ -13884,7 +15273,7 @@ func (s DhcpOptionsSet) GoString() string {
 type DhcpStatusInformationSetItem struct {
 	_ struct{} `type:"structure"`
 
-	DhcpIpAddressInformationSet *DhcpIpAddressInformationSet `locationName:"dhcpIpAddressInformationSet" type:"structure"`
+	DhcpIpAddressInformation *DhcpIpAddressInformation `locationName:"dhcpIpAddressInformation" type:"structure"`
 
 	NetworkId *string `locationName:"networkId" type:"string"`
 
@@ -14257,6 +15646,31 @@ func (s ElasticIpSetItem) GoString() string {
 	return s.String()
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/ElasticLoadBalancerAssociationSetItem
+type ElasticLoadBalancerAssociationSetItem struct {
+	_ struct{} `type:"structure"`
+
+	ElasticLoadBalancerId *string `locationName:"elasticLoadBalancerId" type:"string"`
+
+	ElasticLoadBalancerName *string `locationName:"elasticLoadBalancerName" type:"string"`
+
+	Main *bool `locationName:"main" type:"boolean"`
+
+	RouteTableAssociationId *string `locationName:"routeTableAssociationId" type:"string"`
+
+	RouteTableId *string `locationName:"routeTableId" type:"string"`
+}
+
+// String returns the string representation
+func (s ElasticLoadBalancerAssociationSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ElasticLoadBalancerAssociationSetItem) GoString() string {
+	return s.String()
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/ElasticLoadBalancerDescriptionsMemberItem
 type ElasticLoadBalancerDescriptionsMemberItem struct {
 	_ struct{} `type:"structure"`
@@ -14282,6 +15696,10 @@ type ElasticLoadBalancerDescriptionsMemberItem struct {
 	NetworkVolume *string `locationName:"NetworkVolume" type:"string"`
 
 	NextMonthAccountingType *string `locationName:"NextMonthAccountingType" type:"string"`
+
+	RouteTableAssociationId *string `locationName:"RouteTableAssociationId" type:"string"`
+
+	RouteTableId *string `locationName:"RouteTableId" type:"string"`
 
 	State *string `locationName:"State" type:"string"`
 }
@@ -14369,6 +15787,23 @@ func (s EmailAddressSetItem) String() string {
 
 // GoString returns the string representation
 func (s EmailAddressSetItem) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/ExpectationMemberItem
+type ExpectationMemberItem struct {
+	_ struct{} `type:"structure"`
+
+	HttpCode *int64 `locationName:"HttpCode" type:"integer"`
+}
+
+// String returns the string representation
+func (s ExpectationMemberItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ExpectationMemberItem) GoString() string {
 	return s.String()
 }
 
@@ -14488,11 +15923,15 @@ func (s GroupsSetItem) GoString() string {
 type HealthCheck struct {
 	_ struct{} `type:"structure"`
 
+	Expectation []ExpectationMemberItem `locationName:"Expectation" locationNameList:"member" type:"list"`
+
 	HealthyThreshold *int64 `locationName:"HealthyThreshold" type:"integer"`
 
 	InstanceStates []InstanceStatesMemberItem `locationName:"InstanceStates" locationNameList:"member" type:"list"`
 
 	Interval *int64 `locationName:"Interval" type:"integer"`
+
+	Path *string `locationName:"Path" type:"string"`
 
 	Target *string `locationName:"Target" type:"string"`
 
@@ -14839,6 +16278,245 @@ func (s InboundInterface) GoString() string {
 	return s.String()
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/Instance
+type Instance struct {
+	_ struct{} `type:"structure"`
+
+	AccountingType *string `locationName:"accountingType" type:"string"`
+
+	Admin *string `locationName:"admin" type:"string"`
+
+	AmiLaunchIndex *string `locationName:"amiLaunchIndex" type:"string"`
+
+	Architecture *string `locationName:"architecture" type:"string"`
+
+	BlockDeviceMapping []BlockDeviceMappingSetItem `locationName:"blockDeviceMapping" locationNameList:"item" type:"list"`
+
+	Description *string `locationName:"description" type:"string"`
+
+	DnsName *string `locationName:"dnsName" type:"string"`
+
+	ImageId *string `locationName:"imageId" type:"string"`
+
+	InstanceId *string `locationName:"instanceId" type:"string"`
+
+	InstanceLifecycle *string `locationName:"instanceLifecycle" type:"string"`
+
+	InstanceState *InstanceState `locationName:"instanceState" type:"structure"`
+
+	InstanceType *string `locationName:"instanceType" type:"string"`
+
+	InstanceUniqueId *string `locationName:"instanceUniqueId" type:"string"`
+
+	IpAddress *string `locationName:"ipAddress" type:"string"`
+
+	IpAddressV6 *string `locationName:"ipAddressV6" type:"string"`
+
+	IpType *string `locationName:"ipType" type:"string"`
+
+	KernelId *string `locationName:"kernelId" type:"string"`
+
+	KeyName *string `locationName:"keyName" type:"string"`
+
+	LaunchTime *string `locationName:"launchTime" type:"string"`
+
+	Monitoring *Monitoring `locationName:"monitoring" type:"structure"`
+
+	NetworkInterfaceSet []NetworkInterfaceSetItem `locationName:"networkInterfaceSet" locationNameList:"item" type:"list"`
+
+	NiftyPrivateIpType *string `locationName:"niftyPrivateIpType" type:"string"`
+
+	Placement *Placement `locationName:"placement" type:"structure"`
+
+	Platform *string `locationName:"platform" type:"string"`
+
+	PrivateDnsName *string `locationName:"privateDnsName" type:"string"`
+
+	PrivateIpAddress *string `locationName:"privateIpAddress" type:"string"`
+
+	PrivateIpAddressV6 *string `locationName:"privateIpAddressV6" type:"string"`
+
+	ProductCodes []ProductCodesSetItem `locationName:"productCodes" locationNameList:"item" type:"list"`
+
+	RamdiskId *string `locationName:"ramdiskId" type:"string"`
+
+	Reason *string `locationName:"reason" type:"string"`
+
+	RootDeviceName *string `locationName:"rootDeviceName" type:"string"`
+
+	RootDeviceType *string `locationName:"rootDeviceType" type:"string"`
+
+	SpotInstanceRequestId *string `locationName:"spotInstanceRequestId" type:"string"`
+
+	StateReason *StateReason `locationName:"stateReason" type:"structure"`
+
+	SubnetId *string `locationName:"subnetId" type:"string"`
+
+	VpcId *string `locationName:"vpcId" type:"string"`
+}
+
+// String returns the string representation
+func (s Instance) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s Instance) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/InstanceBackupBaseSetItem
+type InstanceBackupBaseSetItem struct {
+	_ struct{} `type:"structure"`
+
+	Charge *int64 `locationName:"charge" type:"integer"`
+
+	Type *string `locationName:"type" type:"string"`
+
+	Unit *string `locationName:"unit" type:"string"`
+
+	Value *int64 `locationName:"value" type:"integer"`
+}
+
+// String returns the string representation
+func (s InstanceBackupBaseSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InstanceBackupBaseSetItem) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/InstanceBackupImportInstanceDiskSet
+type InstanceBackupImportInstanceDiskSet struct {
+	_ struct{} `type:"structure"`
+
+	Charge *int64 `locationName:"charge" type:"integer"`
+
+	Unit *string `locationName:"unit" type:"string"`
+
+	Value *int64 `locationName:"value" type:"integer"`
+}
+
+// String returns the string representation
+func (s InstanceBackupImportInstanceDiskSet) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InstanceBackupImportInstanceDiskSet) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/InstanceBackupInfo
+type InstanceBackupInfo struct {
+	_ struct{} `type:"structure"`
+
+	InstanceBackupBaseSet []InstanceBackupBaseSetItem `locationName:"instanceBackupBaseSet" locationNameList:"item" type:"list"`
+
+	InstanceBackupImportInstanceDiskSet *InstanceBackupImportInstanceDiskSet `locationName:"instanceBackupImportInstanceDiskSet" type:"structure"`
+
+	InstanceBackupVolumeSet *InstanceBackupVolumeSet `locationName:"instanceBackupVolumeSet" type:"structure"`
+}
+
+// String returns the string representation
+func (s InstanceBackupInfo) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InstanceBackupInfo) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/InstanceBackupRule
+type InstanceBackupRule struct {
+	_ struct{} `type:"structure"`
+
+	AvailabilityZone *string `locationName:"availabilityZone" type:"string"`
+
+	BackupInstanceMaxCount *int64 `locationName:"backupInstanceMaxCount" type:"integer"`
+
+	Description *string `locationName:"description" type:"string"`
+
+	InstanceBackupRuleId *string `locationName:"instanceBackupRuleId" type:"string"`
+
+	InstanceBackupRuleName *string `locationName:"instanceBackupRuleName" type:"string"`
+
+	InstancesSet []InstancesSetItem `locationName:"instancesSet" locationNameList:"item" type:"list"`
+
+	RegionName *string `locationName:"regionName" type:"string"`
+
+	Status *string `locationName:"status" type:"string"`
+
+	TimeSlotId *string `locationName:"timeSlotId" type:"string"`
+}
+
+// String returns the string representation
+func (s InstanceBackupRule) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InstanceBackupRule) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/InstanceBackupRulesSetItem
+type InstanceBackupRulesSetItem struct {
+	_ struct{} `type:"structure"`
+
+	AvailabilityZone *string `locationName:"availabilityZone" type:"string"`
+
+	BackupInstanceMaxCount *int64 `locationName:"backupInstanceMaxCount" type:"integer"`
+
+	Description *string `locationName:"description" type:"string"`
+
+	InstanceBackupRuleId *string `locationName:"instanceBackupRuleId" type:"string"`
+
+	InstanceBackupRuleName *string `locationName:"instanceBackupRuleName" type:"string"`
+
+	InstancesSet []InstancesSetItem `locationName:"instancesSet" locationNameList:"item" type:"list"`
+
+	RegionName *string `locationName:"regionName" type:"string"`
+
+	Status *string `locationName:"status" type:"string"`
+
+	TimeSlotId *string `locationName:"timeSlotId" type:"string"`
+}
+
+// String returns the string representation
+func (s InstanceBackupRulesSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InstanceBackupRulesSetItem) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/InstanceBackupVolumeSet
+type InstanceBackupVolumeSet struct {
+	_ struct{} `type:"structure"`
+
+	Charge *int64 `locationName:"charge" type:"integer"`
+
+	Unit *string `locationName:"unit" type:"string"`
+
+	Value *int64 `locationName:"value" type:"integer"`
+}
+
+// String returns the string representation
+func (s InstanceBackupVolumeSet) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InstanceBackupVolumeSet) GoString() string {
+	return s.String()
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/InstanceCopy
 type InstanceCopy struct {
 	_ struct{} `type:"structure"`
@@ -15109,6 +16787,8 @@ type InstancesSetItem struct {
 
 	Autoscaling *Autoscaling `locationName:"autoscaling" type:"structure"`
 
+	BackupInstancesSet []BackupInstancesSetItem `locationName:"backupInstancesSet" locationNameList:"item" type:"list"`
+
 	BlockDeviceMapping []BlockDeviceMappingSetItem `locationName:"blockDeviceMapping" locationNameList:"item" type:"list"`
 
 	CopyInfo *string `locationName:"copyInfo" type:"string"`
@@ -15129,6 +16809,8 @@ type InstancesSetItem struct {
 
 	ImageName *string `locationName:"imageName" type:"string"`
 
+	InstanceBackupRule *InstanceBackupRule `locationName:"instanceBackupRule" type:"structure"`
+
 	InstanceId *string `locationName:"instanceId" type:"string"`
 
 	InstanceLifecycle *string `locationName:"instanceLifecycle" type:"string"`
@@ -15144,6 +16826,8 @@ type InstancesSetItem struct {
 	IpAddressV6 *string `locationName:"ipAddressV6" type:"string"`
 
 	IpType *string `locationName:"ipType" type:"string"`
+
+	IsoImageSet []IsoImageSetItem `locationName:"isoImageSet" locationNameList:"item" type:"list"`
 
 	KernelId *string `locationName:"kernelId" type:"string"`
 
@@ -15236,6 +16920,10 @@ type InternetVpnInitial struct {
 	_ struct{} `type:"structure"`
 
 	Charge *int64 `locationName:"charge" type:"integer"`
+
+	Type *string `locationName:"type" type:"string"`
+
+	Unit *string `locationName:"unit" type:"string"`
 
 	Value *int64 `locationName:"value" type:"integer"`
 }
@@ -15394,6 +17082,25 @@ func (s Ipv6AddressesSetItem) String() string {
 
 // GoString returns the string representation
 func (s Ipv6AddressesSetItem) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/IsoImageSetItem
+type IsoImageSetItem struct {
+	_ struct{} `type:"structure"`
+
+	IsoImageId *string `locationName:"isoImageId" type:"string"`
+
+	IsoImageName *string `locationName:"isoImageName" type:"string"`
+}
+
+// String returns the string representation
+func (s IsoImageSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s IsoImageSetItem) GoString() string {
 	return s.String()
 }
 
@@ -15577,6 +17284,8 @@ type Listener struct {
 
 	SSLCertificateId *string `locationName:"SSLCertificateId" type:"string"`
 
+	SSLPolicy *SSLPolicy `locationName:"SSLPolicy" type:"structure"`
+
 	SessionStickinessPolicy *SessionStickinessPolicy `locationName:"SessionStickinessPolicy" type:"structure"`
 
 	SorryPage *SorryPage `locationName:"SorryPage" type:"structure"`
@@ -15597,8 +17306,6 @@ type ListenerDescriptionsMemberItem struct {
 	_ struct{} `type:"structure"`
 
 	Listener *Listener `locationName:"Listener" type:"structure"`
-
-	PolicyNames []string `locationName:"PolicyNames" locationNameList:"member" type:"list"`
 }
 
 // String returns the string representation
@@ -15617,9 +17324,11 @@ type ListenersMemberItem struct {
 
 	BalancingType *int64 `locationName:"BalancingType" type:"integer"`
 
-	InstancePort *int64 `locationName:"InstancePort" type:"integer"`
+	Description *string `locationName:"Description" type:"string"`
 
-	Listener *Listener `locationName:"Listener" type:"structure"`
+	ElasticLoadBalancerPort *int64 `locationName:"ElasticLoadBalancerPort" type:"integer"`
+
+	InstancePort *int64 `locationName:"InstancePort" type:"integer"`
 
 	LoadBalancerPort *int64 `locationName:"LoadBalancerPort" type:"integer"`
 
@@ -15667,6 +17376,8 @@ type LoadBalancerDescriptionsMemberItem struct {
 	Option *Option `locationName:"Option" type:"structure"`
 
 	Policies *Policies `locationName:"Policies" type:"structure"`
+
+	PolicyType *string `locationName:"PolicyType" type:"string"`
 }
 
 // String returns the string representation
@@ -16011,6 +17722,57 @@ func (s ModifyInstanceAttributeOutput) GoString() string {
 
 // SDKResponseMetdata return sthe response metadata for the API.
 func (s ModifyInstanceAttributeOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/ModifyInstanceBackupRuleAttributeRequest
+type ModifyInstanceBackupRuleAttributeInput struct {
+	_ struct{} `type:"structure"`
+
+	BackupInstanceMaxCount *int64 `locationName:"BackupInstanceMaxCount" type:"integer"`
+
+	Description *string `locationName:"Description" type:"string"`
+
+	InstanceBackupRuleId *string `locationName:"InstanceBackupRuleId" type:"string"`
+
+	InstanceBackupRuleName *string `locationName:"InstanceBackupRuleName" type:"string"`
+
+	TimeSlotId *string `locationName:"TimeSlotId" type:"string"`
+}
+
+// String returns the string representation
+func (s ModifyInstanceBackupRuleAttributeInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ModifyInstanceBackupRuleAttributeInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/ModifyInstanceBackupRuleAttributeResult
+type ModifyInstanceBackupRuleAttributeOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	RequestId *string `locationName:"requestId" type:"string"`
+
+	Return *bool `locationName:"return" type:"boolean"`
+}
+
+// String returns the string representation
+func (s ModifyInstanceBackupRuleAttributeOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ModifyInstanceBackupRuleAttributeOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s ModifyInstanceBackupRuleAttributeOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
@@ -16436,7 +18198,7 @@ type NetworkInterface struct {
 
 	RequesterId *string `locationName:"requesterId" type:"string"`
 
-	RequesterManaged *string `locationName:"requesterManaged" type:"string"`
+	RequesterManaged *bool `locationName:"requesterManaged" type:"boolean"`
 
 	SourceDestCheck *string `locationName:"sourceDestCheck" type:"string"`
 
@@ -16456,6 +18218,65 @@ func (s NetworkInterface) String() string {
 
 // GoString returns the string representation
 func (s NetworkInterface) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NetworkInterfaceInfo
+type NetworkInterfaceInfo struct {
+	_ struct{} `type:"structure"`
+
+	NetworkInterfaceMonthlyRateSet []NetworkInterfaceMonthlyRateSetItem `locationName:"networkInterfaceMonthlyRateSet" locationNameList:"item" type:"list"`
+}
+
+// String returns the string representation
+func (s NetworkInterfaceInfo) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NetworkInterfaceInfo) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NetworkInterfaceItemSetItem
+type NetworkInterfaceItemSetItem struct {
+	_ struct{} `type:"structure"`
+
+	Count *int64 `locationName:"count" type:"integer"`
+
+	Type *string `locationName:"type" type:"string"`
+}
+
+// String returns the string representation
+func (s NetworkInterfaceItemSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NetworkInterfaceItemSetItem) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NetworkInterfaceMonthlyRateSetItem
+type NetworkInterfaceMonthlyRateSetItem struct {
+	_ struct{} `type:"structure"`
+
+	Charge *int64 `locationName:"charge" type:"integer"`
+
+	Type *string `locationName:"type" type:"string"`
+
+	Unit *string `locationName:"unit" type:"string"`
+
+	Value *int64 `locationName:"value" type:"integer"`
+}
+
+// String returns the string representation
+func (s NetworkInterfaceMonthlyRateSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NetworkInterfaceMonthlyRateSetItem) GoString() string {
 	return s.String()
 }
 
@@ -16513,7 +18334,7 @@ type NetworkInterfaceSetItem struct {
 
 	RequesterId *string `locationName:"requesterId" type:"string"`
 
-	RequesterManaged *string `locationName:"requesterManaged" type:"string"`
+	RequesterManaged *bool `locationName:"requesterManaged" type:"boolean"`
 
 	SourceDestCheck *string `locationName:"sourceDestCheck" type:"string"`
 
@@ -16675,6 +18496,51 @@ func (s NiftyAssociateNatTableOutput) GoString() string {
 
 // SDKResponseMetdata return sthe response metadata for the API.
 func (s NiftyAssociateNatTableOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyAssociateRouteTableWithElasticLoadBalancerRequest
+type NiftyAssociateRouteTableWithElasticLoadBalancerInput struct {
+	_ struct{} `type:"structure"`
+
+	ElasticLoadBalancerId *string `locationName:"ElasticLoadBalancerId" type:"string"`
+
+	RouteTableId *string `locationName:"RouteTableId" type:"string"`
+}
+
+// String returns the string representation
+func (s NiftyAssociateRouteTableWithElasticLoadBalancerInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyAssociateRouteTableWithElasticLoadBalancerInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyAssociateRouteTableWithElasticLoadBalancerResult
+type NiftyAssociateRouteTableWithElasticLoadBalancerOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	RequestId *string `locationName:"requestId" type:"string"`
+
+	Return *bool `locationName:"return" type:"boolean"`
+}
+
+// String returns the string representation
+func (s NiftyAssociateRouteTableWithElasticLoadBalancerOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyAssociateRouteTableWithElasticLoadBalancerOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s NiftyAssociateRouteTableWithElasticLoadBalancerOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
@@ -18105,10 +19971,6 @@ type NiftyDeregisterInstancesFromElasticLoadBalancerOutput struct {
 
 	responseMetadata aws.Response
 
-	Instances []InstancesMemberItem `locationName:"Instances" locationNameList:"member" type:"list"`
-
-	NiftyDeregisterInstancesFromElasticLoadBalancerResult *NiftyDeregisterInstancesFromElasticLoadBalancerOutput `locationName:"NiftyDeregisterInstancesFromElasticLoadBalancerResult" type:"structure"`
-
 	ResponseMetadata *ResponseMetadata `locationName:"ResponseMetadata" type:"structure"`
 }
 
@@ -18225,7 +20087,7 @@ type NiftyDeregisterVpnGatewaysFromSecurityGroupInput struct {
 
 	GroupName *string `locationName:"GroupName" type:"string"`
 
-	RouterSet []RequestRouterSetStruct `locationName:"RouterSet" type:"list"`
+	VpnGatewaySet []RequestVpnGatewaySetStruct `locationName:"VpnGatewaySet" type:"list"`
 }
 
 // String returns the string representation
@@ -18552,7 +20414,7 @@ func (s NiftyDescribeCorporateInfoForCertificateOutput) SDKResponseMetadata() aw
 type NiftyDescribeDhcpConfigsInput struct {
 	_ struct{} `type:"structure"`
 
-	DhcpConfigId *string `locationName:"DhcpConfigId" type:"string"`
+	DhcpConfigId []string `locationName:"DhcpConfigId" type:"list"`
 
 	Filter []RequestFilterStruct `locationName:"Filter" type:"list"`
 }
@@ -18786,6 +20648,53 @@ func (s NiftyDescribeInstanceSnapshotsOutput) GoString() string {
 
 // SDKResponseMetdata return sthe response metadata for the API.
 func (s NiftyDescribeInstanceSnapshotsOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyDescribeLoadBalancerSSLPoliciesRequest
+type NiftyDescribeLoadBalancerSSLPoliciesInput struct {
+	_ struct{} `type:"structure"`
+
+	LoadBalancerName *string `locationName:"LoadBalancerName" type:"string"`
+}
+
+// String returns the string representation
+func (s NiftyDescribeLoadBalancerSSLPoliciesInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyDescribeLoadBalancerSSLPoliciesInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyDescribeLoadBalancerSSLPoliciesResult
+type NiftyDescribeLoadBalancerSSLPoliciesOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	LoadBalancerName *string `locationName:"LoadBalancerName" type:"string"`
+
+	NiftyDescribeLoadBalancerSSLPoliciesResult *NiftyDescribeLoadBalancerSSLPoliciesOutput `locationName:"NiftyDescribeLoadBalancerSSLPoliciesResult" type:"structure"`
+
+	ResponseMetadata *ResponseMetadata `locationName:"ResponseMetadata" type:"structure"`
+
+	SSLPoliciesDescriptions []SSLPoliciesDescriptionsMemberItem `locationName:"SSLPoliciesDescriptions" locationNameList:"member" type:"list"`
+}
+
+// String returns the string representation
+func (s NiftyDescribeLoadBalancerSSLPoliciesOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyDescribeLoadBalancerSSLPoliciesOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s NiftyDescribeLoadBalancerSSLPoliciesOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
@@ -19275,6 +21184,49 @@ func (s NiftyDisassociateNatTableOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyDisassociateRouteTableFromElasticLoadBalancerRequest
+type NiftyDisassociateRouteTableFromElasticLoadBalancerInput struct {
+	_ struct{} `type:"structure"`
+
+	AssociationId *string `locationName:"AssociationId" type:"string"`
+}
+
+// String returns the string representation
+func (s NiftyDisassociateRouteTableFromElasticLoadBalancerInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyDisassociateRouteTableFromElasticLoadBalancerInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyDisassociateRouteTableFromElasticLoadBalancerResult
+type NiftyDisassociateRouteTableFromElasticLoadBalancerOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	RequestId *string `locationName:"requestId" type:"string"`
+
+	Return *bool `locationName:"return" type:"boolean"`
+}
+
+// String returns the string representation
+func (s NiftyDisassociateRouteTableFromElasticLoadBalancerOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyDisassociateRouteTableFromElasticLoadBalancerOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s NiftyDisassociateRouteTableFromElasticLoadBalancerOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyDisassociateRouteTableFromVpnGatewayRequest
 type NiftyDisassociateRouteTableFromVpnGatewayInput struct {
 	_ struct{} `type:"structure"`
@@ -19421,11 +21373,21 @@ func (s NiftyEnableDhcpOutput) SDKResponseMetadata() aws.Response {
 type NiftyIpsecConfiguration struct {
 	_ struct{} `type:"structure"`
 
+	DiffieHellmanGroup *int64 `locationName:"diffieHellmanGroup" type:"integer"`
+
+	EncapsulatingSecurityPayloadLifeTime *int64 `locationName:"encapsulatingSecurityPayloadLifeTime" type:"integer"`
+
+	EncapsulationSecurityPayloadLifetime *int64 `locationName:"encapsulationSecurityPayloadLifetime" type:"integer"`
+
 	EncryptionAlgorithm *string `locationName:"encryptionAlgorithm" type:"string"`
 
 	HashingAlgorithm *string `locationName:"hashingAlgorithm" type:"string"`
 
 	InternetKeyExchange *string `locationName:"internetKeyExchange" type:"string"`
+
+	InternetKeyExchangeLifeTime *int64 `locationName:"internetKeyExchangeLifeTime" type:"integer"`
+
+	InternetKeyExchangeLifetime *int64 `locationName:"internetKeyExchangeLifetime" type:"integer"`
 
 	Mtu *string `locationName:"mtu" type:"string"`
 
@@ -20029,10 +21991,6 @@ type NiftyRegisterInstancesWithElasticLoadBalancerOutput struct {
 
 	responseMetadata aws.Response
 
-	Instances []InstancesMemberItem `locationName:"Instances" locationNameList:"member" type:"list"`
-
-	NiftyRegisterInstancesWithElasticLoadBalancerResult *NiftyRegisterInstancesWithElasticLoadBalancerOutput `locationName:"NiftyRegisterInstancesWithElasticLoadBalancerResult" type:"structure"`
-
 	ResponseMetadata *ResponseMetadata `locationName:"ResponseMetadata" type:"structure"`
 }
 
@@ -20476,6 +22434,57 @@ func (s NiftyReplaceElasticLoadBalancerLatestVersionOutput) SDKResponseMetadata(
 	return s.responseMetadata
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest
+type NiftyReplaceElasticLoadBalancerListenerSSLCertificateInput struct {
+	_ struct{} `type:"structure"`
+
+	ElasticLoadBalancerId *string `locationName:"ElasticLoadBalancerId" type:"string"`
+
+	ElasticLoadBalancerName *string `locationName:"ElasticLoadBalancerName" type:"string"`
+
+	ElasticLoadBalancerPort *int64 `locationName:"ElasticLoadBalancerPort" type:"integer"`
+
+	InstancePort *int64 `locationName:"InstancePort" type:"integer"`
+
+	Protocol *string `locationName:"Protocol" type:"string"`
+
+	SSLCertificateId *string `locationName:"SSLCertificateId" type:"string"`
+}
+
+// String returns the string representation
+func (s NiftyReplaceElasticLoadBalancerListenerSSLCertificateInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyReplaceElasticLoadBalancerListenerSSLCertificateInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyReplaceElasticLoadBalancerListenerSSLCertificateResult
+type NiftyReplaceElasticLoadBalancerListenerSSLCertificateOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	ResponseMetadata *ResponseMetadata `locationName:"ResponseMetadata" type:"structure"`
+}
+
+// String returns the string representation
+func (s NiftyReplaceElasticLoadBalancerListenerSSLCertificateOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyReplaceElasticLoadBalancerListenerSSLCertificateOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s NiftyReplaceElasticLoadBalancerListenerSSLCertificateOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyReplaceNatRuleRequest
 type NiftyReplaceNatRuleInput struct {
 	_ struct{} `type:"structure"`
@@ -20583,6 +22592,51 @@ func (s NiftyReplaceNatTableAssociationOutput) GoString() string {
 
 // SDKResponseMetdata return sthe response metadata for the API.
 func (s NiftyReplaceNatTableAssociationOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest
+type NiftyReplaceRouteTableAssociationWithElasticLoadBalancerInput struct {
+	_ struct{} `type:"structure"`
+
+	AssociationId *string `locationName:"AssociationId" type:"string"`
+
+	RouteTableId *string `locationName:"RouteTableId" type:"string"`
+}
+
+// String returns the string representation
+func (s NiftyReplaceRouteTableAssociationWithElasticLoadBalancerInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyReplaceRouteTableAssociationWithElasticLoadBalancerInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyReplaceRouteTableAssociationWithElasticLoadBalancerResult
+type NiftyReplaceRouteTableAssociationWithElasticLoadBalancerOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	RequestId *string `locationName:"requestId" type:"string"`
+
+	Return *bool `locationName:"return" type:"boolean"`
+}
+
+// String returns the string representation
+func (s NiftyReplaceRouteTableAssociationWithElasticLoadBalancerOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyReplaceRouteTableAssociationWithElasticLoadBalancerOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s NiftyReplaceRouteTableAssociationWithElasticLoadBalancerOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
@@ -20909,6 +22963,55 @@ func (s NiftyRetryImportInstanceOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftySetLoadBalancerSSLPoliciesOfListenerRequest
+type NiftySetLoadBalancerSSLPoliciesOfListenerInput struct {
+	_ struct{} `type:"structure"`
+
+	InstancePort *int64 `locationName:"InstancePort" type:"integer"`
+
+	LoadBalancerName *string `locationName:"LoadBalancerName" type:"string"`
+
+	LoadBalancerPort *int64 `locationName:"LoadBalancerPort" type:"integer"`
+
+	SSLPolicyId *string `locationName:"SSLPolicyId" type:"string"`
+
+	SSLPolicyName *string `locationName:"SSLPolicyName" type:"string"`
+}
+
+// String returns the string representation
+func (s NiftySetLoadBalancerSSLPoliciesOfListenerInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftySetLoadBalancerSSLPoliciesOfListenerInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftySetLoadBalancerSSLPoliciesOfListenerResult
+type NiftySetLoadBalancerSSLPoliciesOfListenerOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	ResponseMetadata *ResponseMetadata `locationName:"ResponseMetadata" type:"structure"`
+}
+
+// String returns the string representation
+func (s NiftySetLoadBalancerSSLPoliciesOfListenerOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftySetLoadBalancerSSLPoliciesOfListenerOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s NiftySetLoadBalancerSSLPoliciesOfListenerOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftySnapshottingSetItem
 type NiftySnapshottingSetItem struct {
 	_ struct{} `type:"structure"`
@@ -20957,6 +23060,51 @@ func (s NiftyTunnel) String() string {
 // GoString returns the string representation
 func (s NiftyTunnel) GoString() string {
 	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest
+type NiftyUnsetLoadBalancerSSLPoliciesOfListenerInput struct {
+	_ struct{} `type:"structure"`
+
+	InstancePort *int64 `locationName:"InstancePort" type:"integer"`
+
+	LoadBalancerName *string `locationName:"LoadBalancerName" type:"string"`
+
+	LoadBalancerPort *int64 `locationName:"LoadBalancerPort" type:"integer"`
+}
+
+// String returns the string representation
+func (s NiftyUnsetLoadBalancerSSLPoliciesOfListenerInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyUnsetLoadBalancerSSLPoliciesOfListenerInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyUnsetLoadBalancerSSLPoliciesOfListenerResult
+type NiftyUnsetLoadBalancerSSLPoliciesOfListenerOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	ResponseMetadata *ResponseMetadata `locationName:"ResponseMetadata" type:"structure"`
+}
+
+// String returns the string representation
+func (s NiftyUnsetLoadBalancerSSLPoliciesOfListenerOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NiftyUnsetLoadBalancerSSLPoliciesOfListenerOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s NiftyUnsetLoadBalancerSSLPoliciesOfListenerOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
 }
 
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/NiftyUpdateAlarmRequest
@@ -21789,7 +23937,7 @@ type PrivateLan struct {
 
 	InstancesSet []InstancesSetItem `locationName:"instancesSet" locationNameList:"item" type:"list"`
 
-	PrivateLanId *string `locationName:"privateLanId" type:"string"`
+	NetworkId *string `locationName:"networkId" type:"string"`
 
 	PrivateLanName *string `locationName:"privateLanName" type:"string"`
 
@@ -21855,7 +24003,11 @@ type PrivateLanSetItem struct {
 
 	NetworkId *string `locationName:"networkId" type:"string"`
 
+	NetworkInterfaceSet []NetworkInterfaceSetItem `locationName:"networkInterfaceSet" locationNameList:"item" type:"list"`
+
 	PrivateLanName *string `locationName:"privateLanName" type:"string"`
+
+	RemoteAccessVpnGatewaySet []RemoteAccessVpnGatewaySetItem `locationName:"remoteAccessVpnGatewaySet" locationNameList:"item" type:"list"`
 
 	RouterSet []RouterSetItem `locationName:"routerSet" locationNameList:"item" type:"list"`
 
@@ -22046,6 +24198,49 @@ func (s RebootInstancesOutput) GoString() string {
 
 // SDKResponseMetdata return sthe response metadata for the API.
 func (s RebootInstancesOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RefreshInstanceBackupRuleRequest
+type RefreshInstanceBackupRuleInput struct {
+	_ struct{} `type:"structure"`
+
+	InstanceBackupRuleId *string `locationName:"InstanceBackupRuleId" type:"string"`
+}
+
+// String returns the string representation
+func (s RefreshInstanceBackupRuleInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s RefreshInstanceBackupRuleInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RefreshInstanceBackupRuleResult
+type RefreshInstanceBackupRuleOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	RequestId *string `locationName:"requestId" type:"string"`
+
+	Return *bool `locationName:"return" type:"boolean"`
+}
+
+// String returns the string representation
+func (s RefreshInstanceBackupRuleOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s RefreshInstanceBackupRuleOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s RefreshInstanceBackupRuleOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
@@ -22369,6 +24564,94 @@ func (s ReleaseAddressOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RemoteAccessVpnGatewayInfo
+type RemoteAccessVpnGatewayInfo struct {
+	_ struct{} `type:"structure"`
+
+	RemoteAccessVpnGatewayMeasuredRateSet []RemoteAccessVpnGatewayMeasuredRateSetItem `locationName:"remoteAccessVpnGatewayMeasuredRateSet" locationNameList:"item" type:"list"`
+
+	RemoteAccessVpnGatewayMonthlyRateSet []RemoteAccessVpnGatewayMonthlyRateSetItem `locationName:"remoteAccessVpnGatewayMonthlyRateSet" locationNameList:"item" type:"list"`
+}
+
+// String returns the string representation
+func (s RemoteAccessVpnGatewayInfo) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s RemoteAccessVpnGatewayInfo) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RemoteAccessVpnGatewayMeasuredRateSetItem
+type RemoteAccessVpnGatewayMeasuredRateSetItem struct {
+	_ struct{} `type:"structure"`
+
+	Charge *int64 `locationName:"charge" type:"integer"`
+
+	Type *string `locationName:"type" type:"string"`
+
+	Unit *string `locationName:"unit" type:"string"`
+
+	Value *int64 `locationName:"value" type:"integer"`
+}
+
+// String returns the string representation
+func (s RemoteAccessVpnGatewayMeasuredRateSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s RemoteAccessVpnGatewayMeasuredRateSetItem) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RemoteAccessVpnGatewayMonthlyRateSetItem
+type RemoteAccessVpnGatewayMonthlyRateSetItem struct {
+	_ struct{} `type:"structure"`
+
+	Charge *int64 `locationName:"charge" type:"integer"`
+
+	Type *string `locationName:"type" type:"string"`
+
+	Unit *string `locationName:"unit" type:"string"`
+
+	Value *int64 `locationName:"value" type:"integer"`
+}
+
+// String returns the string representation
+func (s RemoteAccessVpnGatewayMonthlyRateSetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s RemoteAccessVpnGatewayMonthlyRateSetItem) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RemoteAccessVpnGatewaySetItem
+type RemoteAccessVpnGatewaySetItem struct {
+	_ struct{} `type:"structure"`
+
+	DeviceIndex *int64 `locationName:"deviceIndex" type:"integer"`
+
+	IpAddress *string `locationName:"ipAddress" type:"string"`
+
+	RemoteAccessVpnGatewayId *string `locationName:"remoteAccessVpnGatewayId" type:"string"`
+
+	RemoteAccessVpnGatewayName *string `locationName:"remoteAccessVpnGatewayName" type:"string"`
+}
+
+// String returns the string representation
+func (s RemoteAccessVpnGatewaySetItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s RemoteAccessVpnGatewaySetItem) GoString() string {
+	return s.String()
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/ReplaceRouteRequest
 type ReplaceRouteInput struct {
 	_ struct{} `type:"structure"`
@@ -22683,6 +24966,23 @@ func (s RequestElasticLoadBalancersStruct) GoString() string {
 	return s.String()
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RequestExpectationStruct
+type RequestExpectationStruct struct {
+	_ struct{} `type:"structure"`
+
+	HttpCode *int64 `locationName:"HttpCode" type:"integer"`
+}
+
+// String returns the string representation
+func (s RequestExpectationStruct) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s RequestExpectationStruct) GoString() string {
+	return s.String()
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RequestFilterStruct
 type RequestFilterStruct struct {
 	_ struct{} `type:"structure"`
@@ -22724,6 +25024,10 @@ type RequestHealthCheckStruct struct {
 	_ struct{} `type:"structure"`
 
 	Interval *int64 `locationName:"Interval" type:"integer"`
+
+	Path *string `locationName:"Path" type:"string"`
+
+	RequestExpectation []RequestExpectationStruct `locationName:"Expectation" locationNameList:"member" type:"list"`
 
 	Target *string `locationName:"Target" type:"string"`
 
@@ -22885,7 +25189,7 @@ func (s RequestListenInterfaceStruct) GoString() string {
 type RequestListenerStruct struct {
 	_ struct{} `type:"structure"`
 
-	BalancingType *string `locationName:"BalancingType" type:"string"`
+	BalancingType *int64 `locationName:"BalancingType" type:"integer"`
 
 	InstancePort *int64 `locationName:"InstancePort" type:"integer"`
 
@@ -22929,7 +25233,7 @@ func (s RequestListenerUpdateStruct) GoString() string {
 type RequestListenersStruct struct {
 	_ struct{} `type:"structure"`
 
-	BalancingType *string `locationName:"BalancingType" type:"string"`
+	BalancingType *int64 `locationName:"BalancingType" type:"integer"`
 
 	Description *string `locationName:"Description" type:"string"`
 
@@ -23079,32 +25383,23 @@ func (s RequestNetworkInterfaceStruct) GoString() string {
 	return s.String()
 }
 
-// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RequestNiftyIPsecConfigurationStruct
-type RequestNiftyIPsecConfigurationStruct struct {
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RequestNiftyIpsecConfigurationStruct
+type RequestNiftyIpsecConfigurationStruct struct {
 	_ struct{} `type:"structure"`
+
+	DiffieHellmanGroup *int64 `locationName:"DiffieHellmanGroup" type:"integer"`
+
+	EncapsulatingSecurityPayloadLifeTime *int64 `locationName:"EncapsulatingSecurityPayloadLifeTime" type:"integer"`
 
 	EncryptionAlgorithm *string `locationName:"EncryptionAlgorithm" type:"string"`
 
 	HashAlgorithm *string `locationName:"HashAlgorithm" type:"string"`
 
-	PreSharedKey *string `locationName:"PreSharedKey" type:"string"`
-}
-
-// String returns the string representation
-func (s RequestNiftyIPsecConfigurationStruct) String() string {
-	return nifcloudutil.Prettify(s)
-}
-
-// GoString returns the string representation
-func (s RequestNiftyIPsecConfigurationStruct) GoString() string {
-	return s.String()
-}
-
-// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/RequestNiftyIpsecConfigurationStruct
-type RequestNiftyIpsecConfigurationStruct struct {
-	_ struct{} `type:"structure"`
-
 	InternetKeyExchange *string `locationName:"InternetKeyExchange" type:"string"`
+
+	InternetKeyExchangeLifeTime *int64 `locationName:"InternetKeyExchangeLifeTime" type:"integer"`
+
+	PreSharedKey *string `locationName:"PreSharedKey" type:"string"`
 }
 
 // String returns the string representation
@@ -23636,6 +25931,8 @@ type ResourceInfo struct {
 
 	ElasticLoadBalancerCount *int64 `locationName:"elasticLoadBalancerCount" type:"integer"`
 
+	InstanceBackupRuleCount *int64 `locationName:"instanceBackupRuleCount" type:"integer"`
+
 	InstanceItemSet []InstanceItemSetItem `locationName:"instanceItemSet" locationNameList:"item" type:"list"`
 
 	LoadBalancerCount *int64 `locationName:"loadBalancerCount" type:"integer"`
@@ -23643,6 +25940,8 @@ type ResourceInfo struct {
 	MonitoringRuleCount *int64 `locationName:"monitoringRuleCount" type:"integer"`
 
 	NetworkFlowAmount *int64 `locationName:"networkFlowAmount" type:"integer"`
+
+	NetworkInterfaceItemSet []NetworkInterfaceItemSetItem `locationName:"networkInterfaceItemSet" locationNameList:"item" type:"list"`
 
 	PremiumSupportSet []PremiumSupportSetItem `locationName:"premiumSupportSet" locationNameList:"item" type:"list"`
 
@@ -23805,6 +26104,8 @@ type RouteTableSetItem struct {
 	_ struct{} `type:"structure"`
 
 	AssociationSet []AssociationSetItem `locationName:"associationSet" locationNameList:"item" type:"list"`
+
+	ElasticLoadBalancerAssociationSet []ElasticLoadBalancerAssociationSetItem `locationName:"elasticLoadBalancerAssociationSet" locationNameList:"item" type:"list"`
 
 	PropagatingVgwSet []PropagatingVgwSetItem `locationName:"propagatingVgwSet" locationNameList:"item" type:"list"`
 
@@ -24232,6 +26533,63 @@ func (s RunningScaleOutOsSetItem) GoString() string {
 	return s.String()
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/SSLPoliciesDescriptionsMemberItem
+type SSLPoliciesDescriptionsMemberItem struct {
+	_ struct{} `type:"structure"`
+
+	SSLPolicyId *int64 `locationName:"SSLPolicyId" type:"integer"`
+
+	SSLPolicyName *string `locationName:"SSLPolicyName" type:"string"`
+
+	SSLPolicySet []SSLPolicySetMemberItem `locationName:"SSLPolicySet" locationNameList:"member" type:"list"`
+}
+
+// String returns the string representation
+func (s SSLPoliciesDescriptionsMemberItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s SSLPoliciesDescriptionsMemberItem) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/SSLPolicy
+type SSLPolicy struct {
+	_ struct{} `type:"structure"`
+
+	SSLPolicyId *string `locationName:"SSLPolicyId" type:"string"`
+
+	SSLPolicyName *string `locationName:"SSLPolicyName" type:"string"`
+}
+
+// String returns the string representation
+func (s SSLPolicy) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s SSLPolicy) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/SSLPolicySetMemberItem
+type SSLPolicySetMemberItem struct {
+	_ struct{} `type:"structure"`
+
+	Cipher *string `locationName:"Cipher" type:"string"`
+}
+
+// String returns the string representation
+func (s SSLPolicySetMemberItem) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s SSLPolicySetMemberItem) GoString() string {
+	return s.String()
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/ScheduleSetItem
 type ScheduleSetItem struct {
 	_ struct{} `type:"structure"`
@@ -24516,8 +26874,55 @@ func (s SetFilterForLoadBalancerOutput) SDKResponseMetadata() aws.Response {
 	return s.responseMetadata
 }
 
-// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/Snapshot
-type Snapshot struct {
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/SetLoadBalancerListenerSSLCertificateRequest
+type SetLoadBalancerListenerSSLCertificateInput struct {
+	_ struct{} `type:"structure"`
+
+	InstancePort *int64 `locationName:"InstancePort" type:"integer"`
+
+	LoadBalancerName *string `locationName:"LoadBalancerName" type:"string"`
+
+	LoadBalancerPort *int64 `locationName:"LoadBalancerPort" type:"integer"`
+
+	SSLCertificateId *string `locationName:"SSLCertificateId" type:"string"`
+}
+
+// String returns the string representation
+func (s SetLoadBalancerListenerSSLCertificateInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s SetLoadBalancerListenerSSLCertificateInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/SetLoadBalancerListenerSSLCertificateResult
+type SetLoadBalancerListenerSSLCertificateOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	ResponseMetadata *ResponseMetadata `locationName:"ResponseMetadata" type:"structure"`
+}
+
+// String returns the string representation
+func (s SetLoadBalancerListenerSSLCertificateOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s SetLoadBalancerListenerSSLCertificateOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s SetLoadBalancerListenerSSLCertificateOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/SnapShot
+type SnapShot struct {
 	_ struct{} `type:"structure"`
 
 	Charge *int64 `locationName:"charge" type:"integer"`
@@ -24530,12 +26935,12 @@ type Snapshot struct {
 }
 
 // String returns the string representation
-func (s Snapshot) String() string {
+func (s SnapShot) String() string {
 	return nifcloudutil.Prettify(s)
 }
 
 // GoString returns the string representation
-func (s Snapshot) GoString() string {
+func (s SnapShot) GoString() string {
 	return s.String()
 }
 
@@ -24543,7 +26948,7 @@ func (s Snapshot) GoString() string {
 type SnapshotInfo struct {
 	_ struct{} `type:"structure"`
 
-	Snapshot *Snapshot `locationName:"snapshot" type:"structure"`
+	SnapShot *SnapShot `locationName:"snapShot" type:"structure"`
 }
 
 // String returns the string representation
@@ -25041,6 +27446,51 @@ func (s TriggerSetItem) GoString() string {
 	return s.String()
 }
 
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/UnsetLoadBalancerListenerSSLCertificateRequest
+type UnsetLoadBalancerListenerSSLCertificateInput struct {
+	_ struct{} `type:"structure"`
+
+	InstancePort *int64 `locationName:"InstancePort" type:"integer"`
+
+	LoadBalancerName *string `locationName:"LoadBalancerName" type:"string"`
+
+	LoadBalancerPort *int64 `locationName:"LoadBalancerPort" type:"integer"`
+}
+
+// String returns the string representation
+func (s UnsetLoadBalancerListenerSSLCertificateInput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s UnsetLoadBalancerListenerSSLCertificateInput) GoString() string {
+	return s.String()
+}
+
+// Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/UnsetLoadBalancerListenerSSLCertificateResult
+type UnsetLoadBalancerListenerSSLCertificateOutput struct {
+	_ struct{} `type:"structure"`
+
+	responseMetadata aws.Response
+
+	ResponseMetadata *ResponseMetadata `locationName:"ResponseMetadata" type:"structure"`
+}
+
+// String returns the string representation
+func (s UnsetLoadBalancerListenerSSLCertificateOutput) String() string {
+	return nifcloudutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s UnsetLoadBalancerListenerSSLCertificateOutput) GoString() string {
+	return s.String()
+}
+
+// SDKResponseMetdata return sthe response metadata for the API.
+func (s UnsetLoadBalancerListenerSSLCertificateOutput) SDKResponseMetadata() aws.Response {
+	return s.responseMetadata
+}
+
 // Please also see https://pfs.nifcloud.com/api//goto/WebAPI/computing-2016-11-15/UpdateLoadBalancerRequest
 type UpdateLoadBalancerInput struct {
 	_ struct{} `type:"structure"`
@@ -25050,6 +27500,8 @@ type UpdateLoadBalancerInput struct {
 	ListenerUpdate *RequestListenerUpdateStruct `locationName:"ListenerUpdate" type:"structure"`
 
 	LoadBalancerName *string `locationName:"LoadBalancerName" type:"string"`
+
+	LoadBalancerNameUpdate *string `locationName:"LoadBalancerNameUpdate" type:"string"`
 
 	NetworkVolumeUpdate *int64 `locationName:"NetworkVolumeUpdate" type:"integer"`
 }
@@ -25233,9 +27685,9 @@ func (s UpdateSecurityGroupOutput) SDKResponseMetadata() aws.Response {
 type UploadSslCertificateInput struct {
 	_ struct{} `type:"structure"`
 
-	Ca *string `locationName:"Ca" type:"string"`
-
 	Certificate *string `locationName:"Certificate" type:"string"`
+
+	CertificateAuthority *string `locationName:"Ca" type:"string"`
 
 	Key *string `locationName:"Key" type:"string"`
 }

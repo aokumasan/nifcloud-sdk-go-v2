@@ -64,6 +64,8 @@ import (
 type NasAPI interface {
 	AuthorizeNASSecurityGroupIngressRequest(*nas.AuthorizeNASSecurityGroupIngressInput) nas.AuthorizeNASSecurityGroupIngressRequest
 
+	ClearNASSessionRequest(*nas.ClearNASSessionInput) nas.ClearNASSessionRequest
+
 	CreateNASInstanceRequest(*nas.CreateNASInstanceInput) nas.CreateNASInstanceRequest
 
 	CreateNASSecurityGroupRequest(*nas.CreateNASSecurityGroupInput) nas.CreateNASSecurityGroupRequest

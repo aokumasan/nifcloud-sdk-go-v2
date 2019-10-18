@@ -84,13 +84,19 @@ type ComputingAPI interface {
 
 	ConfigureHealthCheckRequest(*computing.ConfigureHealthCheckInput) computing.ConfigureHealthCheckRequest
 
+	CopyFromBackupInstanceRequest(*computing.CopyFromBackupInstanceInput) computing.CopyFromBackupInstanceRequest
+
 	CopyInstancesRequest(*computing.CopyInstancesInput) computing.CopyInstancesRequest
+
+	CreateBackupInstancesRequest(*computing.CreateBackupInstancesInput) computing.CreateBackupInstancesRequest
 
 	CreateCustomerGatewayRequest(*computing.CreateCustomerGatewayInput) computing.CreateCustomerGatewayRequest
 
 	CreateDhcpOptionsRequest(*computing.CreateDhcpOptionsInput) computing.CreateDhcpOptionsRequest
 
 	CreateImageRequest(*computing.CreateImageInput) computing.CreateImageRequest
+
+	CreateInstanceBackupRuleRequest(*computing.CreateInstanceBackupRuleInput) computing.CreateInstanceBackupRuleRequest
 
 	CreateKeyPairRequest(*computing.CreateKeyPairInput) computing.CreateKeyPairRequest
 
@@ -117,6 +123,8 @@ type ComputingAPI interface {
 	DeleteDhcpOptionsRequest(*computing.DeleteDhcpOptionsInput) computing.DeleteDhcpOptionsRequest
 
 	DeleteImageRequest(*computing.DeleteImageInput) computing.DeleteImageRequest
+
+	DeleteInstanceBackupRuleRequest(*computing.DeleteInstanceBackupRuleInput) computing.DeleteInstanceBackupRuleRequest
 
 	DeleteKeyPairRequest(*computing.DeleteKeyPairInput) computing.DeleteKeyPairRequest
 
@@ -155,6 +163,10 @@ type ComputingAPI interface {
 	DescribeImagesRequest(*computing.DescribeImagesInput) computing.DescribeImagesRequest
 
 	DescribeInstanceAttributeRequest(*computing.DescribeInstanceAttributeInput) computing.DescribeInstanceAttributeRequest
+
+	DescribeInstanceBackupRuleActivitiesRequest(*computing.DescribeInstanceBackupRuleActivitiesInput) computing.DescribeInstanceBackupRuleActivitiesRequest
+
+	DescribeInstanceBackupRulesRequest(*computing.DescribeInstanceBackupRulesInput) computing.DescribeInstanceBackupRulesRequest
 
 	DescribeInstanceHealthRequest(*computing.DescribeInstanceHealthInput) computing.DescribeInstanceHealthRequest
 
@@ -216,6 +228,8 @@ type ComputingAPI interface {
 
 	ModifyInstanceAttributeRequest(*computing.ModifyInstanceAttributeInput) computing.ModifyInstanceAttributeRequest
 
+	ModifyInstanceBackupRuleAttributeRequest(*computing.ModifyInstanceBackupRuleAttributeInput) computing.ModifyInstanceBackupRuleAttributeRequest
+
 	ModifyNetworkInterfaceAttributeRequest(*computing.ModifyNetworkInterfaceAttributeInput) computing.ModifyNetworkInterfaceAttributeRequest
 
 	ModifySslCertificateAttributeRequest(*computing.ModifySslCertificateAttributeInput) computing.ModifySslCertificateAttributeRequest
@@ -225,6 +239,8 @@ type ComputingAPI interface {
 	NiftyAssociateImageRequest(*computing.NiftyAssociateImageInput) computing.NiftyAssociateImageRequest
 
 	NiftyAssociateNatTableRequest(*computing.NiftyAssociateNatTableInput) computing.NiftyAssociateNatTableRequest
+
+	NiftyAssociateRouteTableWithElasticLoadBalancerRequest(*computing.NiftyAssociateRouteTableWithElasticLoadBalancerInput) computing.NiftyAssociateRouteTableWithElasticLoadBalancerRequest
 
 	NiftyAssociateRouteTableWithVpnGatewayRequest(*computing.NiftyAssociateRouteTableWithVpnGatewayInput) computing.NiftyAssociateRouteTableWithVpnGatewayRequest
 
@@ -312,6 +328,8 @@ type ComputingAPI interface {
 
 	NiftyDescribeInstanceSnapshotsRequest(*computing.NiftyDescribeInstanceSnapshotsInput) computing.NiftyDescribeInstanceSnapshotsRequest
 
+	NiftyDescribeLoadBalancerSSLPoliciesRequest(*computing.NiftyDescribeLoadBalancerSSLPoliciesInput) computing.NiftyDescribeLoadBalancerSSLPoliciesRequest
+
 	NiftyDescribeNatTablesRequest(*computing.NiftyDescribeNatTablesInput) computing.NiftyDescribeNatTablesRequest
 
 	NiftyDescribePerformanceChartRequest(*computing.NiftyDescribePerformanceChartInput) computing.NiftyDescribePerformanceChartRequest
@@ -331,6 +349,8 @@ type ComputingAPI interface {
 	NiftyDisableDhcpRequest(*computing.NiftyDisableDhcpInput) computing.NiftyDisableDhcpRequest
 
 	NiftyDisassociateNatTableRequest(*computing.NiftyDisassociateNatTableInput) computing.NiftyDisassociateNatTableRequest
+
+	NiftyDisassociateRouteTableFromElasticLoadBalancerRequest(*computing.NiftyDisassociateRouteTableFromElasticLoadBalancerInput) computing.NiftyDisassociateRouteTableFromElasticLoadBalancerRequest
 
 	NiftyDisassociateRouteTableFromVpnGatewayRequest(*computing.NiftyDisassociateRouteTableFromVpnGatewayInput) computing.NiftyDisassociateRouteTableFromVpnGatewayRequest
 
@@ -378,9 +398,13 @@ type ComputingAPI interface {
 
 	NiftyReplaceElasticLoadBalancerLatestVersionRequest(*computing.NiftyReplaceElasticLoadBalancerLatestVersionInput) computing.NiftyReplaceElasticLoadBalancerLatestVersionRequest
 
+	NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest(*computing.NiftyReplaceElasticLoadBalancerListenerSSLCertificateInput) computing.NiftyReplaceElasticLoadBalancerListenerSSLCertificateRequest
+
 	NiftyReplaceNatRuleRequest(*computing.NiftyReplaceNatRuleInput) computing.NiftyReplaceNatRuleRequest
 
 	NiftyReplaceNatTableAssociationRequest(*computing.NiftyReplaceNatTableAssociationInput) computing.NiftyReplaceNatTableAssociationRequest
+
+	NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest(*computing.NiftyReplaceRouteTableAssociationWithElasticLoadBalancerInput) computing.NiftyReplaceRouteTableAssociationWithElasticLoadBalancerRequest
 
 	NiftyReplaceRouteTableAssociationWithVpnGatewayRequest(*computing.NiftyReplaceRouteTableAssociationWithVpnGatewayInput) computing.NiftyReplaceRouteTableAssociationWithVpnGatewayRequest
 
@@ -395,6 +419,10 @@ type ComputingAPI interface {
 	NiftyRestoreVpnGatewayPreviousVersionRequest(*computing.NiftyRestoreVpnGatewayPreviousVersionInput) computing.NiftyRestoreVpnGatewayPreviousVersionRequest
 
 	NiftyRetryImportInstanceRequest(*computing.NiftyRetryImportInstanceInput) computing.NiftyRetryImportInstanceRequest
+
+	NiftySetLoadBalancerSSLPoliciesOfListenerRequest(*computing.NiftySetLoadBalancerSSLPoliciesOfListenerInput) computing.NiftySetLoadBalancerSSLPoliciesOfListenerRequest
+
+	NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest(*computing.NiftyUnsetLoadBalancerSSLPoliciesOfListenerInput) computing.NiftyUnsetLoadBalancerSSLPoliciesOfListenerRequest
 
 	NiftyUpdateAlarmRequest(*computing.NiftyUpdateAlarmInput) computing.NiftyUpdateAlarmRequest
 
@@ -411,6 +439,8 @@ type ComputingAPI interface {
 	NiftyUpdateVpnGatewayNetworkInterfacesRequest(*computing.NiftyUpdateVpnGatewayNetworkInterfacesInput) computing.NiftyUpdateVpnGatewayNetworkInterfacesRequest
 
 	RebootInstancesRequest(*computing.RebootInstancesInput) computing.RebootInstancesRequest
+
+	RefreshInstanceBackupRuleRequest(*computing.RefreshInstanceBackupRuleInput) computing.RefreshInstanceBackupRuleRequest
 
 	RegisterCorporateInfoForCertificateRequest(*computing.RegisterCorporateInfoForCertificateInput) computing.RegisterCorporateInfoForCertificateRequest
 
@@ -432,11 +462,15 @@ type ComputingAPI interface {
 
 	SetFilterForLoadBalancerRequest(*computing.SetFilterForLoadBalancerInput) computing.SetFilterForLoadBalancerRequest
 
+	SetLoadBalancerListenerSSLCertificateRequest(*computing.SetLoadBalancerListenerSSLCertificateInput) computing.SetLoadBalancerListenerSSLCertificateRequest
+
 	StartInstancesRequest(*computing.StartInstancesInput) computing.StartInstancesRequest
 
 	StopInstancesRequest(*computing.StopInstancesInput) computing.StopInstancesRequest
 
 	TerminateInstancesRequest(*computing.TerminateInstancesInput) computing.TerminateInstancesRequest
+
+	UnsetLoadBalancerListenerSSLCertificateRequest(*computing.UnsetLoadBalancerListenerSSLCertificateInput) computing.UnsetLoadBalancerListenerSSLCertificateRequest
 
 	UpdateLoadBalancerRequest(*computing.UpdateLoadBalancerInput) computing.UpdateLoadBalancerRequest
 
