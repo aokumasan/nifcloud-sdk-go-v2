@@ -9,7 +9,7 @@
 package nasiface
 
 import (
-	"github.com/alice02/nifcloud-sdk-go-v2/service/nas"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/service/nas"
 )
 
 // ClientAPI provides an interface to enable mocking the

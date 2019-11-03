@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"reflect"
 
-	"github.com/alice02/nifcloud-sdk-go-v2/private/protocol/query/queryutil"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/private/protocol/query/queryutil"
 	request "github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/awserr"
 )

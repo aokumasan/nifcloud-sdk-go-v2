@@ -5,7 +5,7 @@ package rdb
 import (
 	"context"
 
-	"github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/internal/nifcloudutil"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/private/protocol"
 	"github.com/aws/aws-sdk-go-v2/private/protocol/query"

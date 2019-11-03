@@ -11,8 +11,8 @@ package computingiface
 import (
 	"context"
 
-	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go-v2/service/computing"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/service/computing"
 )
 
 // ClientAPI provides an interface to enable mocking the

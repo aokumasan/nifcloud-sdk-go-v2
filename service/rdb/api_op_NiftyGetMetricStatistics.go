@@ -6,7 +6,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/internal/nifcloudutil"
 	"github.com/aws/aws-sdk-go-v2/aws"
 )
 

@@ -1,7 +1,7 @@
 package nifcloud
 
 import (
-	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud/endpoints"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud/endpoints"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/defaults"
 )

@@ -11,8 +11,8 @@ package hatobaiface
 import (
 	"context"
 
-	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go-v2/service/hatoba"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/service/hatoba"
 )
 
 // ClientAPI provides an interface to enable mocking the
