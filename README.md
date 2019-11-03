@@ -7,7 +7,7 @@ nifcloud-sdk-go-v2 is the Developer Preview for the v2 of the NIFCLOUD SDK for t
 ## Installing
 
 ```sh
-go get -u github.com/alice02/nifcloud-sdk-go-v2
+go get -u github.com/aokumasan/nifcloud-sdk-go-v2
 ```
 
 ## Hello NIFCLOUD
@@ -19,9 +19,9 @@ import (
         "fmt"
         "context"
 
-        "github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
-        "github.com/alice02/nifcloud-sdk-go-v2/nifcloud/endpoints"
-        "github.com/alice02/nifcloud-sdk-go-v2/service/computing"
+        "github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud"
+        "github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud/endpoints"
+        "github.com/aokumasan/nifcloud-sdk-go-v2/service/computing"
 )
 
 func main() {

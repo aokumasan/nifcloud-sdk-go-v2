@@ -3,8 +3,8 @@
 package script
 
 import (
-	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go-v2/private/protocol/script"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/private/protocol/script"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/signer/v4"
 )

@@ -301,10 +301,10 @@ func writeAPIErrorsFile(g *generateInfo) error {
 func fixServiceFile(code string) string {
 	maps := []map[string]string{
 		{`"github.com/aws/aws-sdk-go-v2/aws"`: `"github.com/aws/aws-sdk-go-v2/aws"
-"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"`},
-		{"github.com/aws/aws-sdk-go-v2/private/protocol/computing": "github.com/alice02/nifcloud-sdk-go-v2/private/protocol/computing"},
-		{"github.com/aws/aws-sdk-go-v2/private/protocol/script": "github.com/alice02/nifcloud-sdk-go-v2/private/protocol/script"},
-		{"github.com/aws/aws-sdk-go-v2/aws/signer/v2": "github.com/alice02/nifcloud-sdk-go-v2/nifcloud/signer/v2"},
+"github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud"`},
+		{"github.com/aws/aws-sdk-go-v2/private/protocol/computing": "github.com/aokumasan/nifcloud-sdk-go-v2/private/protocol/computing"},
+		{"github.com/aws/aws-sdk-go-v2/private/protocol/script": "github.com/aokumasan/nifcloud-sdk-go-v2/private/protocol/script"},
+		{"github.com/aws/aws-sdk-go-v2/aws/signer/v2": "github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud/signer/v2"},
 		{"aws.Config": "nifcloud.Config"},
 		{"config,": "config.AWSConfig(),"},
 	}
@@ -314,7 +314,7 @@ func fixServiceFile(code string) string {
 
 func fixAPIFile(code string) string {
 	maps := []map[string]string{
-		{"github.com/aws/aws-sdk-go-v2/internal/awsutil": "github.com/alice02/nifcloud-sdk-go-v2/internal/nifcloudutil"},
+		{"github.com/aws/aws-sdk-go-v2/internal/awsutil": "github.com/aokumasan/nifcloud-sdk-go-v2/internal/nifcloudutil"},
 		{"awsutil": "nifcloudutil"},
 	}
 
@@ -323,8 +323,8 @@ func fixAPIFile(code string) string {
 
 func fixInterfaceFile(code string) string {
 	maps := []map[string]string{
-		{"github.com/aws/aws-sdk-go-v2/aws": "github.com/alice02/nifcloud-sdk-go-v2/nifcloud"},
-		{"github.com/aws/aws-sdk-go-v2/service": "github.com/alice02/nifcloud-sdk-go-v2/service"},
+		{"github.com/aws/aws-sdk-go-v2/aws": "github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud"},
+		{"github.com/aws/aws-sdk-go-v2/service": "github.com/aokumasan/nifcloud-sdk-go-v2/service"},
 	}
 
 	return replace(code, maps)

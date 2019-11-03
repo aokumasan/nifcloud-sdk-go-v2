@@ -9,7 +9,7 @@
 package rdbiface
 
 import (
-	"github.com/alice02/nifcloud-sdk-go-v2/service/rdb"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/service/rdb"
 )
 
 // ClientAPI provides an interface to enable mocking the

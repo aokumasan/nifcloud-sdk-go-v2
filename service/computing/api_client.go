@@ -3,9 +3,9 @@
 package computing
 
 import (
-	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go-v2/nifcloud/signer/v2"
-	"github.com/alice02/nifcloud-sdk-go-v2/private/protocol/computing"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud/signer/v2"
+	"github.com/aokumasan/nifcloud-sdk-go-v2/private/protocol/computing"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/defaults"
 )
