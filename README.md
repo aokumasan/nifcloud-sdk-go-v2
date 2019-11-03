@@ -17,6 +17,7 @@ package main
 
 import (
         "fmt"
+        "context"
 
         "github.com/alice02/nifcloud-sdk-go-v2/nifcloud"
         "github.com/alice02/nifcloud-sdk-go-v2/nifcloud/endpoints"
