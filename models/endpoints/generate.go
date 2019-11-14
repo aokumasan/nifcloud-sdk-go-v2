@@ -2,5 +2,5 @@
 // to generate endpoint definition files for the SDK.
 package endpoints
 
-//go:generate go run -tags codegen ../../private/model/cli/gen-endpoints/main.go -model ./endpoints.json -out ../../nifcloud/endpoints/defaults.go
+//go:generate ../../bin/gen-endpoints -model ./endpoints.json -out ../../nifcloud/endpoints/defaults.go
 //go:generate gofmt -s -w ../../nifcloud/endpoints
