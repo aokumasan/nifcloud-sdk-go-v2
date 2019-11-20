@@ -1,4 +1,5 @@
-// NOTE: This file was imported from https://github.com/aws/aws-sdk-go-v2/blob/v2.0.0-preview.5/aws/endpoints/v3model.go
+// This code was forked from github.com/aws/aws-sdk-go-v2. DO NOT EDIT.
+// URL: https://github.com/aws/aws-sdk-go-v2/tree/v0.15.0/aws/endpoints/v3model.go
 
 package endpoints
 
@@ -55,8 +56,9 @@ type partition struct {
 
 func (p partition) Partition() Partition {
 	return Partition{
-		id: p.ID,
-		p:  &p,
+		dnsSuffix: p.DNSSuffix,
+		id:        p.ID,
+		p:         &p,
 	}
 }
 

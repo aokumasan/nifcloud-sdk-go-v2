@@ -8,6 +8,9 @@ gen-endpoints:
 gen-services:
 	go generate ./service
 
+update-third-party:
+	./hack/update_third_party.sh
+
 install-deps:
 	mkdir -p ${GOBIN}
 	GOBIN=${GOBIN} go install --tags codegen github.com/aws/aws-sdk-go-v2/private/model/cli/gen-endpoints

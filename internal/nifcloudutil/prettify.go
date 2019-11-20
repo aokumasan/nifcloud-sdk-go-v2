@@ -1,6 +1,7 @@
-// NOTE: This file was imported from https://github.com/aws/aws-sdk-go-v2/blob/v2.0.0-preview.5/internal/awsutil/prettify.go
+// This code was forked from github.com/aws/aws-sdk-go-v2. DO NOT EDIT.
+// URL: https://github.com/aws/aws-sdk-go-v2/tree/v0.15.0/internal/awsutil/prettify.go
 
-package nifcloudutil
+package awsutil
 
 import (
 	"bytes"
