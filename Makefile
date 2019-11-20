@@ -1,5 +1,7 @@
 GOBIN=$(shell pwd)/bin
 
+all: install-deps generate update-third-party
+
 generate: gen-endpoints gen-services
 
 gen-endpoints:
@@ -7,6 +9,9 @@ gen-endpoints:
 
 gen-services:
 	go generate ./service
+
+update-third-party:
+	./hack/update_third_party.sh
 
 install-deps:
 	mkdir -p ${GOBIN}
