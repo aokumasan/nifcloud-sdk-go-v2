@@ -3,7 +3,7 @@
 set -e
 
 PROJECT_DIR=$(cd $(dirname $0)/..; pwd)
-VERSION=$(grep aws-sdk ${PROJECT_DIR}/go.mod | cut -d " " -f 2)
+VERSION=$(grep aws-sdk-go-v2 ${PROJECT_DIR}/go.mod | cut -d " " -f 2)
 TEMP_HEADER_TXT="/tmp/nifcloud_sdk_go_v2_header.txt"
 TEMP_OUTPUT="/tmp/nifcloud_sdl_go_v2_output.go"
 
