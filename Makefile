@@ -1,5 +1,7 @@
 GOBIN=$(shell pwd)/bin
 
+all: install-deps generate update-third-party
+
 generate: gen-endpoints gen-services
 
 gen-endpoints:
