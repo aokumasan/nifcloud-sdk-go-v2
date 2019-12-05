@@ -23,7 +23,7 @@ update_third_party::aws_sdk_go_v2::internal::awsutil() {
     PAGE_URL="https://github.com/aws/aws-sdk-go-v2/tree/${VERSION}/internal/awsutil/prettify.go"
     OUTPUT="${PROJECT_DIR}/internal/nifcloudutil/prettify.go"
     fork_from_aws_sdk_go_v2 ${DOWNLOAD_URL} ${PAGE_URL} ${OUTPUT}
-    sed -i "" -e s/package\sawsutil/package\snifcloudutil/g ${OUTPUT}
+    sed -i "" -e "s/package awsutil/package nifcloudutil/g" ${OUTPUT}
 }
 
 update_third_party::aws_sdk_go_v2::aws::endpoints() {
