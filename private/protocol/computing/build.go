@@ -29,12 +29,24 @@ func Build(r *request.Request) {
 		parameterLength := reflect.ValueOf(r.Params).Elem().FieldByName("LoadBalancerNames").Len()
 		prefix := "LoadBalancerNames"
 		for i := 1; i <= parameterLength; i++ {
-			body[fmt.Sprintf("%s.LoadBalancerPort.%d", prefix, i)] = body[fmt.Sprintf("%s.member.%d.LoadBalancerPort", prefix, i)]
-			body[fmt.Sprintf("%s.InstancePort.%d", prefix, i)] = body[fmt.Sprintf("%s.member.%d.InstancePort", prefix, i)]
-			body[fmt.Sprintf("%s.member.%d", prefix, i)] = body[fmt.Sprintf("%s.member.%d.LoadBalancerName", prefix, i)]
-			delete(body, fmt.Sprintf("%s.member.%d.LoadBalancerPort", prefix, i))
-			delete(body, fmt.Sprintf("%s.member.%d.InstancePort", prefix, i))
-			delete(body, fmt.Sprintf("%s.member.%d.LoadBalancerName", prefix, i))
+			loadBalancerNameKey := fmt.Sprintf("%s.member.%d.LoadBalancerName", prefix, i)
+			loadBalancerPortKey := fmt.Sprintf("%s.member.%d.LoadBalancerPort", prefix, i)
+			instancePortKey := fmt.Sprintf("%s.member.%d.InstancePort", prefix, i)
+			loadBalancerName := body.Get(loadBalancerNameKey)
+			loadBalancerPort := body.Get(loadBalancerPortKey)
+			instancePort := body.Get(instancePortKey)
+			if loadBalancerName != "" {
+				body.Set(fmt.Sprintf("%s.member.%d", prefix, i), loadBalancerName)
+				body.Del(loadBalancerNameKey)
+			}
+			if loadBalancerPort != "" {
+				body.Set(fmt.Sprintf("%s.LoadBalancerPort.%d", prefix, i), loadBalancerPort)
+				body.Del(loadBalancerPortKey)
+			}
+			if instancePort != "" {
+				body.Set(fmt.Sprintf("%s.InstancePort.%d", prefix, i), instancePort)
+				body.Del(instancePortKey)
+			}
 		}
 	}
 
