@@ -11,7 +11,7 @@ package computingiface
 import (
 	"context"
 
-	"github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud"
+	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aokumasan/nifcloud-sdk-go-v2/service/computing"
 )
 

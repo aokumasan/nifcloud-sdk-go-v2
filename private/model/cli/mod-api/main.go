@@ -123,7 +123,7 @@ func rewriteServiceFile(path string) error {
 func rewriteInterfaceFile(path string) error {
 	serviceName := filepath.Base(filepath.Dir(filepath.Dir(path)))
 	imports := []map[string]string{
-		{"github.com/aws/aws-sdk-go-v2/aws": "github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud"},
+		{"github.com/aokumasan/nifcloud-sdk-go-v2/nifcloud": "github.com/aws/aws-sdk-go-v2/aws"},
 		{fmt.Sprintf("github.com/aws/aws-sdk-go-v2/service/%s", serviceName): fmt.Sprintf("github.com/aokumasan/nifcloud-sdk-go-v2/service/%s", serviceName)},
 	}
 
